@@ -32,6 +32,31 @@
 html[data-theme='light'] {
   --global-bg-color: #{$white-color};
   --global-text-color: #{$black-color};
+  --global-theme-color: #{$dark-blue};
+  --global-hover-color: #{$blue-color};
+  --global-navbar-bg-color: #{$dark-blue};
+  --global-navbar-text-color: #{$grey-color-light};
+  --global-navbar-theme-color: #{$grey-color-light};
+  --global-navbar-hover-color: #{$grey-color};
+  --global-footer-bg-color: #{$dark-blue};
+  --global-footer-text-color: #{$grey-color-light};
+  --global-footer-link-color: #{$white-color};
+  --global-icon-color: #{$grey-color-dark};
+  --global-navbar-icon-color: navajowhite;
+
+  .fa-sun {
+    display : none;
+  }
+  .fa-moon {
+    padding-left: 10px;
+    padding-top: 12px;
+    display : block;
+  }
+}
+
+html[data-theme='light'] {
+  --global-bg-color: #{$white-color};
+  --global-text-color: #{$black-color};
   --global-theme-color: #{$purple-color};
   --global-hover-color: #{$light-purple-color};
   --global-navbar-bg-color: #{$dark-blue};

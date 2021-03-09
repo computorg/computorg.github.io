@@ -6,7 +6,7 @@ title: Computo
 first_name: 
 middle_name: 
 last_name: 
-email: computo@sfds.asso.fr
+# email: computo@sfds.asso.fr
 description: > # 
   A Journal of the French Statistical Society to promote reproducible Science
 footer_text: >
@@ -80,7 +80,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: computorg # put your disqus shortname
+disqus_shortname: computo # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
