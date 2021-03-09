@@ -1,8 +1,9 @@
 ---
 layout: page
-title: about
-permalink: /
-description: <img src="assets/img/sfds.png" alt="SFdS"/> A journal of the French Statistical Society 
+title: À propos
+permalink: /a_propos
+order: 4
+nav: true
 ---
 
 <h2>Aims and scope</h2>
