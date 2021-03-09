@@ -1,8 +1,8 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
+title: Current issue
+permalink: /current/
+description: Current issue of the journal
 nav: true
 ---
 
