@@ -2,19 +2,13 @@
 layout: about
 title: about
 permalink: /
-description: <img src="assets/img/sfds.png" alt="SFdS"/> A journal of the French Statistical Society 
-
-profile:
-  align: right
-  picture: 
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
+description: <img src='assets/img/sfds.png' alt ="logo_SFdS"/>  A journal of the French Statistical Society 
+order: 1
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
+---
+
 ---
 
 This journal aims at promoting computational/algorithmic contributions
@@ -24,6 +18,6 @@ scientific question. In order to achieve this goal, Computo goes
 beyond classical static publications by leveraging technical advances
 in literate programming and scientific reporting.
 
-More details about our philosophy in Aims and Scope and Reproducibility.
+[More details about our philosophy](a_propos).
 
 

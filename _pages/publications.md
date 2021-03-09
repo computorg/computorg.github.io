@@ -1,9 +1,10 @@
 ---
 layout: page
 permalink: /publications/
-title: Past issues
+title: Articles
 description: Publications by years in reversed chronological order
-years: [1956, 1950, 1935, 1905]
+order: 2
+years: [2021, 1935]
 nav: true
 ---
 
