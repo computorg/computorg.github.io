@@ -1,8 +1,9 @@
 ---
 layout: page
-title: about
-permalink: /
-description: <img src="assets/img/sfds.png" alt="SFdS"/> A journal of the French Statistical Society 
+title: À propos
+permalink: /a_propos
+order: 4
+nav: true
 ---
 
 <h2>Aims and scope</h2>
@@ -36,3 +37,8 @@ Jupyter).
 
 The reviews are open, i.e. visible to any reader after acceptance of
 the contribution. Reviewers may choose to remain anonymous or not.
+
+<h2 id="thanks">Thanks</h2>
+
+We rely on Jekyll, BibTeX, AI post and got inspiration from
+rescience.github.io, distill.pub, https://rstudio.github.io/distill/.
