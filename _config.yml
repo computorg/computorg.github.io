@@ -6,7 +6,7 @@ title: Computo
 first_name: 
 middle_name: 
 last_name: 
-email: computo@sfds.asso.fr
+# email: computo@sfds.asso.fr
 description: > # 
   A Journal of the French Statistical Society to promote reproducible Science
 footer_text: >
@@ -17,7 +17,7 @@ icon: ⚙ # the emoji used as the favicon
 url:  # the base hostname & protocol for your site
 baseurl:
 last_updated: true
-impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
+impressum_path: false # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
 # RSS Feed
@@ -39,7 +39,7 @@ max_width: 800px
 # Open Graph
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -61,8 +61,8 @@ keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
 
-# contact_note: >
-#   You can even add a little note about which of these is the best way to reach you.
+#contact_note: >
+#  You can even add a little note about which of these is the best way to reach you.
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
@@ -80,7 +80,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: computorg # put your disqus shortname
+disqus_shortname: computo # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -123,6 +123,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - _pages_template
 keep_files:
   - CNAME
   - .nojekyll
