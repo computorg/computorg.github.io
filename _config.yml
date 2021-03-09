@@ -6,7 +6,7 @@ title: Computo
 first_name: 
 middle_name: 
 last_name: 
-email: computo@sfds.asso.fr
+# email: computo@sfds.asso.fr
 description: > # 
   A Journal of the French Statistical Society to promote reproducible Science
 footer_text: >
@@ -16,7 +16,7 @@ footer_text: >
 url:
 baseurl:
 last_updated: true
-impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
+impressum_path: false # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -32,7 +32,7 @@ max_width: 800px
 # Open Graph
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -40,10 +40,10 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 
 github_username: computorg
-twitter_username: computorg
+# twitter_username: computorg
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+#contact_note: >
+#  You can even add a little note about which of these is the best way to reach you.
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
@@ -52,8 +52,8 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: current issue  # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_name: Computo's ecosystem
+blog_description: documentation, reproducibility, additional details and how the journal shall work.
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -61,7 +61,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: computorg # put your disqus shortname
+disqus_shortname: computo # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -104,6 +104,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - _pages_template
 keep_files:
   - CNAME
   - .nojekyll

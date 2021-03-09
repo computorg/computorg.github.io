@@ -82,7 +82,7 @@ a, table.table a {
   box-shadow: none;
   border-bottom: 1px solid $grey-color-light;
   opacity: 0.95;
-  background-color: var(--global-bg-color);
+  background-color: var(--global-navbar-bg-color);
   font-family: $ff-title ;
 }
 .navbar.navbar-light {
@@ -93,27 +93,27 @@ a, table.table a {
     }
   }
   .navbar-brand {
-    color: var(--global-text-color);
+    color: var(--global-navbar-text-color);
   }
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+    color: var(--global-navbar-text-color);
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-navbar-hover-color);
     }
   }
   .navbar-nav .nav-item.active>.nav-link {
       background-color: inherit;
       font-weight: bolder;
-      color: var(--global-theme-color);
+      color: var(--global-navbar-theme-color);
       &:hover {
-        color: var(--global-hover-color);
+        color: var(--global-navbar-hover-color);
       }
   }
   .contact-icon {
     font-size: 2rem;
     a {
       &:hover {
-        color: var(--global-hover-color);
+        color: var(--global-navbar-hover-color);
       }
     }
   }
@@ -124,7 +124,7 @@ a, table.table a {
     display: block;
     width: 22px;
     height: 2px;
-    background-color: var(--global-icon-color);
+    background-color: var(--global-navbar-icon-color);
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
@@ -220,7 +220,7 @@ footer.sticky-bottom {
   padding-bottom: 5rem;
   h1 {
     color: var(--global-theme-color);
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
