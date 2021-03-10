@@ -3,7 +3,8 @@
     <!-- Nav Bar -->
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
      <div class="container">
-       <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a> &nbsp;
+       <a class="navbar-brand title font-weight-lighter" href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub">
+	 <i class="fab fa-github"></i></a>  &nbsp;
        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl | prepend: site.url }}/">{{ site.title }}</a>
 
       <!-- Navbar Toggle -->
