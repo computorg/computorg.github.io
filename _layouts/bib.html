@@ -39,27 +39,20 @@
     {% if entry.hal %}
       <a href="https://hal.archives-ouvertes.fr/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">HAL</a>
     {% endif %}
-    {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-    {% endif %}
     {% if entry.html %}
       <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
     {% endif %}
     {% if entry.pdf %}
       <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
-      {% else %}
-      <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
-      {% endif %}
-    {% endif %}
-    {% if entry.supp %}
-      {% if entry.supp contains '://' %}
-      <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Supp</a>
-      {% else %}
-      <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Supp</a>
-      {% endif %}
     {% endif %}
     {% if entry.code %}
       <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank">git repo</a>
+    {% endif %}
+    {% if entry.data %}
+      <a href="{{ entry.data }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Data</a>
+    {% endif %}
+    {% if entry.review %}
+      <a href="{{ entry.review }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Review</a>
     {% endif %}
     {% if entry.data %}
       <a href="{{ entry.data }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Data</a>
