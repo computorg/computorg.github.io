@@ -2,7 +2,7 @@
 layout: page
 title: À propos
 permalink: /a_propos
-order: 4
+order: 5
 nav: true
 ---
 

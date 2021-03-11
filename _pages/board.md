@@ -2,7 +2,7 @@
 layout: page
 permalink: /board/
 title: Board
-order: 3
+order: 4
 description: People in the Boards of Computo
 nav: true
 ---
