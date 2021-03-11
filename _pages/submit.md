@@ -9,7 +9,29 @@ nav: true
 
 <h2>The Submission process</h2>
 
-Make a draw, write a text.
+Submissions to Computo require both scientific content (typically
+equations, codes and figures) and a proof that this content is
+reproducible. This is achieved via the standard notebook systems
+available for R, Python and Julia (Jupyter notebook + Myst and Rmarkdown),
+coupled with the binder building system.
+
+A Computo submission is thus a git(hub) repository typically containing
+
+- the source of the notebook, which may be a Rmarkdown document or a Jupyter notebook + Myst ;
+- auxiliary files, e.g.: a $$\mathrm{bib}\TeX $$ file, some static
+figures in thefigs/ subdirectory, configuration files for the binder
+environment to setup the machine that will build the final notebook
+file (HTML and/or PDF)
+
+The compiled notebook (HTML/PDF files) will be generated directly in
+the github repository (via a github action). The PDF will be ready to
+be submitted to the Computo submission platform, and the HTML will be
+published, if the action is successfull, to a gh-page.
+
+More details can be found in the following templates, which serve both
+as material for starting to write your submission, and as a
+documentation for doing so.
+
 
 <h2>Available templates </h2>
 
