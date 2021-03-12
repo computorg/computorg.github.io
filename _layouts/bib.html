@@ -2,14 +2,13 @@
 ---
 
 <div class="row">
-  <div class="col-sm-3 abbr">
-    <abbr class="badge">{{entry.type}}</abbr>
+  <div class="col-sm-2 abbr">
     {% if entry.code %}
     <a href="{{entry.code}}"><img src="{{entry.code}}/workflows/build/badge.svg"/></a>
     {% endif %}
   </div>
   
-  <div id="{{entry.key}}" class="col-sm-7">
+  <div id="{{entry.key}}" class="col-sm-8">
 
     <div class="title">{{entry.title}}</div>
     <div class="author">
