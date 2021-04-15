@@ -34,10 +34,6 @@ as material for starting to write your submission, and as a
 documentation for doing so. The [full process is described in a
 dedicated post]({{ site.baseurl }}/blog/2021/submission-process/).
 
-<div class="row mt-3">
-<img alt="Author process" class="img-fluid rounded z-depth-1" src="{{ site.baseurl }}/assets/img/computo_process_authors.png" data-zoomable>
-</div>
-
 ## Available templates
 
 <div class="publications">
