@@ -53,6 +53,15 @@ _Write an introduction about the composition of the board, and how we shall recr
 </li>
 
 <li>
+    <p><a class="post-title" href="https://www.ceremade.dauphine.fr/~xian/">Christian Robert</a></p>
+	<p class="post-meta">Statistics</p>
+	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-6635-3261" href="https://orcid.org/0000-0001-6635-3261" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0001-6635-3261</a></div>
+	<small>
+	Université Paris-Dauphine, Paris, France
+	</small>
+</li>
+
+<li>
     <p><a class="post-title" href="https://nellev.github.io/">Nelle Varoquaux</a></p>
 	<p class="post-meta">Machine learning and causal inference for genomics</p>
 	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8748-6546" href="https://orcid.org/0000-0002-8748-6546" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0002-8748-6546</a></div>

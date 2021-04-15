@@ -25,13 +25,14 @@ file (HTML and/or PDF)
 
 The compiled notebook (HTML/PDF files) will be generated directly in
 the github repository (via a github action). The PDF will be ready to
-be submitted to the Computo submission platform, and the HTML will be
-published, if the action is successfull, to a gh-page.
+be submitted to the <a
+href="https://computo.scholasticahq.com/for-authors" style="outline:
+none; border: none;">Computo submission platform</a>, and the HTML
+will be published, if the action is successfull, to a gh-page.
 
 More details can be found in the following templates, which serve both
 as material for starting to write your submission, and as a
 documentation for doing so.
-
 
 <h2>Available templates </h2>
 
@@ -40,3 +41,9 @@ documentation for doing so.
 {% bibliography --file templates %}
 
 </div>
+
+<h2>Submit your work</h2>
+
+Once your are happy with your notebook AND that the github-action successfully generates a PDF, you may submit it via Scholastica, our platform for peer-reviewing:
+
+<div id="scholastica-submission-button" style="margin-top: 10px; margin-bottom: 10px;"><a href="https://computo.scholasticahq.com/for-authors" style="outline: none; border: none;"><img style="outline: none; border: none;" src="https://s3.amazonaws.com/docs.scholastica/law-review-submission-button/submit_via_scholastica.png" alt="Submit to Computo"></a></div>
