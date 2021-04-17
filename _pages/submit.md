@@ -13,6 +13,7 @@ Submissions to Computo require both scientific content (typically
 equations, codes, and figures) and a proof that this content is
 reproducible. This is achieved via the standard notebook systems
 available for R, Python, and Julia (Jupyter notebook + Myst and Rmarkdown),
+coupled with the binder building system.
 
 A Computo submission is thus a git(hub) repository typically containing
 
