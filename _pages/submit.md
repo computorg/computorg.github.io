@@ -10,9 +10,9 @@ nav: true
 <h2>The Submission process</h2>
 
 Submissions to Computo require both scientific content (typically
-equations, codes and figures) and a proof that this content is
+equations, codes, and figures) and a proof that this content is
 reproducible. This is achieved via the standard notebook systems
-available for R, Python and Julia (Jupyter notebook + Myst and Rmarkdown),
+available for R, Python, and Julia (Jupyter notebook + Myst and Rmarkdown),
 coupled with the binder building system.
 
 A Computo submission is thus a git(hub) repository typically containing
@@ -44,6 +44,8 @@ documentation for doing so.
 
 <h2>Submit your work</h2>
 
-Once your are happy with your notebook AND that the github-action successfully generates a PDF, you may submit it via Scholastica, our platform for peer-reviewing:
+Once your are happy with your notebook AND that the github-action successfully
+generates a PDF, you may submit it via Scholastica, our platform for
+peer-reviewing:
 
 <div id="scholastica-submission-button" style="margin-top: 10px; margin-bottom: 10px;"><a href="https://computo.scholasticahq.com/for-authors" style="outline: none; border: none;"><img style="outline: none; border: none;" src="https://s3.amazonaws.com/docs.scholastica/law-review-submission-button/submit_via_scholastica.png" alt="Submit to Computo"></a></div>
