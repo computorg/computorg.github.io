@@ -32,7 +32,7 @@ will be published, if the action is successfull, to a gh-page.
 
 More details can be found in the following templates, which serve both
 as material for starting to write your submission, and as a
-documentation for doing so. The [full process is pictured in a
+documentation for doing so. The [full process is described in a
 dedicated post]({{ site.baseurl }}/blog/2021/submission-process/).
 
 ## Available templates
