@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  How does Computo works?
+title:  How does Computo work?
 date: 2021-04-23 00:00:00
-description: A nice picture to explain the overall process
+description: A nice diagram to explain the overall process
 ---
 
 
