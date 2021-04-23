@@ -7,7 +7,7 @@ order: 3
 nav: true
 ---
 
-<h2>The Submission process</h2>
+## Overview of the Submission process
 
 Submissions to Computo require both scientific content (typically
 equations, codes and figures) and a proof that this content is
@@ -32,9 +32,9 @@ will be published, if the action is successfull, to a gh-page.
 
 More details can be found in the following templates, which serve both
 as material for starting to write your submission, and as a
-documentation for doing so.
+documentation for doing so. Full technical details is given [below]().
 
-<h2>Available templates </h2>
+## Available templates
 
 <div class="publications">
 
@@ -42,8 +42,15 @@ documentation for doing so.
 
 </div>
 
-<h2>Submit your work</h2>
+## Submit your work
 
 Once your are happy with your notebook AND that the github-action successfully generates a PDF, you may submit it via Scholastica, our platform for peer-reviewing:
 
 <div id="scholastica-submission-button" style="margin-top: 10px; margin-bottom: 10px;"><a href="https://computo.scholasticahq.com/for-authors" style="outline: none; border: none;"><img style="outline: none; border: none;" src="https://s3.amazonaws.com/docs.scholastica/law-review-submission-button/submit_via_scholastica.png" alt="Submit to Computo"></a></div>
+
+
+## The full process
+
+![Full process](../assets/img/computo_process.png)
+
+
