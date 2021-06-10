@@ -20,4 +20,3 @@ in literate programming and scientific reporting.
 
 [More details about our philosophy](about).
 
-
