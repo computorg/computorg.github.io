@@ -1,24 +1,38 @@
 ---
-layout: about
+layout: page
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+description: <img src="assets/img/sfds.png" alt="SFdS"/> A journal of the French Statistical Society 
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<h2>Aims and scope</h2>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Computo has been created in the context of a reproducibility crisis in
+science, which calls for higher standards in the publication of
+scientific results. Computo aims at promoting
+computational/algorithmic contributions in statistics and machine
+learning that provide insight into which models or methods are the
+most appropriate to address a specific scientific question.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+The journal welcomes the following types of contributions: case
+studies or surveys on stats/ML methods to address a specific (type of)
+question in data analysis neutral comparison studies that provide
+insight into when, how, and why the compared methods perform well or
+less well.  new methods with original stats/ML developments numerical
+studies that illustrate theoretical results in stats/ML
+
+
+<h2>An open journal with reproducible contributions</h2>
+
+Computo is free for readers and authors.
+
+The reproducibility of numerical results is a necessary condition for
+publication in Computo. In particular, submissions must include all
+necessary data (e.g. via zenodo repositories) and code.  For
+contributions featuring the implementation of methods/algorithms, the
+quality of the provided code is assessed during the review process.
+We accept contributions in the form of notebooks (e.g. Rmarkdown, or
+Jupyter).
+
+The reviews are open, i.e. visible to any reader after acceptance of
+the contribution. Reviewers may choose to remain anonymous or not.
