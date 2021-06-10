@@ -5,6 +5,7 @@
 
 
 // Colors
+$dark-blue: #0F2E3D;
 $red-color:           #FF3636 !default;
 $red-color-dark:      #B71C1C !default;
 $orange-color:        #F29105 !default;
@@ -30,9 +31,9 @@ $grey-color-dark:     darken($grey-color, 25%);
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
-
 // Theme colors
-
 $code-bg-color-light:     rgba($purple-color, 0.05);
 $code-bg-color-dark:      #2c3237 !default;
 
+// font
+$ff-title: 'IBM Plex Mono', sans-serif;
