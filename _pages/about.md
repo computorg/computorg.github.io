@@ -17,10 +17,10 @@ most appropriate to address a specific scientific question.
 
 The journal welcomes the following types of contributions: case
 studies or surveys on stats/ML methods to address a specific (type of)
-question in data analysis neutral comparison studies that provide
+question in data analysis, neutral comparison studies that provide
 insight into when, how, and why the compared methods perform well or
-less well.  new methods with original stats/ML developments numerical
-studies that illustrate theoretical results in stats/ML
+less well,  new methods with original stats/ML developments numerical
+studies that illustrate theoretical results in stats/ML.
 
 
 <h2>An open journal with reproducible contributions</h2>
