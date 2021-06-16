@@ -18,6 +18,6 @@ scientific question. In order to achieve this goal, Computo goes
 beyond classical static publications by leveraging technical advances
 in literate programming and scientific reporting.
 
-[More details about our philosophy](a_propos).
+[More details about our philosophy](about).
 
 
