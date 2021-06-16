@@ -35,7 +35,7 @@ _Write an introduction about the composition of the board, and how we shall recr
 </li>
 
 <li>
-    <p><a class="post-title" href="https://robin.genuer.fr/">Robing Génuer</a></p>
+    <p><a class="post-title" href="https://robin.genuer.fr/">Robin Génuer</a></p>
 	<p class="post-meta">Statistical Learning</p>
 	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-0981-3943" href="https://orcid.org/0000-0002-0981-3943" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0002-0981-3943</a></div>
 	<small>
