@@ -7,8 +7,6 @@ description: People in the Boards of Computo
 nav: true
 ---
 
-_Write an introduction about the composition of the board, and how we shall recruit some reviewers._
-
 <div class="container mt-5">
 <div class="post">
 
