@@ -9,7 +9,14 @@ nav: true
 
 ## Overview
 
-Computo relies on [Scholastica](https://computo.scholasticahq.com/) for the review process. The review form is text based but Markdown and LaTeX formatting is supported so you can add hyperlinks, use LaTeX to add equations in your review. Reviewers are also required to answer a handful of rating scale questions about the submission. Detailed information on the review process in Scholastica can be found in the [Scholastica reviewer guide](https://help.scholasticahq.com/article/97-reviewer-guide).
+Computo  relies  on  [Scholastica](https://computo.scholasticahq.com/)
+for the review process. The review form is text based but Markdown and
+LaTeX formatting is supported so you  can add hyperlinks and use LaTeX
+to add equations in your review. Reviewers are also required to answer
+a handful  of rating  scale questions  about the  submission. Detailed
+information on the  review process in Scholastica can be  found in the
+[Scholastica                                                  reviewer
+guide](https://help.scholasticahq.com/article/97-reviewer-guide).
 
 ## Guidelines for evaluation
 
