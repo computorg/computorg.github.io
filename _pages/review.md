@@ -2,21 +2,23 @@
 layout: page
 permalink: /review/
 title: Review
-description: Guidelines for reviewing a contribution to Computo
 order: 4
+description: Guidelines for reviewing a contribution to Computo
 nav: true
 ---
 
 ## Overview
 
 Computo  relies  on  [Scholastica](https://computo.scholasticahq.com/)
-for the review process. The review form is text based but Markdown and
-LaTeX formatting is supported so you  can add hyperlinks and use LaTeX
-to add equations in your review. Reviewers are also required to answer
+for the review process. The review form is text-based, but Markdown and
+LaTeX formatting is supported so you can add hyperlinks and use LaTeX
+to add equations to your review. Reviewers are also required to answer
 a handful  of rating  scale questions  about the  submission. Detailed
 information on the  review process in Scholastica can be  found in the
 [Scholastica                                                  reviewer
 guide](https://help.scholasticahq.com/article/97-reviewer-guide).
+
+Once a manuscript is accepted, its reviews will be made available on the Computo website. Reviewers can choose to remain anonymous or not.
 
 ## Guidelines for evaluation
 
@@ -24,7 +26,7 @@ In order to help you in performing your review we provide a list of the main que
 
 1. Is the paper within the scope of Computo?
 
-    See [https://computo.sfds.asso.fr/about](Aims and Scope) of Computo.
+    See [Aims and Scope](https://computo.sfds.asso.fr/about) of Computo.
 
 2. Is the paper clearly written?
 
