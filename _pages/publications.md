@@ -8,7 +8,17 @@ years: [2021, 1935]
 nav: true
 ---
 
-ℹ️: _we are working on mock contributions that should be ready during September_
+## Example: a mock contribution
+
+This  page is  a reworking  of the  original t-SNE  article using  the
+Computo template. It aims to help authors submitting to the journal by
+using some advanced formatting features.
+
+<div class="publications">
+
+{% bibliography --file mock_papers %}
+
+</div>
 
 ## Under review
 
