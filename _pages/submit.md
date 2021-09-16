@@ -17,7 +17,8 @@ coupled with the binder building system.
 
 A Computo submission is thus a git(hub) repository typically containing
 
-- the source of the notebook, which may be a Rmarkdown document or a Jupyter notebook + Myst ;
+- the  source of  the notebook  (a markdown  file with yaml metadata,
+  typically a Rmarkdown or a Jupyter notebook) ;
 - auxiliary files, e.g.: a $$\mathrm{bib}\TeX $$ file, some static
 figures in thefigs/ subdirectory, configuration files for the binder
 environment to setup the machine that will build the final notebook
@@ -30,7 +31,7 @@ href="https://computo.scholasticahq.com/for-authors" style="outline:
 none; border: none;">Computo submission platform</a>, and the HTML
 will be published, if the action is successfull, to a gh-page.
 
-More details can be found in the following templates, which serve both
+More details can be found in the following templates, which serve 
 as material for starting to write your submission, and as a
 documentation for doing so. The [process is described in a
 dedicated post]({{ site.baseurl }}/blog/2021/submission-process/).
