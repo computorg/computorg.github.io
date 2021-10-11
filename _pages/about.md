@@ -26,6 +26,10 @@ well or less well;
 - Software papers to present implementations of stats/ML algorithms or
   to feature the use of a package/toolbox.
 
+### Pre-submission enquiries
+
+Prospective authors willing to know whether their contribution falls into the scope of Computo are encouraged to contact the editor at computo@sfds.asso.fr. Please make sure to include the title and abstract of your work in your pre-submission enquiry.
+
 ## An open journal with reproducible contributions
 
 Computo is free for readers and authors.
