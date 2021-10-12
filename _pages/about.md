@@ -20,7 +20,7 @@ The journal welcomes the following types of contributions:
 - New methods with original stats/ML developments, or numerical
   studies that illustrate theoretical results in stats/ML;
 - Case studies or surveys on stats/ML methods to address a specific
-(type of) question in data analysis neutral comparison studies that
+(type of) question in data analysis, neutral comparison studies that
 provide insight into when, how, and why the compared methods perform
 well or less well;
 - Software papers to present implementations of stats/ML algorithms or

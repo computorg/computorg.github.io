@@ -20,12 +20,6 @@ last_updated: true
 impressum_path: false # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
-# RSS Feed
-# -----------------------------------------------------------------------------
-# will use title and url fields
-# Take a look to https://github.com/jekyll/jekyll-feed for more customization
-
-# -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
 
@@ -168,9 +162,6 @@ scholar:
   join_strings: true
 
   use_raw_bibtex_entry: true
-  bibtex_filters:
-  - superscript
-  - latex
 
   details_dir: bibliography
   details_layout: bibtex.html
