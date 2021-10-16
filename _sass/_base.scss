@@ -4,7 +4,19 @@
 
 // Typography
 
-p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
+body {
+  font-family: var(--ff-main) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $ff-title ;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--global-title-color) !important;
+}
+
+
+p, em, div, span, strong {
   color: var(--global-text-color);
 }
 
@@ -95,6 +107,8 @@ blockquote {
   opacity: 0.95;
   background-color: var(--global-navbar-bg-color);
   font-family: $ff-title ;
+  font-weight: 500;
+  letter-spacing: 0.1em;
 }
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
@@ -120,7 +134,9 @@ blockquote {
     }
   }
   .navbar-brand {
-    color: var(--global-navbar-text-color);
+      color: var(--global-navbar-text-color);
+      font-family: var(--ff-title);
+      letter-spacing: 0.25em;
   }
   .navbar-nav .nav-item .nav-link {
     color: var(--global-navbar-text-color);
@@ -509,7 +525,6 @@ code {
   border-radius: 3px;
   padding: 3px 3px;
 }
-
 
 // Transitioning Themes
 html.transition,

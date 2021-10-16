@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: <img src='assets/img/sfds.png' alt ="logo_SFdS"/>  A journal of the French Statistical Society 
+description: A journal of the <a href="https://sfds.asso.fr/">French Statistical Society <img height="10px" src="assets/img/sfds.png" alt="SFdS"/></a>
 order: 1
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
