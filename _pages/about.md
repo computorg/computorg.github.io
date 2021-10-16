@@ -28,10 +28,13 @@ well or less well;
 - Software papers to present implementations of stats/ML algorithms or
   to feature the use of a package/toolbox.
 
-### Pre-submission enquiries
-
-<div class="callout-note callout">
-Prospective authors willing to know whether their contribution falls into the scope of Computo are encouraged to contact the editor at computo@sfds.asso.fr. Please make sure to include the title and abstract of your work in your pre-submission enquiry.
+<div class="info-block">
+    <div class="info-block-header">Pre-submission enquiries</div>
+     <div class="info-block-body">
+    <p>Prospective authors willing to  know whether their contribution
+    falls  into the  scope of  Computo are  encouraged to  contact the
+    editor at <a href="mailto@computo@sfds.asso.fr">computo@sfds.asso.fr</a>. Please make sure to include the title and abstract of your work in your pre-submission enquiry.</p>
+    </div>
 </div>
 
 ## An open journal with reproducible contributions
@@ -58,3 +61,10 @@ We rely on [Jekyll](https://jekyllrb.com/),
 [Jupyter-book](https://jupyterbook.org/) and we drawn our inspiration
 from [Rescience-C](https://rescience.github.io/) and
 [distill.pub](https://distill.pub/) among others.
+
+## About the logo
+
+Computo's logo has been designed by [https://loack.me/](Loïc Schwaller).
+
+<img src="assets/img/computo_concept.png" alt="concept" width="300"/>
+

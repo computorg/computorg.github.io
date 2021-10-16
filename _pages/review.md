@@ -7,20 +7,25 @@ description: Guidelines for reviewing a contribution to Computo
 nav: true
 ---
 
----
 
-## Overview
-
-Computo  relies  on  [Scholastica](https://computo.scholasticahq.com/)
+<div class="info-block">
+    <div class="info-block-header">Overview</div>
+     <div class="info-block-body">
+    <p>
+Computo relies on <a href="https://computo.scholasticahq.com/">Scholastica</a>
 for the review process. The review form is text-based, but Markdown and
 LaTeX formatting is supported so you can add hyperlinks and use LaTeX
 to add equations to your review. Reviewers are also required to answer
 a handful  of rating  scale questions  about the  submission. Detailed
 information on the  review process in Scholastica can be  found in the
-[Scholastica                                                  reviewer
-guide](https://help.scholasticahq.com/article/97-reviewer-guide).
-
-Once a manuscript is accepted, its reviews will be made available on the Computo website. Reviewers can choose to remain anonymous or not.
+<a href="https://help.scholasticahq.com/article/97-reviewer-guide">Scholastica
+    reviewer guide.</a>.
+    </p>
+<p>Once a manuscript  is accepted, its reviews will  be made available
+on the  Computo website. Reviewers  can choose to remain  anonymous or
+not.</p>    
+    </div>
+</div>
 
 ## Guidelines for evaluation
 
