@@ -6,6 +6,8 @@ order: 1
 nav: true
 ---
 
+---
+
 ## Aims and scope
 
 Computo has been created in the context of a reproducibility crisis in
@@ -28,7 +30,9 @@ well or less well;
 
 ### Pre-submission enquiries
 
+<div class="callout-note callout">
 Prospective authors willing to know whether their contribution falls into the scope of Computo are encouraged to contact the editor at computo@sfds.asso.fr. Please make sure to include the title and abstract of your work in your pre-submission enquiry.
+</div>
 
 ## An open journal with reproducible contributions
 

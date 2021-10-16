@@ -5,7 +5,16 @@ date: 2021-04-23 00:00:00
 description: Diagrams that describe the submission process
 ---
 
-Check out the author's perspective or the full process to get an idea.
+Processes on the author's side are further described in the README
+files of the [Quarto
+template](https://github.com/computorg/template-computo-quarto),
+[Jupyter-book
+template](https://github.com/computorg/template-computo-myst) and the
+the [Rmarkdown
+template](https://github.com/computorg/template-computo-Rmarkdown).
+
+Check out the author's perspective or the full process to get a general
+overview.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">	
@@ -17,9 +26,3 @@ Check out the author's perspective or the full process to get an idea.
 </div>
 
 <br />
-
-Processes on the author's side are further described in the README
-files of the [Jupyter-book
-template](https://github.com/computorg/template-computo-myst) and of
-the [Rmarkdown
-template](https://github.com/computorg/template-computo-Rmarkdown).

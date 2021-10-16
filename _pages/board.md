@@ -7,6 +7,8 @@ description: People in the Boards of Computo
 nav: true
 ---
 
+---
+
 <div class="container mt-5">
 <div class="post">
 

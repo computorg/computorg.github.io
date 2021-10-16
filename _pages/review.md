@@ -7,6 +7,8 @@ description: Guidelines for reviewing a contribution to Computo
 nav: true
 ---
 
+---
+
 ## Overview
 
 Computo  relies  on  [Scholastica](https://computo.scholasticahq.com/)
