@@ -64,7 +64,7 @@ from [Rescience-C](https://rescience.github.io/) and
 
 ## About the logo
 
-Computo's logo has been designed by [https://loack.me/](Loïc Schwaller).
+Computo's logo has been designed by [Loïc Schwaller](https://loack.me/).
 
 <img src="assets/img/computo_concept.png" alt="concept" width="300"/>
 
