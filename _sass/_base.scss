@@ -14,7 +14,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--global-title-color) !important;
 }
 
-
 p, em, div, span, strong {
   color: var(--global-text-color);
 }
@@ -566,4 +565,25 @@ html.transition *:after {
     padding-right: .5em;
     padding-top: .8em;
     padding-bottom: -.2em;
+}
+
+.about-title {
+    float:left;
+}
+
+.about-title h1 {
+  width:100%;
+  font-family: $ff-title ;
+  font-weight: 700;
+  color: $computo-color !important;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size:12px;
+  margin:0px;
+}
+
+.container-about {
+    width:100%;
+    height:auto;
+    padding:1%;
 }
