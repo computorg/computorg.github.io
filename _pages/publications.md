@@ -16,14 +16,6 @@ nav: true
 
 </div>
 
-## Current Issue
-
-<div class="publications">
-
-{% bibliography --file published --query @*[volume=1,number=0] %}
-
-</div>
-
 ## Example: a mock contribution
 
 This  page is  a reworking  of the  original t-SNE  article using  the
