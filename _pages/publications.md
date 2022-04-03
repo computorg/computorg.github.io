@@ -4,23 +4,28 @@ permalink: /publications/
 title: Articles
 description: Publications by years in reversed chronological order
 order: 2
-years: [2022, 2021]
+years: [2022]
 nav: true
 ---
 
-## 2022 
+## Published contribution
 
 <div class="publications">
 
-{% bibliography --file published -q @*[year=2022]* %}
+{%- for y in page.years %}
+  <h3 class="year">{{y}}</h2>
+  {% bibliography -f published -q @*[year={{y}}]* %}
+{% endfor %}
 
 </div>
 
-## Accepted - in the pipeline
+## Upcoming contribution
+
+### In the pipeline
 
 {% bibliography --file in_production %}
 
-## Under review
+### Under review
 
 At the moment, 3 manuscripts are under review.
 
