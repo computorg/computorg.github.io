@@ -4,17 +4,25 @@ permalink: /publications/
 title: Articles
 description: Publications by years in reversed chronological order
 order: 2
-years: [2022, 2021, 1935]
+years: [2022, 2021]
 nav: true
 ---
 
-## Accepted - in the pipeline
+## 2022 
 
 <div class="publications">
 
-{% bibliography --file in_production %}
+{% bibliography --file published -q @*[year=2022]* %}
 
 </div>
+
+## Accepted - in the pipeline
+
+{% bibliography --file in_production %}
+
+## Under review
+
+At the moment, 3 manuscripts are under review.
 
 ## Example: a mock contribution
 
