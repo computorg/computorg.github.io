@@ -8,7 +8,7 @@ years: [2022]
 nav: true
 ---
 
-## Published contribution
+## Published
 
 <div class="publications">
 
@@ -19,7 +19,7 @@ nav: true
 
 </div>
 
-## Upcoming contribution
+## Upcoming
 
 ### In the pipeline
 
