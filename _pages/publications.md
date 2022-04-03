@@ -13,7 +13,7 @@ nav: true
 <div class="publications">
 
 {%- for y in page.years %}
-  <h3 class="year">{{y}}</h2>
+  <h3 class="year">{{y}}</h3>
   {% bibliography -f published -q @*[year={{y}}]* %}
 {% endfor %}
 
