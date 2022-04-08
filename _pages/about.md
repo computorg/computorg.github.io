@@ -58,7 +58,7 @@ We rely on [Jekyll](https://jekyllrb.com/),
 [BibTeX](http://www.bibtex.org/), the
 [aI-folio](https://github.com/alshedivat/al-folio) Jekyll theme,
 [Rmarkdown](https://rmarkdown.rstudio.com/),
-[Jupyter-book](https://jupyterbook.org/) and we drawn our inspiration
+[Jupyter-book](https://jupyterbook.org/) and we drew our inspiration
 from [Rescience-C](https://rescience.github.io/) and
 [distill.pub](https://distill.pub/) among others.
 
