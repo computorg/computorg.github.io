@@ -38,6 +38,13 @@ as material for starting to write your submission, and as a
 documentation for doing so. The [process is described in a
 dedicated post]({{ site.baseurl }}/blog/2021/submission-process/).
 
+<div class="info-block">
+    <div class="info-block-header">Warning!</div>
+     <div class="info-block-body">
+	 <p>To start writting your own contribution, **do not start from scratch!!** You must clone the github repositories associated with one of the following templates. Then, rename it an share it on your onw github account.</p>
+    </div>
+</div>
+
 ## Available templates
 
 <div class="publications">
