@@ -47,6 +47,10 @@ dedicated post]({{ site.baseurl }}/blog/2021/submission-process/).
 
 ## Available templates
 
+Choosing the [quarto system](https://quarto.org) would help us in the
+final formatting process of your article.  Moreover, it supports both
+R, Python and Julia!
+
 <div class="publications">
 
 {% bibliography --file templates %}
