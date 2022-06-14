@@ -7,6 +7,7 @@ description: Guidelines for reviewing a contribution to Computo
 nav: true
 ---
 
+Please *volunteer for reviewing* by [filling this form](https://forms.gle/P9iYJANuNM4WTVHDA)
 
 <div class="info-block">
     <div class="info-block-header">Overview</div>
