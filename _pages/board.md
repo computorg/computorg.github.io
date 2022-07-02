@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /board/
-title: Board
+title: Staff
 order: 5
-description: People in the Boards of Computo
+description: People making Computo
 nav: true
 ---
 
@@ -34,6 +34,14 @@ nav: true
 	</small>
 </li>
 
+<li>
+    <p><a class="post-title" href="https://mathurinm.github.io/">Mathurin Massias</a></p>
+	<p class="post-meta">Optimization for Machine Learning</p>
+	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-" href="https://orcid.org/0000-" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-</a></div>
+	<small>
+	INRIA, OCKHAM (DANTE), Lyon, France
+	</small>
+</li>
 
 <li>
     <p><a class="post-title" href="https://www.math.univ-toulouse.fr/~pneuvial/">Pierre Neuvial</a></p>
@@ -56,6 +64,29 @@ nav: true
 
 </ul>
 
+<h2 id="support">Technical Support</h2>
+
+<ul class="post-list">
+<li>
+    <p><a class="post-title" href="https://fradav.github.io/">François-David Collin</a></p>
+	<p class="post-meta">Research Engineer, Biostatistics</p>
+	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8374-7163" href="https://orcid.org/0000-0002-8374-7163" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0002-8374-7163</a></div>
+	<small>
+	Institut Montpelliérain Alexander Grothendieck, CNRS, France
+	</small>
+</li>
+
+<li>
+    <p><a class="post-title" href="https://gdurif.perso.math.cnrs.fr/">Ghislain Durif</a></p>
+	<p class="post-meta">Research Engineer, Biostatistics</p>
+	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-2567-1401" href="https://orcid.org/0000-0003-2567-1401" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0003-2567-1401</a></div>
+	<small>
+	ENS Lyon, LBMC, CNRS, France
+	</small>
+</li>
+</ul>
+
+<!--
 
 <h2 id="editors">Associate Editors</h2>
 
@@ -78,6 +109,7 @@ nav: true
 	</small>
 </li>
 </ul>
+-->
 
 </div>
 </div>
