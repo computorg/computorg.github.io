@@ -27,7 +27,7 @@ nav: true
 
 ### Under review
 
-At the moment, 3 manuscripts are under review.
+At the moment, 5 manuscripts are under review.
 
 ## Example: a mock contribution
 
