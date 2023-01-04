@@ -3,7 +3,7 @@ layout: page
 permalink: /review/
 title: Review
 order: 4
-description: Guidelines for reviewing a contribution to Computo
+description: Details on Computo's submission process
 nav: true
 ---
 
@@ -20,11 +20,11 @@ to add equations to your review. Reviewers are also required to answer
 a handful  of rating  scale questions  about the  submission. Detailed
 information on the  review process in Scholastica can be  found in the
 <a href="https://help.scholasticahq.com/article/97-reviewer-guide">Scholastica
-    reviewer guide.</a>.
+    reviewer guide</a>.
     </p>
 <p>Once a manuscript  is accepted, its reviews will  be made available
 on the  Computo website. Reviewers  can choose to remain  anonymous or
-not.</p>    
+not.</p>
     </div>
 </div>
 

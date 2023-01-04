@@ -66,28 +66,34 @@ peer-reviewing:
 <div id="scholastica-submission-button" style="margin-top: 10px; margin-bottom: 10px;"><a href="https://computo.scholasticahq.com/for-authors" style="outline: none; border: none;"><img style="outline: none; border: none;" src="https://s3.amazonaws.com/docs.scholastica/law-review-submission-button/submit_via_scholastica.png" alt="Submit to Computo"></a></div>
 
 
-## Computo's ethical charter for authors
+## Reviewing and publication
 
-- **Originality**
+Submitted papers are reviewed by external reviewers selected by the Associate Editor in charge of the paper.
+Computo strives for fast reviewing cycles, but cannot provide strict guarantees on the matter; the current time between submission and final submission is under six months.
 
+Computo's accepted papers are published electronically immediately upon receipt.
+
+More details about the reviewing process are available on the [Review page]({{ site.baseurl }} /review)
+
+## Computo's code of ethics for authors
+
+- **Originality**:
   Authors guarantee that their proposed article is original, and that it infringes no moral intellectual property right of any other person or entity.
   Authors guarantee that their proposed article has not been published previously, and that it relies neither wholly nor in part on material already published.
   Authors guarantee that they have not submitted the proposed article simultaneously to any other journal.
-- **Conflicts of interest**
-
+- **Conflicts of interest**:
   Authors shall disclose any potential conflict of interest, whether it is professional,
   financial or other, to the journal’s Editor, if this conflict could be interpreted as having
   influenced their work. Authors shall declare all sources of funding for the research     presented in the article.
--  **Impartiality**
-
+-  **Impartiality**:
   All articles are examined impartially, and their merits are assessed regardless of the
   sex, religion, sexual orientation, nationality, ethnic origin, length of service or     institutional affiliation of the author(s).
-- **Funding**
-
+- **Funding**:
   All funding received by the author(s) shall be clearly stated in the article(s).
-- **Defamatory statements**
-
+- **Defamatory statements**:
   Authors guarantee that their proposed article contains no matter of a defamatory, hateful, fraudulent or knowingly inexact character.
--  **References**
-
+-  **References**:
   Authors guarantee that all the publications used in their work have been cited appropriately.
+
+
+

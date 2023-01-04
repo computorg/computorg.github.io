@@ -26,7 +26,7 @@ nav: true
 </li>
 
 <li>
-    <p><a class="post-title" href="https://cazencott.info/">Chloé-Agathe Azencott</a></p>
+    <p><a class="post-title" href="https://cazencott.info/">Chloé-Agathe Azencott</a> (Associate editor)</p>
 	<p class="post-meta"> Machine learning for therapeutic research </p>
 	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-1003-301X" href="https://orcid.org/0000-0003-1003-301X" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0003-1003-301X</a></div>
 	<small>
@@ -35,7 +35,7 @@ nav: true
 </li>
 
 <li>
-    <p><a class="post-title" href="https://mathurinm.github.io/">Mathurin Massias</a></p>
+    <p><a class="post-title" href="https://mathurinm.github.io/">Mathurin Massias</a> (Associate editor)</p>
 	<p class="post-meta">Optimization for Machine Learning</p>
 	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-" href="https://orcid.org/0000-" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0002-8950-0356</a></div>
 	<small>
@@ -44,7 +44,7 @@ nav: true
 </li>
 
 <li>
-    <p><a class="post-title" href="https://www.math.univ-toulouse.fr/~pneuvial/">Pierre Neuvial</a></p>
+    <p><a class="post-title" href="https://www.math.univ-toulouse.fr/~pneuvial/">Pierre Neuvial</a>(Associate editor)</p>
 	<p class="post-meta">Statistics</p>
 	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-3584-9998" href="https://orcid.org/0000-0003-3584-9998" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0003-3584-9998</a></div>
 	<small>
@@ -53,7 +53,7 @@ nav: true
 </li>
 
 <li>
-    <p><a class="post-title" href="https://nellev.github.io/">Nelle Varoquaux</a></p>
+    <p><a class="post-title" href="https://nellev.github.io/">Nelle Varoquaux</a>(Associate editor)</p>
 	<p class="post-meta">Machine learning and causal inference for genomics</p>
 	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8748-6546" href="https://orcid.org/0000-0002-8748-6546" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0002-8748-6546</a></div>
 	<small>
