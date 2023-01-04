@@ -27,8 +27,8 @@ notebook file.
 
 The  compiled  notebook  will  be generated  directly  in  the  github
 repository  via  a github  action  and  published,  if the  action  is
-successfull, to a gh-page.
-A PDF can be then be submitted
+successful, to a gh-page.
+A PDF can then be submitted
 to    the   <a    href="https://computo.scholasticahq.com/for-authors"
 style="outline: none; border:  none;">Computo submission platform</a>,
 by means of the chrome print function.
@@ -41,7 +41,7 @@ dedicated post]({{ site.baseurl }}/blog/2021/submission-process/).
 <div class="info-block">
     <div class="info-block-header">Warning!</div>
      <div class="info-block-body">
-	 <p>To start writing your own contribution, <em>do not start from scratch!!</em> You must clone the github repositories associated with one of the following templates. Then, rename it an share it on your own github account.</p>
+	 <p>To start writing your own contribution, <em>do not start from scratch!!</em> You must clone the github repository associated with one of the following templates. Then, rename it an share it on your own github account.</p>
     </div>
 </div>
 
@@ -65,3 +65,29 @@ peer-reviewing:
 
 <div id="scholastica-submission-button" style="margin-top: 10px; margin-bottom: 10px;"><a href="https://computo.scholasticahq.com/for-authors" style="outline: none; border: none;"><img style="outline: none; border: none;" src="https://s3.amazonaws.com/docs.scholastica/law-review-submission-button/submit_via_scholastica.png" alt="Submit to Computo"></a></div>
 
+
+## Computo's ethical charter for authors
+
+- **Originality**
+
+  Authors guarantee that their proposed article is original, and that it infringes no moral intellectual property right of any other person or entity.
+  Authors guarantee that their proposed article has not been published previously, and that it relies neither wholly nor in part on material already published.
+  Authors guarantee that they have not submitted the proposed article simultaneously to any other journal.
+- **Conflicts of interest**
+
+  Authors shall disclose any potential conflict of interest, whether it is professional,
+  financial or other, to the journal’s Editor, if this conflict could be interpreted as having
+  influenced their work. Authors shall declare all sources of funding for the research     presented in the article.
+-  **Impartiality**
+
+  All articles are examined impartially, and their merits are assessed regardless of the
+  sex, religion, sexual orientation, nationality, ethnic origin, length of service or     institutional affiliation of the author(s).
+- **Funding**
+
+  All funding received by the author(s) shall be clearly stated in the article(s).
+- **Defamatory statements**
+
+  Authors guarantee that their proposed article contains no matter of a defamatory, hateful, fraudulent or knowingly inexact character.
+-  **References**
+
+  Authors guarantee that all the publications used in their work have been cited appropriately.
