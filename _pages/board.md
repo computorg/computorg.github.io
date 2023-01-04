@@ -37,7 +37,7 @@ nav: true
 <li>
     <p><a class="post-title" href="https://mathurinm.github.io/">Mathurin Massias</a></p>
 	<p class="post-meta">Optimization for Machine Learning</p>
-	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-" href="https://orcid.org/0000-" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-</a></div>
+	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-" href="https://orcid.org/0000-" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0002-8950-0356</a></div>
 	<small>
 	INRIA, OCKHAM (DANTE), Lyon, France
 	</small>
