@@ -37,9 +37,16 @@ well or less well;
     </div>
 </div>
 
-## An open journal with reproducible contributions
+## An open access journal with reproducible contributions
 
 Computo is free for readers and authors.
+It is an open access journal which means that all content is
+freely available without charge to the user or his/her institution.
+Users are allowed to read, download, copy, distribute, print,
+search, or link to the full texts of the articles, or use
+them for any other lawful purpose, without asking prior permission
+from the publisher or the author. This is in accordance with the
+Budapest Open Access Initiative (BOAI) definition of open access.
 
 The reproducibility of numerical results is a necessary condition for
 publication in Computo. In particular, submissions must include all
