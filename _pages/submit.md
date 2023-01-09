@@ -71,7 +71,8 @@ peer-reviewing:
 Submitted papers are reviewed by external reviewers selected by the Associate Editor in charge of the paper.
 Computo strives for fast reviewing cycles, but cannot provide strict guarantees on the matter; the current time between submission and final submission is under six months.
 
-Computo's accepted papers are published electronically immediately upon receipt, under XXX license.
+Computo's accepted papers are published electronically immediately upon receipt under CC BY 4.0 license.
+Authors retain the copyright and full publishing rights without restrictions.
 
 More details about the reviewing process are available on the [Review page]({{ site.baseurl }} /review)
 
