@@ -19,13 +19,11 @@ nav: true
 
 </div>
 
-## Upcoming
-
-### In the pipeline
+## In the pipeline
 
 {% bibliography --file in_production %}
 
-### Under review
+## Under review
 
 At the moment, 5 manuscripts are under review.
 
