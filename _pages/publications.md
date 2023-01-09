@@ -21,7 +21,11 @@ nav: true
 
 ## In the pipeline
 
+<div class="publications">
+
 {% bibliography --file in_production %}
+
+</div>
 
 ## Under review
 
