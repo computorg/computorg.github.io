@@ -3,7 +3,7 @@ layout: page
 permalink: /review/
 title: Review
 order: 4
-description: Guidelines for reviewing a contribution to Computo
+description: Details on Computo's submission process
 nav: true
 ---
 
@@ -20,11 +20,11 @@ to add equations to your review. Reviewers are also required to answer
 a handful  of rating  scale questions  about the  submission. Detailed
 information on the  review process in Scholastica can be  found in the
 <a href="https://help.scholasticahq.com/article/97-reviewer-guide">Scholastica
-    reviewer guide.</a>.
+    reviewer guide</a>.
     </p>
 <p>Once a manuscript  is accepted, its reviews will  be made available
 on the  Computo website. Reviewers  can choose to remain  anonymous or
-not.</p>    
+not.</p>
     </div>
 </div>
 
@@ -34,7 +34,7 @@ In order to help you in performing your review we provide a list of the main que
 
 1. Is the paper within the scope of Computo?
 
-    See [Aims and Scope](https://computo.sfds.asso.fr/about) of Computo.
+    See [Aims and Scope]({{ site.baseurl }} /about) of Computo.
 
 2. Is the paper clearly written?
 
@@ -51,3 +51,9 @@ In order to help you in performing your review we provide a list of the main que
 5. Is the paper reproducible?
 
     The reproducibility of numerical results is a necessary condition for publication in Computo. The referees are expected to check whether they can run the code provided by the authors to reproduce their results. In case of major reproducibility issues, the referees should warn the Associate Editor as soon as possible.
+
+## Plagiarism policy
+
+Computo abides by the Committee on Publishing Ethics’s (COPE) guidelines listed below on plagiarism:
+- COPE Council. [Suspected plagiarism in a submitted manuscript](https://doi.org/10.24318/cope.2019.2.1), Version 2, November 2018.
+- COPE Council. [Suspected plagiarism in a published manuscript](https://doi.org/10.24318/cope.2019.2.2). Version 2. 2013.

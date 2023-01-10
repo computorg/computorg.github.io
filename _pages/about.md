@@ -37,9 +37,16 @@ well or less well;
     </div>
 </div>
 
-## An open journal with reproducible contributions
+## An open access journal with reproducible contributions
 
 Computo is free for readers and authors.
+It is an open access journal which means that all content is
+freely available without charge to the user or his/her institution.
+Users are allowed to read, download, copy, distribute, print,
+search, or link to the full texts of the articles, or use
+them for any other lawful purpose, without asking prior permission
+from the publisher or the author. This is in accordance with the
+Budapest Open Access Initiative (BOAI) definition of open access.
 
 The reproducibility of numerical results is a necessary condition for
 publication in Computo. In particular, submissions must include all
@@ -51,6 +58,10 @@ Jupyter).
 
 The reviews are open, i.e. visible to any reader after acceptance of
 the contribution. Reviewers may choose to remain anonymous or not.
+
+## Contact
+Enquiries can be sent to the Chief Editor, Julien Chiquet, through  <a href="mailto@computo@sfds.asso.fr">computo@sfds.asso.fr</a>.
+
 
 ## Thanks
 
@@ -67,4 +78,5 @@ from [Rescience-C](https://rescience.github.io/) and
 Computo's logo has been designed by [Loïc Schwaller](https://loack.me/).
 
 <img src="assets/img/computo_concept.png" alt="concept" width="300"/>
+
 
