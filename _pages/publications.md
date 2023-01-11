@@ -4,7 +4,7 @@ permalink: /publications/
 title: Articles
 description: Publications by years in reversed chronological order
 order: 2
-years: [2022]
+years: [2023, 2022]
 nav: true
 ---
 
