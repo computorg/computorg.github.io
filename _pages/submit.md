@@ -80,8 +80,7 @@ More details about the reviewing process are available on the [Review page]({{ s
 
 - **Originality**:
   Authors guarantee that their proposed article is original, and that it infringes no moral intellectual property right of any other person or entity.
-  Authors guarantee that their proposed article has not been published previously, and that it relies neither wholly nor in part on material already published.
-  Authors guarantee that they have not submitted the proposed article simultaneously to any other journal.
+  Authors guarantee that their proposed article has not been published previously, and that they have not submitted the proposed article simultaneously to any other journal.
 - **Conflicts of interest**:
   Authors shall disclose any potential conflict of interest, whether it is professional,
   financial or other, to the journal’s Editor, if this conflict could be interpreted as having
