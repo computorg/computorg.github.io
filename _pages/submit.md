@@ -57,6 +57,10 @@ R, Python and Julia!
 
 </div>
 
+## Large Files
+
+If your submission materials contain files larger than 100MB, they won’t fit on a git repository as is. For this reason, we encourage you to put your data or any materials you deem necessary on a “open data” centered repository hub like [Zenodo](https://zenodo.org/). 
+
 ## Submit your work
 
 Once your are happy with your notebook AND the github-action is
