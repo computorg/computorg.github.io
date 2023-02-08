@@ -51,14 +51,13 @@ dedicated post]({{ site.baseurl }}/blog/2021/submission-process/).
 
 Choosing one of [our quarto-based extension](https://github.com/computorg/computo-quarto-extension) would help us in the final formatting process of your article.  Moreover, it supports both R, Python and Julia!
 
-We have example for setting up everything for either R, Python (and hopefully soon Julia) users:
+We have examples for setting up everything either for R, Python (and hopefully soon Julia) users:
 
 <div class="publications">
 
 {% bibliography --file templates %}
 
 </div>
-
 
 ### Other templates
 
