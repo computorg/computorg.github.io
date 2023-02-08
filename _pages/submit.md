@@ -11,27 +11,29 @@ nav: true
 
 ## Overview
 
-Submissions  to Computo  require  both  scientific content  (typically
-equations,  codes, and  figures)  and  a proof  that  this content  is
-reproducible.  This  is achieved  via  the  standard notebook  systems
-available for R,  Python, and Julia, coupled with  the binder building
-system.
+
+Submissions to Computo require both scientific content (typically
+equations, codes and figures, data) and a proof that this content is
+reproducible. This is achieved by means of i) a notebook system, ii) a
+virtual environment fixing the dependencies and iii) continuous
+integration (plus, if needed, an external website to store large data
+files such a Zenodo or OSF ).
 
 A Computo submission is thus a git(hub) repository typically containing
 
-- the  source of  the notebook  (a markdown  file with yaml metadata) ;
-- auxiliary  files, e.g.:  a $$\mathrm{bib}\TeX  $$ file,  some static
-figures  in  the `figs/`  subdirectory,  configuration  files for  the
-binder  environment to  setup the  machine that  will build  the final
-notebook file.
+- the source file of the notebook (a markdown  file with yaml metadata)
+- auxiliary  files: a $$\mathrm{bib}\TeX  $$ file and some statics files, e.g. figures or small .csv data tables
+- configuration files to set up the dependencies in a virtual environment
+- configuration files to set up the continuous integration rendering the final documents
 
-The  compiled  notebook  will  be generated  directly  in  the  github
-repository  via  a github  action  and  published,  if the  action  is
-successful, to a gh-page.
-A PDF can then be submitted
+The compiled notebook (both HTML and PDF) will be generated directly
+in the git(hub) repository via continuous integration (e.g., Github
+action or Gitlab CI) and published, if the action is successful, to
+web page (e.g. gh-page).
+
+The PDF and the git repository address are then submitted
 to    the   <a    href="https://computo.scholasticahq.com/for-authors"
-style="outline: none; border:  none;">Computo submission platform</a>,
-by means of the chrome print function.
+style="outline: none; border:  none;">Computo submission platform</a>.
 
 More details can be found in the following templates, which serve
 as material for starting to write your submission, and as a
@@ -51,7 +53,7 @@ dedicated post]({{ site.baseurl }}/blog/2021/submission-process/).
 
 Choosing one of [our quarto-based extension](https://github.com/computorg/computo-quarto-extension) would help us in the final formatting process of your article.  Moreover, it supports both R, Python and Julia!
 
-We have examples for setting up everything either for R, Python (and hopefully soon Julia) users:
+We have templates for setting everything up either for R, Python and Julia users:
 
 <div class="publications">
 
