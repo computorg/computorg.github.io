@@ -61,6 +61,8 @@ We have examples for setting up everything either for R, Python (and hopefully s
 
 ### Other templates
 
+if you are attached to Jupyter book or do not prefer to use Quarto, you are of course still encouraged to submit to Computo! A Jupyter-myst template is available that requires more formatting work for production, but author comfort is a priority.
+
 <div class="publications">
 
 {% bibliography --file templates_obsolete %}
