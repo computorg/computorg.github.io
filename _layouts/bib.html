@@ -39,10 +39,8 @@
     {% if entry.data %}
       <a href="{{ entry.data }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Data</a>
     {% endif %}
-      <a href="{https://github.com/computorg/{{ entry.repository }}/issues?q=is%3Aopen+is%3Aissue+label%3Areview" class="btn btn-sm z-depth-0" role="button" target="_blank">Review</a>
-    {% if entry.bibtex_show %}
-      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-    {% endif %}
+     <a href="https://github.com/computorg/{{ entry.repository }}/issues?q=is%3Aopen+is%3Aissue+label%3Areview" class="btn btn-sm z-depth-0" role="button" target="_blank">Review</a>
+     <a href="https://computo.sfds.asso.fr/{{ entry.repository }}/#citation" class="btn btn-sm z-depth-0" role="button" target="_blank">Bib</a>
     </div>
 
     <!-- Hidden abstract block -->
@@ -55,11 +53,5 @@
     </div>
     {% endif %}
 
-    <!-- Hidden bibtex block -->
-    {% if entry.bibtex_show %}
-    <div class="bibtex hidden">
-      {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
-    </div>
-    {% endif %}
   </div>
 </div>
