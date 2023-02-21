@@ -86,7 +86,9 @@ Scholastica, our platform for peer-reviewing:
 ## Reviewing and publication
 
 Submitted papers are reviewed by external reviewers selected by the Associate Editor in charge of the paper.
-Computo strives for fast reviewing cycles, but cannot provide strict guarantees on the matter; the current time between submission and final publication is under six months.
+Computo strives for fast reviewing cycles, but cannot provide strict guarantees on the matter; the current time between submission and publication is under six months.
+
+In order to ensure an efficient reviewing process, authors are requested upon submission to suggest the names of four potential referees.  To avoid conflicts of interests, recent co-authors or collaborators should not be suggested.
 
 Computo's accepted papers are published electronically immediately upon receipt under [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 Authors retain the copyright and full publishing rights without restrictions.
