@@ -114,6 +114,6 @@ More details about the reviewing process are available on the [Review page]({{ s
   Authors guarantee that their proposed article contains no matter of a defamatory, hateful, fraudulent or knowingly inexact character.
 -  **References**:
   Authors guarantee that all the publications used in their work have been cited appropriately.
-
-
+- **Copyright/author's right/license compliance**:
+  Authors guarantee that they comply with the usage license of any third party contents/works (code, software, data, figures/images, documents, etc.) that were used to produce their work.
 
