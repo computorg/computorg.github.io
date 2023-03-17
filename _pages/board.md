@@ -2,7 +2,7 @@
 layout: page
 permalink: /board/
 title: Staff
-order: 5
+nav_order: 5
 description: People making Computo
 nav: true
 ---

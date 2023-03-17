@@ -62,7 +62,6 @@ the contribution. Reviewers may choose to remain anonymous or not.
 ## Contact
 Enquiries can be sent to the Chief Editor, Julien Chiquet, through  <a href="mailto@computo@sfds.asso.fr">computo@sfds.asso.fr</a>.
 
-
 ## Thanks
 
 We rely on [Jekyll](https://jekyllrb.com/),
@@ -78,5 +77,3 @@ from [Rescience-C](https://rescience.github.io/) and
 Computo's logo has been designed by [Loïc Schwaller](https://loack.me/).
 
 <img src="assets/img/computo_concept.png" alt="concept" width="300"/>
-
-

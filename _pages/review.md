@@ -2,7 +2,7 @@
 layout: page
 permalink: /review/
 title: Review
-order: 4
+nav_order: 4
 description: Details on Computo's submission process
 nav: true
 ---

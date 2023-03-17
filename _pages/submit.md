@@ -3,7 +3,7 @@ layout: page
 permalink: /submit/
 title: Submit
 description: Overview and general guidelines to submit a contribution to Computo
-order: 3
+nav_order: 3
 nav: true
 ---
 
