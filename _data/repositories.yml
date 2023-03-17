@@ -1,12 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - computorg
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - computorg/template-computo-R
+  - computorg/template-computo-python
+  - computorg/template-computo-julia
+  - computorg/computo-quarto-extension
+  - computorg/published-paper-tsne
+  - computorg/computorg.github.io
+ 
