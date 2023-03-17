@@ -238,7 +238,7 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['formatting', 'reproductibility', 'data', 'code'] # this tags will be dispalyed on the front page of your blog
+display_tags: ['formatting', 'reproducibility', 'data', 'code'] # this tags will be dispalyed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
