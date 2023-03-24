@@ -70,10 +70,6 @@ if you are attached to Jupyter book or do not prefer to use Quarto, you are of c
 
 </div>
 
-## Data and large files
-
-If your submission materials contain files larger than 50MB, **especially data files**, they won’t fit on a git repository as is. For this reason, we encourage you to put your data or any materials you deem necessary on an external “open data” centered repository hub such a [Zenodo](https://zenodo.org/) or [OSF](https://osf.io/).
-
 ## Submit your work
 
 Once your are happy with your notebook AND the continuous integration 
