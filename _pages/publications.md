@@ -22,6 +22,8 @@ nav: true
 
 ## In the pipeline
 
+Manuscript conditionally accepted, whose editorial and scientific reproducibility is being validated
+
 <div class="publications">
 
 {% bibliography --file in_production %}
@@ -30,7 +32,7 @@ nav: true
 
 ## Under review
 
-At the moment, 5 manuscripts are under review.
+At the moment, 6 manuscripts are under review.
 
 ## Example: a mock contribution
 
