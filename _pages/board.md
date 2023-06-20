@@ -44,7 +44,7 @@ nav: true
 </li>
 
 <li>
-    <p><a class="post-title" href="https://www.math.univ-toulouse.fr/~pneuvial/">Pierre Neuvial</a>(Associate editor)</p>
+    <p><a class="post-title" href="https://www.math.univ-toulouse.fr/~pneuvial/">Pierre Neuvial</a> (Associate editor)</p>
 	<p class="post-meta">Statistics</p>
 	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-3584-9998" href="https://orcid.org/0000-0003-3584-9998" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0003-3584-9998</a></div>
 	<small>
@@ -53,7 +53,7 @@ nav: true
 </li>
 
 <li>
-    <p><a class="post-title" href="https://nellev.github.io/">Nelle Varoquaux</a>(Associate editor)</p>
+    <p><a class="post-title" href="https://marieetienne.github.io//">Nelle Varoquaux</a> (Associate editor)</p>
 	<p class="post-meta">Machine learning and causal inference for genomics</p>
 	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8748-6546" href="https://orcid.org/0000-0002-8748-6546" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0002-8748-6546</a></div>
 	<small>
@@ -61,6 +61,14 @@ nav: true
 	</small>
 </li>
 
+<li>
+    <p><a class="post-title" href="https://nellev.github.io/">Marie-Pierre Etienne</a> (Associate editor)</p>
+	<p class="post-meta">Statistical methods for ecology</p>
+	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0000-0000-0000" href="https://orcid.org/0000-0000-0000-0000" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0000-0000-0000</a></div>
+	<small>
+	Agrocampus Ouest, Rennes, France
+	</small>
+</li>
 
 </ul>
 
