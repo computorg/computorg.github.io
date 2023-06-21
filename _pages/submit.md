@@ -76,12 +76,7 @@ If your submission materials contain files larger than 50MB, **especially data
 
 ## Submit your work
 
-Once your are happy with your notebook AND the continuous integration 
-(Github action or Gitlab CI) is successful, you may submit your PDF via 
-Scholastica, our platform for peer-reviewing:
-
-<div id="scholastica-submission-button" style="margin-top: 10px; margin-bottom: 10px;"><a href="https://computo.scholasticahq.com/for-authors" style="outline: none; border: none;"><img style="outline: none; border: none;" src="https://s3.amazonaws.com/docs.scholastica/law-review-submission-button/submit_via_scholastica.png" alt="Submit to Computo"></a></div>
-
+Once your are happy with your notebook AND the continuous integration (Github action or Gitlab CI) is successful, you must submit your PDF with [OpenReview, our platform for peer-reviewing](https://openreview.net/group?id=Computo).
 
 ## Reviewing and publication
 
