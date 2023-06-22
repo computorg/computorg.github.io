@@ -8,4 +8,4 @@ description: Discuss the different kinds of reproducibility at play in Computo, 
 
 Computo is not just about publishing a notebook and proving that it can be compiled with CI! This part of the process is what we call _"Editorial Reproducibility"_. _"Scientific"_ or _"numerical"_ reproducibility of the analyses is also mandatory, on top of classical peer-review evaluation. 
 
-We don't ask people reproducing their data... yet! We also don't ask for bit-wise reproducibility but at least statistical reproducibility.
+We don't ask people reproducing their data... yet! We also don't ask for "bit-wise computational" reproducibility (i.e. obtaining exactly the same results bit-by-bit) but rather a "statistical" reproducibility, i.e. obtaining results leading to the same conclusion, with potential non-significant statistical variability.
