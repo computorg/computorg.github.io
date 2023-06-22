@@ -13,17 +13,12 @@ Please *volunteer for reviewing* by [filling this form](https://forms.gle/P9iYJA
     <div class="info-block-header">Overview</div>
      <div class="info-block-body">
     <p>
-Computo relies on <a href="https://computo.scholasticahq.com/">Scholastica</a>
-for the review process. The review form is text-based, but Markdown and
-LaTeX formatting is supported so you can add hyperlinks and use LaTeX
-to add equations to your review. Reviewers are also required to answer
-a handful  of rating  scale questions  about the  submission. Detailed
-information on the  review process in Scholastica can be  found in the
-<a href="https://help.scholasticahq.com/article/97-reviewer-guide">Scholastica
-    reviewer guide</a>.
+Since recently, Computo relies on <a href="https://openreview.net/group?id=Computo">Open Review</a>
+for the review process. The review form is text-based, but Markdown and LaTeX formatting is supported so you can add hyperlinks and use LaTeX to add equations to your review. Reviewers are also required to answer
+a handful  of rating  scale questions  about the  submission.
     </p>
-<p>Once a manuscript  is accepted, its reviews will  be made available
-on the  Computo website. Reviewers  can choose to remain  anonymous or
+<p>Once a manuscript  is accepted, reviews and discussion will be made available
+on the Computo website. Reviewers  can choose to remain  anonymous or
 not.</p>
     </div>
 </div>
