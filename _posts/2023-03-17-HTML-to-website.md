@@ -15,8 +15,6 @@ We review here the full process for more clarity.
 
 If you used one of our template repository, the build action (in `.github/workflows/build.yml`) should look like this:
 
-
-
 {% highlight yaml linenos %}
 name: build
 
