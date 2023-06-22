@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is expected exactly in terms of reproducibility?
+title: What is expected exactly in terms of reproducibility? And for long-running code?
 date: 2023-04-24 00:00:00
 tags: reproducibility
 description: Discuss the different kinds of reproducibility at play in Computo, and what is expected from the authors.
