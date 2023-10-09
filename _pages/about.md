@@ -60,7 +60,7 @@ The reviews are open, i.e. visible to any reader after acceptance of
 the contribution. Reviewers may choose to remain anonymous or not.
 
 ## Contact
-Enquiries can be sent to the Chief Editor, Julien Chiquet, through  <a href="mailto@computo@sfds.asso.fr">computo@sfds.asso.fr</a>.
+Enquiries can be sent to the Chief Editor, Julien Chiquet, through  <a href="mailto:computo@sfds.asso.fr">computo@sfds.asso.fr</a>.
 
 ## Thanks
 
