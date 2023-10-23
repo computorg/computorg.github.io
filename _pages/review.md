@@ -7,18 +7,15 @@ description: Details on Computo's submission process
 nav: true
 ---
 
-Please *volunteer for reviewing* by [filling this form](https://forms.gle/P9iYJANuNM4WTVHDA)
-
 <div class="info-block">
     <div class="info-block-header">Overview</div>
      <div class="info-block-body">
     <p>
-Since recently, Computo relies on <a href="https://openreview.net/group?id=Computo">Open Review</a>
-for the review process. The review form is text-based, but Markdown and LaTeX formatting is supported so you can add hyperlinks and use LaTeX to add equations to your review. Reviewers are also required to answer
-a handful  of rating  scale questions  about the  submission.
+Computo relies on <a href="https://openreview.net/group?id=Computo">Open Review</a>
+for the review process. The review form is text-based, but Markdown and LaTeX formatting is supported so you can add hyperlinks and use LaTeX to add equations to your review. Reviewers are also required to answer a handful  of rating  scale questions  about the  submission.
     </p>
 <p>Once a manuscript  is accepted, reviews and discussion will be made available
-on the Computo website. Reviewers  can choose to remain  anonymous or
+on the Computo website. Reviewers  can choose to remain anonymous or
 not.</p>
     </div>
 </div>

@@ -30,14 +30,11 @@ in the git(hub) repository via continuous integration (e.g., Github
 action or Gitlab CI) and published, if the action is successful, 
 to a web page (e.g. gh-page).
 
-The PDF and the git repository address are then submitted
-to    the   <a    href="https://computo.scholasticahq.com/for-authors"
-style="outline: none; border:  none;">Computo submission platform</a>.
+The PDF and the git repository address are then submitted via <a href="https://openreview.net/group?id=Computo" style="outline: none; border:  none;"> OpenReview</a>.
 
 More details can be found in the following templates, which serve
 as material for starting to write your submission, and as a
-documentation for doing so. The [process is described in a
-dedicated post]({{ site.baseurl }}/blog/2021/submission-process/).
+documentation for doing so.
 
 <div class="info-block">
     <div class="info-block-header">Warning!</div>
@@ -62,7 +59,7 @@ In particular, we have dedicated templates for setting everything up either for 
 
 ### Other templates
 
-if you are attached to Jupyter book or do not prefer to use Quarto, you are of course still encouraged to submit to Computo! A Jupyter-myst template is available that requires more formatting work for production, but author comfort is a priority.
+If you are attached to Jupyter book or do not prefer to use Quarto, you are of course still encouraged to submit to Computo! A Jupyter-myst template is available that requires more formatting work for production, but author comfort is a priority.
 
 <div class="publications">
 
@@ -72,7 +69,7 @@ if you are attached to Jupyter book or do not prefer to use Quarto, you are of c
 
 ## Submit your work
 
-Once your are happy with your notebook AND the continuous integration (Github action or Gitlab CI) is successful, you must submit your PDF with [OpenReview, our platform for peer-reviewing](https://openreview.net/group?id=Computo).
+Once your are happy with your notebook AND the continuous integration (Github action or Gitlab CI) is successful, you must submit your PDF and the url of your git repository via [OpenReview, our platform for peer-reviewing](https://openreview.net/group?id=Computo).
 
 ## Reviewing and publication
 
