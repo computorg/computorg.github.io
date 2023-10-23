@@ -45,25 +45,13 @@ documentation for doing so.
 
 ## Available templates
 
-### Quarto-based templates
+Please use one of **our templates** (c.f. below) or [our quarto-based extension](https://github.com/computorg/computo-quarto-extension). This will ensure the reproducibility of your contribution and will simplify the final formatting process of your article.  
 
-Choosing one of **our templates** (c.f. below) or [our quarto-based extension](https://github.com/computorg/computo-quarto-extension) would help us in the final formatting process of your article.  Moreover, it supports R, Python and Julia!
-
-In particular, we have dedicated templates for setting everything up either for R, Python and Julia users:
+quarto supports R, Python and Julia: we have dedicated templates for setting everything up:
 
 <div class="publications">
 
 {% bibliography --file templates %}
-
-</div>
-
-### Other templates
-
-If you are attached to Jupyter book or do not prefer to use Quarto, you are of course still encouraged to submit to Computo! A Jupyter-myst template is available that requires more formatting work for production, but author comfort is a priority.
-
-<div class="publications">
-
-{% bibliography --file templates_obsolete %}
 
 </div>
 
@@ -81,7 +69,7 @@ In order to ensure an efficient reviewing process, authors are requested upon su
 Computo's accepted papers are published electronically immediately upon receipt under [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 Authors retain the copyright and full publishing rights without restrictions.
 
-More details about the reviewing process are available on the [Review page]({{ site.baseurl }} /review)
+More information about the reviewing process are available on the [Review page]({{ site.baseurl }} /review)
 
 ## Computo's code of ethics for authors
 
