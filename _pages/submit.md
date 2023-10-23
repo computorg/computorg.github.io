@@ -30,14 +30,11 @@ in the git(hub) repository via continuous integration (e.g., Github
 action or Gitlab CI) and published, if the action is successful, 
 to a web page (e.g. gh-page).
 
-The PDF and the git repository address are then submitted
-to    the   <a    href="https://computo.scholasticahq.com/for-authors"
-style="outline: none; border:  none;">Computo submission platform</a>.
+The PDF and the git repository address are then submitted via <a href="https://openreview.net/group?id=Computo" style="outline: none; border:  none;"> OpenReview</a>.
 
 More details can be found in the following templates, which serve
 as material for starting to write your submission, and as a
-documentation for doing so. The [process is described in a
-dedicated post]({{ site.baseurl }}/blog/2021/submission-process/).
+documentation for doing so.
 
 <div class="info-block">
     <div class="info-block-header">Warning!</div>
@@ -48,11 +45,9 @@ dedicated post]({{ site.baseurl }}/blog/2021/submission-process/).
 
 ## Available templates
 
-### Quarto-based templates
+Please use one of **our templates** (c.f. below) or [our quarto-based extension](https://github.com/computorg/computo-quarto-extension). This will ensure the reproducibility of your contribution and will simplify the final formatting process of your article.  
 
-Choosing one of **our templates** (c.f. below) or [our quarto-based extension](https://github.com/computorg/computo-quarto-extension) would help us in the final formatting process of your article.  Moreover, it supports R, Python and Julia!
-
-In particular, we have dedicated templates for setting everything up either for R, Python and Julia users:
+quarto supports R, Python and Julia: we have dedicated templates for setting everything up:
 
 <div class="publications">
 
@@ -60,19 +55,9 @@ In particular, we have dedicated templates for setting everything up either for 
 
 </div>
 
-### Other templates
-
-if you are attached to Jupyter book or do not prefer to use Quarto, you are of course still encouraged to submit to Computo! A Jupyter-myst template is available that requires more formatting work for production, but author comfort is a priority.
-
-<div class="publications">
-
-{% bibliography --file templates_obsolete %}
-
-</div>
-
 ## Submit your work
 
-Once your are happy with your notebook AND the continuous integration (Github action or Gitlab CI) is successful, you must submit your PDF with [OpenReview, our platform for peer-reviewing](https://openreview.net/group?id=Computo).
+Once your are happy with your notebook AND the continuous integration (Github action or Gitlab CI) is successful, you must submit your PDF and the url of your git repository via [OpenReview, our platform for peer-reviewing](https://openreview.net/group?id=Computo).
 
 ## Reviewing and publication
 
@@ -84,7 +69,7 @@ In order to ensure an efficient reviewing process, authors are requested upon su
 Computo's accepted papers are published electronically immediately upon receipt under [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 Authors retain the copyright and full publishing rights without restrictions.
 
-More details about the reviewing process are available on the [Review page]({{ site.baseurl }} /review)
+More information about the reviewing process are available on the [Review page]({{ site.baseurl }} /review)
 
 ## Computo's code of ethics for authors
 

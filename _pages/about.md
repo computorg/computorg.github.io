@@ -1,9 +1,9 @@
 ---
+title: "About"
 layout: page
-title: About
 permalink: /about
 order: 1
-nav: true
+nav: yes
 ---
 
 ---
@@ -14,19 +14,19 @@ Computo has been created in the context of a reproducibility crisis in
 science, which calls for higher standards in the publication of
 scientific results. Computo aims at promoting
 computational/algorithmic contributions in statistics and machine
-learning that provide insight into which models or methods are the
+learning (ML) that provide insight into which models or methods are the
 most appropriate to address a specific scientific question.
 
 The journal welcomes the following types of contributions:
 
-- New methods with original stats/ML developments, or numerical
+- New **methods** with original stats/ML developments, or numerical
   studies that illustrate theoretical results in stats/ML;
-- Case studies or surveys on stats/ML methods to address a specific
+- **Case studies** or **surveys** on stats/ML methods to address a specific
   (type of) question in data analysis, neutral comparison studies that
   provide insight into when, how, and why the compared methods perform
   well or less well;
-- Software/tutorial papers to present implementations of stats/ML algorithms or
-  to feature the use of a package/toolbox.
+- **Software/tutorial papers** to present implementations of stats/ML algorithms or
+  to feature the use of a package/toolbox. For such papers we expect not only the description of an existing implementation but also the study of a concrete use case. If applicable, a comparison to related works and appropriate benchmarking are also expected. 
 
 <div class="info-block">
     <div class="info-block-header">Pre-submission enquiries</div>
