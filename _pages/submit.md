@@ -32,7 +32,6 @@ to a web page (e.g. gh-page).
 
 The PDF and the git repository address are then submitted via <a href="https://openreview.net/group?id=Computo" style="outline: none; border:  none;"> OpenReview</a>.
 
-
 ## Available templates for R, Python and Julia
 
 <div class="info-block">
@@ -50,7 +49,6 @@ To get started, click "[GIT REPO]" for the language of your choice and follow th
 {% bibliography --file templates %}
 
 </div>
-
 
 ## Submit your work
 
