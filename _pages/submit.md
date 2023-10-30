@@ -32,22 +32,17 @@ to a web page (e.g. gh-page).
 
 The PDF and the git repository address are then submitted via <a href="https://openreview.net/group?id=Computo" style="outline: none; border:  none;"> OpenReview</a>.
 
-More details can be found in the following templates, which serve
-as material for starting to write your submission, and as a
-documentation for doing so.
+## Available templates for R, Python and Julia
 
 <div class="info-block">
     <div class="info-block-header">Warning!</div>
      <div class="info-block-body">
-	 <p>To start writing your own contribution, <em>do not start from scratch!!</em> You must click on <b>"use this template" button</b> (top right) on the github repository associated with one of the following templates. Then, rename it an share it on your own github account.</p>
+	 <p>To start writing your own contribution, <em>do not start from scratch!!</em> Please use one of <em>our quarto-based templates</em> below to ensure reproducibility. 	<a href="https://quarto.org/">quarto</a> supports R, Python and Julia.
+	 </p>
     </div>
 </div>
 
-## Available templates
-
-Please use one of **our templates** (c.f. below) or [our quarto-based extension](https://github.com/computorg/computo-quarto-extension). This will ensure the reproducibility of your contribution and will simplify the final formatting process of your article.  
-
-quarto supports R, Python and Julia: we have dedicated templates for setting everything up:
+To get started, click "[GIT REPO]" for the language of your choice and follow the corresponding "Step-by-step procedure". These templates serve both as material for starting to write your submission, and as a documentation for doing so.
 
 <div class="publications">
 
