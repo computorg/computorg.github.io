@@ -65,7 +65,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: computorg
 twitter_username: # your Twitter handle
-mastodon_username: # your mastodon instance+username in the format instance.tld/@username
+mastodon_username: mathstodon.xyz/@computo # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: # your Google Scholar ID
