@@ -1,3 +1,21 @@
+@article{adrat_repulsion,
+  bibtex_show = {true},
+  author      = {Adrat, Hamza and Decreusefond, Laurent},
+  title       = {{Point Process Discrimination According to Repulsion}},
+  journal     = {Computo},
+  year        = 2024,
+  abstract    = {In numerous applications, cloud of points do seem to exhibit repulsion in the intuitive sense that there is no local cluster as in a Poisson process. Motivated by data coming from cellular networks, we devise a classification algorithm based on the form of the Voronoi cells. We show that, in the particular set of data we are given, we can retrieve some repulsiveness between antennas, which was expected for engineering reasons.},
+  doi         = {10.57750/3r07-aw28},
+  repository  = {published_202401_adrat_repulsion},
+  type        = {{Research article}},
+  language    = {Python},
+  domain      = {Statistics},
+  keywords    = {classification, point process, repulsion},
+  issn        = {2824-7795}
+}
+
+
+
 @article{favrot_hierarchical,
   bibtex_show = {true},
   author      = {Favrot, Armand and Makoswki, David},
@@ -5,13 +23,13 @@
   journal     = {Computo},
   year        = 2024,
   abstract    = {In plant epidemiology, pest abundance is measured in field trials using metrics assessing either pest prevalence (fraction of the plant population infected) or pest intensity (average number of pest individuals present in infected plants). Some of these trials rely on prevalence, while others rely on intensity, depending on the protocols. In this paper, we present a hierarchical Bayesian model able to handle both types of data. In this model, the intensity and prevalence variables are derived from a latent variable representing the number of pest individuals on each host individual, assumed to follow a Poisson distribution. Effects of pest treaments, time trend, and between-trial variability are described using fixed and random effects. We apply the model to a real dataset in the context of aphid control in sugar beet fields. In this dataset, prevalence and intensity were derived from aphid counts observed on either factorial trials testing different types of pesticides treatments or field surveys monitoring aphid abundance.  Next, we perform simulations to assess the impacts of using either prevalence or intensity data, or both types of data simultaneously, on the accuracy of the model parameter estimates and on the ranking of pesticide treatment efficacy. Our results show that, when pest prevalence and pest intensity data are collected separately in different trials, the model parameters are more accurately estimated using both types of trials than using one type of trials only. When prevalence data are collected in all trials and intensity data are collected in a subset of trials, estimations and pest treatment ranking are more accurate using both types of data than using prevalence data only. When only one type of observation can be collected in a pest survey or in an experimental trial, our analysis indicates that it is better to collect intensity data than prevalence data when all or most of the plants are expected to be infested, but that both types of data lead to similar results when the level of infestation is low to moderate. Finally, our simulations show that it is unlikely to obtain accurate results with fewer than 40 trials when assessing the efficacy of pest control treatments based on prevalence and intensity data. Because of its flexibility, our model can be used to evaluate and rank the efficacy of pest treatments using either prevalence or intensity data, or both types of data simultaneously. As it can be easily implemented using standard Bayesian packages, we hope that it will be useful to agronomists, plant pathologists, and applied statisticians to analyze pest surveys and field experiments conducted to assess the efficacy of pest treatments.},
-  doi =		 {10.57750/6cgk-g727},
+  doi         = {10.57750/6cgk-g727},
   repository  = {published-202312-favrot-hierarchical},
   type        = {{Research article}},
   language    = {R},
   domain      = {Statistics},
   keywords    = {bayesian model, epidemiology, hierarchical model, pest control, trial, survey},
-  issn =	 {2824-7795},  
+  issn        = {2824-7795}
 }
 
 @article{cleynen_local,
@@ -21,13 +39,13 @@
   journal     = {Computo},
   year        = 2023,
   abstract    = {Random Forests (RF) [@breiman:2001] are very popular machine learning methods. They perform well even with little or no tuning, and have some theoretical guarantees, especially for sparse problems [@biau:2012;@scornet:etal:2015]. These learning strategies have been used in several contexts, also outside the field of classification and regression. To perform Bayesian model selection in the case of intractable likelihoods, the ABC Random Forests (ABC-RF) strategy of @pudlo:etal:2016 consists in applying Random Forests on training sets composed of simulations coming from the Bayesian generative models. The ABC-RF technique is based on an underlying RF for which the training and prediction phases are separated. The training phase does not take into account the data to be predicted. This seems to be suboptimal as in the ABC framework only one observation is of interest for the prediction. In this paper, we study tree-based methods that are built to predict a specific instance in a classification setting. This type of methods falls within the scope of local (lazy/instance-based/case specific) classification learning. We review some existing strategies and propose two new ones. The first consists in modifying the tree splitting rule by using kernels, the second in using a first RF to compute some local variable importance that is used to train a second, more local, RF. Unfortunately, these approaches, although interesting, do not provide conclusive results.},
-  doi =		 {10.57750/3j8m-8d57},
+  doi         = {10.57750/3j8m-8d57},
   repository  = {published-202312-cleynen-local},
   type        = {{Research article}},
   language    = {R},
   domain      = {Statistics},
   keywords    = {classification, Random Forests, local methods},
-  issn =	 {2824-7795},  
+  issn        = {2824-7795}
 }
 
 @article{delattre_fim,
@@ -37,13 +55,13 @@
   journal     = {Computo},
   year        = 2023,
   abstract    = {The Fisher information matrix (FIM) is a key quantity in statistics. However its exact computation is often not trivial. In particular in many latent variable models, it is intricated due to the presence of unobserved variables. Several methods have been proposed to approximate the  FIM when it can not be evaluated analytically.  Different  estimates have been considered, in particular moment estimates. However some of them require to compute second derivatives of the complete data log-likelihood which leads to some disadvantages. In this paper, we focus on the empirical Fisher information matrix defined as an empirical estimate of the covariance matrix of the score, which only requires to compute the first derivatives of the log-likelihood. Our contribution consists in presenting a new numerical method to evaluate this empirical Fisher information matrix in latent variable model when the proposed estimate can not be directly analytically evaluated. We propose a stochastic approximation estimation algorithm to compute this estimate as a by-product of the parameter estimate. We evaluate the finite sample size properties of the proposed estimate and the convergence properties of the estimation algorithm through simulation studies.},
-  doi =		 {10.57750/r5gx-jk62},
+  doi         = {10.57750/r5gx-jk62},
   repository  = {published-202311-delattre-fim},
   type        = {{Research article}},
   language    = {R},
   domain      = {Statistics},
   keywords    = {Model-based standard error, moment estimate, Fisher identity, stochastic approximation algorithm},
-  issn =	 {2824-7795},  
+  issn        = {2824-7795}
 }
 
 @article{sanou_multiscale,
@@ -53,136 +71,136 @@
   journal     = {Computo},
   year        = 2023,
   abstract    = {Gaussian Graphical Models (GGMs) are widely used in high-dimensional data analysis to synthesize the interaction between variables. In many applications, such as genomics or image analysis, graphical models rely on sparsity and clustering to reduce dimensionality and improve performances. This paper explores a slightly different paradigm where clustering is not knowledge-driven but performed simultaneously with the graph inference task. We introduce a novel Multiscale Graphical Lasso (MGLasso) to improve networks interpretability by proposing graphs at different granularity levels. The method estimates clusters through a convex clustering approach — a relaxation of k-means, and hierarchical clustering. The conditional independence graph is simultaneously inferred through a neighborhood selection scheme for undirected graphical models. MGLasso extends and generalizes the sparse group fused lasso problem to undirected graphical models. We use continuation with Nesterov smoothing in a shrinkage-thresholding algorithm (CONESTA) to propose a regularization path of solutions along the group fused Lasso penalty, while the Lasso penalty is kept constant. Extensive experiments on synthetic data compare the performances of our model to state-of-the-art clustering methods and network inference models. Applications to gut microbiome data and poplar's methylation mixed with transcriptomic data are presented.},
-  doi =		 {10.57750/1f4p-7955},
+  doi         = {10.57750/1f4p-7955},
   repository  = {published-202306-sanou-multiscale_glasso},
   type        = {{Research article}},
   language    = {R and Python},
   domain      = {Statistics},
   keywords    = {Neighborhood selection, Convex hierarchical clustering, Gaussian graphical models},
-  issn =	 {2824-7795},  
+  issn        = {2824-7795}
 }
 
 
 @article{chagneux_macrolitter,
-  bibtex_show =	 {true},
-  author =	 {Chagneux, Mathis and Le Corff, Sylvain and 
-                  Gloaguen, Pierre and Ollion, Charles and Lepâtre, Océane and
-                  Bruge, Antoine},
-  title =	 {Macrolitter Video Counting on Riverbanks Using State
-                  Space Models and Moving Cameras},
-  journal =	 {Computo},
-  year =         {2023},
-  repository =	 {published-202301-chagneux-macrolitter},
-  doi =		 {10.57750/845m-f805},
-  language =	 {Python},
-  issn =	 {2824-7795},
-  langid =	 {en},
-  type =	 {{Research article}},
-  abstract =	 {Litter is a known cause of degradation in marine
-                  environments and most of it travels in rivers before
-                  reaching the oceans. In this paper, we present a
-                  novel algorithm to assist waste monitoring along
-                  watercourses. While several attempts have been made
-                  to quantify litter using neural object detection in
-                  photographs of floating items, we tackle the more
-                  challenging task of counting directly in videos
-                  using boat-embedded cameras. We rely on multi-object
-                  tracking (MOT) but focus on the key pitfalls of
-                  false and redundant counts which arise in typical
-                  scenarios of poor detection performance. Our system
-                  only requires supervision at the image level and
-                  performs Bayesian filtering via a state space model
-                  based on optical flow. We present a new open image
-                  dataset gathered through a crowdsourced campaign and
-                  used to train a center-based anchor-free object
-                  detector. Realistic video footage assembled by water
-                  monitoring experts is annotated and provided for
-                  evaluation.  Improvements in count quality are
-                  demonstrated against systems built from
-                  state-of-the-art multi-object trackers sharing the
-                  same detection capabilities. A precise error
-                  decomposition allows clear analysis and highlights
-                  the remaining challenges.}
+  bibtex_show = {true},
+  author      = {Chagneux, Mathis and Le Corff, Sylvain and
+                 Gloaguen, Pierre and Ollion, Charles and Lepâtre, Océane and
+                 Bruge, Antoine},
+  title       = {Macrolitter Video Counting on Riverbanks Using State
+                 Space Models and Moving Cameras},
+  journal     = {Computo},
+  year        = {2023},
+  repository  = {published-202301-chagneux-macrolitter},
+  doi         = {10.57750/845m-f805},
+  language    = {Python},
+  issn        = {2824-7795},
+  langid      = {en},
+  type        = {{Research article}},
+  abstract    = {Litter is a known cause of degradation in marine
+                 environments and most of it travels in rivers before
+                 reaching the oceans. In this paper, we present a
+                 novel algorithm to assist waste monitoring along
+                 watercourses. While several attempts have been made
+                 to quantify litter using neural object detection in
+                 photographs of floating items, we tackle the more
+                 challenging task of counting directly in videos
+                 using boat-embedded cameras. We rely on multi-object
+                 tracking (MOT) but focus on the key pitfalls of
+                 false and redundant counts which arise in typical
+                 scenarios of poor detection performance. Our system
+                 only requires supervision at the image level and
+                 performs Bayesian filtering via a state space model
+                 based on optical flow. We present a new open image
+                 dataset gathered through a crowdsourced campaign and
+                 used to train a center-based anchor-free object
+                 detector. Realistic video footage assembled by water
+                 monitoring experts is annotated and provided for
+                 evaluation.  Improvements in count quality are
+                 demonstrated against systems built from
+                 state-of-the-art multi-object trackers sharing the
+                 same detection capabilities. A precise error
+                 decomposition allows clear analysis and highlights
+                 the remaining challenges.}
 }
 
-@Article{boulin_clayton,
-  bibtex_show =	 {true},
-  author =	 {Boulin, Alexis},
-  title =	 {{A Python Package for Sampling from Copulae:
-                  clayton}},
-  journal =	 {Computo},
-  year =	 2023,
-  abstract =	 {The package clayton is designed to be intuitive,
-                  user-friendly, and efficient. It offers a wide range
-                  of copula models, including Archimedean, Elliptical,
-                  and Extreme. The package is implemented in pure
-                  Python, making it easy to install and use. In
-                  addition, we provide detailed documentation and
-                  examples to help users get started quickly. We also
-                  conduct a performance comparison with existing R
-                  packages, demonstrating the efficiency of our
-                  implementation. The clayton package is a valuable
-                  tool for researchers and practitioners working with
-                  copulae in Python},
-  doi =		 {10.57750/4szh-t752},
-  repository =	 {published-202301-boulin-clayton},
-  type =	 {{Software paper}},
-  language =	 {Python},
-  domain =	 {Statistics},
-  keywords =	 {Copulae, Random number generation},
-  issn =	 {2824-7795},
+@article{boulin_clayton,
+  bibtex_show = {true},
+  author      = {Boulin, Alexis},
+  title       = {{A Python Package for Sampling from Copulae:
+                 clayton}},
+  journal     = {Computo},
+  year        = 2023,
+  abstract    = {The package clayton is designed to be intuitive,
+                 user-friendly, and efficient. It offers a wide range
+                 of copula models, including Archimedean, Elliptical,
+                 and Extreme. The package is implemented in pure
+                 Python, making it easy to install and use. In
+                 addition, we provide detailed documentation and
+                 examples to help users get started quickly. We also
+                 conduct a performance comparison with existing R
+                 packages, demonstrating the efficiency of our
+                 implementation. The clayton package is a valuable
+                 tool for researchers and practitioners working with
+                 copulae in Python},
+  doi         = {10.57750/4szh-t752},
+  repository  = {published-202301-boulin-clayton},
+  type        = {{Software paper}},
+  language    = {Python},
+  domain      = {Statistics},
+  keywords    = {Copulae, Random number generation},
+  issn        = {2824-7795}
 }
 
-@Article{gimenez_lynx,
-  bibtex_show =	 {true},
-  author =	 {Gimenez, Olivier and Kervellec, Maelis and Fanjul,
-                  Jean-Baptiste and Chaine, Anna and Marescot, Lucile
-                  and Bollet, Yoann and Duchamp, Christophe},
-  title =	 {{Trade-off between deep learning for species
-                  identification and inference about predator-prey
-                  co-occurrence: Reproducible R workflow integrating
-                  models in computer vision and ecological
-                  statistics}},
-  journal =	 {Computo},
-  year =	 2022,
-  abstract =	 {Deep learning is used in computer vision problems
-                  with important applications in several scientific
-                  fields. In ecology for example, there is a growing
-                  interest in deep learning for automatizing
-                  repetitive analyses on large amounts of images, such
-                  as animal species identification.  However, there
-                  are challenging issues toward the wide adoption of
-                  deep learning by the community of ecologists. First,
-                  there is a programming barrier as most algorithms
-                  are written in Python while most ecologists are
-                  versed in R. Second, recent applications of deep
-                  learning in ecology have focused on computational
-                  aspects and simple tasks without addressing the
-                  underlying ecological questions or carrying out the
-                  statistical data analysis to answer these questions.
-                  Here, we showcase a reproducible R workflow
-                  integrating both deep learning and statistical
-                  models using predator-prey relationships as a case
-                  study. We illustrate deep learning for the
-                  identification of animal species on images collected
-                  with camera traps, and quantify spatial
-                  co-occurrence using multispecies occupancy models.
-                  Despite average model classification performances,
-                  ecological inference was similar whether we analysed
-                  the ground truth dataset or the classified
-                  dataset. This result calls for further work on the
-                  trade-offs between time and resources allocated to
-                  train models with deep learning and our ability to
-                  properly address key ecological questions with
-                  biodiversity monitoring. We hope that our
-                  reproducible workflow will be useful to ecologists
-                  and applied statisticians.},
-  doi =		 {10.57750/yfm2-5f45},
-  repository =	 {published-202204-deeplearning-occupancy-lynx},
-  type =	 {{Research article}},
-  language =	 {R},
-  domain =	 {Statistical Ecology},
-  keywords =	 {computer vision, deep-learning, species distribution
-                  modeling, ecological statistics},
-  issn =	 {2824-7795},
+@article{gimenez_lynx,
+  bibtex_show = {true},
+  author      = {Gimenez, Olivier and Kervellec, Maelis and Fanjul,
+                 Jean-Baptiste and Chaine, Anna and Marescot, Lucile
+                 and Bollet, Yoann and Duchamp, Christophe},
+  title       = {{Trade-off between deep learning for species
+                 identification and inference about predator-prey
+                 co-occurrence: Reproducible R workflow integrating
+                 models in computer vision and ecological
+                 statistics}},
+  journal     = {Computo},
+  year        = 2022,
+  abstract    = {Deep learning is used in computer vision problems
+                 with important applications in several scientific
+                 fields. In ecology for example, there is a growing
+                 interest in deep learning for automatizing
+                 repetitive analyses on large amounts of images, such
+                 as animal species identification.  However, there
+                 are challenging issues toward the wide adoption of
+                 deep learning by the community of ecologists. First,
+                 there is a programming barrier as most algorithms
+                 are written in Python while most ecologists are
+                 versed in R. Second, recent applications of deep
+                 learning in ecology have focused on computational
+                 aspects and simple tasks without addressing the
+                 underlying ecological questions or carrying out the
+                 statistical data analysis to answer these questions.
+                 Here, we showcase a reproducible R workflow
+                 integrating both deep learning and statistical
+                 models using predator-prey relationships as a case
+                 study. We illustrate deep learning for the
+                 identification of animal species on images collected
+                 with camera traps, and quantify spatial
+                 co-occurrence using multispecies occupancy models.
+                 Despite average model classification performances,
+                 ecological inference was similar whether we analysed
+                 the ground truth dataset or the classified
+                 dataset. This result calls for further work on the
+                 trade-offs between time and resources allocated to
+                 train models with deep learning and our ability to
+                 properly address key ecological questions with
+                 biodiversity monitoring. We hope that our
+                 reproducible workflow will be useful to ecologists
+                 and applied statisticians.},
+  doi         = {10.57750/yfm2-5f45},
+  repository  = {published-202204-deeplearning-occupancy-lynx},
+  type        = {{Research article}},
+  language    = {R},
+  domain      = {Statistical Ecology},
+  keywords    = {computer vision, deep-learning, species distribution
+                 modeling, ecological statistics},
+  issn        = {2824-7795}
 }
