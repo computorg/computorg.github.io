@@ -30,10 +30,6 @@ Manuscript conditionally accepted, whose editorial and scientific reproducibilit
 
 </div>
 
-## Under review
-
-At the moment, 6 manuscripts are under review.
-
 ## Example: a mock contribution
 
 This  page is  a reworking  of the  original t-SNE  article using  the
