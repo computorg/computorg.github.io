@@ -5,5 +5,4 @@ inline: true
 ---
 
 A new article was published, by
-    Liudmila Pishchagina, Guillem Rigaill, Vincent Runge: [Geometric-Based Pruning Rules for Change Point Detection in Multiple Independent Time Series](https://computo.sfds.asso.fr/
-published-202406-pishchagina-change-point/)
+    Liudmila Pishchagina, Guillem Rigaill, Vincent Runge: [Geometric-Based Pruning Rules for Change Point Detection in Multiple Independent Time Series](https://computo.sfds.asso.fr/published-202406-pishchagina-change-point/)
