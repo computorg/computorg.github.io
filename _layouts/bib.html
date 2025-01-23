@@ -6,13 +6,14 @@
     {% if entry.preprint %}
     &nbsp;
     {% else %}
-    {% if entry.year > 2024 %}
-    <a href="https://github.com/computorg/{{ entry.repository }}"><img
-      src="https://github.com/computorg/{{ entry.repository }}/actions/workflows/build.yml/badge.svg" /></a>
-  {% else %}
-    <a href="https://github.com/computorg/{{ entry.repository }}"><img
+      {% assign year = entry.year | plus: 0 %}
+      {% if year > 2024 %}
+      <a href="https://github.com/computorg/{{ entry.repository }}"><img
+        src="https://github.com/computorg/{{ entry.repository }}/actions/workflows/build.yml/badge.svg" /></a>
+      {% else %}
+      <a href="https://github.com/computorg/{{ entry.repository }}"><img
         src="https://github.com/computorg/{{ entry.repository }}/workflows/build/badge.svg" /></a>
-    {% endif %}
+      {% endif %}
     {% endif %}
   </div>
 
