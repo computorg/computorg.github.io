@@ -1,0 +1,13 @@
+---
+date: 2022-06-14 07:59:00-0400
+format:
+  html:
+    toc: true
+page-layout: article
+---
+
+The 53rd ["Journées de Statistique"](https://jds22.sciencesconf.org/)
+take place in Lyon, where Computo is presented. We will also be
+searching for volunteers for reviewing the submission. Please [fill
+this form](https://forms.gle/P9iYJANuNM4WTVHDA).
+

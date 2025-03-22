@@ -1,0 +1,67 @@
+project:
+  type: website
+  output-dir: _site
+website:
+  title: Computo.org
+  site-url: https://computo.org
+  description: A platform for computational research and reproducibility
+  favicon: assets/favicon.ico
+  navbar:
+    background: primary
+    logo: assets/img/logo.png
+    logo-alt: Computo.org Logo
+    left:
+    - href: index.qmd
+      text: Computo.org
+    - href: blog/index.qmd
+      text: Blog
+    - href: publications/index.qmd
+      text: Articles
+    - href: submit/index.qmd
+      text: Submit
+    - href: review/index.qmd
+      text: Review
+    - href: repos/index.qmd
+      text: Repositories
+    - href: board/index.qmd
+      text: Staff
+    - href: about/index.qmd
+      text: About
+  page-footer:
+    left: "\xA9 2023 Computo.org"
+    center:
+    - text: Privacy Policy
+      href: privacy.qmd
+    - text: Terms of Use
+      href: terms.qmd
+    right:
+    - icon: github
+      href: https://github.com/computorg
+    - icon: twitter
+      href: https://twitter.com/your-twitter-handle
+    - icon: rss
+      href: blog/index.xml
+format:
+  html:
+    theme:
+      light:
+      - cosmo
+      - light.scss
+      dark:
+      - cosmo
+      - dark.scss
+    css: styles.css
+    toc: true
+    code-copy: true
+    code-block-border-left: true
+    highlight-style: github
+    citations-hover: true
+    footnotes-hover: true
+    include-in-header:
+    - text: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+        '
+execute:
+  freeze: auto

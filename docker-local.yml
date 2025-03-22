@@ -1,5 +1,3 @@
-version: "3"
-
 services:
   jekyll_custom:
     build: .

@@ -1,0 +1,77 @@
+{
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "dvilualatex -> dvisvgm",
+            "tools": [
+                "dvilualatex",
+                "dvisvgm",
+                "clean"
+            ]
+        },
+        {
+            "name": "pdflatex (latexmk)",
+            "tools": [
+                "latexmk"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "--recorder",
+                "--pdf",
+                "--enable-installer",
+                "--shell-escape",
+                "-output-directory=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "dvilualatex",
+            "command": "latexmk",
+            "args": [
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "--recorder",
+                "--dvilua",
+                "--enable-installer",
+                "--output-format=dvi",
+                "--shell-escape",
+                "-output-directory=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "dvisvgm",
+            "command": "dvisvgm",
+            "args": [
+                "--colornames",
+                "--grad-overlap",
+                "--optimize",
+                "--exact",
+                "--clipjoin",
+                "--font-format=woff",
+                "%DOCFILE%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "clean",
+            "command": "latexmk",
+            "args": [
+                "-C",
+                "--shell-escape",
+                "-output-directory=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ]
+}

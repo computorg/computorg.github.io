@@ -1,9 +1,14 @@
-_site
+/_site/
+/.quarto/
+*.html
+!_site/**/*.html
+/.DS_Store
+*/.DS_Store
+/_freeze/
 .bundle
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-.DS_store
 .tweet-cache
 vendor
 .Rproj.user

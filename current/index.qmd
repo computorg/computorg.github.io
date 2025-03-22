@@ -1,0 +1,28 @@
+---
+title: "Current Projects"
+page-layout: full
+---
+
+## Our Current Projects
+
+Computo is involved in several ongoing projects related to computational reproducibility and statistical software.
+
+### Reproducibility Framework
+
+We're developing standards and tools to ensure computational research can be easily reproduced.
+
+### Template Development
+
+Creating and maintaining templates that make it easy to prepare reproducible research papers.
+
+### Community Engagement
+
+Building a community of researchers committed to open and reproducible computational science.
+
+<!-- When you have projects to list, uncomment the section below -->
+<!--
+:::{.callout-note}
+## Project Listing
+To add your project, create a new directory in the "current" folder with an index.qmd file.
+:::
+-->

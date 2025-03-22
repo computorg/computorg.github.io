@@ -1,0 +1,39 @@
+---
+title: "Privacy Policy"
+page-layout: article
+---
+
+# Privacy Policy
+
+This privacy policy describes how Computo.org collects, uses, and shares your personal information when you visit our website.
+
+## Information We Collect
+
+- **Usage Data**: We collect information about how you interact with our website, including pages visited, time spent, and referring website.
+- **Personal Information**: If you submit content or contact us, we may collect your name, email address, and institutional affiliation.
+
+## How We Use Information
+
+We use the information we collect to:
+- Improve our website and content
+- Communicate with authors and readers
+- Process article submissions and reviews
+- Analyze usage patterns to enhance user experience
+
+## Data Security
+
+We take reasonable measures to protect the information we collect from unauthorized access, disclosure, or misuse.
+
+## Cookies
+
+We use cookies to understand how our site is used. You can control cookies through your browser settings.
+
+## Changes to This Policy
+
+We may update this privacy policy from time to time. The current version will always be posted on this page.
+
+## Contact Us
+
+If you have questions about this privacy policy, please contact us at [contact@computo.org](mailto:contact@computo.org).
+
+Last updated: January 2023

@@ -1,0 +1,36 @@
+---
+title: "Articles"
+description: "Publications by years in reversed chronological order"
+filters:
+  - multibib
+validate-yaml: false
+bibliography:
+  published: published.bib
+  pipeline: in_production.bib
+  examples: mock_papers.bib
+nocite: |
+  @*
+format:
+  html: 
+    toc: true
+page-layout: article
+---
+
+## Published Articles
+
+::: {#refs-published}
+:::
+
+## In the Pipeline
+
+Manuscripts conditionally accepted, whose editorial and scientific reproducibility are being validated.
+
+::: {#refs-pipeline}
+:::
+
+## Examples and Mock Contributions
+
+These are examples that help authors submitting to the journal by demonstrating formatting features.
+
+::: {#refs-examples}
+:::

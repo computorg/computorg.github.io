@@ -1,0 +1,32 @@
+```{=html}
+<% for (const item of items) { %>
+<div class="quarto-listing-item" data-categories="<%= item.categories %>" data-listing-date-sort="<%= item['listing-date-sort'] %>">
+  <div class="quarto-post-item">
+    <div class="quarto-post-metadata">
+      <div>
+        <% if (item.date) { %>
+        <p class="quarto-post-date"><%= item.date %></p>
+        <% } %>
+      </div>
+    </div>
+    <div class="quarto-post-body">
+      <h3 class="no-anchor quarto-post-title">
+        <a href="<%= item.path %>"><%= item.title %></a>
+      </h3>
+      <div>
+        <div class="quarto-post-description">
+          <%= item.description %>
+        </div>
+      </div>
+      <% if (item.categories && item.categories.length > 0) { %>
+      <div class="quarto-post-categories">
+        <% for (const category of item.categories) { %>
+        <div class="quarto-listing-category"><%= category %></div>
+        <% } %>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</div>
+<% } %>
+```

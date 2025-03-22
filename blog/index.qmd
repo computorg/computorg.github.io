@@ -1,0 +1,21 @@
+---
+title: Computo Blog
+listing:
+  contents: .
+  sort: date desc
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields:
+  - date
+  - title
+  - description
+  - categories
+  feed: true
+  template: ../assets/listing-templates/default.ejs
+page-layout: full
+title-block-banner: true
+---
+
+Welcome to the Computo blog, where we share updates, tutorials, and information about computational reproducibility in research.

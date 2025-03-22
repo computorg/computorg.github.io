@@ -1,0 +1,44 @@
+---
+title: "Terms of Use"
+page-layout: article
+---
+
+# Terms of Use
+
+These terms of use govern your use of the Computo.org website.
+
+## Acceptance of Terms
+
+By accessing or using Computo.org, you agree to be bound by these terms of use and all applicable laws and regulations.
+
+## Intellectual Property
+
+### Content License
+
+Articles published in Computo are typically available under a Creative Commons Attribution License (CC-BY 4.0), which allows others to share and adapt the work with appropriate attribution.
+
+### Code and Data
+
+Code and data associated with articles may be subject to separate licenses as specified in the respective repositories.
+
+## User Submissions
+
+By submitting content to Computo, you grant us the rights necessary to publish, archive, and promote your work according to our publication policies.
+
+## Prohibited Uses
+
+You may not use Computo.org for any unlawful purpose or in any way that could damage or impair the site or interfere with others' use.
+
+## Disclaimer
+
+The content on Computo.org is provided for informational purposes only. We make no warranties about the accuracy, reliability, or availability of the website or its content.
+
+## Changes to Terms
+
+We may revise these terms at any time without notice. By continuing to use the site after any changes, you accept the revised terms.
+
+## Contact Us
+
+If you have questions about these terms, please contact us at [contact@computo.org](mailto:contact@computo.org).
+
+Last updated: January 2023

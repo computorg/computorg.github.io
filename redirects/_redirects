@@ -1,0 +1,5 @@
+# Redirects from Jekyll paths to Quarto paths
+/index.html              /
+/pages/*                 /:splat
+/tags/:tag               /blog/index.html?tag=:tag
+/categories/:category    /blog/index.html?category=:category

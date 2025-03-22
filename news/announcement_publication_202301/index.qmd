@@ -1,0 +1,11 @@
+---
+date: 2023-01-11 07:59:00-0400
+format:
+  html:
+    toc: true
+page-layout: article
+---
+
+Computo is happy to announce a [newly published paper, by Alexis Boulin!](https://computo.sfds.asso.fr/publications/) :sparkles:
+
+Congratulations!

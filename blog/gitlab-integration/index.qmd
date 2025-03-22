@@ -1,0 +1,15 @@
+---
+title: 'I use gitlab instead of github: what should I do?'
+date: '2030-03-24'
+description: Discuss integration of Computo's contribution in Gitlab instances
+tags:
+- reproducibility
+format:
+  html:
+    toc: true
+page-layout: article
+draft: true
+---
+
+_Under Construction_
+
