@@ -2,7 +2,7 @@
 /.quarto/
 *.html
 !_site/**/*.html
-/.DS_Store
+/**/.DS_Store
 */.DS_Store
 /_freeze/
 .bundle

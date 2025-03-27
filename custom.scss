@@ -1,0 +1,30 @@
+/*-- scss:defaults --*/
+$link-decoration:       none !default;
+$primary: #034e79;
+.navbar {
+  font-weight: 500;
+  font-family: Oswald, sans-serif;
+  letter-spacing: .1em;
+
+  .navbar-title {
+    font-size: 1.2em;
+    color: #ffffff;
+    letter-spacing: .25em;
+    font-weight: lighter !important;
+  }
+
+  li:nth-child(1) {
+    display: none;
+  }
+ }
+
+.nav-footer {
+  position: fixed;
+  bottom: -20px;
+  width: 100%;
+  z-index: 1000;
+}
+/*-- scss:rules --*/
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
+}

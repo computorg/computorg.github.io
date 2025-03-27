@@ -333,7 +333,7 @@ def update_quarto_navigation(nav_structure):
             for item in nav_structure:
                 if item.get('href') == 'index.qmd' and item.get('text', '').lower() == 'about':
                     # This is the main site entry - update text to site name
-                    item['text'] = quarto_config['website'].get('title', 'Computo.org')
+                    item['text'] = quarto_config['website'].get('title', 'COMPUTO')
             
             # Remove "Home" entry if it exists - we only want the main entry
             nav_structure = [item for item in nav_structure if not (
@@ -786,7 +786,7 @@ if not os.path.exists('about') and not os.path.exists('about/index.qmd'):
     os.makedirs('about', exist_ok=True)
     with open('about/index.qmd', 'w', encoding='utf-8') as f:
         f.write("""---
-title: "About Computo.org"
+title: "About COMPUTO"
 page-layout: article
 ---
 

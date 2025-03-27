@@ -63,11 +63,8 @@ Enquiries can be sent to the Chief Editor, Julien Chiquet, through  <a href="mai
 
 ## Thanks
 
-We rely on [Jekyll](https://jekyllrb.com/),
-[BibTeX](http://www.bibtex.org/), the
-[aI-folio](https://github.com/alshedivat/al-folio) Jekyll theme,
-[Rmarkdown](https://rmarkdown.rstudio.com/),
-[Jupyter-book](https://jupyterbook.org/) and we drew our inspiration
+We rely on [Quarto](https://quarto.org/),
+[BibTeX](http://www.bibtex.org/) and we drew our inspiration
 from [Rescience-C](https://rescience.github.io/) and
 [distill.pub](https://distill.pub/) among others.
 
@@ -75,4 +72,4 @@ from [Rescience-C](https://rescience.github.io/) and
 
 Computo's logo has been designed by [Loïc Schwaller](https://loack.me/).
 
-<img src="assets/img/computo_concept.png" alt="concept" width="300"/>
+<img src="/assets/img/computo_concept.png" alt="concept" width="300"/>

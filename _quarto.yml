@@ -2,19 +2,20 @@ project:
   type: website
   output-dir: _site
 website:
-  title: Computo.org
-  site-url: https://computo.org
+  title: COMPUTO
+  site-url: https://computo.sfds.asso.fr/
   description: A platform for computational research and reproducibility
   favicon: assets/favicon.ico
   navbar:
     background: primary
-    logo: assets/img/logo.png
-    logo-alt: Computo.org Logo
-    left:
+    logo-alt: Computo’s Logo
+    toggle-position: right
+    tools-collapse: true
+    right:
     - href: index.qmd
-      text: Computo.org
-    - href: blog/index.qmd
-      text: Blog
+      text: Home
+    - href: about/index.qmd
+      text: About
     - href: publications/index.qmd
       text: Articles
     - href: submit/index.qmd
@@ -25,32 +26,27 @@ website:
       text: Repositories
     - href: board/index.qmd
       text: Staff
-    - href: about/index.qmd
-      text: About
+    - href: blog/index.qmd
+      text: FAQ
+    - icon: github
+      href: https://github.com/computorg
+    - icon: mastodon
+      href: https://mathstodon.xyz/@computo
   page-footer:
-    left: "\xA9 2023 Computo.org"
-    center:
+    left: "\xA9 2023 Computo"
+    border: false
+    background: primary
+    
+    right:
     - text: Privacy Policy
       href: privacy.qmd
     - text: Terms of Use
       href: terms.qmd
-    right:
-    - icon: github
-      href: https://github.com/computorg
-    - icon: twitter
-      href: https://twitter.com/your-twitter-handle
-    - icon: rss
-      href: blog/index.xml
 format:
   html:
     theme:
-      light:
-      - cosmo
-      - light.scss
-      dark:
-      - cosmo
-      - dark.scss
-    css: styles.css
+      light: [ custom.scss, light.scss ]
+      dark: [ custom.scss, dark.scss ]
     toc: true
     code-copy: true
     code-block-border-left: true
@@ -65,3 +61,5 @@ format:
         '
 execute:
   freeze: auto
+
+brand: ./_brand.yml

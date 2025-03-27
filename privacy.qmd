@@ -5,7 +5,7 @@ page-layout: article
 
 # Privacy Policy
 
-This privacy policy describes how Computo.org collects, uses, and shares your personal information when you visit our website.
+This privacy policy describes how COMPUTO collects, uses, and shares your personal information when you visit our website.
 
 ## Information We Collect
 
@@ -34,6 +34,6 @@ We may update this privacy policy from time to time. The current version will al
 
 ## Contact Us
 
-If you have questions about this privacy policy, please contact us at [contact@computo.org](mailto:contact@computo.org).
+If you have questions about this privacy policy, please contact us at [contact@COMPUTO](mailto:contact@COMPUTO).
 
 Last updated: January 2023
