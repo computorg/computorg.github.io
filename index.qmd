@@ -2,21 +2,13 @@
 description: <h1>COMPUTO</h1> A journal of the <a href="https://sfds.asso.fr/">French
   Statistical Society <img height="10px" src="assets/img/sfds.png" alt="SFdS"/></a>
   - ISSN 2824-7795
-format:
-  html: {}
 listing:
-  contents: news
+  contents: news.yml
   sort: date desc
-  type: default
-  categories: false
-  sort-ui: false
-  filter-ui: false
   fields:
   - date
-  - title
   - description
   feed: true
-page-layout: article
 ---
 
 :::: {layout="[ 40, 60 ]"}
@@ -34,12 +26,7 @@ A french journal of the
 
 ::::
 
-This journal aims at promoting computational/algorithmic contributions
-in statistics and machine learning that provide insight into which
-models or methods are more appropriate to address a specific
-scientific question. In order to achieve this goal, Computo goes
-beyond classical static publications by leveraging technical advances
-in literate programming and scientific reporting.
+This journal aims at promoting computational/algorithmic contributions in statistics and machine learning that provide insight into which models or methods are more appropriate to address a specific scientific question. In order to achieve this goal, Computo goes beyond classical static publications by leveraging technical advances in literate programming and scientific reporting.
 
 [More details about our philosophy](about).
 

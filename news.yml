@@ -1,0 +1,166 @@
+- date: 2021-03-11 07:59:00-0400
+  description: >2+
+
+    New version of the website relying on Jekyll, Jekyll-scholar, aI-folio emoji! :sparkles:
+
+- date: 2021-05-25 07:59:00-0400
+  description: >2
+
+    [Check out these nice diagrams :sparkles: describing how Computo works
+
+    on the author, editor and reviewer
+
+    sides]({{ site.baseurl }}/blog/2021/submission-process/).
+- date: 2021-06-23 07:59:00-0400
+  description: >2+
+
+    We are presenting Computo at a [mini-workshop on reproducible
+
+    research](https://mtp-rr2021.sciencesconf.org/) in Montpellier 🗓. Very
+
+    interesting talks to come besides ours
+
+- date: 2021-10-28 07:59:00-0400
+  description: >2+
+
+    [Paper submission](submit) is now officially opened! 📢 
+
+- date: 2022-02-24 07:59:00-0400
+  description: >2+
+
+    Computo has been presented at the [2nd Toronto Workshop on reproducibility](https://canssiontario.utoronto.ca/toronto_workshop_on_reproducibility_2022/) !
+
+    🤩 [slides are online here](http://computo.sfds.asso.fr/comm/)
+
+
+
+- date: 2022-04-03 07:59:00-0400
+  description: >2
+
+    Computo is proud to announce its [first published paper, by Olivier Gimenez et al.!](https://computo.sfds.asso.fr/publications/) :sparkles:
+
+
+    Thanks to them and congratulations!
+- date: 2022-06-14 07:59:00-0400
+  description: >2+
+
+    The 53rd ["Journées de Statistique"](https://jds22.sciencesconf.org/)
+
+    take place in Lyon, where Computo is presented. We will also be
+
+    searching for volunteers for reviewing the submission. Please [fill
+
+    this form](https://forms.gle/P9iYJANuNM4WTVHDA).
+
+- date: 2022-07-01 07:59:00-0400
+  description: >2+
+
+    We are very pleased to welcome
+
+    [Mathurin](https://mathurinm.github.io/),
+
+    [François-David](https://fradav.github.io/) and
+
+    [Ghislain](https://gdurif.perso.math.cnrs.fr/) [in the team](board) 👨‍💻 !
+
+    Thanks for their support.
+
+- date: 2023-01-11 07:59:00-0400
+  description: >2
+
+    Computo is happy to announce a [newly published paper, by Alexis Boulin!](https://computo.sfds.asso.fr/publications/) :sparkles:
+
+
+    Congratulations!
+- date: 2023-02-08 07:59:00-0400
+  description: >2
+
+    We have [updated our templates for submitting to Computo](https://computo.sfds.asso.fr/submit/): all based on Quarto, but now with more specific and hoefully friendly set-ups for R, Python or Julia users.
+- date: 2023-02-16 07:59:00-0400
+  description: >2
+
+    Another [published paper, by Mathis Chagneux and co-authors!](https://computo.sfds.asso.fr/publications/), a nice academic collaboration with Surfrider Europe for detecting macrolitter on riverbanks :sparkles:
+- date: 2023-06-21 07:59:00-0400
+  description: >2+
+
+    Delighted to welcome
+
+    [Marie-Pierre](httpshttps://marieetienne.github.io/) [in the team](board) 👨‍💻 !
+
+- date: 2023-06-21 07:59:00-0400
+  description: >2+
+
+    We're changing our peer-review platform 📰 to a fully free, open and communty-based solution with [OpenReview](https://openreview.net/group?id=Computo). Don't hesitate to send us feedback or contact us if you have any questions.
+
+- date: 2023-07-11 07:59:00-0400
+  description: >2
+
+    [A new article was published, by Edmond Sanou, Geneviève Robin and Christophe Ambroise](https://computo.sfds.asso.fr/publications/), on a multiscale version of Graphical-Lasso.
+- date: 2023-11-21 07:59:00-0400
+  description: >2
+
+    [Paper published by Maud Delattre and Estelle Kuhn](https://computo.sfds.asso.fr/published-202311-delattre-fim/), on computing an empirical Fisher information matrix estimate in latent variable models through stochastic approximation.
+- date: 2023-12-14 07:59:00-0400
+  description: >2
+
+    [Paper published by Alice Cleynen, Louis Raynal, and Jean-Michel
+
+    Marin](https://computo.sfds.asso.fr/published-202312-cleynen-local/), on
+
+    local tree methods for classification.
+- date: 2024-01-09 07:59:00-0400
+  description: >2
+
+    [Paper published by Armand Favrot and David Makowski](https://computo.sfds.asso.fr/published-202312-favrot-hierarchical/), on MCMC estimation in a hierarchical model to evaluate pest treatments from prevalence and intensity data.
+- date: 2024-02-26 07:59:00-0400
+  description: >2
+
+    A new article was published, by Hamza Adrat and Laurent Decreusefond: [Point Process Discrimination According to Repulsion](http://computo.sfds.asso.fr/published_202401_adrat_repulsion/).
+- date: 2024-04-04 07:59:00-0400
+  description: >2
+
+    A new article was published, by  Maxime El Masri, Jérôme Morio, and Florian
+
+    Simatos: [Optimal Projection for Parametric Importance Sampling in High
+
+    Dimensions]( https://computo.sfds.asso.fr/published-202402-elmasri-optimal/)
+- date: 2024-05-15 07:59:00-0400
+  description: >2
+
+    A new article was published, by 
+        Tanguy Lefort, Benjamin Charlier, Alexis Joly, Joseph Salmon: [Peerannot: classification for crowdsourced image datasets with Python]( https://computo.sfds.asso.fr/published-202402-lefort-peerannot/)
+- date: 2024-07-19 07:59:00-0400
+  description: >2
+
+    A new article was published, by
+        Liudmila Pishchagina, Guillem Rigaill, Vincent Runge: [Geometric-Based Pruning Rules for Change Point Detection in Multiple Independent Time Series](https://computo.sfds.asso.fr/published-202406-pishchagina-change-point/)
+- date: 2024-07-22 07:59:00-0400
+  description: >2
+
+    A new article was published, by
+        Herbert Susmann, Antoine Chambaz and Julie Josse: [AdaptiveConformal: An R Package for Adaptive Conformal Inference](https://computo.sfds.asso.fr/published-202407-susmann-adaptive-conformal/)
+- date: 2024-08-30 07:59:00-0400
+  description: >2+
+
+    A new article was published, by
+       Juliette Legrand, François Pimont, Jean-Luc Dupuy and Thomas Opitz: [Bayesian spatiotemporal modelling of wildfire occurrences and sizes for projections under climate change](https://computo.sfds.asso.fr/published-202407-legrand-wildfires/)
+
+
+- date: 2024-12-16 07:59:00-0400
+  description: >2+
+
+    This year, Computo will publish extended versions of selected submissions to [2025 French Statistics Days](https://jds2025.sciencesconf.org/). If interested, please select the theme “Interest in Computo submission” in your [SciencesConf](https://jds2025.sciencesconf.org/submission/submit?lang=fr) submission. If the conference program committee considers that your work falls within the scope of our journal, you will be invited to propose a longer version of your submission to Computo. We (the editorial board and technical team) will be able to assist you in bringing your article into the journal's reproducible format, targeting the end of June 2025. The review process will then involve experts in the field, following the recommendations of the conference program committee, with a view to publication in Computo by the end of 2025.
+
+- date: 2025-01-23 07:59:00-0400
+  description: >2
+
+    A new article, first of 2025, was published, by
+       Félix Laplante and Christophe Ambroise : [Spectral Bridges: Scalable Spectral Clustering Based on Vector Quantization](http://computo.sfds.asso.fr/published-202412-ambroise-spectral/)
+- date: 2025-01-27 07:59:00-0400
+  description: >2
+
+    A new article was published, by Daphné Giorgi, Sarah Kaakai, and Vincent
+
+    Lemaire: [Efficient simulation of individual-based population
+
+    models](https://computo.sfds.asso.fr/published-202412-giorgi-efficient/).

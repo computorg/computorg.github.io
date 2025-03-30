@@ -1,0 +1,29 @@
+```{=html}
+<div class="repo p-2">
+  <div class="repo-card">
+    <h3 class="repo-name">
+      <a href="<%= item.html_url || 'https://github.com/' + item.owner + '/' + item.name %>">
+        <i class="fab fa-github"></i> <%= item.name %>
+      </a>
+    </h3>
+    <p class="repo-description"><%= item.description %></p>
+    <div class="repo-stats">
+      <% if(item.stargazers_count) { %>
+      <span class="repo-stars">
+        <i class="fas fa-star"></i> <%= item.stargazers_count %>
+      </span>
+      <% } %>
+      <% if(item.forks_count) { %>
+      <span class="repo-forks">
+        <i class="fas fa-code-branch"></i> <%= item.forks_count %>
+      </span>
+      <% } %>
+      <% if(item.language) { %>
+      <span class="repo-language">
+        <i class="fas fa-circle" style="color: <%= getLanguageColor(item.language) %>"></i> <%= item.language %>
+      </span>
+      <% } %>
+    </div>
+  </div>
+</div>
+```

@@ -1,0 +1,23 @@
+- name: computorg-article
+  owner: computorg
+  description: A Quarto extension for scientific article publishing
+  html_url: https://github.com/computorg/computorg-article
+  stargazers_count: 15
+  forks_count: 3
+  language: TypeScript
+
+- name: article-template
+  owner: computorg
+  description: Template for authors to create computational articles
+  html_url: https://github.com/computorg/article-template
+  stargazers_count: 8
+  forks_count: 12
+  language: HTML
+
+- name: example-contribution
+  owner: computorg
+  description: An advanced mock contribution showing our features
+  html_url: https://github.com/computorg/example-contribution
+  stargazers_count: 5
+  forks_count: 2
+  language: Python

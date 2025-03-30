@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: _site
+  pre-render: dotnet fsi getcomputo-pub.fsx
 website:
   title: COMPUTO
   site-url: https://computo.sfds.asso.fr/
@@ -14,17 +15,17 @@ website:
     right:
     - href: index.qmd
       text: Home
-    - href: about/index.qmd
+    - href: site/about.qmd
       text: About
-    - href: publications/index.qmd
+    - href: site/publications.qmd
       text: Articles
-    - href: submit/index.qmd
+    - href: site/submit.qmd
       text: Submit
-    - href: review/index.qmd
+    - href: site/review.qmd
       text: Review
-    - href: repos/index.qmd
+    - href: site/repos.qmd
       text: Repositories
-    - href: board/index.qmd
+    - href: site/board.qmd
       text: Staff
     - href: blog/index.qmd
       text: FAQ
@@ -39,9 +40,9 @@ website:
     
     right:
     - text: Privacy Policy
-      href: privacy.qmd
+      href: site/various/privacy.qmd
     - text: Terms of Use
-      href: terms.qmd
+      href: site/various/terms.qmd
 format:
   html:
     theme:

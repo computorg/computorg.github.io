@@ -18,13 +18,18 @@ $primary: #034e79;
   }
  }
 
-.nav-footer {
+ .footer {
+  // Make footer adopt the same positioning and styling as .nav-footer
   position: fixed;
   bottom: -20px;
   width: 100%;
   z-index: 1000;
-}
+  padding: 0; // Remove default padding
+  margin: 0; // Remove default margin
+  min-height: fit-content !important;
+ }
+
 /*-- scss:rules --*/
-h1, h2, h3, h4, h5, h6 {
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
-}
+// h1, h2, h3, h4, h5, h6 {
+//   text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
+// }
