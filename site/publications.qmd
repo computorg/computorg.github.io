@@ -5,6 +5,7 @@ listing:
   contents: published.yml
   sort: date desc
   id: published
+  type: table
 ---
 
 ## Published Articles
