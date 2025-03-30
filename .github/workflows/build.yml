@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - master
-      - main
   pull_request:
     branches:
       - master
-      - main
 
 jobs:
   build:
@@ -25,7 +23,7 @@ jobs:
 
   # Deployment job
   deploy:
-    # skip this job if the event that triggered the workflow is a pull request
+    # skip this job if the event is a pull request or if the branch is not master
     if: github.event_name != 'pull_request'
     permissions:
       pages: write
