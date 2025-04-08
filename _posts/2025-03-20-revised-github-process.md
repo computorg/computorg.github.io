@@ -22,10 +22,15 @@ on:
   pull_request:
     branches: ["main","master"]
 
+
 jobs:
   call_env_workflow:
     uses: computorg/workflows/.github/workflows/global-env.yml@main
   call_quartopublish_workflow:
+    permissions:
+      id-token: write
+      contents: write
+      pages: write
     uses: computorg/workflows/.github/workflows/publish-render.yml@main
     needs: call_env_workflow
 ```
