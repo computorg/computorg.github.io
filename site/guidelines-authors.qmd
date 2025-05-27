@@ -1,0 +1,8 @@
+---
+title: Guidelines for authors
+description: This are the guidelines
+format:
+  html: {}
+page-layout: article
+---
+

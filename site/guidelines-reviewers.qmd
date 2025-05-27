@@ -1,0 +1,7 @@
+---
+title: Guidelines for reviewers
+description: This are the guidelines
+format:
+  html: {}
+page-layout: article
+---
