@@ -8,7 +8,6 @@ listing:
   - categories
   categories: true
 page-layout: full
-title-block-banner: true
 ---
 
 Additional details and support for authors
