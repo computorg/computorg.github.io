@@ -15,7 +15,7 @@ Computo is not just about publishing a notebook and proving that it can be compi
 
 We don't ask people reproducing their data... yet! We also don't ask for "bit-wise computational" reproducibility (i.e. obtaining exactly the same results bit-by-bit) but rather a "statistical" reproducibility, i.e. obtaining results leading to the same conclusion, with potential non-significant statistical variability.
 
-![Reproducible Workflow](img/reproducible-sequence.svg)
+![Reproducible Workflow](/assets/img/reproducible-sequence.png)
 
 Indeed, the global scientific workflow of a reproducible process for a Computo may be split in two types of steps:
 
