@@ -12,5 +12,5 @@
 .tweet-cache
 vendor
 .Rproj.user
-
+.env-secret
 .fake
