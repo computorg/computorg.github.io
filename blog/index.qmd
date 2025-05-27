@@ -1,16 +1,13 @@
 ---
-title: Computo Blog
+title: Frequently Asked Questions
 listing:
   contents: .
-  sort: date desc
+  sort: title
   fields:
-  - date
   - title
-  - description
   - categories
-  feed: true
 page-layout: full
 title-block-banner: true
 ---
 
-Welcome to the Computo blog, where we share updates, tutorials, and information about computational reproducibility in research.
+Additional details and support for authors
