@@ -3,7 +3,7 @@ title: How to automatically publish the HTML of my contribution to a website?
 date: '2023-03-17'
 description: Describe how to render your article, activate your gh-page and publish
   your contribution online
-tags:
+categories:
 - reproducibility
 format:
   html:

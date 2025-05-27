@@ -6,6 +6,7 @@ listing:
   fields:
   - title
   - categories
+  categories: true
 page-layout: full
 title-block-banner: true
 ---
