@@ -14,3 +14,4 @@ vendor
 .Rproj.user
 .env-secret
 .fake
+*_files/
