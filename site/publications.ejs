@@ -1,0 +1,40 @@
+:::{
+<% for (const item of items) { %>
+  <% if (item.type === 'article') { %>
+:::{ .article-card }
+# [<%= item.title %>](<%= item.url %>)
+**Authors:** <%= item.authors.join(', ') %>
+
+**Abstract:** <%= item.abstract %>
+
+**Journal and Year:** <%= item.journal %>, <%= item.year %>
+  <% if (item.pdf) { %>
+        [PDF](<%= item.pdf %>) |
+<% } %>
+      [Repository](<%= item.url %>)
+:::
+  <% } else if (item.type === 'book') { %>
+    :::{ .book-card }
+    # [<%= item.title %>](<%= item.url %>)
+    **Authors:** <%= item.authors.join(', ') %>
+
+    **Publisher and Year:** <%= item.publisher %>, <%= item.year %>
+      <% if (item.pdf) { %>
+        [PDF](<%= item.pdf %>) |
+      <% } %>
+      [Repository](<%= item.url %>)
+    :::
+  <% } else if (item.type === 'conference') { %>
+    :::{ .conference-card }
+    # [<%= item.title %>](<%= item.url %>)
+    **Authors:** <%= item.authors.join(', ') %>
+
+    **Conference and Year:** <%= item.conference %>, <%= item.year %>
+      <% if (item.pdf) { %>
+        [PDF](<%= item.pdf %>) |
+      <% } %>
+      [Repository](<%= item.url %>)
+    :::
+  <% } %>
+<% } %>
+:::
