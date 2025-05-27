@@ -13,20 +13,11 @@ listing:
 
 :::: {layout="[ 40, 60 ]"}
 
-![Computo Logo](/assets/img/logo_text_vertical.svg){ height="200px" }
-
-:::{}
-# Computo
-A french journal of the
-
-[French Statistical Society](https://sfds.asso.fr/)
-
-![](/assets/img/sfds.png){ height="15px" } - ISSN 2824-7795
-:::
+![](/assets/img/logo_text_vertical.svg){ height="150px" }
 
 ::::
 
-This journal aims at promoting computational/algorithmic contributions in statistics and machine learning that provide insight into which models or methods are more appropriate to address a specific scientific question. In order to achieve this goal, Computo goes beyond classical static publications by leveraging technical advances in literate programming and scientific reporting.
+Computo is an academic journal promoting computational/algorithmic contributions in statistics and machine learning that provide insight into which models or methods are more appropriate to address a specific scientific question. In order to achieve this goal, Computo goes beyond classical static publications by leveraging technical advances in literate programming and scientific reporting.
 
 [More details about our philosophy](about).
 

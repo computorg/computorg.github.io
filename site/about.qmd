@@ -27,14 +27,10 @@ The journal welcomes the following types of contributions:
 - **Software/tutorial papers** to present implementations of stats/ML algorithms or
   to feature the use of a package/toolbox. For such papers we expect not only the description of an existing implementation but also the study of a concrete use case. If applicable, a comparison to related works and appropriate benchmarking are also expected. 
 
-<div class="info-block">
-    <div class="info-block-header">Pre-submission enquiries</div>
-     <div class="info-block-body">
-    <p>Prospective authors willing to  know whether their contribution
-    falls  into the  scope of  Computo are  encouraged to  contact the
-    editor at <a href="mailto@computo@sfds.asso.fr">computo@sfds.asso.fr</a>. Please make sure to include the title and abstract of your work in your pre-submission enquiry.</p>
-    </div>
-</div>
+::: {.callout-note}
+### Pre-submission enquiries
+Prospective authors willing to  know whether their contribution falls  into the  scope of  Computo are  encouraged to  contact the editor at [mailto@computo@sfds.asso.fr](computo@sfds.asso.fr). Please make sure to include the title and abstract of your work in your pre-submission enquiry.
+:::
 
 ## An open access journal with reproducible contributions
 
@@ -57,6 +53,16 @@ Jupyter).
 
 The reviews are open, i.e. visible to any reader after acceptance of
 the contribution. Reviewers may choose to remain anonymous or not.
+
+## Plagiarism policy
+
+Computo abides by the Committee on Publishing Ethics’s (COPE) guidelines listed below on plagiarism:
+- COPE Council. [Suspected plagiarism in a submitted manuscript](https://doi.org/10.24318/cope.2019.2.1), Version 2, November 2018.
+- COPE Council. [Suspected plagiarism in a published manuscript](https://doi.org/10.24318/cope.2019.2.2). Version 2. 2013.
+
+## Publisher
+
+Computo is a journal of the [French Statistical Society](https://sfds.asso.fr/) - ISSN 2824-7795
 
 ## Contact
 Enquiries can be sent to the Chief Editor, Julien Chiquet, through  <a href="mailto:computo@sfds.asso.fr">computo@sfds.asso.fr</a>.
