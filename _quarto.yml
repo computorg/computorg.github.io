@@ -21,9 +21,9 @@ website:
       text: Articles
     - href: site/submit.qmd
       text: Submit
-    - id: guidelines
-      text: "Guidelines"
+    - text: "Guidelines"
       menu:
+        - text: General
         - text: Authors
           href: site/guidelines-authors.qmd
         - text: Reviewers
