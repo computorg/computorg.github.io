@@ -24,8 +24,7 @@ listing:
 
 <div style="text-align: justify; font-size: 95%;">
 
-Computo is an academic journal that advances computational and algorithmic work in statistics and machine learning, with a focus on selecting appropriate models for specific scientific questions. It goes beyond traditional publications by embracing literate programming and modern scientific reporting tools.
-
+This journal aims at promoting computational/algorithmic contributions in statistics and machine learning that provide insight into which models or methods are more appropriate to address a specific scientific question. In order to achieve this goal, Computo goes beyond classical static publications by leveraging technical advances in literate programming and scientific reporting.
 </div>
 :::
 
