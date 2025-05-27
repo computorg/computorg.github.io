@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: _site
-  pre-render: dotnet fsi getcomputo-pub.fsx
+#  pre-render: dotnet fsi getcomputo-pub.fsx
 website:
   title: COMPUTO
   site-url: https://computo.sfds.asso.fr/
