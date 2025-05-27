@@ -30,10 +30,6 @@ website:
           href: site/guidelines-reviewers.qmd
         - text: Editors
           href: site/guidelines-editors.qmd
-    - href: site/review.qmd
-      text: Review
-    - href: site/repos.qmd
-      text: Repositories
     - href: site/board.qmd
       text: Staff
     - href: blog/index.qmd
