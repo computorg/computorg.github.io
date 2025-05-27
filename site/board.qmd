@@ -8,90 +8,38 @@ page-layout: article
 
 ---
 
-<div class="container mt-5">
-<div class="post">
 
-<h2 id="editors">Editors</h2>
+## Chief Editor
 
-<ul class="post-list">
+- [Julien Chiquet](https://jchiquet.github.io), 
+Statistical learning for life science 
+[![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-3629-3429) *Université Paris-Saclay, AgroParisTech, INRAE, Paris, France*
 
-<li>
-    <p><a class="post-title" href="https://jchiquet.github.io">Julien Chiquet</a> (Chief editor)</p>
-	<p class="post-meta"> Statistical learning for life science </p>
-	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-3629-3429" href="https://orcid.org/0000-0002-3629-3429" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0002-3629-3429</a></div>
-	<small>
-	Université Paris-Saclay, AgroParisTech, INRAE, Paris, France<br />
-	</small>
-</li>
 
-<li>
-    <p><a class="post-title" href="https://cazencott.info/">Chloé-Agathe Azencott</a> (Associate editor)</p>
-	<p class="post-meta"> Machine learning for therapeutic research </p>
-	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-1003-301X" href="https://orcid.org/0000-0003-1003-301X" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0003-1003-301X</a></div>
-	<small>
-	Mines ParisTech, Institut Curie and INSERM, Paris, France<br />
-	</small>
-</li>
+## Associate Editors
 
-<li>
-    <p><a class="post-title" href="https://mathurinm.github.io/">Mathurin Massias</a> (Associate editor)</p>
-	<p class="post-meta">Optimization for Machine Learning</p>
-	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-" href="https://orcid.org/0000-" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0002-8950-0356</a></div>
-	<small>
-	INRIA, OCKHAM, Lyon, France
-	</small>
-</li>
+- [Pierre Neuvial](https://www.math.univ-toulouse.fr/~pneuvial/). Statistics. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-3584-9998). *CNRS, Institut de Mathématiques de Toulouse, Toulouse, France*
 
-<li>
-    <p><a class="post-title" href="https://www.math.univ-toulouse.fr/~pneuvial/">Pierre Neuvial</a> (Associate editor)</p>
-	<p class="post-meta">Statistics</p>
-	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-3584-9998" href="https://orcid.org/0000-0003-3584-9998" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0003-3584-9998</a></div>
-	<small>
-	CNRS, Institut de Mathématiques de Toulouse, Toulouse, France
-	</small>
-</li>
 
-<li>
-    <p><a class="post-title" href="https://nellev.github.io/">Nelle Varoquaux</a> (Associate editor)</p>
-	<p class="post-meta">Machine learning and causal inference for genomics</p>
-	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8748-6546" href="https://orcid.org/0000-0002-8748-6546" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0002-8748-6546</a></div>
-	<small>
-	CNRS, Université Grenoble Alpes, Grenoble, France
-	</small>
-</li>
+- [Nelle Varoquaux](href="https://nellev.github.io/)
+Machine learning and causal inference for genomics [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8748-6546). *CNRS, Université Grenoble Alpes, Grenoble, France*
 
-<li>
-    <p><a class="post-title" href="https://marieetienne.github.io/">Marie-Pierre Etienne</a> (Associate editor)</p>
-	<p class="post-meta">Statistical methods for ecology</p>
-	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-2097-2267" href="https://orcid.org/0000-0002-2097-2267" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0002-2097-2267</a></div>
-	<small>
-	Agrocampus Ouest, Rennes, France
-	</small>
-</li>
+- [Marie-Pierre Etienne](href="https://marieetienne.github.io/)
+Statistical methods for ecology. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-2097-2267). *ENSAI CREST, Rennes, France*
 
-</ul>
+## Technical Support
 
-<h2 id="support">Technical Support</h2>
+- [François-David Collin](href="https://fradav.github.io/) 
+Research Engineer, Biostatistics. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8374-7163). *Institut Montpelliérain Alexander Grothendieck, CNRS, France*
 
-<ul class="post-list">
-<li>
-    <p><a class="post-title" href="https://fradav.github.io/">François-David Collin</a></p>
-	<p class="post-meta">Research Engineer, Biostatistics</p>
-	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8374-7163" href="https://orcid.org/0000-0002-8374-7163" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0002-8374-7163</a></div>
-	<small>
-	Institut Montpelliérain Alexander Grothendieck, CNRS, France
-	</small>
-</li>
+- [Aymeric Stamm](https://astamm.github.io/) 
+Research Engineer, Biostatistics.[![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8725-3654). *Laboratoire de Mathématiques Jean Leray, Nantes› CNRS, France*
 
-<li>
-    <p><a class="post-title" href="https://gdurif.perso.math.cnrs.fr/">Ghislain Durif</a></p>
-	<p class="post-meta">Research Engineer, Biostatistics</p>
-	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0003-2567-1401" href="https://orcid.org/0000-0003-2567-1401" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0003-2567-1401</a></div>
-	<small>
-	ENS Lyon, LBMC, CNRS, France
-	</small>
-</li>
-</ul>
+
+## Community Management
+- [Chloé-Agathe Azencott](https://cazencott.info/) 
+Machine learning for therapeutic research  [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-1003-301X). *Mines ParisTech, Institut Curie and INSERM, Paris, France*
+
 
 <!--
 
@@ -118,5 +66,12 @@ page-layout: article
 </ul>
 -->
 
-</div>
-</div>
+## Former contributors
+
+- [Mathurin Massias](https://mathurinm.github.io/)
+Optimization for Machine Learning. 
+Mathurin greatly contributed to the initial launch of the journal and the technical aspects
+[![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8950-0356).
+
+- [Ghislain Durif](https://gdurif.perso.math.cnrs.fr)
+Research Engineer, Biostatistics. Ghislain contributed to the initial technical architecture decisions. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-2567-1401)
