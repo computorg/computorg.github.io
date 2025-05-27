@@ -21,15 +21,15 @@ Statistical learning for life science
 - [Pierre Neuvial](https://www.math.univ-toulouse.fr/~pneuvial/). Statistics. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-3584-9998). *CNRS, Institut de Mathématiques de Toulouse, Toulouse, France*
 
 
-- [Nelle Varoquaux](href="https://nellev.github.io/)
+- [Nelle Varoquaux](https://nellev.github.io/)
 Machine learning and causal inference for genomics [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8748-6546). *CNRS, Université Grenoble Alpes, Grenoble, France*
 
-- [Marie-Pierre Etienne](href="https://marieetienne.github.io/)
+- [Marie-Pierre Etienne](https://marieetienne.github.io/)
 Statistical methods for ecology. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-2097-2267). *ENSAI CREST, Rennes, France*
 
 ## Technical Support
 
-- [François-David Collin](href="https://fradav.github.io/) 
+- [François-David Collin](https://fradav.github.io/) 
 Research Engineer, Biostatistics. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8374-7163). *Institut Montpelliérain Alexander Grothendieck, CNRS, France*
 
 - [Aymeric Stamm](https://astamm.github.io/) 
