@@ -1,42 +1,70 @@
 ---
-title: Guidelines for reviewers
-description: This are the guidelines
+title: Reviewing for Computo
+description: Guidelines for reviewers
 format:
   html: {}
 page-layout: article
 ---
 
-::: {.callout-note}
-### Overview
+## OpenReview
 
-Computo relies on <a href="https://openreview.net/group?id=Computo">Open Review</a>
-for the review process. The review form is text-based, but Markdown and LaTeX formatting is supported so you can add hyperlinks and use LaTeX to add equations to your review. Reviewers are also required to answer a handful  of rating  scale questions  about the  submission.
+Computo relies on  [OpenReview](https://openreview.net/group?id=Computo) for the review process. OpenReview is designed to support conference-style peer review, and its process requires a few specific steps to ensure proper setup and participation. Please follow the instructions below carefully:
 
-Once a manuscript  is accepted, reviews and discussion will be made available
-on the Computo website. Reviewers  can choose to remain anonymous or
-not.
+1. **Accepting the Review Invitation.** Once you are invited to review a paper, you will receive an email from OpenReview. This email includes a link to an openreview page to accept the review.
+
+- Click the blue "Accept" button to begin the review process.
+- Ensure that the email address used for the invitation is associated with your OpenReview account:
+
+    - If you already have an OpenReview account: Make sure that the email used in the invitation is listed among the email addresses in your profile.
+    - If you do not have an OpenReview account: You must create an account using the exact email address to which the invitation was sent.
+
+This step is essential for linking the invitation to your account.
+
+2. **Confirming Your Commitment.** After accepting the invitation and logging in:
+
+- In your [OpenReview tasks](https://openreview.net/tasks), you must acknowledge your commitment to complete the review by the designated deadline. 
+
+::: {.callout-tip}
+### Additional tips
+
+- If you do not see the invitation email, please check your spam/junk folder.
+- If you encounter any technical issues or need to update your email, contact us.
 :::
+
+
 
 ## Guidelines for evaluation
 
+::: {.callout-important}
+Once a manuscript is accepted, reviews and discussion will be made available on the Computo website. Reviewers can choose to remain anonymous or
+not.
+:::
+
 In order to help you in performing your review we provide a list of the main questions we are trying to answer when evaluating a submission:
 
-1. Is the paper within the scope of Computo?
+1. **Is the paper within the scope of Computo?**
 
     See [Aims and Scope]({{ site.baseurl }} /about) of Computo.
 
-2. Is the paper clearly written?
+2. **Is the paper clearly written?**
 
-    Computo is intended for computational scientists in statistics/machine learning. The Abstract and Introduction should be as nontechnical as possible, and provide a clear description of the contributions of the paper. Strength and limitations of the work should be adequately discussed, in particular in relation to related work. Graphs and tables should be well thought out and uncluttered.
+    Computo is intended for computational scientists in statistics/machine learning. The Abstract and Introduction should be as nontechnical as possible, and provide a clear description of the contributions of the paper. Strengths and limitations of the work should be adequately discussed, in particular in relation to related works. Graphs and tables should be well thought out and uncluttered.
 
-3. Is the paper correct?
+3. **Is the paper correct?**
 
     Mathematical and algorithmic validity are the authors' professional responsibility. Referees can spot errors of reasoning, but are not expected to perform line-by-line checks of technical results.
 
-4. Is the paper adequately evaluated?
+4. **Is the paper adequately evaluated?**
 
     Are all claims clearly articulated and supported either by empirical experiments or theoretical analyses? If appropriate, have the authors implemented their work and demonstrated its utility on a significant problem?
 
-5. Is the paper reproducible?
+5. **Is the paper reproducible?**
 
     The reproducibility of numerical results is a necessary condition for publication in Computo. The referees are expected to check whether they can run the code provided by the authors to reproduce their results. In case of major reproducibility issues, the referees should warn the Associate Editor as soon as possible.
+
+::: {.callout-tip}
+### Markdown and LaTeX formatting
+
+The review form is text-based, but Markdown and LaTeX formatting is supported so you can add hyperlinks and use LaTeX to add equations to your review. Reviewers are also required to answer a handful  of rating  scale questions  about the  submission.
+:::
+
