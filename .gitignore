@@ -14,3 +14,4 @@ vendor
 .Rproj.user
 
 .fake
+.env-secret
