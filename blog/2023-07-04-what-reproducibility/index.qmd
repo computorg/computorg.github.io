@@ -3,7 +3,7 @@ title: What is expected exactly in terms of reproducibility?
 date: '2023-07-04'
 description: Discuss the different kinds of reproducibility at play in Computo, and
   what is expected from the authors.
-tags:
+categories:
 - reproducibility
 format:
   html:
