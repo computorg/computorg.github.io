@@ -2,10 +2,20 @@
 title: "Articles"
 description: "Publications by years in reversed chronological order"
 listing:
-  contents: published.yml
-  sort: date desc
-  id: published
-  type: table
+  - id: published
+    template: publications.ejs
+    contents: published.yml
+    sort: date desc
+  - id: pipeline
+    template: publications.ejs
+    contents: pipeline.yml
+    sort: date desc
+    type: table
+  - id: examples
+    template: publications.ejs
+    contents: mock-papers.yml
+    sort: date desc
+    type: table
 ---
 
 ## Published Articles

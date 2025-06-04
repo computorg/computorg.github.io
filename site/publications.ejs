@@ -1,40 +1,141 @@
-:::{
-<% for (const item of items) { %>
-  <% if (item.type === 'article') { %>
-:::{ .article-card }
-# [<%= item.title %>](<%= item.url %>)
-**Authors:** <%= item.authors.join(', ') %>
+```{=html}
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-**Abstract:** <%= item.abstract %>
-
-**Journal and Year:** <%= item.journal %>, <%= item.year %>
-  <% if (item.pdf) { %>
-        [PDF](<%= item.pdf %>) |
+<div class="container-fluid">
+<%
+// Group items by year
+let currentYear = null;
+for (const item of items) {
+  if (item.year !== currentYear) {
+    if (currentYear !== null) { %>
+</div> <!-- End previous year section -->
+    <% } %>
+    <h2 class="mt-5 mb-3 text-primary"><%= item.year %></h2>
+    <div class="row year-section">
+    <% currentYear = item.year;
+  } %>
+      <div class="col-12 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-md-2">
+                <a href="https://github.com/computorg/<%- item.repo %>" target="_blank">
+                  <img src="https://img.shields.io/github/actions/workflow/status/computorg/<%- item.repo %>/build.yml?label=build&logo=github" class="img-fluid" alt="Build Status">
+                </a>
+              </div>
+              <div class="col-md-10">
+                <h5 class="card-title mb-2">
+                  <a href="<%= item.url %>" data-toggle="modal" data-target="#articleModal" class="text-decoration-none"><%= item.title %></a>
+                </h5>
+                <% if (item.authors) { %>
+                <p class="text-muted mb-2"><%= item.authors %></p>
+                <% } %>
+                <p class="text-muted mb-3"><em>Computo</em>, <%= item.year %>.</p>
+                <div class="btn-group" role="group" aria-label="Article actions">
+                  <% if (item["abstract'"] && item["abstract'"].trim()) { %>
+                  <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#abstractModal" data-abstract="<%- item["abstract'"].replace(/"/g, '&quot;') %>" data-title="<%- item.title.replace(/"/g, '&quot;') %>">ABS</button>
+                  <% } %>
+                  <a href="<%= item.url %>" class="btn btn-outline-secondary btn-sm" target="_blank">HTML</a>
+                  <% if (item.pdf && item.pdf.trim()) { %>
+                  <a href="<%= item.pdf %>" class="btn btn-outline-secondary btn-sm" target="_blank">PDF</a>
+                  <% } %>
+                  <a href="https://github.com/computorg/<%- item.repo %>" class="btn btn-outline-secondary btn-sm" target="_blank">GIT REPO</a>
+                  <button type="button" class="btn btn-outline-secondary btn-sm" onclick="generateBibTex('<%- item.title.replace(/'/g, "\\'") %>', '<%- item.authors.replace(/'/g, "\\'") %>', '<%= item.year %>', '<%= item.url %>')">BIB</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 <% } %>
-      [Repository](<%= item.url %>)
-:::
-  <% } else if (item.type === 'book') { %>
-    :::{ .book-card }
-    # [<%= item.title %>](<%= item.url %>)
-    **Authors:** <%= item.authors.join(', ') %>
-
-    **Publisher and Year:** <%= item.publisher %>, <%= item.year %>
-      <% if (item.pdf) { %>
-        [PDF](<%= item.pdf %>) |
-      <% } %>
-      [Repository](<%= item.url %>)
-    :::
-  <% } else if (item.type === 'conference') { %>
-    :::{ .conference-card }
-    # [<%= item.title %>](<%= item.url %>)
-    **Authors:** <%= item.authors.join(', ') %>
-
-    **Conference and Year:** <%= item.conference %>, <%= item.year %>
-      <% if (item.pdf) { %>
-        [PDF](<%= item.pdf %>) |
-      <% } %>
-      [Repository](<%= item.url %>)
-    :::
-  <% } %>
+<% if (currentYear !== null) { %>
+</div> <!-- End last year section -->
 <% } %>
-:::
+</div> <!-- End container -->
+
+<!-- Modal -->
+<div class="modal fade" id="articleModal" tabindex="-1" role="dialog" aria-labelledby="articleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="articleModalLabel">Article</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe id="iframe_article" width="100%" height="500px"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Abstract Modal -->
+<div class="modal fade" id="abstractModal" tabindex="-1" role="dialog" aria-labelledby="abstractModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="abstractModalLabel">Abstract</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6 id="abstractTitle" class="font-weight-bold mb-3"></h6>
+        <p id="abstractContent"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+  $('#articleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget); // Button that triggered the modal
+    var url = button.attr('href'); // Extract info from data-* attributes
+    $('#iframe_article').attr('src', url);
+  });
+
+  $('#articleModal').on('hidden.bs.modal', function () {
+    $('#iframe_article').attr('src', '');
+  });
+
+  $('#abstractModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget); // Button that triggered the modal
+    var abstract = button.data('abstract'); // Extract abstract from data-* attributes
+    var title = button.data('title'); // Extract title from data-* attributes
+    
+    $('#abstractTitle').text(title);
+    $('#abstractContent').text(abstract);
+  });
+
+  function generateBibTex(title, authors, year, url) {
+    // Generate a simple BibTeX key from the first author's last name and year
+    var firstAuthor = authors.split(' and ')[0].split(' ').pop().toLowerCase();
+    var bibKey = firstAuthor + year;
+    
+    var bibTeX = '@article{' + bibKey + ',\n' +
+      '  title={' + title + '},\n' +
+      '  author={' + authors + '},\n' +
+      '  journal={Computo},\n' +
+      '  year={' + year + '},\n' +
+      '  url={' + url + '}\n' +
+      '}';
+
+    // Create a temporary textarea to copy the BibTeX to clipboard
+    var textArea = document.createElement('textarea');
+    textArea.value = bibTeX;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    
+    // Show a temporary alert
+    alert('BibTeX citation copied to clipboard!');
+  }
+</script>
+```

@@ -19,11 +19,12 @@
   authors: Félix Laplante and Christophe Ambroise
   date: 2024-12-13
   description: Scalable Spectral Clustering Based on Vector Quantization
+  draft: false
   journal: Computo
   pdf: ''
   repo: published-202412-ambroise-spectral
   title: Spectral Bridges
-  url: https://github.com/computorg/published-202412-ambroise-spectral
+  url: https://computo.sfds.asso.fr/published-202412-ambroise-spectral/
   year: 2024
 - abstract': >-
     The `R` Package `IBMPopSim` facilitates the simulation of
@@ -45,6 +46,7 @@
   date: 2024-12-01
   description: >
     This document provides a full description of the Stochastic Individual-Based Models (IBMs) that can be implemented in the IBMPopSim package. A unified mathematical and simulation framework is given, with a detailed description of the simulation algorithm. Examples of applications for the package are also provided, showing the performance and flexibility of IBMPopSim. 
+  draft: false
   journal: Computo
   pdf: ''
   repo: published-202412-giorgi-efficient
@@ -73,6 +75,7 @@
   date: 2024-07-18
   description: >
     Conformal Inference (CI) is a popular approach for generating finite sample prediction intervals based on the output of any point prediction method when data are exchangeable. Adaptive Conformal Inference (ACI) algorithms extend CI to the case of sequentially observed data, such as time series, and exhibit strong theoretical guarantees without having to assume exchangeability of the observed data. The common thread that unites algorithms in the ACI family is that they adaptively adjust the width of the generated prediction intervals in response to the observed data. We provide a detailed description of five ACI algorithms and their theoretical guarantees, and test their performance in simulation studies. We then present a case study of producing prediction intervals for influenza incidence in the United States based on black-box point forecasts. Implementations of all the algorithms are released as an open-source `R` package, `AdaptiveConformal`, which also includes tools for visualizing and summarizing conformal prediction intervals.
+  draft: false
   journal: Computo
   pdf: ''
   repo: published-202407-susmann-adaptive-conformal
@@ -112,6 +115,7 @@
   authors: Juliette Legrand, François Pimont, Jean-Luc Dupuy and Thomas Opitz
   date: 2024-07-12
   description: ''
+  draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202407-legrand-wildfires/published-202407-legrand-wildfires.pdf
   repo: published-202407-legrand-wildfires
@@ -142,6 +146,7 @@
   authors: Liudmila Pishchagina, Guillem Rigaill and Vincent Runge
   date: 2024-07-12
   description: ''
+  draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202406-pishchagina-change-point/published-202406-pishchagina-change-point.pdf
   repo: published-202406-pishchagina-change-point
@@ -169,6 +174,7 @@
     Sources of error can arise from the workers' skills, but also from the intrinsic difficulty of the task.
 
     We introduce `peerannot`, a Python library for managing and learning from crowdsourced labels of image classification tasks.
+  draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202402-lefort-peerannot/published-202402-lefort-peerannot.pdf
   repo: published-202402-lefort-peerannot
@@ -195,6 +201,7 @@
   date: 2024-03-11
   description: >
     This document provides a dimension-reduction strategy in order to improve the performance of importance sampling in high dimensions.
+  draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202402-elmasri-optimal/published-202312-elmasri-optimal.pdf
   repo: published-202402-elmasri-optimal
@@ -212,6 +219,7 @@
   authors: Hamza Adrat and Laurent Decreusefond
   date: 2024-01-25
   description: ''
+  draft: false
   journal: Computo
   pdf: ''
   repo: published_202401_adrat_repulsion/
@@ -264,6 +272,7 @@
   authors: Armand Favrot and David Makowski
   date: 2024-01-09
   description: ''
+  draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202312-favrot-hierarchical/published-202312-favrot-hierarchical.pdf
   repo: published-202312-favrot-hierarchical
@@ -297,6 +306,7 @@
   authors: Alice Cleynen, Louis Raynal and Jean-Michel Marin
   date: 2023-12-14
   description: ''
+  draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202312-cleynen-local/published-202312-cleynen-local.pdf
   repo: published-202312-cleynen-local
@@ -327,6 +337,7 @@
   authors: Maud Delattre and Estelle Kuhn
   date: 2023-11-21
   description: ''
+  draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202311-delattre-fim/published-202311-delattre-fim.pdf
   repo: published-202311-delattre-fim
@@ -359,6 +370,7 @@
   authors: Edmond Sanou, Christophe Ambroise and Geneviève Robin
   date: 2023-06-28
   description: ''
+  draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202306-sanou-multiscale_glasso/published-202306-sanou-multiscale_glasso.pdf
   repo: published-202306-sanou-multiscale_glasso
@@ -388,6 +400,7 @@
   authors: Mathis Chagneux, Sylvain Le Corff, Pierre Gloaguen, Charles Ollion, Océane Lepâtre and Antoine Bruge
   date: 2023-02-16
   description: ''
+  draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202301-chagneux-macrolitter/published-202301-chagneux-macrolitter.pdf
   repo: published-202301-chagneux-macrolitter
@@ -411,6 +424,7 @@
   date: 2023-01-12
   description: >
     The package $\textsf{clayton}$ is designed to be intuitive, user-friendly, and efficient. It offers a wide range of copula models, including Archimedean, Elliptical, and Extreme. The package is implemented in pure $\textsf{Python}$, making it easy to install and use.
+  draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202301-boulin-clayton/published-202301-boulin-clayton.pdf
   repo: published-202301-boulin-clayton
@@ -446,6 +460,7 @@
   authors: Olivier Gimenez, Maëlis Kervellec, Jean-Baptiste Fanjul, Anna Chaine, Lucile Marescot, Yoann Bollet and Christophe Duchamp
   date: 2022-04-22
   description: ''
+  draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202204-deeplearning-occupancy-lynx/published-202204-gimenez-lynx.pdf
   repo: published-202204-deeplearning-occupancy-lynx

@@ -12,7 +12,12 @@ open System.IO
 open DotNetEnv
 open FSharp.Data
 open DrBiber
+open System.Threading.Tasks
 
+// exit if QUARTO_PROJECT_RENDER_ALL is set in the environment
+if System.Environment.GetEnvironmentVariable("QUARTO_PROJECT_RENDER_ALL") = null then
+    printfn "QUARTO_PROJECT_RENDER_ALL is not set, exiting."
+    exit 0
 // Load environment variables from .env file
 Env.Load(".env-secret")
 
@@ -60,9 +65,19 @@ let getAuthors (d: Dictionary<obj, obj>) =
         | last :: list -> (String.concat ", " (list |> Seq.ofList |> Seq.rev)) + " and " + last
         | [] -> ""
 
+
+type RepoBaseError = Repo of string
+
+type RepoError =
+    | NoQmdFound of RepoBaseError
+    | NoContentFound of RepoBaseError
+    | NoFrontMatterFound of RepoBaseError
+    | BogusFrontMatter of RepoBaseError
+
 let redirectStringRe = Regex(@"URL='(.*)'")
 
 let getAbstract (page: string) =
+
     let htmlFirst = HtmlDocument.Load(page)
 
     let html =
@@ -77,7 +92,9 @@ let getAbstract (page: string) =
             |> fun a -> a.Value()
             |> redirectStringRe.Match
             |> fun m -> m.Groups[1].Value
-            |> fun p -> HtmlDocument.Load(page + p))
+            |> fun p ->
+                printfn "new url to fetch %s" (page + p)
+                HtmlDocument.Load(page + p))
         |> Option.defaultValue htmlFirst
 
     try
@@ -142,14 +159,16 @@ let extractCitation (d: Dictionary<obj, obj>) =
        abstract' = d |> getAbstractFromDict
        repo = d |> getSomeString "repo"
        pdf = d |> getAnotherThing "citation" |> getSomeString "pdf-url"
-       url = d |> getAnotherThing "citation" |> getSomeString "url" |}
+       url = d |> getAnotherThing "citation" |> getSomeString "url"
+       draft = d |> getSomeString "draft" |}
 
 let getPublishedRepoContent (repo: Repository) =
     task {
         let repoName = repo.Name
         let owner = repo.Owner.Login
         // get the list of files in the repo
-        let! repoContents = client.Repository.Content.GetAllContents(owner, repoName, "/")
+        let! (repoContents: IReadOnlyList<RepositoryContent>) =
+            client.Repository.Content.GetAllContents(owner, repoName, "/")
 
         let fileQmd =
             repoContents
@@ -158,10 +177,24 @@ let getPublishedRepoContent (repo: Repository) =
                 && f.Path.EndsWith(".qmd")
                 && not (f.Path.Contains("-supp")))
             |> Seq.tryHead
-            |> Option.map (fun f -> f.Path)
+            |> Option.map _.Path
             |> function
                 | Some path -> Ok path
                 | None -> Error "No .qmd file found"
+
+        let fileQuartoYML =
+            repoContents
+            |> Seq.filter (fun f -> f.Type.Value.ToString() = ContentType.File.ToString() && f.Path = "_quarto.yml")
+            |> Seq.tryHead
+            |> Option.map _.Path
+
+        let! quartoYMLMatch =
+            match fileQuartoYML with
+            | Some path -> client.Repository.Content.GetAllContents(owner, repoName, path)
+            | _ -> Task.FromResult([])
+
+        let mainQuartoYML =
+            quartoYMLMatch |> Seq.tryHead |> Option.map _.Content |> Option.defaultValue ""
 
         match fileQmd with
         | Ok path ->
@@ -175,7 +208,8 @@ let getPublishedRepoContent (repo: Repository) =
                     | _ -> Result.Error "No content found"
                 |> Result.map (_.Content >> _.Split("---\n"))
                 |> Result.bind (function
-                    | f when Array.length f > 1 -> Ok f[1]
+                    | f when Array.length f > 1 -> Ok(mainQuartoYML + "\n" + f[1])
+                    | _ when mainQuartoYML.Length > 0 -> Ok mainQuartoYML
                     | _ -> Error $"No front matter found for repo {repoName}")
                 |> Result.bind (fun f ->
                     try
@@ -188,35 +222,76 @@ let getPublishedRepoContent (repo: Repository) =
         | Error e -> return Error e
     }
 
-let publishedFrontMatters =
+let getReposContents filter repos =
     repos
     |> List.ofSeq
-    |> List.filter (fun (r: Repository) -> r.Name |> publishedRe.IsMatch)
+    |> List.filter filter
     |> List.map (getPublishedRepoContent >> Async.AwaitTask)
     |> Async.Parallel
     |> Async.RunSynchronously
     |> Array.toList
 
-let serializer = SerializerBuilder().Build()
 
-publishedFrontMatters
-|> List.map (function
-    | Ok d -> Result.Ok d
-    | Error e -> Error $"Error getting front matter: {e}")
-|> List.map (
-    Result.bind (fun d ->
+let publishedFrontMatters: Result<Dictionary<obj, obj>, string> list =
+    repos |> getReposContents (fun r -> r.Name |> publishedRe.IsMatch)
+
+let getCitationStructure (d: Result<Dictionary<obj, obj>, string>) =
+    d
+    |> Result.mapError (fun e -> $"Error getting citation structure: {e}")
+    |> Result.bind (fun d ->
         try
-            d |> extractCitation |> Result.Ok
+            d |> extractCitation |> Ok
         with e ->
             let repoName = d["repo"] :?> string
-            Result.Error $"Error getting citation structure for {repoName} : {e.Message}")
-)
+            Error $"Error getting citation structure for {repoName} : {e.Message}")
+
+let serializer = SerializerBuilder().Build()
+
+let publishedYML =
+    publishedFrontMatters
+    |> List.map getCitationStructure
+    |> List.choose (function
+        | Ok d -> Some d
+        | Error e ->
+            printfn "Error: %s" e
+            None)
+    |> List.sortBy _.date
+    |> List.rev
+    |> List.partition (fun d -> d.draft = "true")
+
+publishedYML
+|> snd
+|> serializer.Serialize
+|> (fun n -> File.WriteAllText(Path.Combine(__SOURCE_DIRECTORY__, "site", "published.yml"), n))
+
+publishedYML
+|> fst
+|> serializer.Serialize
+|> (fun n -> File.WriteAllText(Path.Combine(__SOURCE_DIRECTORY__, "site", "pipeline.yml"), n))
+
+repos
+|> getReposContents (fun r -> r.Name.StartsWith("published-paper"))
+|> List.map getCitationStructure
 |> List.choose (function
     | Ok d -> Some d
     | Error e ->
         printfn "Error: %s" e
         None)
-|> List.sortBy _.date
-|> List.rev
 |> serializer.Serialize
-|> (fun n -> File.WriteAllText(Path.Combine(__SOURCE_DIRECTORY__, "site", "published.yml"), n))
+|> (fun n -> File.WriteAllText(Path.Combine(__SOURCE_DIRECTORY__, "site", "mock-papers.yml"), n))
+
+// let mockpapers =
+//     repos
+//     |> getReposContents (fun r -> r.Name.StartsWith("published-paper"))
+
+// mockpapers
+// |> Seq.last
+// |> function | Ok d -> getAbstractFromDict d |> printfn "%A" | Error e -> printfn "Error: %s" e
+//     // |> List.map getCitationStructure
+//     // |> List.choose (function
+//     //     | Ok d -> Some d
+//     //     | Error e ->
+//     //         printfn "Error: %s" e
+//     //         None)
+//     // |> serializer.Serialize
+//     // |> (fun n -> File.WriteAllText(Path.Combine(__SOURCE_DIRECTORY__, "site", "mock-papers.yml"), n))
