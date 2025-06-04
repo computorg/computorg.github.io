@@ -5,31 +5,31 @@ description: <h1>COMPUTO</h1> A journal of the <a href="https://sfds.asso.fr/">F
 listing:
   contents: news.yml
   sort: date desc
+  page-size: 5
   fields:
   - date
   - description
-  feed: true
+  feed:
+    items: 5
 ---
 
-:::: {layout="[ 40, 60 ]"}
+:::: {layout="[30,70]" style="display: flex; margin-bottom: 3em;"}
 
-![Computo Logo](/assets/img/logo_text_vertical.svg){ height="200px" }
+::: {.column style="display: flex; align-items: center;"}
+![](/assets/img/logo_text_vertical.svg){ height="150px" }
+:::
 
-:::{}
-# Computo
-A french journal of the
+::: {.column style="display: flex; margin-top: auto;"}
+**COMPUTO** A journal of the <a href="https://sfds.asso.fr/">French Statistical Society <img height="10px" src="assets/img/sfds.png" alt="SFdS"/></a> - ISSN 2824-7795
 
-[French Statistical Society](https://sfds.asso.fr/)
+<div style="text-align: justify; font-size: 95%;">
 
-![](/assets/img/sfds.png){ height="15px" } - ISSN 2824-7795
+This journal aims at promoting computational/algorithmic contributions in statistics and machine learning that provide insight into which models or methods are more appropriate to address a specific scientific question. In order to achieve this goal, Computo goes beyond classical static publications by leveraging technical advances in literate programming and scientific reporting.
+</div>
 :::
 
 ::::
 
-This journal aims at promoting computational/algorithmic contributions in statistics and machine learning that provide insight into which models or methods are more appropriate to address a specific scientific question. In order to achieve this goal, Computo goes beyond classical static publications by leveraging technical advances in literate programming and scientific reporting.
-
-[More details about our philosophy](about).
-
-## News 
+## News
 ::: {#news}
 :::

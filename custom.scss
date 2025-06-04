@@ -101,3 +101,20 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h2.text-primary {
   color: inherit !important;
 }
+// h1, h2, h3, h4, h5, h6 {
+//   text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
+// }
+
+div.quarto-post {
+    display: block;
+}
+
+.navbar-logo {
+    max-height: 35px;
+    width: auto;
+    padding-right: 10px;
+}
+
+p {
+    text-align: justify;
+}

@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: _site
-  pre-render: dotnet fsi getcomputo-pub.fsx
+#  pre-render: dotnet fsi getcomputo-pub.fsx
 website:
   title: COMPUTO
   site-url: https://computo.sfds.asso.fr/
@@ -21,10 +21,15 @@ website:
       text: Articles
     - href: site/submit.qmd
       text: Submit
-    - href: site/review.qmd
-      text: Review
-    - href: site/repos.qmd
-      text: Repositories
+    - text: "Guidelines"
+      menu:
+        - text: General
+        - text: Authors
+          href: site/guidelines-authors.qmd
+        - text: Reviewers
+          href: site/guidelines-reviewers.qmd
+        - text: Editors
+          href: site/guidelines-editors.qmd
     - href: site/board.qmd
       text: Staff
     - href: blog/index.qmd

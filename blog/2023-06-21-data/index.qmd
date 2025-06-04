@@ -3,7 +3,7 @@ title: I have large or sensible data. How should I proceed?
 date: '2023-06-21'
 description: Describe how to handle large or sensible data files when submitting to
   Computo
-tags:
+categories:
 - reproducibility
 format:
   html:
