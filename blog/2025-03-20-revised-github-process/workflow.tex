@@ -1,6 +1,13 @@
 \documentclass[tikz,dvisvgm,border=10pt]{standalone}
 \usetikzlibrary{shapes.geometric,shapes.symbols,shapes.callouts,shapes.multipart,shapes.misc,arrows,positioning,fit,backgrounds,shadows}
 
+\usepackage{fontspec}
+
+\newfontfamily\oswald[Scale=1.0]{Oswald}
+% \newfontfamily\small[Scale=0.6]{Oswald}
+\setmainfont{oswald}
+
+\tikzset{every node/.append style={font=\oswald}}
 \begin{document}
 \begin{tikzpicture}[
     % Define styles for nodes with enhanced colors
