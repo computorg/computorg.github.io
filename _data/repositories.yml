@@ -1,9 +1,0 @@
-github_users:
-  - computorg
-
-github_repos:
-  - computorg/template-computo-R
-  - computorg/template-computo-python
-  - computorg/template-computo-julia
-  - computorg/computo-quarto-extension
-  - computorg/published-paper-tsne
