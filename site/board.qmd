@@ -33,7 +33,7 @@ Statistical methods for ecology. [![ORCID](https://orcid.org/sites/default/files
 Research Engineer, Biostatistics. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8374-7163). *Institut Montpelliérain Alexander Grothendieck, CNRS, France*
 
 - [Aymeric Stamm](https://astamm.github.io/) 
-Research Engineer, Biostatistics.[![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8725-3654). *Laboratoire de Mathématiques Jean Leray, Nantes› CNRS, France*
+Research Engineer, Statistics.[![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8725-3654). *Laboratoire de Mathématiques Jean Leray, Nantes› CNRS, France*
 
 
 ## Community Management
