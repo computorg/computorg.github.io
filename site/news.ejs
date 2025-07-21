@@ -1,0 +1,20 @@
+```{=html}
+<%
+// Only show articles from this year (2025) and not drafts
+const currentYear = new Date().getFullYear();
+for (const item of items) {
+  if (!item.draft && item.year == currentYear) { %>
+    <a href="/site/publications.html#<%= item.repo %>" class="list-group-item list-group-item-action">
+      <strong><%= item.date %></strong> — 
+      <%= item.title %>
+      <% if (item.authors) { %>
+        by <%= item.authors %>
+      <% } %>
+      <!-- <% if (item.url && item.url.trim()) { %>
+        [<a href="<%= item.url %>" target="_blank">link</a>]
+      <% } %> -->
+    </a>
+<%  }
+} %>
+```
+

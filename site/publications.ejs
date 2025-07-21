@@ -15,13 +15,14 @@ for (const item of items) {
     <div class="row year-section">
     <% currentYear = item.year;
   } %>
+      <a id="<%= item.repo %>" class="publication-anchor"></a>
       <div class="col-12 mb-3">
         <div class="card">
           <div class="card-body">
-            <div class="row align-items-center border-left border-primary">
+            <div class="row align-items-center">
               <div class="col-md-2">
                 <a href="https://github.com/computorg/<%- item.repo %>" target="_blank">
-                  <img style="width:100px;" src=https://img.shields.io/github/actions/workflow/status/computorg/<%- item.repo %>/build.yml?label=build&logo=github" class="img-fluid" alt="Build Status">
+                  <img src="https://img.shields.io/github/actions/workflow/status/computorg/<%- item.repo %>/build.yml?label=build&logo=github" class="img-fluid" alt="Build Status">
                 </a>
               </div>
               <div class="col-md-10">
@@ -137,5 +138,27 @@ for (const item of items) {
     // Show a temporary alert
     alert('BibTeX citation copied to clipboard!');
   }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.hash) {
+      var el = document.getElementById(window.location.hash.substring(1));
+      if (el) {
+        el.scrollIntoView({ behavior: "auto", block: "center" });
+      }
+    }
+  });
+document.addEventListener("DOMContentLoaded", function() {
+  function scrollToAnchor() {
+    if (window.location.hash) {
+      var el = document.getElementById(window.location.hash.substring(1));
+      if (el) {
+        el.scrollIntoView({ behavior: "auto", block: "center" });
+      }
+    }
+  }
+  // Try immediately, then again after a short delay (for mobile/layout shifts)
+  scrollToAnchor();
+  setTimeout(scrollToAnchor, 400);
+});
 </script>
 ```

@@ -118,3 +118,35 @@ div.quarto-post {
 p {
     text-align: justify;
 }
+
+// Ensure anchor scrolling works inside grid/flex containers
+.publication-anchor, a[id] {
+  scroll-margin-top: 80px; // Adjust to your header height
+}
+
+@media (max-width: 600px) {
+  a[id], .publication-anchor {
+    scroll-margin-top: 120px; // or more, adjust to your mobile header height
+  }
+}
+
+.nav-footer-center {
+  height: 0px;
+  max-height: 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-footer-left {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-footer-center {
+    display: none; // Hide left footer on small screens
+  }
+  
+}

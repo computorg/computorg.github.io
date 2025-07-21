@@ -48,6 +48,7 @@ website:
       href: site/various/privacy.qmd
     - text: Terms of Use
       href: site/various/terms.qmd
+    center: ""
 format:
   html:
     theme:
