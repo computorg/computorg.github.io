@@ -23,6 +23,7 @@
   date: 2008-08-11
   description: >
     This page is a reworking of the original t-SNE article using the Computo template. It aims to help authors submitting to the journal by using some advanced formatting features. We warmly thank the authors of t-SNE and the editor of JMLR for allowing us to use their work to illustrate the Computo spirit.
+  doi: ''
   draft: false
   journal: Computo
   pdf: ''
@@ -55,6 +56,7 @@
   date: 2008-08-11
   description: >
     This page is a reworking of the original t-SNE article using the Computo template. It aims to help authors submitting to the journal by using some advanced formatting features. We warmly thank the authors of t-SNE and the editor of JMLR for allowing us to use their work to illustrate the Computo spirit.
+  doi: ''
   draft: false
   journal: Computo
   pdf: ''
