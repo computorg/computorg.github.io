@@ -1,13 +1,13 @@
 ---
-  title: 'OpenReview: how does the peer review of a Computo paper work?'
-  date: '2025-07-22'
+title: 'OpenReview: how does the peer review of a Computo paper work?'
+date: '2025-07-22'
 description: Describe the review process using OpenReview
 categories:
 - authors
 - reviewers
 format:
   html:
-  toc: true
+    toc: true
 page-layout: article
 ---
 
