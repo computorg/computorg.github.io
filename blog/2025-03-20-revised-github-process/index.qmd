@@ -37,7 +37,7 @@ jobs:
 
 Second, in your `Settings > Pages` on your repository, select the **GitHub Actions** as the source of your website.
 
-![Deploy your website with GitHub Actions](depoy-github.png){:width="100%"}
+![Deploy your website with GitHub Actions](depoy-github.png){width="100%"}
 
 Then, you can customize the `setup-env-ci.sh` and `setup-render-ci.sh` scripts to fit your needs.
 - `setup-env-ci.sh` is for setting up the environment and typically adding system dependencies. The virtual machine on github (runner) may need to install some packages with `apt-get` for R or Python packages.
@@ -53,7 +53,7 @@ The Computo workflows provide a streamlined publishing pipeline for authors to s
 
 ## Workflow Summary
 
-![Computo Workflow Structure](workflow.svg){:width="100%"}
+![Computo Workflow Structure](workflow.svg){width="100%"}
 
 The publication process consists of two main phases:
 
