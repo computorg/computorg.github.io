@@ -3,6 +3,7 @@ title: My data analysis takes several hours/days/weeks... How to address the iss
 date: '2023-06-21'
 description: Discuss the reproducibility for long-running code
 categories:
+- authors
 - reproducibility
 format:
   html:

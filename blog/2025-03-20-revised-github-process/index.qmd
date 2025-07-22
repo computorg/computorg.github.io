@@ -4,6 +4,7 @@ date: '2025-03-20'
 description: Describe how to render your article, activate your gh-page and publish
   your contribution online
 categories:
+- authors
 - reproducibility
 format:
   html:

@@ -4,6 +4,7 @@ title: 'I use a different language than Python, R or Julia: would Computo accept
 date: '2023-03-24'
 description: Describe how to handle other languages than R, Julia or Python
 categories:
+- authors
 - reproducibility
 - code
 format:
