@@ -7,6 +7,7 @@
 // Group items by year
 let currentYear = null;
 for (const item of items) {
+  let doiurl = item.url === "" ? "https://doi.org/" + item.doi : item.url;
   if (item.year !== currentYear) {
     if (currentYear !== null) { %>
 </div> <!-- End previous year section -->
@@ -15,33 +16,34 @@ for (const item of items) {
     <div class="row year-section">
     <% currentYear = item.year;
   } %>
-      <div class="col-12 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <div class="row align-items-center border-left border-primary">
-              <div class="col-md-2">
-                <a href="https://github.com/computorg/<%- item.repo %>" target="_blank">
-                  <img style="width:100px;" src=https://img.shields.io/github/actions/workflow/status/computorg/<%- item.repo %>/build.yml?label=build&logo=github" class="img-fluid" alt="Build Status">
+      <a id="<%= item.repo %>" class="publication-anchor"></a>
+      <div class="col-12 mb-2">
+        <div class="card border-0" style="padding: 0.25rem 0.5rem; background: #fff;">
+          <div class="card-body p-1" style="padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;">
+            <div class="row align-items-start"> <!-- align-items-start for top alignment -->
+              <div class="col-md-2 col-3 d-flex flex-column justify-content-start align-items-start p-0 badge-left-align"> <!-- left-aligned, no padding -->
+                <a href="https://github.com/computorg/<%- item.repo %>" target="_blank" style="margin-left:0;">
+                  <img src="https://img.shields.io/github/actions/workflow/status/computorg/<%- item.repo %>/build.yml?label=build&logo=github" class="img-fluid" alt="Build Status" style="vertical-align: top; margin-top: 0; margin-left:-20px; margin-top:5px; display:block;" />
                 </a>
               </div>
-              <div class="col-md-10">
-                <h5 class="card-title mb-2">
-                  <a href="<%= item.url %>" data-toggle="modal" data-target="#articleModal" class="text-decoration-none"><%= item.title %></a>
+              <div class="col-md-10 col-9 pl-1">
+                <h5 class="card-title mb-1" style="font-size:1.1em;">
+                  <a href="<%= doiurl %>" data-toggle="modal" data-target="#articleModal" class="text-decoration-none"><%= item.title %></a>
                 </h5>
                 <% if (item.authors) { %>
-                <p class="text-muted mb-2"><%= item.authors %></p>
+                <p class="text-muted mb-1" style="font-size:0.97em;"><%= item.authors %></p>
                 <% } %>
-                <p class="text-muted mb-3"><em>Computo</em>, <%= item.year %>.</p>
-                <div class="btn-group" role="group" aria-label="Article actions">
-                  <% if (item["abstract'"] && item["abstract'"].trim()) { %>
-                  <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#abstractModal" data-abstract="<%- item["abstract'"].replace(/"/g, '&quot;') %>" data-title="<%- item.title.replace(/"/g, '&quot;') %>">ABS</button>
+                <p class="text-muted mb-2" style="font-size:0.95em;"><em>Computo</em>, <%= item.year %>.</p>
+                <div class="btn-group btn-group-sm" role="group" aria-label="Article actions">
+                  <% if (item["abstract'" ] && item["abstract'"].trim()) { %>
+                  <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#abstractModal" data-abstract="<%- item["abstract'"].replace(/"/g, '&quot;') %>" data-title="<%- item.title.replace(/"/g, '&quot;') %>" style="padding:0.2em 0.6em;">ABS</button>
                   <% } %>
-                  <a href="<%= item.url %>" class="btn btn-outline-secondary btn-sm" target="_blank">HTML</a>
+                  <a href="<%= doiurl %>" class="btn btn-outline-secondary btn-sm" target="_blank" style="padding:0.2em 0.6em;">HTML</a>
                   <% if (item.pdf && item.pdf.trim()) { %>
-                  <a href="<%= item.pdf %>" class="btn btn-outline-secondary btn-sm" target="_blank">PDF</a>
+                  <a href="<%= item.pdf %>" class="btn btn-outline-secondary btn-sm" target="_blank" style="padding:0.2em 0.6em;">PDF</a>
                   <% } %>
-                  <a href="https://github.com/computorg/<%- item.repo %>" class="btn btn-outline-secondary btn-sm" target="_blank">GIT REPO</a>
-                  <button type="button" class="btn btn-outline-secondary btn-sm" onclick="generateBibTex('<%- item.title.replace(/'/g, "\\'") %>', '<%- item.authors.replace(/'/g, "\\'") %>', '<%= item.year %>', '<%= item.url %>')">BIB</button>
+                  <a href="https://github.com/computorg/<%- item.repo %>" class="btn btn-outline-secondary btn-sm" target="_blank" style="padding:0.2em 0.6em;">GIT REPO</a>
+                  <button type="button" class="btn btn-outline-secondary btn-sm" onclick="generateBibTex('<%- item.title.replace(/'/g, "\\'") %>', '<%- item.authors.replace(/'/g, "\\'") %>', '<%= item.year %>', '<%= doiurl %>')" style="padding:0.2em 0.6em;">BIB</button>
                 </div>
               </div>
             </div>
@@ -137,5 +139,27 @@ for (const item of items) {
     // Show a temporary alert
     alert('BibTeX citation copied to clipboard!');
   }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.hash) {
+      var el = document.getElementById(window.location.hash.substring(1));
+      if (el) {
+        el.scrollIntoView({ behavior: "auto", block: "center" });
+      }
+    }
+  });
+document.addEventListener("DOMContentLoaded", function() {
+  function scrollToAnchor() {
+    if (window.location.hash) {
+      var el = document.getElementById(window.location.hash.substring(1));
+      if (el) {
+        el.scrollIntoView({ behavior: "auto", block: "center" });
+      }
+    }
+  }
+  // Try immediately, then again after a short delay (for mobile/layout shifts)
+  scrollToAnchor();
+  setTimeout(scrollToAnchor, 400);
+});
 </script>
 ```

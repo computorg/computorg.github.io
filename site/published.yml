@@ -10,6 +10,7 @@
   authors: Julien Jacques and Thomas Brendan Murphy
   date: 2025-07-01
   description: ''
+  doi: 10.57750/6v7b-8483
   draft: false
   journal: Computo
   pdf: ''
@@ -41,6 +42,7 @@
   authors: Thomas Ferté, Kalidou Ba, Dan Dutartre, Pierrick Legrand, Vianney Jouhet, Rodolphe Thiébaut, Xavier Hinaut and Boris P Hejblum
   date: 2025-06-27
   description: ''
+  doi: 10.57750/arxn-6z34
   draft: false
   journal: Computo
   pdf: ''
@@ -68,6 +70,7 @@
   date: 2025-01-27
   description: >
     This document provides a full description of the Stochastic Individual-Based Models (IBMs) that can be implemented in the IBMPopSim package. A unified mathematical and simulation framework is given, with a detailed description of the simulation algorithm. Examples of applications for the package are also provided, showing the performance and flexibility of IBMPopSim. 
+  doi: 10.57750/sfxn-1t05
   draft: false
   journal: Computo
   pdf: ''
@@ -96,6 +99,7 @@
   authors: Félix Laplante and Christophe Ambroise
   date: 2024-12-13
   description: Scalable Spectral Clustering Based on Vector Quantization
+  doi: 10.57750/1gr8-bk61
   draft: false
   journal: Computo
   pdf: ''
@@ -124,6 +128,7 @@
   authors: Herbert Susmann, Antoine Chambaz and Julie Josse
   date: 2024-07-18
   description: ''
+  doi: 10.57750/edan-5f53
   draft: false
   journal: Computo
   pdf: ''
@@ -164,6 +169,7 @@
   authors: Juliette Legrand, François Pimont, Jean-Luc Dupuy and Thomas Opitz
   date: 2024-07-12
   description: ''
+  doi: 10.57750/4y84-4t68
   draft: false
   journal: Computo
   pdf: ''
@@ -195,6 +201,7 @@
   authors: Liudmila Pishchagina, Guillem Rigaill and Vincent Runge
   date: 2024-07-12
   description: ''
+  doi: 10.57750/9vvx-eq57
   draft: false
   journal: Computo
   pdf: ''
@@ -223,6 +230,7 @@
     Sources of error can arise from the workers' skills, but also from the intrinsic difficulty of the task.
 
     We introduce `peerannot`, a Python library for managing and learning from crowdsourced labels of image classification tasks.
+  doi: 10.57750/qmaz-gr91
   draft: false
   journal: Computo
   pdf: ''
@@ -250,6 +258,7 @@
   date: 2024-03-11
   description: >
     This document provides a dimension-reduction strategy in order to improve the performance of importance sampling in high dimensions.
+  doi: 10.57750/jjza-6j82
   draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202402-elmasri-optimal/published-202312-elmasri-optimal.pdf
@@ -268,6 +277,7 @@
   authors: Hamza Adrat and Laurent Decreusefond
   date: 2024-01-25
   description: ''
+  doi: 10.57750/3r07-aw28
   draft: false
   journal: Computo
   pdf: ''
@@ -321,6 +331,7 @@
   authors: Armand Favrot and David Makowski
   date: 2024-01-09
   description: ''
+  doi: 10.57750/6cgk-g727
   draft: false
   journal: Computo
   pdf: ''
@@ -355,6 +366,7 @@
   authors: Alice Cleynen, Louis Raynal and Jean-Michel Marin
   date: 2023-12-14
   description: ''
+  doi: 10.57750/3j8m-8d57
   draft: false
   journal: Computo
   pdf: ''
@@ -386,6 +398,7 @@
   authors: Maud Delattre and Estelle Kuhn
   date: 2023-11-21
   description: ''
+  doi: 10.57750/r5gx-jk62
   draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202311-delattre-fim/published-202311-delattre-fim.pdf
@@ -419,6 +432,7 @@
   authors: Edmond Sanou, Christophe Ambroise and Geneviève Robin
   date: 2023-06-28
   description: ''
+  doi: 10.57750/1f4p-7955
   draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202306-sanou-multiscale_glasso/published-202306-sanou-multiscale_glasso.pdf
@@ -449,6 +463,7 @@
   authors: Mathis Chagneux, Sylvain Le Corff, Pierre Gloaguen, Charles Ollion, Océane Lepâtre and Antoine Bruge
   date: 2023-02-16
   description: ''
+  doi: 10.57750/845m-f805
   draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202301-chagneux-macrolitter/published-202301-chagneux-macrolitter.pdf
@@ -473,6 +488,7 @@
   date: 2023-01-12
   description: >
     The package $\textsf{clayton}$ is designed to be intuitive, user-friendly, and efficient. It offers a wide range of copula models, including Archimedean, Elliptical, and Extreme. The package is implemented in pure $\textsf{Python}$, making it easy to install and use.
+  doi: 10.57750/4szh-t752
   draft: false
   journal: Computo
   pdf: https://computo.sfds.asso.fr/published-202301-boulin-clayton/published-202301-boulin-clayton.pdf
@@ -509,6 +525,7 @@
   authors: Olivier Gimenez, Maëlis Kervellec, Jean-Baptiste Fanjul, Anna Chaine, Lucile Marescot, Yoann Bollet and Christophe Duchamp
   date: 2022-04-22
   description: ''
+  doi: 10.57750/yfm2-5f45
   draft: false
   journal: Computo
   pdf: ''

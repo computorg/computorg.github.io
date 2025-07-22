@@ -153,6 +153,7 @@ let extractCitation (d: Dictionary<obj, obj>) =
     {| title = d |> getSomeString "title"
        authors = d |> getAuthors
        journal = d |> getAnotherThing "citation" |> getSomeString "container-title"
+       doi = d |> getAnotherThing "citation" |> getSomeString "doi"
        year = dateTime.Year
        date = dateTime.ToString("yyyy-MM-dd")
        description = d |> getSomeString "description"
