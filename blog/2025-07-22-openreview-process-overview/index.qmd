@@ -1,0 +1,24 @@
+---
+  title: 'OpenReview: how does the peer review of a Computo paper work?'
+  date: '2025-07-22'
+description: Describe the review process using OpenReview
+categories:
+- authors
+- reviewers
+format:
+  html:
+  toc: true
+page-layout: article
+---
+
+
+Here is a step-by-step overview of the Computo reviewing process based on   [OpenReview](https://openreview.net/): 
+
+- **Submission**: the authors link to git repository and HTML/PDF version of the manuscript
+- Editorial management: the editorial board decides whether the paper is appropriate for review
+- **Review** (typically 8 weeks): see our [Reviewer guidelines](/guidelines-reviewers)
+- **Rebuttal**: discussion and revision period (6 weeks, but extendable): 
+  -  discussion between authors and reviewers, upon which the reviewers will make their final recommendation.
+  -  if necessary the authors should update their submission
+- **Recommendation** by reviewers: accept/leaning accept/leaning reject/reject
+- **Official decision** by the editor: possible decisions are accept/minor revision/rejection (possibly with invitation to resubmit). There is no "major revision" option.
