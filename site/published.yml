@@ -105,7 +105,7 @@
   pdf: ''
   repo: published-202412-ambroise-spectral
   title: Spectral Bridges
-  url: https://computo.sfds.asso.fr/published-202412-ambroise-spectral/
+  url: ''
   year: 2024
 - abstract': >-
     Conformal Inference (CI) is a popular approach for
@@ -261,10 +261,10 @@
   doi: 10.57750/jjza-6j82
   draft: false
   journal: Computo
-  pdf: https://computo.sfds.asso.fr/published-202402-elmasri-optimal/published-202312-elmasri-optimal.pdf
+  pdf: ''
   repo: published-202402-elmasri-optimal
   title: Optimal projection for parametric importance sampling in high dimensions
-  url: https://computo.sfds.asso.fr/published-202402-elmasri-optimal/
+  url: ''
   year: 2024
 - abstract': >-
     In numerous applications, cloud of points do seem to
@@ -283,7 +283,7 @@
   pdf: ''
   repo: published-202401-adrat-repulsion
   title: Point Process Discrimination According to Repulsion
-  url: https://computo.sfds.asso.fr/published_202401_adrat_repulsion/
+  url: ''
   year: 2024
 - abstract': >-
     In plant epidemiology, pest abundance is measured in field
@@ -401,10 +401,10 @@
   doi: 10.57750/r5gx-jk62
   draft: false
   journal: Computo
-  pdf: https://computo.sfds.asso.fr/published-202311-delattre-fim/published-202311-delattre-fim.pdf
+  pdf: ''
   repo: published-202311-delattre-fim
   title: Computing  an empirical  Fisher information matrix estimate in latent variable models through stochastic approximation
-  url: https://computo.sfds.asso.fr/published-202311-delattre-fim/
+  url: ''
   year: 2023
 - abstract': >-
     Gaussian Graphical Models (GGMs) are widely used in
@@ -435,10 +435,10 @@
   doi: 10.57750/1f4p-7955
   draft: false
   journal: Computo
-  pdf: https://computo.sfds.asso.fr/published-202306-sanou-multiscale_glasso/published-202306-sanou-multiscale_glasso.pdf
+  pdf: ''
   repo: published-202306-sanou-multiscale_glasso
   title: Inference of Multiscale Gaussian Graphical Models
-  url: https://computo.sfds.asso.fr/published-202306-sanou-multiscale_glasso/
+  url: ''
   year: 2023
 - abstract': >-
     Litter is a known cause of degradation in marine
@@ -466,10 +466,10 @@
   doi: 10.57750/845m-f805
   draft: false
   journal: Computo
-  pdf: https://computo.sfds.asso.fr/published-202301-chagneux-macrolitter/published-202301-chagneux-macrolitter.pdf
+  pdf: ''
   repo: published-202301-chagneux-macrolitter
   title: 'Macrolitter video counting on riverbanks using state space models and moving cameras '
-  url: https://computo.sfds.asso.fr/published-202301-chagneux-macrolitter/
+  url: ''
   year: 2023
 - abstract': >-
     The package \$\textbackslash textsf\{clayton\}\$ is
@@ -491,10 +491,10 @@
   doi: 10.57750/4szh-t752
   draft: false
   journal: Computo
-  pdf: https://computo.sfds.asso.fr/published-202301-boulin-clayton/published-202301-boulin-clayton.pdf
+  pdf: ''
   repo: published-202301-boulin-clayton
   title: 'A Python Package for Sampling from Copulae: clayton'
-  url: https://computo.sfds.asso.fr/published-202301-boulin-clayton/
+  url: ''
   year: 2023
 - abstract': >-
     Deep learning is used in computer vision problems with
