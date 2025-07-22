@@ -247,7 +247,7 @@ jobs:
 ```
 
 ::: {.callout-important title="Content of `build.yml`"}
-Authors should **under no circumstances** modify this file. If you encounter a problem (such as the CI not completing successfully), please get in touch with us at <computo@sfds.asso.fr>.
+Authors should **under no circumstances** modify this file. If you encounter a problem (such as the CI not completing successfully), please get in touch with us at <contact@computo-journal.org>.
 :::
 
 Next, as illustrated in @fig-deploy, under `Settings > Pages` on the webpage of your repository, select **GitHub Actions** as the source for building and deploying your website.
@@ -264,7 +264,7 @@ You can safely delete the `gh-pages` branch if you have one, as we don't need an
 
 While you should have by now handled R, Python or Julia package dependencies using appropriate tools that register environments and version numbers, some of the packages your work depend upon might require external system dependencies that must be installed either when setting up the environment in the github runner or when taking care of the paper rendering or in both cases. To take care of that, you can add and customize two scripts at the root of your repository. Specifically:
 
-- `setup-env-ci.sh` is for setting up the environment and typically adding system dependencies. The virtual machine on github (runner) may need to install some packages with `apt-get` for R or Python packages. Here is an example of such a file taken from @giorgi2024:
+- `setup-env-ci.sh` is for setting up the environment and typically adding system dependencies. The virtual machine on GitHub (runner) may need to install some packages with `apt-get` for R or Python packages. Here is an example of such a file taken from @giorgi2024:
 
 ```bash
 # The CI runs on Linux Ubuntu, here goes system dependencies
