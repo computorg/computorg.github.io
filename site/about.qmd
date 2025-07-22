@@ -29,7 +29,7 @@ The journal welcomes the following types of contributions:
 
 ::: {.callout-note}
 ### Pre-submission enquiries
-Prospective authors willing to  know whether their contribution falls  into the  scope of  Computo are  encouraged to  contact the editor at [mailto@computo@sfds.asso.fr](computo@sfds.asso.fr). Please make sure to include the title and abstract of your work in your pre-submission enquiry.
+Prospective authors willing to  know whether their contribution falls  into the  scope of  Computo are  encouraged to  contact the editor at <contact@computo-journal.org>. Please make sure to include the title and abstract of your work in your pre-submission enquiry.
 :::
 
 ## An open access journal with reproducible contributions
@@ -65,7 +65,7 @@ Computo abides by the Committee on Publishing Ethics’s (COPE) guidelines liste
 Computo is a journal of the [French Statistical Society](https://sfds.asso.fr/) - ISSN 2824-7795
 
 ## Contact
-Enquiries can be sent to the Chief Editor, Julien Chiquet, through  <a href="mailto:computo@sfds.asso.fr">computo@sfds.asso.fr</a>.
+Enquiries can be sent to the Chief Editor, Julien Chiquet, through <contact@computo-journal.org>.
 
 ## Thanks
 

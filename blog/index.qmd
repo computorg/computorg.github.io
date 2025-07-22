@@ -10,4 +10,4 @@ listing:
 page-layout: full
 ---
 
-Additional details and support for authors
+Additional details and support for authors and reviewers

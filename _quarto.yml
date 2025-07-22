@@ -13,27 +13,20 @@ website:
     toggle-position: right
     tools-collapse: true
     right:
-    - href: index.qmd
-      text: Home
-    - href: site/about.qmd
-      text: About
-    - href: site/publications.qmd
-      text: Articles
-    - href: site/submit.qmd
-      text: Submit
-    - text: "Guidelines"
-      menu:
-        - text: General
-        - text: Authors
-          href: site/guidelines-authors.qmd
-        - text: Reviewers
-          href: site/guidelines-reviewers.qmd
-        - text: Editors
-          href: site/guidelines-editors.qmd
-    - href: site/board.qmd
-      text: Staff
-    - href: blog/index.qmd
-      text: FAQ
+    - text: Home
+      href: index.qmd      
+    - text: About
+      href: site/about.qmd      
+    - text: Articles
+      href: site/publications.qmd      
+    - text: Authors
+      href: site/guidelines-authors.qmd
+    - text: Reviewers
+      href: site/guidelines-reviewers.qmd
+    - text: Staff
+      href: site/board.qmd
+    - text: FAQ
+      href: blog/index.qmd      
     - icon: github
       href: https://github.com/computorg
     - icon: mastodon
