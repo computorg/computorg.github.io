@@ -11,7 +11,7 @@ page-layout: article
 bibliography: ../publications/published.bib
 ---
 
-## A step-by-step guide to submitting a paper to Computo
+## A step-by-step guide to submitting a paper to Computo {#sec-guide}
 
 Submissions to [Computo](https://computorg.github.io) require both scientific content (typically equations, codes and figures, data) and a proof that this content is reproducible. This is achieved by means of i) a notebook system, ii) a virtual environment freezing the dependencies and iii) continuous integration (plus, if needed, an external website to store large data files such a [Zenodo](https://zenodo.org/) or [OSF](https://osf.io/)). 
 
@@ -23,7 +23,7 @@ A Computo submission is thus a Git(Hub) repository containing:
 
 The [Computo](https://github.com/computorg) organization provides template repositories for [R](https://github.com/computorg/template-computo-R), [Python](https://github.com/computorg/template-computo-python) and [Julia](https://github.com/computorg/template-computo-julia) contributors. In the following sections, we detail step-by-step what authors have to do in order to format their paper for submission to Computo.
 
-### Setup a git repository
+### Setup a git repository {#sec-git}
 
 Setup a new github repository by going on the URL of either the R or Python or Julia template repository and clicking on the **"use this template"** button on the top of the page, as illustrated in @fig-template.
 
@@ -45,7 +45,7 @@ In summary, before clicking on *Create repository*, you should have the options 
 You can use Gitlab for submitting to Computo. We will be giving more detailed support for this in the future.
 :::
 
-### Setup Quarto and Computo extension on your system
+### Setup Quarto and Computo extension on your system {#sec-quarto}
 
 You need [quarto](https://quarto.org/) installed on your computer, as well as the [Computo extension](https://github.com/computorg/computo-quarto-extension) to prepare your document. 
 
@@ -66,7 +66,7 @@ If you are collaborating with others when writing your contributions, **each col
 - install the Computo Quarto extension by executing the above command.
 :::
 
-### Write your contribution
+### Write your contribution {#sec-writing}
 
 In the forked template, there are mainly two files you are expected to modify for writing your contribution: `template-computo-LANG.qmd` (where LANG is to be replaced with either R, python or julia) and `_quarto.yml`.
 
@@ -132,7 +132,7 @@ format:
 
 You can customize most of the entries in that file except `project:`, `published:` and `format:`. If your contribution is accepted for publication, the associate editors will modify parts of this file accordingly.
 
-### Setup dependencies
+### Setup dependencies {#sec-dependencies}
 
 The next step is to inform Computo of the other packages, tools and environment that your paper might depend upon. It is important to freeze their versions to ensure reproducibility. This step is inherently handled differently whether you are an R, Python or Julia user.
 
@@ -154,7 +154,7 @@ The next step is to inform Computo of the other packages, tools and environment 
 {{< include _handle_dependencies_julia.qmd >}}
 :::
 
-### Ensure reproducibility
+### Ensure reproducibility {#sec-reproducibility}
 
 Now that you have written your contribution in the correct template and set up its dependencies, you need to set up continuous integration via GitHub Actions in order to ensure reproducibility of your work and its publication as a webpage.
 
@@ -221,7 +221,7 @@ sudo apt-get install -y libcurl4-openssl-dev
 sudo apt-get install -y libblas-dev liblapack-dev
 ```
 
-### Submit your manuscript
+### Submit your manuscript {#sec-submitting}
 
 Once you are done writing your contribution, recall that you can render it in both HTML and PDF by running `quarto render .` from a terminal within the folder in which you cloned the Computo template.
 
@@ -231,7 +231,7 @@ The PDF version should then be submitted to the [OpenReview](https://openreview.
 
 You can find more details about the scientific reviewing process in the [dedicated page](/site/guidelines-reviewers.qmd) on this website (*Reviewers* tabs).
 
-### Accepted manuscript
+### Accepted manuscript {#sec-acceptance}
 
 If your submission is accepted for publication, you will be asked to transfer the ownership of the repository that hosts your paper to the Computo GitHub organization. To do that, you must go on the main page of your repository in a web browser and click on the *Settings* tab as indicated in @fig-transfer-ownership-1.
 
@@ -245,7 +245,7 @@ A new page opens where you need to select *Specify an organization or username* 
 
 ![The ownership transfer page.](/assets/img/transfer-ownership.003.png){#fig-transfer-ownership-3 width="100%" fig-align="center"}
 
-## Example papers
+## Example papers {#sec-examples}
 
 Authors can find example papers for each language that illustrate the expected content and some key features for formatting contributions as well as reminding some of the guidelines:
 
@@ -253,7 +253,7 @@ Authors can find example papers for each language that illustrate the expected c
 
 ::: {.g-col-4}
 ::: {.callout-note icon="false"}
-## R
+### R
 
 [![](/assets/img/computo-template-r.png)](https://computo-journal.org/template-computo-R/)
 
@@ -263,7 +263,7 @@ Authors can find example papers for each language that illustrate the expected c
 
 ::: {.g-col-4}
 ::: {.callout-tip icon="false"}
-## Python
+### Python
 
 [![](/assets/img/computo-template-python.png)](https://computo-journal.org/template-computo-python/)
 
@@ -273,7 +273,7 @@ Authors can find example papers for each language that illustrate the expected c
 
 ::: {.g-col-4}
 ::: {.callout-important icon="false"}
-## Julia
+### Julia
 
 [![](/assets/img/computo-template-julia.png)](https://computo-journal.org/template-computo-julia/)
 
@@ -331,7 +331,7 @@ quarto add computorg/computo-quarto-extension
 quarto render .
 ```
 
-## Computo's code of ethics
+## Computo's code of ethics {#sec-ethics}
 
 Originality
 
