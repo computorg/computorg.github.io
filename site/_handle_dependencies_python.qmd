@@ -1,1 +1,54 @@
-More to come.
+If you are writing a contribution that relies on Python code and Python packages, you can locally install and use those packages any way you like.
+
+We then handle your Python package dependencies in our CI/CD scripts using [micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html), which requires that you ship a file called `environment.yml` that lists your dependencies. This file should be stored at the root of your repository. Here is the typical content of such a file:
+
+```yml
+name: computo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyter
+  - matplotlib
+  - pandas
+  - scipy
+  - seaborn
+  - scikit-learn
+  - numpy=1.24
+  - numba
+```
+
+The `name:` entry
+
+: You can choose a name of your liking. It should be short with no spaces and uniquely refer to the title or content of your contribution.
+
+The `channels:` entry
+
+: In most cases, you should leave it to the value `conda-forge`. Some advanced configurations for which you might want to reference other channels can be found by browsing our list of published papers [here](https://github.com/computorg?q=published&type=all&language=&sort=).
+
+The `dependencies:` entry
+
+: This is where you should list all your dependencies. It is good practice to list `python` itself so you can provide the version you used as done above. Other dependencies written in the outer list will be installed from the listed channel using micromamba. It is recommended to indicate which version was used as done above for **numpy** for instance. If your work relies on packages that have not been made available as conda packages, you can add a `pip` entry to the outer list and add those packages under the `pip:` list as in:
+
+```yml
+name: clayton
+channels:
+  - conda-forge
+dependencies:
+  - jupyter
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - seaborn
+  - pip:
+    - clayton
+```
+
+::: {.callout-note title="Automatic registration of packages"}
+Currently and differently from what we provide for R users, we do not have implemented an automatic way of registering environment, packages and their versions. Hence, you are expected to do that manually.
+:::
+
+::: {.callout-tip title="`requirements.txt`"}
+If your work exclusively depends on packages installed from `pip` and you are used to listing dependencies in a `requirements.txt` file, you can ship this file instead of the `environment.yml` file and our CI/CD scripts should run smoothly.
+:::
