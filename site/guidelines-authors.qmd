@@ -203,9 +203,9 @@ You can safely delete the `gh-pages` branch if you have one, as we don't need an
 
 #### Handle external *system* dependencies
 
-While you should have by now handled R, Python or Julia package dependencies using appropriate tools that register environments and version numbers, some of the packages your work depend upon might require external system dependencies that must be installed either when setting up the environment in the github runner or when taking care of the paper rendering or in both cases. To take care of that, you can add and customize two scripts at the root of your repository. Specifically:
+While you should have by now handled R, Python or Julia package dependencies using appropriate tools that register environments and version numbers, some of the packages your work depend upon might require external *system* dependencies that must be installed either when setting up the environment in the GitHub runner or when taking care of the paper rendering or in both cases. To take care of that, you can add and customize two scripts at the root of your repository. Specifically:
 
-- `setup-env-ci.sh` is for setting up the environment and typically adding system dependencies. The virtual machine on GitHub (runner) may need to install some packages with `apt-get` for R or Python packages. Here is an example of such a file taken from @giorgi2024:
+- `setup-env-ci.sh` is meant to install system dependencies required to set up the environment in the GitHub runner. Here is an example of such a file taken from @giorgi2024:
 
 ```bash
 # The CI runs on Linux Ubuntu, here goes system dependencies
@@ -213,13 +213,17 @@ While you should have by now handled R, Python or Julia package dependencies usi
 sudo apt-get install -y libcurl4-openssl-dev
 ```
 
-- `setup-render-ci.sh` is for taking care of specific dependencies outside of quarto, related to rendering, like plotting software or running a script to generate data. Here is an example of such a file taken from @giorgi2024:
+- `setup-render-ci.sh` is meant to install system dependencies required for rendering the paper, like plotting software or running a script to generate data. Here is an example of such a file taken from @giorgi2024:
 
 ```bash
 # The CI runs on Linux Ubuntu, here goes system dependencies
 # needed at rendering step
 sudo apt-get install -y libblas-dev liblapack-dev
 ```
+
+::: {.callout-warning title="Ubuntu GitHub runner"}
+Remember that the GitHub runner uses Linux Ubuntu and therefore software installation is achieved through `apt-get`. Furthermore, you should prepend calls to `apt-get` with the `sudo` word to specify that you want to execute this command as administrator of the machine.
+:::
 
 ### Submit your manuscript {#sec-submitting}
 
