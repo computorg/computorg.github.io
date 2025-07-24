@@ -44,7 +44,7 @@ In order to help you in performing your review we provide a list of the main que
 
 1. **Is the paper within the scope of Computo?**
 
-    See [Aims and Scope]({{ site.baseurl }} /about) of Computo.
+    See [Aims and Scope](/about) of Computo.
 
 2. **Is the paper clearly written?**
 

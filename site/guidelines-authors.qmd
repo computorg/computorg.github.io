@@ -20,7 +20,7 @@ Submissions to [Computo](https://computorg.github.io) require both scientific co
 
 A Computo submission is thus a Git(Hub) repository containing:
 
-- the source files of the notebook (a quarto `.qmd` file + a BibTeX `.bib` file + some statics files, _e.g._ figures or small `.csv` data tables);
+- the source files of the notebook (a quarto `.qmd` file + a BibTeX `.bib` file + some static files, _e.g._ figures or small `.csv` data tables);
 - configuration files to set up the dependencies in a virtual environment;
 - configuration files to set up the continuous integration rendering the final documents.
 
@@ -28,7 +28,9 @@ The [Computo](https://github.com/computorg) organization provides template repos
 
 ### Setup a git repository {#sec-git}
 
-Setup a new github repository by going on the URL of either the R or Python or Julia template repository and clicking on the **"use this template"** button on the top of the page, as illustrated in @fig-template.
+Setup a new Github repository by browsing either the 
+[R](https://github.com/computorg/template-computo-R) or [Python](https://github.com/computorg/template-computo-python) or [Julia](https://github.com/computorg/template-computo-julia) 
+template repository and clicking the **"use this template"** button at the top of the page, as illustrated in @fig-template.
 
 ![Screenshot of the R Computo template GitHub page.](/assets/img/computo-template-screenshot.png){#fig-template width="100%"}
 
@@ -48,13 +50,20 @@ In summary, before clicking on *Create repository*, you should have the options 
 You can use Gitlab for submitting to Computo. We will be giving more detailed support for this in the future.
 :::
 
-### Setup Quarto and Computo extension on your system {#sec-quarto}
+### Local setup: clone, quarto, and computo extension {#sec-quarto}
+
+You should first clone the repository on your local computer. From a terminal window, run:
+
+```bash
+# Clone the repository
+git clone http://github.com/<user-name>/<repository-name>.git
+```
 
 You need [quarto](https://quarto.org/) installed on your computer, as well as the [Computo extension](https://github.com/computorg/computo-quarto-extension) to prepare your document. 
 
 To install Quarto, you should refer to the instructions here: <https://quarto.org/docs/get-started/>.
 
-Once Quarto is properly installed locally on your computer, you can install the Computo Quarto extension from a terminal window with the following command line:
+Once Quarto is properly installed locally on your computer, you can install the Computo Quarto extension. To do this, open a terminal window in the folder of your local clone, and run the following command line:
 
 ```bash
 # Install computo quarto extension
@@ -62,7 +71,7 @@ quarto add computorg/computo-quarto-extension
 ```
 
 ::: {.callout-caution title="Multiple collaborators"}
-If you are collaborating with others when writing your contributions, **each collaborator** needs to:
+If you are collaborating with others when writing your contributions, **each collaborator** needs to perform the same three steps:
 
 - clone the repository,
 - install Quarto,
@@ -85,7 +94,7 @@ To build your document (both in PDF and HTML by default), you can run the comman
 
 ```bash
 # will render both to html and PDF
-quarto render template-computo-{R,python,julia}.qmd
+quarto render
 ```
 
 #### Metadata of your contribution
@@ -198,7 +207,7 @@ Next, as illustrated in @fig-deploy, under `Settings > Pages` on the webpage of 
 
 ![Deploy your website with GitHub Actions](/assets/img/2025-03-20-revised-github-process/depoy-github.png){#fig-deploy width="100%"}
 
-Authors can find more detailed about Computo's workflow in @sec-workflow.
+Authors can find more details about Computo's workflow in @sec-workflow.
 
 ::: {.callout-note title="Compatibility with old reproducibility system"}
 You can safely delete the `gh-pages` branch if you have one, as we don't need anymore to push the HTML files to the site.
@@ -208,7 +217,7 @@ You can safely delete the `gh-pages` branch if you have one, as we don't need an
 
 While you should have by now handled R, Python or Julia package dependencies using appropriate tools that register environments and version numbers, some of the packages your work depend upon might require external *system* dependencies that must be installed either when setting up the environment in the GitHub runner or when taking care of the paper rendering or in both cases. To take care of that, you can add and customize two scripts at the root of your repository. Specifically:
 
-- `setup-env-ci.sh` is meant to install system dependencies required to set up the environment in the GitHub runner. Here is an example of such a file taken from @giorgi2024:
+- `setup-env-ci.sh` is meant to install system dependencies required to set up the environment in the GitHub runner. Here is an example of such a file taken from a published article:
 
 ```bash
 # The CI runs on Linux Ubuntu, here goes system dependencies
@@ -216,7 +225,7 @@ While you should have by now handled R, Python or Julia package dependencies usi
 sudo apt-get install -y libcurl4-openssl-dev
 ```
 
-- `setup-render-ci.sh` is meant to install system dependencies required for rendering the paper, like plotting software or running a script to generate data. Here is an example of such a file taken from @giorgi2024:
+- `setup-render-ci.sh` is meant to install system dependencies required for rendering the paper, like plotting software or running a script to generate data. Here is an example of such a file taken from a published article:
 
 ```bash
 # The CI runs on Linux Ubuntu, here goes system dependencies
@@ -225,12 +234,12 @@ sudo apt-get install -y libblas-dev liblapack-dev
 ```
 
 ::: {.callout-warning title="Ubuntu GitHub runner"}
-Remember that the GitHub runner uses Linux Ubuntu and therefore software installation is achieved through `apt-get`. Furthermore, you should prepend calls to `apt-get` with the `sudo` word to specify that you want to execute this command as administrator of the machine.
+Remember that the GitHub runner uses Linux Ubuntu and therefore software installation is achieved through `apt-get`. Furthermore, you must precede calls to `apt-get` with the word `sudo` to indicate that you wish to run this command as an administrator.
 :::
 
 ### Submit your manuscript {#sec-submitting}
 
-Once you are done writing your contribution, recall that you can render it in both HTML and PDF by running `quarto render .` from a terminal within the folder in which you cloned the Computo template.
+Once you are done writing your contribution, recall that you can render it in both HTML and PDF by running `quarto render` from a terminal within the folder in which you cloned the Computo template.
 
 If the Quarto rendering is successful locally (hence you get both HTML and PDF files), then, once you push the last modification to your repository on GitHub, the continuous integration and deployment scripts should automatically run and, if successful, the HTML version of your contribution will be published online, as well as a PDF version (see "Other format" at the end of the table of content of the rendered HTML).
 
@@ -329,13 +338,13 @@ Authors simply use the `build.yml` workflow in their repository to trigger the c
 
 ### Reproducing an existing paper published in Computo
 
-Our publication workflow makes it very easy for anyone to reproduce a given paper. To do that, you can first clone the repository. Then you need to install Quarto and the Computo Quarto extension in the `published-202412-giorgi-efficient` folder that the cloning step made. Finally, you can render the document. In summary, you do that with the following commands:
+Our publication workflow makes it very easy for anyone to reproduce a given paper. Consider for instance the paper <https://doi.org/10.57750/sfxn-1t05> associated with the Github repository [published-202412-giorgi-efficient][https://github.com/computorg/published-202412-giorgi-efficient]. You first need to clone the repository. Then you need to install Quarto and the Computo Quarto extension in the `published-202412-giorgi-efficient` folder that the cloning step made. Finally, you can render the document. In summary, you do that with the following commands:
 
 ```bash
 git clone https://github.com/computorg/published-202412-giorgi-efficient.git
 cd published-202412-giorgi-efficient
 quarto add computorg/computo-quarto-extension
-quarto render .
+quarto render
 ```
 
 ## Computo's code of ethics {#sec-ethics}
@@ -370,4 +379,3 @@ Copyright/author's right/license compliance
 
 : Authors guarantee that they comply with the usage license of any third party contents/works (code, software, data, figures/images, documents, etc.) that were used to produce their work.
 
-## References
