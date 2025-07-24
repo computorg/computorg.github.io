@@ -11,11 +11,11 @@ page-layout: article
 bibliography: ../publications/published.bib
 ---
 
-## Submitting a paper to Computo
+## A step-by-step guide to submitting a paper to Computo {#sec-guide}
 
-Submissions to [Computo](https://computorg.github.io) require both scientific content (typically equations, codes and figures, data) and a proof that this content is reproducible. This is achieved by means of i) a notebook system, ii) a virtual environment freezing the dependencies and iii) continuous integration (plus, if needed, an external website to store large data files such a [Zenodo](https://zenodo.org/) or [OSF](https://osf.io/) ). 
+Submissions to [Computo](https://computorg.github.io) require both scientific content (typically equations, codes and figures, data) and a proof that this content is reproducible. This is achieved by means of i) a notebook system, ii) a virtual environment freezing the dependencies and iii) continuous integration (plus, if needed, an external website to store large data files such a [Zenodo](https://zenodo.org/) or [OSF](https://osf.io/)). 
 
-A Computo submission is thus a git(hub) repository containing:
+A Computo submission is thus a Git(Hub) repository containing:
 
 - the source files of the notebook (a quarto `.qmd` file + a BibTeX `.bib` file + some statics files, _e.g._ figures or small `.csv` data tables);
 - configuration files to set up the dependencies in a virtual environment;
@@ -23,28 +23,56 @@ A Computo submission is thus a git(hub) repository containing:
 
 The [Computo](https://github.com/computorg) organization provides template repositories for [R](https://github.com/computorg/template-computo-R), [Python](https://github.com/computorg/template-computo-python) and [Julia](https://github.com/computorg/template-computo-julia) contributors. In the following sections, we detail step-by-step what authors have to do in order to format their paper for submission to Computo.
 
-### Setup a git repository
+### Setup a git repository {#sec-git}
 
 Setup a new github repository by going on the URL of either the R or Python or Julia template repository and clicking on the **"use this template"** button on the top of the page, as illustrated in @fig-template.
 
 ![Screenshot of the R Computo template GitHub page.](/assets/img/computo-template-screenshot.png){#fig-template width="100%"}
 
+::: {.callout-tip title="Branches"}
+When you fork a GitHub repository, be it classic or template, GitHub asks if you want to fork all branches (there is a box called *Include all branches*). You only need to fork the main branch so you do not have to check that box.
+:::
+
+::: {.callout-caution title="Public repository"}
+The paper will be automatically published online using GitHub pages. This is possible only with public repositories. Hence, when you initialize your repository from the template, make sure that the *Public* box is checked (the default) and not the *Private* one.
+:::
+
+In summary, before clicking on *Create repository*, you should have the options documented in @fig-clone-template.
+
+![Forking a GitHub template.](/assets/img/clone-template.png){#fig-clone-template width="100%"}
+
 ::: {.callout-note title="Using Gitlab"}
 You can use Gitlab for submitting to Computo. We will be giving more detailed support for this in the future.
 :::
 
-### Setup Quarto and Computo extension on your system
+### Setup Quarto and Computo extension on your system {#sec-quarto}
 
-You need [quarto](https://quarto.org/) installed on your computer, as well as the [Computo extension](https://github.com/computorg/computo-quarto-extension) to prepare your document. The latter can be installed from a terminal window with the following command line:
+You need [quarto](https://quarto.org/) installed on your computer, as well as the [Computo extension](https://github.com/computorg/computo-quarto-extension) to prepare your document. 
+
+To install Quarto, you should refer to the instructions here: <https://quarto.org/docs/get-started/>.
+
+Once Quarto is properly installed locally on your computer, you can install the Computo Quarto extension from a terminal window with the following command line:
 
 ```bash
 # Install computo quarto extension
 quarto add computorg/computo-quarto-extension
 ```
 
-### Write your contribution 
+::: {.callout-caution title="Multiple collaborators"}
+If you are collaborating with others when writing your contributions, **each collaborator** needs to:
 
-Write your paper in the `template-computo-LANG.qmd` following the formatting suggestions therein.
+- clone the repository,
+- install Quarto,
+- install the Computo Quarto extension by executing the above command.
+:::
+
+### Write your contribution {#sec-writing}
+
+In the forked template, there are mainly two files you are expected to modify for writing your contribution: `template-computo-LANG.qmd` (where LANG is to be replaced with either R, python or julia) and `_quarto.yml`.
+
+#### Main content of your contribution
+
+The main body of your paper (starting with the *Introduction* section) should be written in the `template-computo-LANG.qmd` following the formatting suggestions therein.
 
 ::: {.callout-note title="Local compilation"}
 Make sure that you are able to build your manuscript as a standard notebook on your system before proceeding to the next step.
@@ -57,58 +85,76 @@ To build your document (both in PDF and HTML by default), you can run the comman
 quarto render template-computo-{R,python,julia}.qmd
 ```
 
-### Setup dependencies
+#### Metadata of your contribution
 
-The next step is to inform Computo of the other packages or tools that your paper might depend upon. It is important to freeze their versions to ensure reproducibility. This step is inherently handled differently whether you are an R, Python or Julia user.
+To customise title, authors, date, abstract and so on, you should modify the `_quarto.yml` file. By default, it looks like this:
 
+```yml
+project:
+  title: "template-computo-R"
+
+title: "Template for contribution to Computo"
+subtitle: "Example dedicated to `R` users"
+author:
+  - name: Jane Doe
+    corresponding: true
+    email: janedoe@nowhere.moon
+    url: https://janedoe.someplace.themoon.org
+    orcid: 0000-0000-0000-0000
+    affiliations:
+      - name: Name of Affiliation one
+        department: Statistics
+        url: https://someplace.themoon.org
+  - name: John Doe
+    email: johndoe@nowhere.moon
+    url: https://johndoe.someplace.themoon.org
+    orcid: 0000-0000-0000-0000
+    affiliations:
+      - name: Name of Afficiliation two
+        department: Computer Science
+        url: https://someplace.themoon.org
+date: last-modified
+date-modified: last-modified
+description: |
+  This document provides a template based on the [`quarto`](https://quarto.org/) system for contributions to Computo, using the [`quarto journal extension`](https://github.com/computorg/computo-quarto-extension), the knitr kernel (R user) and [`renv`](https://rstudio.github.io/renv/articles/renv.html) to set-up the dependencies.
+abstract: >+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere vestibulum facilisis. Aenean pretium orci augue, quis lobortis libero accumsan eu. Nam mollis lorem sit amet pellentesque ullamcorper. Curabitur lobortis libero eget malesuada vestibulum. Nam nec nibh massa. Pellentesque porttitor cursus tellus. Mauris urna erat, rhoncus sed faucibus sit amet, venenatis eu ipsum.
+keywords: [key1, key2, key3]
+bibliography: references.bib
+github-user: computorg
+repo: "template-computo-r"
+draft: true # set to false once the build is running
+published: false # will be set to true once accepted
+format:
+  computo-html: default
+  computo-pdf: default
+```
+
+You can customize most of the entries in that file except `project:`, `published:` and `format:`. If your contribution is accepted for publication, the associate editors will modify parts of this file accordingly.
+
+### Setup dependencies {#sec-dependencies}
+
+The next step is to inform Computo of the other packages, tools and environment that your paper might depend upon. It is important to freeze their versions to ensure reproducibility. This step is inherently handled differently whether you are an R, Python or Julia user.
+
+::: {.callout-note icon="false" collapse="true"}
 #### R users
 
-For the R community, Computo relies on the [**renv**](https://rstudio.github.io/renv/articles/renv.html) package manager to setup a reproducible environment that handles `R` dependencies. Setting up **renv** for use within your repository requires the following steps. First,
-
-```r
-# Initialize your repo to work with renv
-renv::init()
-```
-
-will set up your repository for using **renv**. Then, install the required dependencies as usual (via `install.packages()` or via the RStudio IDE) or using **renv** built-in `install()` function:
-
-```r
-# Install packages you need
-renv::install("ggplot2") # or equivalently install.packages("ggplot2")
-```
-
-Non-CRAN packages (*e.g.* Github packages) can be used. To install such packages, you need to first install the **remotes** package. Then, if you want to install the development version of *e.g.* the **gt** package hosted by `rstudio` GitHub account (useful for nicely and easily formatting tables btw), you would do:
-
-```r
-install.packages("remotes")
-remotes::install_github("rstudio/gt")
-```
-
-Once you are done, you need to freeze the environment and package versions that are going to be used to run the calculations within your paper. This is achieved via:
-
-```r
-# Register environment and package versions
-renv::snapshot()
-```
-
-::: {.callout-warning title="The `renv.lock` file"}
-The `renv::snapshot()` command produces a file named `renv.lock` which registered the version of R, quarto and R packages that must be used to compile the publication. This file should be versioned with git. Other files that `snapshot()` might produce should be listed under `.gitignore` and therefore not put under versioning.
+{{< include _handle_dependencies_R.qmd >}}
 :::
 
-More details for using **renv** can be found:
-
-- either on the [**renv**](https://rstudio.github.io/renv/articles/renv.html) package website,
-- or on the Quarto website at this [dedicated page](https://quarto.org/docs/projects/virtual-environments.html#using-renv).
-
+::: {.callout-tip icon="false" collapse="true"}
 #### Python users
 
-More to come.
+{{< include _handle_dependencies_python.qmd >}}
+:::
 
+::: {.callout-important icon="false" collapse="true"}
 #### Julia users
 
-More to come.
+{{< include _handle_dependencies_julia.qmd >}}
+:::
 
-### Ensure reproducibility
+### Ensure reproducibility {#sec-reproducibility}
 
 Now that you have written your contribution in the correct template and set up its dependencies, you need to set up continuous integration via GitHub Actions in order to ensure reproducibility of your work and its publication as a webpage.
 
@@ -116,7 +162,7 @@ Now that you have written your contribution in the correct template and set up i
 
 Computo has a built-in workflow for just that purpose which comes in the form of a YAML file describing a GitHub Action. It should have been automatically added to your repository when you cloned one of our templates. It is located under `.github/workflows/build.yml` and its content should exactly match the following:
 
-```yaml
+```yml
 name: Main Workflows
 
 on:
@@ -128,21 +174,26 @@ on:
   pull_request:
     branches: ["main","master"]
 
+
 jobs:
   call_env_workflow:
     uses: computorg/workflows/.github/workflows/global-env.yml@main
   call_quartopublish_workflow:
+    permissions:
+      id-token: write
+      contents: write
+      pages: write
     uses: computorg/workflows/.github/workflows/publish-render.yml@main
     needs: call_env_workflow
 ```
 
 ::: {.callout-important title="Content of `build.yml`"}
-Authors should **under no circumstances** modify this file. If you encounter a problem (such as the CI not completing successfully), please get in touch with us at <computo@sfds.asso.fr>.
+Authors should **under no circumstances** modify this file. If you encounter a problem (such as the CI not completing successfully), please get in touch with us at <contact@computo-journal.org>.
 :::
 
 Next, as illustrated in @fig-deploy, under `Settings > Pages` on the webpage of your repository, select **GitHub Actions** as the source for building and deploying your website.
 
-![Deploy your website with GitHub Actions](/assets/images/2025-03-20-revised-github-process/depoy-github.png){#fig-deploy width="100%"}
+![Deploy your website with GitHub Actions](/assets/img/2025-03-20-revised-github-process/depoy-github.png){#fig-deploy width="100%"}
 
 Authors can find more detailed about Computo's workflow in @sec-workflow.
 
@@ -152,9 +203,9 @@ You can safely delete the `gh-pages` branch if you have one, as we don't need an
 
 #### Handle external *system* dependencies
 
-While you should have by now handled R, Python or Julia package dependencies using appropriate tools that register environments and version numbers, some of the packages your work depend upon might require external system dependencies that must be installed either when setting up the environment in the github runner or when taking care of the paper rendering or in both cases. To take care of that, you can add and customize two scripts at the root of your repository. Specifically:
+While you should have by now handled R, Python or Julia package dependencies using appropriate tools that register environments and version numbers, some of the packages your work depend upon might require external *system* dependencies that must be installed either when setting up the environment in the GitHub runner or when taking care of the paper rendering or in both cases. To take care of that, you can add and customize two scripts at the root of your repository. Specifically:
 
-- `setup-env-ci.sh` is for setting up the environment and typically adding system dependencies. The virtual machine on github (runner) may need to install some packages with `apt-get` for R or Python packages. Here is an example of such a file taken from @giorgi2024:
+- `setup-env-ci.sh` is meant to install system dependencies required to set up the environment in the GitHub runner. Here is an example of such a file taken from @giorgi2024:
 
 ```bash
 # The CI runs on Linux Ubuntu, here goes system dependencies
@@ -162,7 +213,7 @@ While you should have by now handled R, Python or Julia package dependencies usi
 sudo apt-get install -y libcurl4-openssl-dev
 ```
 
-- `setup-render-ci.sh` is for taking care of specific dependencies outside of quarto, related to rendering, like plotting software or running a script to generate data. Here is an example of such a file taken from @giorgi2024:
+- `setup-render-ci.sh` is meant to install system dependencies required for rendering the paper, like plotting software or running a script to generate data. Here is an example of such a file taken from @giorgi2024:
 
 ```bash
 # The CI runs on Linux Ubuntu, here goes system dependencies
@@ -170,21 +221,72 @@ sudo apt-get install -y libcurl4-openssl-dev
 sudo apt-get install -y libblas-dev liblapack-dev
 ```
 
-### Submit your manuscript
+::: {.callout-warning title="Ubuntu GitHub runner"}
+Remember that the GitHub runner uses Linux Ubuntu and therefore software installation is achieved through `apt-get`. Furthermore, you should prepend calls to `apt-get` with the `sudo` word to specify that you want to execute this command as administrator of the machine.
+:::
 
-Once step 4 is successful, you should end up with an HTML version published online, as well as a PDF version (see "Other format" at the end of the table of content of the rendered HTML). This PDF version can be submitted to the [OpenReview](https://openreview.net/group?id=Computo) platform.
+### Submit your manuscript {#sec-submitting}
 
-## Example papers
+Once you are done writing your contribution, recall that you can render it in both HTML and PDF by running `quarto render .` from a terminal within the folder in which you cloned the Computo template.
+
+If the Quarto rendering is successful locally (hence you get both HTML and PDF files), then, once you push the last modification to your repository on GitHub, the continuous integration and deployment scripts should automatically run and, if successful, the HTML version of your contribution will be published online, as well as a PDF version (see "Other format" at the end of the table of content of the rendered HTML).
+
+The PDF version should then be submitted to the [OpenReview](https://openreview.net/group?id=Computo) platform which will trigger the scientific review of the content of the PDF as well as the technical and reproducibility review from the repository.
+
+You can find more details about the scientific reviewing process in the [dedicated page](/site/guidelines-reviewers.qmd) on this website (*Reviewers* tabs).
+
+### Accepted manuscript {#sec-acceptance}
+
+If your submission is accepted for publication, you will be asked to transfer the ownership of the repository that hosts your paper to the Computo GitHub organization. To do that, you must go on the main page of your repository in a web browser and click on the *Settings* tab as indicated in @fig-transfer-ownership-1.
+
+![Accessing the settings of a GitHub repository.](/assets/img/transfer-ownership.001.png){#fig-transfer-ownership-1 width="100%" fig-align="center"}
+
+Once inside the settings of the repository, scroll all the way down to the bottom of the page until you see **Danger Zone** in red color and click on *Transfer* as indicated in @fig-transfer-ownership-2.
+
+![Accessing the interface for ownership transfer.](/assets/img/transfer-ownership.002.png){#fig-transfer-ownership-2 width="100%" fig-align="center"}
+
+A new page opens where you need to select *Specify an organization or username* and write `computorg` (see @fig-transfer-ownership-3). Then you type what is asked in the blank box and click on *I understand, transfer this repository* and you're all set!
+
+![The ownership transfer page.](/assets/img/transfer-ownership.003.png){#fig-transfer-ownership-3 width="100%" fig-align="center"}
+
+## Example papers {#sec-examples}
 
 Authors can find example papers for each language that illustrate the expected content and some key features for formatting contributions as well as reminding some of the guidelines:
 
-| [R](https://computo.sfds.asso.fr/template-computo-R/) | [Python](https://computo.sfds.asso.fr/template-computo-python/) | [Julia](https://computo.sfds.asso.fr/template-computo-julia/) |
-|:-:|:------:|:-----:|
-| [![](/assets/img/computo-template-r.png)](https://computo.sfds.asso.fr/template-computo-R/) | [![](/assets/img/computo-template-python.png)](https://computo.sfds.asso.fr/template-computo-python/) | [![](/assets/img/computo-template-julia.png)](https://computo.sfds.asso.fr/template-computo-julia/) |
+::: {.grid}
 
-: {tbl-colwidths="[33,33,33]"}
+::: {.g-col-4}
+::: {.callout-note icon="false"}
+### R
 
-You can click above either on the name of the language or the screenshot to access the rendered version of each example paper. At any time you can then access the source code by clicking on the `</> Source` button in the upper-right corner of the page as illustrated in @fig-template-source.
+[![](/assets/img/computo-template-r.png)](https://computo-journal.org/template-computo-R/)
+
+<https://computo-journal.org/template-computo-R/>
+:::
+:::
+
+::: {.g-col-4}
+::: {.callout-tip icon="false"}
+### Python
+
+[![](/assets/img/computo-template-python.png)](https://computo-journal.org/template-computo-python/)
+
+<https://computo-journal.org/template-computo-python/>
+:::
+:::
+
+::: {.g-col-4}
+::: {.callout-important icon="false"}
+### Julia
+
+[![](/assets/img/computo-template-julia.png)](https://computo-journal.org/template-computo-julia/)
+
+<https://computo-journal.org/template-computo-julia/>
+:::
+:::
+:::
+
+You can click above either on the screenshot or the URL to access the rendered version of each example paper. At any time you can then access the source code by clicking on the `</> Source` button in the upper-right corner of the page as illustrated in @fig-template-source.
 
 ![Accessing sources of the rendered example papers.](/assets/img/computo-template-r-source.png){#fig-template-source width="100%"}
 
@@ -198,7 +300,7 @@ The Computo workflows provide a streamlined publishing pipeline for authors to s
 
 ### Workflow Summary
 
-![Computo Workflow Structure](/assets/images/2025-03-20-revised-github-process/workflow.svg){#fig-workflow width="100%"}
+![Computo Workflow Structure](/assets/img/2025-03-20-revised-github-process/workflow.svg){#fig-workflow width="100%"}
 
 As illustrated in @fig-workflow, the publication process consists of two main phases:
 
@@ -222,7 +324,18 @@ Authors only need to reference the main workflow file (`build.yml`) in their rep
 
 Authors simply use the `build.yml` workflow in their repository to trigger the complete process from environment setup to final publication.
 
-## Computo's code of ethics
+### Reproducing an existing paper published in Computo
+
+Our publication workflow makes it very easy for anyone to reproduce a given paper. To do that, you can first clone the repository. Then you need to install Quarto and the Computo Quarto extension in the `published-202412-giorgi-efficient` folder that the cloning step made. Finally, you can render the document. In summary, you do that with the following commands:
+
+```bash
+git clone https://github.com/computorg/published-202412-giorgi-efficient.git
+cd published-202412-giorgi-efficient
+quarto add computorg/computo-quarto-extension
+quarto render .
+```
+
+## Computo's code of ethics {#sec-ethics}
 
 Originality
 
