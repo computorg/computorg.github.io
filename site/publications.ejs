@@ -10,6 +10,7 @@ for (const item of items) {
   let doiurl = item.url === "" ? "https://doi.org/" + item.doi : item.url;
   let bibtitle = item.title.replace(/'/g, "\\'");
   let bibauthors = item.authors.replace(/'/g, "\\'");
+  let bibtex = item.bibtex.replace(/'/g, "\\'").replace(/\"/g, '&quot;').replace(/\r?\n/g, "\\n");
   if (item.year !== currentYear) {
     if (currentYear !== null) { %>
 </div> <!-- End previous year section -->
@@ -52,7 +53,7 @@ for (const item of items) {
                   <a href="<%= item.pdf %>" class="btn btn-outline-secondary btn-sm" target="_blank" style="padding:0.2em 0.6em;">PDF</a>
                   <% } %> -->
                   <a href="https://github.com/computorg/<%- item.repo %>" class="btn btn-outline-secondary btn-sm" target="_blank" style="padding:0.2em 0.6em;">Sources (Git)</a>
-                  <button type="button" class="btn btn-outline-secondary btn-sm" onclick="generateBibTex('<%- bibtitle %>', '<%- bibauthors %>', '<%= item.year %>', '<%= doiurl %>')" style="padding:0.2em 0.6em;"><span style="font-variant: small-caps; font-family: 'Times New Roman', Times, serif;">Bib<span style="vertical-align: -0.2em;">T</span><span style="vertical-align: 0em;">E</span>X</span></button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm" onclick="generateBibTex('<%= bibtex %>')" style="padding:0.2em 0.6em;"><span style="font-variant: small-caps; font-family: 'Times New Roman', Times, serif;">Bib<span style="vertical-align: -0.2em;">T</span><span style="vertical-align: 0em;">E</span>X</span></button>
                 </div>
               </div>
             </div>
@@ -124,19 +125,7 @@ for (const item of items) {
     $('#abstractContent').text(abstract);
   });
 
-  function generateBibTex(title, authors, year, url) {
-    // Generate a simple BibTeX key from the first author's last name and year
-    var firstAuthor = authors.split(' and ')[0].split(' ').pop().toLowerCase();
-    var bibKey = firstAuthor + year;
-    
-    var bibTeX = '@article{' + bibKey + ',\n' +
-      '  title={' + title + '},\n' +
-      '  author={' + authors + '},\n' +
-      '  journal={Computo},\n' +
-      '  year={' + year + '},\n' +
-      '  url={' + url + '}\n' +
-      '}';
-
+  function generateBibTex(bibTeX) {
     // Create a temporary textarea to copy the BibTeX to clipboard
     var textArea = document.createElement('textarea');
     textArea.value = bibTeX;
