@@ -20,7 +20,7 @@ Submissions to [Computo](https://computorg.github.io) require both scientific co
 
 A Computo submission is thus a Git(Hub) repository containing:
 
-- the source files of the notebook (a quarto `.qmd` file + a BibTeX `.bib` file + some statics files, _e.g._ figures or small `.csv` data tables);
+- the source files of the notebook (a quarto `.qmd` file + a BibTeX `.bib` file + some static files, _e.g._ figures or small `.csv` data tables);
 - configuration files to set up the dependencies in a virtual environment;
 - configuration files to set up the continuous integration rendering the final documents.
 
@@ -28,7 +28,9 @@ The [Computo](https://github.com/computorg) organization provides template repos
 
 ### Setup a git repository {#sec-git}
 
-Setup a new Github repository by going on the URL of either the R or Python or Julia template repository and clicking on the **"use this template"** button on the top of the page, as illustrated in @fig-template.
+Setup a new Github repository by browsing either the 
+[R](https://github.com/computorg/template-computo-R) or [Python](https://github.com/computorg/template-computo-python) or [Julia](https://github.com/computorg/template-computo-julia) 
+template repository and clicking the **"use this template"** button at the top of the page, as illustrated in @fig-template.
 
 ![Screenshot of the R Computo template GitHub page.](/assets/img/computo-template-screenshot.png){#fig-template width="100%"}
 
