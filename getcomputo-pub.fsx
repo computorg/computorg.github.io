@@ -76,7 +76,7 @@ type RepoError =
 
 let redirectStringRe = Regex(@"URL='(.*)'")
 
-let getAbstract (page: string) =
+let getBibTeX (page: string) =
 
     let htmlFirst = HtmlDocument.Load(page)
 
@@ -100,16 +100,29 @@ let getAbstract (page: string) =
     try
         html.CssSelect(".bibtex").Head.InnerText()
         |> DirtyParser.bibTeXFromString
-        |> _.Head.Properties["abstract"]
+        |> _.Head
         |> Result.Ok
     with e ->
-        printfn "Error getting abstract from %s: %s" page e.Message
+        printfn "Error getting BibTeX from %s: %s" page e.Message
         Result.Error e.Message
+
+let getAbstract (entry: BibTeXEntry) = entry.Properties["abstract"]
+
+let getBibTeXFromDict (d: Dictionary<obj, obj>) =
+    d["repoObj"] :?> Repository
+    |> _.Homepage
+    |> getBibTeX
+    |> function
+        | Ok a -> DrBiber.DirtyParser.bibTeXToString [ a ]
+        | Error e ->
+            printfn "Error getting BibTeX from %s: %s" (d["repoObj"] :?> Repository).Name e
+            ""
 
 let getAbstractFromDict (d: Dictionary<obj, obj>) =
     d["repoObj"] :?> Repository
     |> _.Homepage
-    |> getAbstract
+    |> getBibTeX
+    |> Result.map (fun bibTeX -> getAbstract bibTeX)
     |> function
         | Ok a -> a
         | Error e ->
@@ -159,6 +172,7 @@ let extractCitation (d: Dictionary<obj, obj>) =
        description = d |> getSomeString "description"
        abstract' = d |> getAbstractFromDict
        repo = d |> getSomeString "repo"
+       bibtex = d |> getBibTeXFromDict
        pdf = d |> getAnotherThing "citation" |> getSomeString "pdf-url"
        url = d |> getAnotherThing "citation" |> getSomeString "url"
        draft = d |> getSomeString "draft" |}
