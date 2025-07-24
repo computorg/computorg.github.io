@@ -50,13 +50,20 @@ In summary, before clicking on *Create repository*, you should have the options 
 You can use Gitlab for submitting to Computo. We will be giving more detailed support for this in the future.
 :::
 
-### Setup Quarto and Computo extension on your system {#sec-quarto}
+### Local setup: clone, quarto, and computo extension {#sec-quarto}
+
+You should first clone the repository on your local computer. From a terminal window, run:
+
+```bash
+# Clone the repository
+git clone http://github.com/<user-name>/<repository-name>.git
+```
 
 You need [quarto](https://quarto.org/) installed on your computer, as well as the [Computo extension](https://github.com/computorg/computo-quarto-extension) to prepare your document. 
 
 To install Quarto, you should refer to the instructions here: <https://quarto.org/docs/get-started/>.
 
-Once Quarto is properly installed locally on your computer, you can install the Computo Quarto extension from a terminal window with the following command line:
+Once Quarto is properly installed locally on your computer, you can install the Computo Quarto extension. To do this, open a terminal window in the folder of your local clone, and run the following command line:
 
 ```bash
 # Install computo quarto extension
@@ -64,7 +71,7 @@ quarto add computorg/computo-quarto-extension
 ```
 
 ::: {.callout-caution title="Multiple collaborators"}
-If you are collaborating with others when writing your contributions, **each collaborator** needs to:
+If you are collaborating with others when writing your contributions, **each collaborator** needs to perform the same three steps:
 
 - clone the repository,
 - install Quarto,
