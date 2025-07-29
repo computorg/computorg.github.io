@@ -72,6 +72,8 @@ To ensure that all published information remains accessible and usable over time
 - we regularly run the workflow of each published article to check its medium- and long-term reproducibility;
 - we archive all git repositories of published articles on [Software Heritage](https://www.softwareheritage.org/) ![](../assets/img/logo-sh.png){height="20px"}.
 
+We would also like to emphasize that publishing an article in Computo in no way prevents authors from depositing a version of their article (e.g., PDF) in an institutional repository (e.g., HAL or arXiv), which helps to preserve and disseminate scientific work and is fully in line with the journal's policy and spirit. 
+
 ## Plagiarism policy
 
 Computo abides by the Committee on Publishing Ethics’s (COPE) guidelines listed below on plagiarism:
