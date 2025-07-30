@@ -9,9 +9,7 @@ format:
     fig-align: "center"
 page-layout: article
 bibliography: ../publications/published.bib
-filters: 
-  - lightbox
-lightbox: auto
+lightbox: true
 ---
 
 ## A step-by-step guide to submitting a paper to Computo {#sec-guide}
