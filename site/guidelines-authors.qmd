@@ -1,7 +1,7 @@
 ---
 title: Guidelines for authors
 description: |
-  This page provides a step-by-step guide for authors to accompany them for formatting and submitting their paper to Computo. 
+  Step-by-step guide to help authors format and submit their papers.
 format:
   html:
     toc: true
@@ -14,30 +14,65 @@ lightbox: true
 
 ## A step-by-step guide to submitting a paper to Computo {#sec-guide}
 
-Submissions to [Computo](https://computorg.github.io) require both scientific content (typically equations, codes and figures, data) and a proof that this content is reproducible. This is achieved by means of i) a notebook system, ii) a virtual environment freezing the dependencies and iii) continuous integration (plus, if needed, an external website to store large data files such a [Zenodo](https://zenodo.org/) or [OSF](https://osf.io/)). 
+Submissions to [Computo](https://computorg.github.io) require both scientific content (such as equations, code, figures, and data) and clear evidence that this content is reproducible. This is achieved through: i) a notebook system, ii) a virtual environment with frozen dependencies, and iii) continuous integration. If needed, large data files can be stored externally on platforms like [Zenodo](https://zenodo.org/) or [OSF](https://osf.io/).
 
-A Computo submission is thus a Git(Hub) repository containing:
+A Computo submission is therefore a Git(Hub) repository containing:
 
-- the source files of the notebook (a quarto `.qmd` file + a BibTeX `.bib` file + some static files, _e.g._ figures or small `.csv` data tables);
-- configuration files to set up the dependencies in a virtual environment;
-- configuration files to set up the continuous integration rendering the final documents.
+- the source files for the notebook (a Quarto `.qmd` file, a BibTeX `.bib` file, and any static files such as figures or small `.csv` data tables);
+- configuration files to set up dependencies in a virtual environment;
+- configuration files to enable continuous integration and render the final documents.
 
-The [Computo](https://github.com/computorg) organization provides template repositories for [R](https://github.com/computorg/template-computo-R), [Python](https://github.com/computorg/template-computo-python) and [Julia](https://github.com/computorg/template-computo-julia) contributors. In the following sections, we detail step-by-step what authors have to do in order to format their paper for submission to Computo.
+### Template repositories {#sec-templates}
+
+The [Computo](https://github.com/computorg) organization provides template repositories for [R](https://github.com/computorg/template-computo-R), [Python](https://github.com/computorg/template-computo-python), and [Julia](https://github.com/computorg/template-computo-julia) contributors. 
+
+::: {.grid}
+
+::: {.g-col-4}
+::: {.callout-note icon="false"}
+### R
+
+[![](/assets/img/computo-template-r.png)](https://github.com/computorg/template-computo-R/)
+
+<https://github.com/computorg/template-computo-R/>
+:::
+:::
+
+::: {.g-col-4}
+::: {.callout-tip icon="false"}
+### Python
+
+[![](/assets/img/computo-template-python.png)](https://github.com/computorg/template-computo-python/)
+
+<https://github.com/computorg/template-computo-python/>
+:::
+:::
+
+::: {.g-col-4}
+::: {.callout-important icon="false"}
+### Julia
+
+[![](/assets/img/computo-template-julia.png)](https://github.com/computorg/template-computo-julia/)
+
+<https://github.com/computorg/template-computo-julia/>
+:::
+:::
+:::
+
+These templates provide a starting point for authors to format their contributions according to Computo's guidelines. They include the necessary files and configurations to set up a reproducible environment and continuous integration
 
 ### Setup a git repository {#sec-git}
 
-Setup a new Github repository by browsing either the 
-[R](https://github.com/computorg/template-computo-R) or [Python](https://github.com/computorg/template-computo-python) or [Julia](https://github.com/computorg/template-computo-julia) 
-template repository and clicking the **"use this template"** button at the top of the page, as illustrated in @fig-template.
+Create a new GitHub repository by navigating to the [R](https://github.com/computorg/template-computo-R), [Python](https://github.com/computorg/template-computo-python), or [Julia](https://github.com/computorg/template-computo-julia) template repository and clicking the **"Use this template"** button at the top of the page, as shown in @fig-template.
 
 ![Screenshot of the R Computo template GitHub page.](/assets/img/computo-template-screenshot.png){#fig-template width="100%"}
 
 ::: {.callout-tip title="Branches"}
-When you fork a GitHub repository, be it classic or template, GitHub asks if you want to fork all branches (there is a box called *Include all branches*). You only need to fork the main branch so you do not have to check that box.
+When you fork a GitHub repository – whether it is a classic repository or a template – GitHub will ask if you want to include all branches (there is a box labeled *Include all branches*). You only need to fork the main branch, so you do not need to check that box.
 :::
 
 ::: {.callout-caution title="Public repository"}
-The paper will be automatically published online using GitHub pages. This is possible only with public repositories. Hence, when you initialize your repository from the template, make sure that the *Public* box is checked (the default) and not the *Private* one.
+The paper will be automatically published online using GitHub pages. This is possible only with public repositories (which is the default behavior when you initialize your repository from this template). It is  fine to keep your repository private during the writing phase. However, we ask you to set it public at the submission stage; so that the paper can be rendered and published online for the reviewers.
 :::
 
 In summary, before clicking on *Create repository*, you should have the options documented in @fig-clone-template.
@@ -50,18 +85,18 @@ You can use Gitlab for submitting to Computo. We will be giving more detailed su
 
 ### Local setup: clone, quarto, and computo extension {#sec-quarto}
 
-You should first clone the repository on your local computer. From a terminal window, run:
+First, clone the repository to your local computer. In a terminal, run:
 
 ```bash
 # Clone the repository
 git clone http://github.com/<user-name>/<repository-name>.git
 ```
 
-You need [quarto](https://quarto.org/) installed on your computer, as well as the [Computo extension](https://github.com/computorg/computo-quarto-extension) to prepare your document. 
+You need to have [Quarto](https://quarto.org/) and the [Computo extension](https://github.com/computorg/computo-quarto-extension) installed.
 
-To install Quarto, you should refer to the instructions here: <https://quarto.org/docs/get-started/>.
+- Install Quarto: follow instructions at <https://quarto.org/docs/get-started/>.
+- Once Quarto is installed, open a terminal in your cloned repo folder and run:
 
-Once Quarto is properly installed locally on your computer, you can install the Computo Quarto extension. To do this, open a terminal window in the folder of your local clone, and run the following command line:
 
 ```bash
 # Install computo quarto extension
@@ -69,16 +104,12 @@ quarto add computorg/computo-quarto-extension
 ```
 
 ::: {.callout-caution title="Multiple collaborators"}
-If you are collaborating with others when writing your contributions, **each collaborator** needs to perform the same three steps:
-
-- clone the repository,
-- install Quarto,
-- install the Computo Quarto extension by executing the above command.
+If you are collaborating with others when writing your contributions, **each collaborator** needs to perform these same three steps (clone the repository, install Quarto and install the Computo Quarto extension).
 :::
 
 ### Write your contribution {#sec-writing}
 
-In the forked template, there are mainly two files you are expected to modify for writing your contribution: `template-computo-LANG.qmd` (where LANG is to be replaced with either R, python or julia) and `_quarto.yml`.
+There are mainly two files you are expected to modify in your repository for writing your contribution: `template-computo-LANG.qmd` (where LANG is to be replaced with either R, Python or Julia) and `_quarto.yml`.
 
 #### Main content of your contribution
 
@@ -101,7 +132,10 @@ To customise title, authors, date, abstract and so on, you should modify the `_q
 
 ```yml
 project:
-  title: "template-computo-R"
+  type: default
+  render:
+    - template-computo-R.qmd
+    - README.qmd
 
 title: "Template for contribution to Computo"
 subtitle: "Example dedicated to `R` users"
@@ -135,12 +169,13 @@ github-user: computorg
 repo: "template-computo-r"
 draft: true # set to false once the build is running
 published: false # will be set to true once accepted
+license: CC-BY-4.0
 format:
   computo-html: default
   computo-pdf: default
 ```
 
-You can customize most of the entries in that file except `project:`, `published:` and `format:`. If your contribution is accepted for publication, the associate editors will modify parts of this file accordingly.
+You can customize most of the entries in that file except `project:`, `published:`, `draft:`, `license:` and `format:`. If your contribution is accepted for publication, the associate editors will modify parts of this file accordingly.
 
 ### Setup dependencies {#sec-dependencies}
 
@@ -213,7 +248,7 @@ You can safely delete the `gh-pages` branch if you have one, as we don't need an
 
 #### Handle external *system* dependencies
 
-While you should have by now handled R, Python or Julia package dependencies using appropriate tools that register environments and version numbers, some of the packages your work depend upon might require external *system* dependencies that must be installed either when setting up the environment in the GitHub runner or when taking care of the paper rendering or in both cases. To take care of that, you can add and customize two scripts at the root of your repository. Specifically:
+While R, Python, or Julia package dependencies should be managed using the appropriate environment tools, your project may also require external *system* dependencies (such as libraries or command-line tools). These must be installed on the GitHub runner during environment setup or rendering. To handle this, add and customize two scripts at the root of your repository:
 
 - `setup-env-ci.sh` is meant to install system dependencies required to set up the environment in the GitHub runner. Here is an example of such a file taken from a published article:
 
@@ -237,13 +272,19 @@ Remember that the GitHub runner uses Linux Ubuntu and therefore software install
 
 ### Submit your manuscript {#sec-submitting}
 
-Once you are done writing your contribution, recall that you can render it in both HTML and PDF by running `quarto render` from a terminal within the folder in which you cloned the Computo template.
+Once you have finished writing your contribution, render it locally by running `quarto render` in your project folder. This will generate both HTML and PDF files if everything is set up correctly.
 
-If the Quarto rendering is successful locally (hence you get both HTML and PDF files), then, once you push the last modification to your repository on GitHub, the continuous integration and deployment scripts should automatically run and, if successful, the HTML version of your contribution will be published online, as well as a PDF version (see "Other format" at the end of the table of content of the rendered HTML).
+After confirming that the document builds successfully, push your changes to GitHub. The continuous integration workflow will automatically build and publish the HTML and PDF versions online.
 
-The PDF version should then be submitted to the [OpenReview](https://openreview.net/group?id=Computo) platform which will trigger the scientific review of the content of the PDF as well as the technical and reproducibility review from the repository.
+::: {.callout-caution}
+## Ignored files
+Make sure to check and update the `.gitignore` file in your repository. In particular, 
+if you changed the name of some files in the repository (like the main `.qmd` file), make propagate this change to the `.gitignore` file in order to avoid pushing binary files to the repository (such as the PDF file). 
+:::
 
-You can find more details about the scientific reviewing process in the [dedicated page](/site/guidelines-reviewers.qmd) on this website (*Reviewers* tabs).
+To submit your manuscript for review, upload the generated PDF to the [OpenReview](https://openreview.net/group?id=Computo) platform. This will start both the scientific and reproducibility review processes.
+
+For more details about the review process, see the [guidelines for reviewers](/site/guidelines-reviewers.qmd).
 
 ### Accepted manuscript {#sec-acceptance}
 
@@ -261,42 +302,37 @@ A new page opens where you need to select *Specify an organization or username* 
 
 ## Example papers {#sec-examples}
 
-Authors can find example papers for each language that illustrate the expected content and some key features for formatting contributions as well as reminding some of the guidelines:
+In addition to the template repositories that can serve as example papers [see @sec-templates], we provide more in-depth illustrations of the expected content and available features through mock contributions consisting of a complete reworking of the famous t-SNE article.
 
 ::: {.grid}
 
-::: {.g-col-4}
+::: {.g-col-6}
 ::: {.callout-note icon="false"}
 ### R
 
-[![](/assets/img/computo-template-r.png)](https://computo-journal.org/template-computo-R/)
+[![](/assets/img/published-paper-tsne.png)](https://computo-journal.org/published-paper-tsne/)
 
-<https://computo-journal.org/template-computo-R/>
+<https://computo-journal.org/published-paper-tsne/>
 :::
 :::
 
-::: {.g-col-4}
+::: {.g-col-6}
 ::: {.callout-tip icon="false"}
 ### Python
 
-[![](/assets/img/computo-template-python.png)](https://computo-journal.org/template-computo-python/)
+[![](/assets/img/published-paper-tsne.png)](https://computo-journal.org/published-paper-tsne-R/)
 
-<https://computo-journal.org/template-computo-python/>
+<https://computo-journal.org/published-paper-tsne-R/>
 :::
 :::
 
-::: {.g-col-4}
-::: {.callout-important icon="false"}
-### Julia
-
-[![](/assets/img/computo-template-julia.png)](https://computo-journal.org/template-computo-julia/)
-
-<https://computo-journal.org/template-computo-julia/>
-:::
-:::
 :::
 
-You can click above either on the screenshot or the URL to access the rendered version of each example paper. At any time you can then access the source code by clicking on the `</> Source` button in the upper-right corner of the page as illustrated in @fig-template-source.
+:::{.callout-tip}
+## Accessing paper source
+
+For other advanced examples, do not hesitate to explore the source code of any [paper already published in Computo](https://computo-journal.org/site/publications.html) to see how the template is used in practice. You can also access the source code of the example papers mentioned above by clicking on the `</> Source` button in the upper-right corner of the page as illustrated in @fig-template-source.
+:::
 
 ![Accessing sources of the rendered example papers.](/assets/img/computo-template-r-source.png){#fig-template-source width="100%"}
 
