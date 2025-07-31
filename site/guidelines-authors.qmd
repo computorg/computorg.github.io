@@ -72,10 +72,8 @@ When you fork a GitHub repository – whether it is a classic repository or a te
 :::
 
 ::: {.callout-caution title="Public repository"}
-The paper will be automatically published online using GitHub pages. This is possible only with public repositories (which is the default behavior when you initialize your repository from this template). It is  fine to keep your repository private during the writing phase. However, we ask you to set it public at the submission stage; so that the paper can be rendered and published online for the reviewers.
+The paper will be automatically published online using GitHub pages. This is possible only with public repositories (which is the default behavior when you initialize your repository from this template, see @fig-clone-template). If your prefer, it is fine to keep your repository private during the writing phase. However, we ask you to set it public at the submission stage; so that the paper can be rendered and published online for the reviewers.
 :::
-
-In summary, before clicking on *Create repository*, you should have the options documented in @fig-clone-template.
 
 ![Forking a GitHub template.](/assets/img/clone-template.png){#fig-clone-template width="100%"}
 
@@ -107,38 +105,37 @@ quarto add computorg/computo-quarto-extension
 If you are collaborating with others when writing your contributions, **each collaborator** needs to perform these same three steps (clone the repository, install Quarto and install the Computo Quarto extension).
 :::
 
-### Write your contribution {#sec-writing}
-
-There are mainly two files you are expected to modify in your repository for writing your contribution: `template-computo-LANG.qmd` (where LANG is to be replaced with either R, Python or Julia) and `_quarto.yml`.
-
-#### Main content of your contribution
-
-The main body of your paper (starting with the *Introduction* section) should be written in the `template-computo-LANG.qmd` following the formatting suggestions therein.
-
-::: {.callout-note title="Local compilation"}
-Make sure that you are able to build your manuscript as a standard notebook on your system before proceeding to the next step.
-:::
-
-To build your document (both in PDF and HTML by default), you can run the command `quarto render`, e.g. for the template:
+::: {.callout-important title="Local compilation"}
+Before proceeding to the next step,  make sure that you are able to build your manuscript as a standard notebook on your system by running the following command in a terminal:
 
 ```bash
 # will render both to html and PDF
 quarto render
 ```
+:::
+
+### Write your contribution {#sec-writing}
+
+There are mainly two files you are expected to modify in your repository for writing your contribution: `template-computo-LANG.qmd` (where LANG is to be replaced with either R, Python or Julia) and `_quarto.yml`. While the first can be renamed (e.g, `submission-YYYYMM-firstAuthor-keyword.qmd`), the second must remain `_quarto.yml` as it contains metadata about your contribution shared between project's files.
+
+::: {.callout-tip}
+## Editing your project
+You can edit your project using any text editor, but we recommend using an IDE such as [vsCode](https://code.visualstudio.com/) or [RStudio](https://posit.co/download/rstudio-desktop/). These IDEs provide syntax highlighting, code completion, and other features that make editing Quarto files easier.
+:::
 
 #### Metadata of your contribution
 
-To customise title, authors, date, abstract and so on, you should modify the `_quarto.yml` file. By default, it looks like this:
+All yaml metadata should preferably be placed in the `_quarto.yml` file. To customise title, authors, date, abstract and so on, you should modify `_quarto.yml` which by default looks like this:
 
 ```yml
 project:
   type: default
   render:
-    - template-computo-R.qmd
+    - template-computo-LANG.qmd
     - README.qmd
 
 title: "Template for contribution to Computo"
-subtitle: "Example dedicated to `R` users"
+subtitle: "Example dedicated to `LANG` users"
 author:
   - name: Jane Doe
     corresponding: true
@@ -176,6 +173,12 @@ format:
 ```
 
 You can customize most of the entries in that file except `project:`, `published:`, `draft:`, `license:` and `format:`. If your contribution is accepted for publication, the associate editors will modify parts of this file accordingly.
+
+#### Main content of your contribution
+
+The main content of your contribution must be written in the `template-computo-LANG.qmd` file (see formatting suggestion therein). To compile your contribution, run `quarto render` anytime needed.
+
+We also provide a `README.qmd` file as part of the project. This file uses shortcodes to extract metadata from `_quarto.yml` and generate a `README.md` that will be displayed on the main page of your GitHub repository. The `README.md` file is rendered automatically when you run `quarto render` at the root of your repository. You may modify the `README.qmd` file if you wish, at your own risk. If your submission is accepted, it will be standardized by the Computo team.
 
 ### Setup dependencies {#sec-dependencies}
 
@@ -270,19 +273,18 @@ sudo apt-get install -y libblas-dev liblapack-dev
 Remember that the GitHub runner uses Linux Ubuntu and therefore software installation is achieved through `apt-get`. Furthermore, you must precede calls to `apt-get` with the word `sudo` to indicate that you wish to run this command as an administrator.
 :::
 
-### Submit your manuscript {#sec-submitting}
+### Push to GitHub {#sec-ppush-git}
 
-Once you have finished writing your contribution, render it locally by running `quarto render` in your project folder. This will generate both HTML and PDF files if everything is set up correctly.
-
-After confirming that the document builds successfully, push your changes to GitHub. The continuous integration workflow will automatically build and publish the HTML and PDF versions online.
+Once you have finished part of your writing and confirmed that the document builds successfully locally, you can push your changes to GitHub as you would with any Git project. If everything is set up correctly, the continuous integration workflow will automatically build and publish the HTML and PDF versions online.
 
 ::: {.callout-caution}
 ## Ignored files
-Make sure to check and update the `.gitignore` file in your repository. In particular, 
-if you changed the name of some files in the repository (like the main `.qmd` file), make propagate this change to the `.gitignore` file in order to avoid pushing binary files to the repository (such as the PDF file). 
+Make sure to check and update the `.gitignore` file in your repository. In particular, if you changed the name of some files in the repository (like the main `.qmd` file), make propagate this change to the `.gitignore` file in order to avoid pushing binary files to the repository (such as the PDF file). 
 :::
 
-To submit your manuscript for review, upload the generated PDF to the [OpenReview](https://openreview.net/group?id=Computo) platform. This will start both the scientific and reproducibility review processes.
+### Submit your manuscript {#sec-submitting}
+
+Once you are satisfied with your manuscript, you can submit it for review. To do so, upload the generated PDF to the [OpenReview](https://openreview.net/group?id=Computo) platform and indicate the corresponding Git repository. This will initiate both the scientific and reproducibility review processes.
 
 For more details about the review process, see the [guidelines for reviewers](/site/guidelines-reviewers.qmd).
 
