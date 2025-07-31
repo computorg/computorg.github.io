@@ -52,7 +52,7 @@ renv::snapshot()
 The `renv.lock` should be versioned with git. Other files that `renv::snapshot()` might produce should be listed under `.gitignore` and therefore not put under versioning (which is done in the default template version of `.gitignore`).
 :::
 
-::: {.callout-tip title=" R version"}
+::: {.callout-tip title="R version"}
 A seamless workflow has been reported with `renv` when using `R` version `>= 4.5.1`. We recommand to update your system to this version or later.
 :::
 

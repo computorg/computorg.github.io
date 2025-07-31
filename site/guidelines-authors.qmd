@@ -1,7 +1,7 @@
 ---
 title: Guidelines for authors
 description: |
-  Step-by-step guide to help authors format and submit their papers.
+  Step-by-step guide to format and submit papers to Computo.
 format:
   html:
     toc: true
@@ -12,7 +12,42 @@ bibliography: ../publications/published.bib
 lightbox: true
 ---
 
-## A step-by-step guide to submitting a paper to Computo {#sec-guide}
+## Introduction
+
+This document provides a comprehensive documentation to accompany the authors during the writing of their contribution to Computo. It covers the requirements for submission, how to use the provided templates, how to set up dependencies, and how to ensure reproducibility through continuous integration and finally.
+
+::: {.callout-tip title="TL;DR / summary of the whole guidelines"}
+
+- **Official templates (R, Python, Julia)**:
+  - Create a new GitHub repository from the appropriate template
+  - This contains document, environment and CI configuration files
+
+- **Local Setup**:
+  - Clone the repository.
+  - Install [Quarto](https://quarto.org/) and the [Computo Quarto extension](https://github.com/computorg/computo-quarto-extension).
+  - Ensure you can render the manuscript locally.
+
+- **Writing Your Contribution**:
+  - Main content goes in `template-computo-LANG.qmd`.
+  - Metadata (title, authors, abstract, etc.) is set in `_quarto.yml`.
+  - Edit using any text editor or IDE (VS Code/RStudio recommended).
+
+- **Dependencies**:
+  - Freeze package versions for reproducibility.
+  - Use `renv` (R), `conda`/`requirements.txt` (Python), or `Project.toml` (Julia).
+  - System dependencies can be installed via `setup-env-ci.sh` and `setup-render-ci.sh`.
+
+- **Continuous Integration (CI)**:
+  - Uses GitHub Actions via a provided `build.yml` workflow.
+  - Automatically builds and publishes HTML/PDF outputs to GitHub Pages.
+
+- **Publishing**:
+  - Push changes to GitHub; CI will build and deploy the site.
+  - Submit the PDF and repository link to [OpenReview](https://openreview.net/group?id=Computo).
+
+:::
+
+## Step-by-step guide {#sec-guide}
 
 Submissions to [Computo](https://computorg.github.io) require both scientific content (such as equations, code, figures, and data) and clear evidence that this content is reproducible. This is achieved through: i) a notebook system, ii) a virtual environment with frozen dependencies, and iii) continuous integration. If needed, large data files can be stored externally on platforms like [Zenodo](https://zenodo.org/) or [OSF](https://osf.io/).
 
