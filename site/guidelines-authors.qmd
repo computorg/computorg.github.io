@@ -8,8 +8,13 @@ format:
     number-sections: true
     fig-align: "center"
 page-layout: article
-bibliography: ../publications/published.bib
 lightbox: true
+listing:
+  - id: examples
+    template: publications.ejs
+    contents: mock-papers.yml
+    sort: date desc
+    type: table
 ---
 
 ## Introduction
@@ -278,7 +283,7 @@ Next, as illustrated in @fig-deploy, under `Settings > Pages` on the webpage of 
 
 ![Deploy your website with GitHub Actions](/assets/img/2025-03-20-revised-github-process/depoy-github.png){#fig-deploy width="100%"}
 
-Authors can find more details about Computo's workflow in @sec-workflow.
+Authors can find more details about Computo's workflow [in the corresponding FAQ entry](../blog/2025-07-31-computo-workflow/index.html).
 
 ::: {.callout-note title="Compatibility with old reproducibility system"}
 You can safely delete the `gh-pages` branch if you have one, as we don't need anymore to push the HTML files to the site.
@@ -337,38 +342,24 @@ A new page opens where you need to select *Specify an organization or username* 
 
 ![The ownership transfer page.](/assets/img/transfer-ownership.003.png){#fig-transfer-ownership-3 width="100%" fig-align="center"}
 
-## Example papers {#sec-examples}
+## Advanced examples {#sec-examples}
 
-In addition to the template repositories that can serve as example papers [see @sec-templates], we provide more in-depth illustrations of the expected content and available features through mock contributions consisting of a complete reworking of the famous t-SNE article.
+### Mock contributions
 
-::: {.grid}
+In addition to the template repositories that can serve as example papers (see @sec-templates), we provide more in-depth illustrations of the expected content and available features through mock contributions consisting of a complete reworking of the famous t-SNE article.
 
-::: {.g-col-6}
-::: {.callout-note icon="false"}
-### R
-
-[![](/assets/img/published-paper-tsne.png)](https://computo-journal.org/published-paper-tsne/)
-
-<https://computo-journal.org/published-paper-tsne/>
-:::
+::: {#examples}
 :::
 
-::: {.g-col-6}
-::: {.callout-tip icon="false"}
-### Python
+### Previously published papers
 
-[![](/assets/img/published-paper-tsne.png)](https://computo-journal.org/published-paper-tsne-R/)
-
-<https://computo-journal.org/published-paper-tsne-R/>
-:::
-:::
-
+::: {.callout-tip title="Reproducing a paper"}
+For other advanced examples, do not hesitate to explore the source code of any [paper already published in Computo](https://computo-journal.org/site/publications.html) to see how the template is used in practice. In particular, reproducing an existing paper published in Computo can be easily done [as detailed in the FAQ](../blog/2025-07-31-reproduce-paper/index.html).
 :::
 
 :::{.callout-tip}
-## Accessing paper source
-
-For other advanced examples, do not hesitate to explore the source code of any [paper already published in Computo](https://computo-journal.org/site/publications.html) to see how the template is used in practice. You can also access the source code of the example papers mentioned above by clicking on the `</> Source` button in the upper-right corner of the page as illustrated in @fig-template-source.
+## Accessing source code
+You can also access the source code of the example papers mentioned above by clicking on the `</> Source` button in the upper-right corner of the page as illustrated in @fig-template-source.
 :::
 
 ![Accessing sources of the rendered example papers.](/assets/img/computo-template-r-source.png){#fig-template-source width="100%"}
@@ -377,46 +368,6 @@ The source code of the page then displays as shown in @fig-template-source-displ
 
 ![Copying the sources of the rendered example papers.](/assets/img/computo-template-r-source-display.png){#fig-template-source-display width="100%"}
 
-## Computo's publication workflow {#sec-workflow}
-
-The Computo workflows provide a streamlined publishing pipeline for authors to submit and render Quarto articles directly on GitHub Pages without requiring technical expertise.
-
-### Workflow Summary
-
-![Computo Workflow Structure](/assets/img/2025-03-20-revised-github-process/workflow.svg){#fig-workflow width="100%"}
-
-As illustrated in @fig-workflow, the publication process consists of two main phases:
-
-1.  **Environment Setup and Caching** (`global-env.yml`)
-    -   Detects and installs required dependencies (Python, R)
-    -   Caches the environment for faster subsequent runs
-    -   Customizable via `setup-env-ci.sh`
-2.  **Rendering and Deployment** (`publish-render.yml`)
-    -   Renders Quarto documents to HTML
-    -   Publish the output to GitHub Pages
-    -   Customizable via `setup-render-ci.sh`
-
-Authors only need to reference the main workflow file (`build.yml`) in their repository, which orchestrates these processes.
-
-### Key Benefits
-
--   **Simplified Process**: Authors need minimal GitHub Actions knowledge
--   **Optimized Performance**: Environment caching for faster builds
--   **Customization Points**: Two script entry points for custom configurations
--   **Automated Deployment**: Direct publishing to GitHub Pages
-
-Authors simply use the `build.yml` workflow in their repository to trigger the complete process from environment setup to final publication.
-
-### Reproducing an existing paper published in Computo
-
-Our publication workflow makes it very easy for anyone to reproduce a given paper. Consider for instance the paper <https://doi.org/10.57750/sfxn-1t05> associated with the Github repository [published-202412-giorgi-efficient][https://github.com/computorg/published-202412-giorgi-efficient]. You first need to clone the repository. Then you need to install Quarto and the Computo Quarto extension in the `published-202412-giorgi-efficient` folder that the cloning step made. Finally, you can render the document. In summary, you do that with the following commands:
-
-```bash
-git clone https://github.com/computorg/published-202412-giorgi-efficient.git
-cd published-202412-giorgi-efficient
-quarto add computorg/computo-quarto-extension
-quarto render
-```
 
 ## Computo's code of ethics {#sec-ethics}
 
