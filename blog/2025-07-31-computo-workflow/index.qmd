@@ -1,0 +1,40 @@
+---
+title: Computo's publication workflow
+date: '2025-07-31'
+description: Diagram summarizing the publication workflow
+categories:
+  - authors
+  - reproducibility
+format:
+  html:
+    toc: true
+page-layout: article
+---
+
+The Computo workflows provide a streamlined publishing pipeline for authors to submit and render Quarto articles directly on GitHub Pages without requiring technical expertise.
+
+### Workflow Summary
+
+![Computo Workflow Structure](/assets/img/2025-03-20-revised-github-process/workflow.svg){#fig-workflow width="100%"}
+
+As illustrated in @fig-workflow, the publication process consists of two main phases:
+
+1.  **Environment Setup and Caching** (`global-env.yml`)
+    -   Detects and installs required dependencies (Python, R)
+    -   Caches the environment for faster subsequent runs
+    -   Customizable via `setup-env-ci.sh`
+2.  **Rendering and Deployment** (`publish-render.yml`)
+    -   Renders Quarto documents to HTML
+    -   Publish the output to GitHub Pages
+    -   Customizable via `setup-render-ci.sh`
+
+Authors only need to reference the main workflow file (`build.yml`) in their repository, which orchestrates these processes.
+
+### Key Benefits
+
+-   **Simplified Process**: Authors need minimal GitHub Actions knowledge
+-   **Optimized Performance**: Environment caching for faster builds
+-   **Customization Points**: Two script entry points for custom configurations
+-   **Automated Deployment**: Direct publishing to GitHub Pages
+
+Authors simply use the `build.yml` workflow in their repository to trigger the complete process from environment setup to final publication.
