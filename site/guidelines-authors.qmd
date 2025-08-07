@@ -121,7 +121,13 @@ There are mainly two files you are expected to modify in your repository for wri
 
 The main body of your paper (starting with the *Introduction* section) should be written in the `template-computo-LANG.qmd` following the formatting suggestions therein.
 
-::: {.callout-note title="Local compilation"}
+::: {.callout-tip title="Multiple languages"}
+Quarto relies on a specific engine to compile your document. By default, that engine detects code blocks, executes them and paste the result below the code block in the rendered document.
+
+It is possible to use multiple languages within the same document (e.g. R and Python or Python and Julia, etc.) provided that you use the **knitr** engine. Indeed, [**knitr**](https://yihui.org/knitr/) is an R package that is able to parse code blocks from many languages. This can be achieved by specifying `engine: knitr` in your document metadata. The default engine binding that Quarto uses is detailed here: <https://quarto.org/docs/computations/execution-options.html#engine-binding>.
+:::
+
+::: {.callout-caution title="Local compilation"}
 Make sure that you are able to build your manuscript as a standard notebook on your system before proceeding to the next step.
 :::
 
