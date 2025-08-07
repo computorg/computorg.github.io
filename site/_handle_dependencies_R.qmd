@@ -36,13 +36,11 @@ Now you can write your contribution, using all the packages you need. Install th
 renv::install("ggplot2") # or equivalently install.packages("ggplot2")
 ```
 
-Non-CRAN packages (*e.g.* Github packages) can be used. To install such packages, you need to first install the **remotes** package. Then, if you want to install the development version of *e.g.* the **gt** package hosted by `rstudio` GitHub account (useful for nicely and easily formatting tables btw), you would do:
+Non-CRAN packages (*e.g.* Github packages) can be used. For instance, if you want to install the development version of *e.g.* the **gt** package hosted by `rstudio` GitHub account, you would do
 
 ```r
-install.packages("remotes")
-remotes::install_github("rstudio/gt")
+renv::install("rstudio/gt")
 ```
-
 Once you are done, you need to freeze the environment and package versions that are going to be used to run the calculations within your paper. This is achieved via:
 
 ```r
@@ -51,7 +49,11 @@ renv::snapshot()
 ```
 
 ::: {.callout-warning title="The `renv.lock` file"}
-The `renv.lock` should be versioned with git. Other files that `renv::snapshot()` might produce should be listed under `.gitignore` and therefore not put under versioning.
+The `renv.lock` should be versioned with git. Other files that `renv::snapshot()` might produce should be listed under `.gitignore` and therefore not put under versioning (which is done in the default template version of `.gitignore`).
+:::
+
+::: {.callout-tip title="R version"}
+A seamless workflow has been reported with `renv` when using `R` version `>= 4.5.1`. We recommand to update your system to this version or later.
 :::
 
 More details for using **renv** can be found:

@@ -1,18 +1,58 @@
 ---
 title: Guidelines for authors
 description: |
-  Step-by-step guide to help authors format and submit their papers.
+  Step-by-step guide to format and submit papers to Computo.
 format:
   html:
     toc: true
     number-sections: true
     fig-align: "center"
 page-layout: article
-bibliography: ../publications/published.bib
 lightbox: true
+listing:
+  - id: examples
+    template: publications.ejs
+    contents: mock-papers.yml
+    sort: date desc
+    type: table
 ---
 
-## A step-by-step guide to submitting a paper to Computo {#sec-guide}
+## Introduction
+
+This document provides a comprehensive documentation to accompany the authors during the writing of their contribution to Computo. It covers the requirements for submission, how to use the provided templates, how to set up dependencies, and how to ensure reproducibility through continuous integration and finally.
+
+::: {.callout-tip title="TL;DR / summary of the whole guidelines"}
+
+- **Official templates (R, Python, Julia)**:
+  - Create a new GitHub repository from the appropriate template
+  - This contains document, environment and CI configuration files
+
+- **Local Setup**:
+  - Clone the repository.
+  - Install [Quarto](https://quarto.org/) and the [Computo Quarto extension](https://github.com/computorg/computo-quarto-extension).
+  - Ensure you can render the manuscript locally.
+
+- **Writing Your Contribution**:
+  - Main content goes in `template-computo-LANG.qmd`.
+  - Metadata (title, authors, abstract, etc.) is set in `_quarto.yml`.
+  - Edit using any text editor or IDE (VS Code/RStudio recommended).
+
+- **Dependencies**:
+  - Freeze package versions for reproducibility.
+  - Use `renv` (R), `conda`/`requirements.txt` (Python), or `Project.toml` (Julia).
+  - System dependencies can be installed via `setup-env-ci.sh` and `setup-render-ci.sh`.
+
+- **Continuous Integration (CI)**:
+  - Uses GitHub Actions via a provided `build.yml` workflow.
+  - Automatically builds and publishes HTML/PDF outputs to GitHub Pages.
+
+- **Publishing**:
+  - Push changes to GitHub; CI will build and deploy the site.
+  - Submit the PDF and repository link to [OpenReview](https://openreview.net/group?id=Computo).
+
+:::
+
+## Step-by-step guide {#sec-guide}
 
 Submissions to [Computo](https://computorg.github.io) require both scientific content (such as equations, code, figures, and data) and clear evidence that this content is reproducible. This is achieved through: i) a notebook system, ii) a virtual environment with frozen dependencies, and iii) continuous integration. If needed, large data files can be stored externally on platforms like [Zenodo](https://zenodo.org/) or [OSF](https://osf.io/).
 
@@ -78,10 +118,8 @@ When you fork a GitHub repository – whether it is a classic repository or a te
 :::
 
 ::: {.callout-caution title="Public/private repository"}
-The paper will be automatically published online using GitHub pages. This is possible only with public repositories (which is the default behavior when you initialize your repository from this template). It is  fine to keep your repository private during the writing phase. However, we ask you to set it public at the submission stage; so that the paper can be rendered and published online for the reviewers.
+The paper will be automatically published online using GitHub pages. This is possible only with public repositories (which is the default behavior when you initialize your repository from this template, see @fig-clone-template). If your prefer, it is fine to keep your repository private during the writing phase. However, we ask you to set it public at the submission stage; so that the paper can be rendered and published online for the reviewers.
 :::
-
-In summary, before clicking on *Create repository*, you should have the options documented in @fig-clone-template.
 
 ![Forking a GitHub template.](/assets/img/clone-template.png){#fig-clone-template width="100%"}
 
@@ -128,29 +166,36 @@ It is possible to use multiple languages within the same document (e.g. R and Py
 :::
 
 ::: {.callout-caution title="Local compilation"}
-Make sure that you are able to build your manuscript as a standard notebook on your system before proceeding to the next step.
-:::
-
-To build your document (both in PDF and HTML by default), you can run the command `quarto render`, e.g. for the template:
+Before proceeding to the next step,  make sure that you are able to build your manuscript as a standard notebook on your system by running the following command in a terminal:
 
 ```bash
 # will render both to html and PDF
 quarto render
 ```
+:::
+
+### Write your contribution {#sec-writing}
+
+There are mainly two files you are expected to modify in your repository for writing your contribution: `template-computo-LANG.qmd` (where LANG is to be replaced with either R, Python or Julia) and `_quarto.yml`. While the first can be renamed (e.g, `submission-YYYYMM-firstAuthor-keyword.qmd`), the second must remain `_quarto.yml` as it contains metadata about your contribution shared between project's files.
+
+::: {.callout-tip}
+## Editing your project
+You can edit your project using any text editor, but we recommend using an IDE such as [vsCode](https://code.visualstudio.com/) or [RStudio](https://posit.co/download/rstudio-desktop/). These IDEs provide syntax highlighting, code completion, and other features that make editing Quarto files easier.
+:::
 
 #### Metadata of your contribution
 
-To customise title, authors, date, abstract and so on, you should modify the `_quarto.yml` file. By default, it looks like this:
+All yaml metadata should preferably be placed in the `_quarto.yml` file. To customise title, authors, date, abstract and so on, you should modify `_quarto.yml` which by default looks like this:
 
 ```yml
 project:
   type: default
   render:
-    - template-computo-R.qmd
+    - template-computo-LANG.qmd
     - README.qmd
 
 title: "Template for contribution to Computo"
-subtitle: "Example dedicated to `R` users"
+subtitle: "Example dedicated to `LANG` users"
 author:
   - name: Jane Doe
     corresponding: true
@@ -188,6 +233,12 @@ format:
 ```
 
 You can customize most of the entries in that file except `project:`, `published:`, `draft:`, `license:` and `format:`. If your contribution is accepted for publication, the associate editors will modify parts of this file accordingly.
+
+#### Main content of your contribution
+
+The main content of your contribution must be written in the `template-computo-LANG.qmd` file (see formatting suggestion therein). To compile your contribution, run `quarto render` anytime needed.
+
+We also provide a `README.qmd` file as part of the project. This file uses shortcodes to extract metadata from `_quarto.yml` and generate a `README.md` that will be displayed on the main page of your GitHub repository. The `README.md` file is rendered automatically when you run `quarto render` at the root of your repository. You may modify the `README.qmd` file if you wish, at your own risk. If your submission is accepted, it will be standardized by the Computo team.
 
 ### Setup dependencies {#sec-dependencies}
 
@@ -227,7 +278,7 @@ Next, as illustrated in @fig-deploy, under `Settings > Pages` on the webpage of 
 
 ![Deploy your website with GitHub Actions](/assets/img/2025-03-20-revised-github-process/depoy-github.png){#fig-deploy width="100%"}
 
-Authors can find more details about Computo's workflow in @sec-workflow.
+Authors can find more details about Computo's workflow [in the corresponding FAQ entry](../blog/2025-07-31-computo-workflow/index.html).
 
 ::: {.callout-note title="Compatibility with old reproducibility system"}
 You can safely delete the `gh-pages` branch if you have one, as we don't need anymore to push the HTML files to the site.
@@ -257,19 +308,18 @@ sudo apt-get install -y libblas-dev liblapack-dev
 Remember that the GitHub runner uses Linux Ubuntu and therefore software installation is achieved through `apt-get`. Furthermore, you must precede calls to `apt-get` with the word `sudo` to indicate that you wish to run this command as an administrator.
 :::
 
-### Submit your manuscript {#sec-submitting}
+### Push to GitHub {#sec-ppush-git}
 
-Once you have finished writing your contribution, render it locally by running `quarto render` in your project folder. This will generate both HTML and PDF files if everything is set up correctly.
-
-After confirming that the document builds successfully, push your changes to GitHub. The continuous integration workflow will automatically build and publish the HTML and PDF versions online.
+Once you have finished part of your writing and confirmed that the document builds successfully locally, you can push your changes to GitHub as you would with any Git project. If everything is set up correctly, the continuous integration workflow will automatically build and publish the HTML and PDF versions online.
 
 ::: {.callout-caution}
 ## Ignored files
-Make sure to check and update the `.gitignore` file in your repository. In particular, 
-if you changed the name of some files in the repository (like the main `.qmd` file), make propagate this change to the `.gitignore` file in order to avoid pushing binary files to the repository (such as the PDF file). 
+Make sure to check and update the `.gitignore` file in your repository. In particular, if you changed the name of some files in the repository (like the main `.qmd` file), make propagate this change to the `.gitignore` file in order to avoid pushing binary files to the repository (such as the PDF file). 
 :::
 
-To submit your manuscript for review, upload the generated PDF to the [OpenReview](https://openreview.net/group?id=Computo) platform. This will start both the scientific and reproducibility review processes.
+### Submit your manuscript {#sec-submitting}
+
+Once you are satisfied with your manuscript, you can submit it for review. To do so, upload the generated PDF to the [OpenReview](https://openreview.net/group?id=Computo) platform and indicate the corresponding Git repository. This will initiate both the scientific and reproducibility review processes.
 
 For more details about the review process, see the [guidelines for reviewers](/site/guidelines-reviewers.qmd).
 
@@ -287,38 +337,24 @@ A new page opens where you need to select *Specify an organization or username* 
 
 ![The ownership transfer page.](/assets/img/transfer-ownership.003.png){#fig-transfer-ownership-3 width="100%" fig-align="center"}
 
-## Example papers {#sec-examples}
+## Advanced examples {#sec-examples}
 
-In addition to the template repositories that can serve as example papers [see @sec-templates], we provide more in-depth illustrations of the expected content and available features through mock contributions consisting of a complete reworking of the famous t-SNE article.
+### Mock contributions
 
-::: {.grid}
+In addition to the template repositories that can serve as example papers (see @sec-templates), we provide more in-depth illustrations of the expected content and available features through mock contributions consisting of a complete reworking of the famous t-SNE article.
 
-::: {.g-col-6}
-::: {.callout-note icon="false"}
-### R
-
-[![](/assets/img/published-paper-tsne.png)](https://computo-journal.org/published-paper-tsne/)
-
-<https://computo-journal.org/published-paper-tsne/>
-:::
+::: {#examples}
 :::
 
-::: {.g-col-6}
-::: {.callout-tip icon="false"}
-### Python
+### Previously published papers
 
-[![](/assets/img/published-paper-tsne.png)](https://computo-journal.org/published-paper-tsne-R/)
-
-<https://computo-journal.org/published-paper-tsne-R/>
-:::
-:::
-
+::: {.callout-tip title="Reproducing a paper"}
+For other advanced examples, do not hesitate to explore the source code of any [paper already published in Computo](https://computo-journal.org/site/publications.html) to see how the template is used in practice. In particular, reproducing an existing paper published in Computo can be easily done [as detailed in the FAQ](../blog/2025-07-31-reproduce-paper/index.html).
 :::
 
 :::{.callout-tip}
-## Accessing paper source
-
-For other advanced examples, do not hesitate to explore the source code of any [paper already published in Computo](https://computo-journal.org/site/publications.html) to see how the template is used in practice. You can also access the source code of the example papers mentioned above by clicking on the `</> Source` button in the upper-right corner of the page as illustrated in @fig-template-source.
+## Accessing source code
+You can also access the source code of the example papers mentioned above by clicking on the `</> Source` button in the upper-right corner of the page as illustrated in @fig-template-source.
 :::
 
 ![Accessing sources of the rendered example papers.](/assets/img/computo-template-r-source.png){#fig-template-source width="100%"}
@@ -327,46 +363,6 @@ The source code of the page then displays as shown in @fig-template-source-displ
 
 ![Copying the sources of the rendered example papers.](/assets/img/computo-template-r-source-display.png){#fig-template-source-display width="100%"}
 
-## Computo's publication workflow {#sec-workflow}
-
-The Computo workflows provide a streamlined publishing pipeline for authors to submit and render Quarto articles directly on GitHub Pages without requiring technical expertise.
-
-### Workflow Summary
-
-![Computo Workflow Structure](/assets/img/2025-03-20-revised-github-process/workflow.svg){#fig-workflow width="100%"}
-
-As illustrated in @fig-workflow, the publication process consists of two main phases:
-
-1.  **Environment Setup and Caching** (`global-env.yml`)
-    -   Detects and installs required dependencies (Python, R)
-    -   Caches the environment for faster subsequent runs
-    -   Customizable via `setup-env-ci.sh`
-2.  **Rendering and Deployment** (`publish-render.yml`)
-    -   Renders Quarto documents to HTML
-    -   Publish the output to GitHub Pages
-    -   Customizable via `setup-render-ci.sh`
-
-Authors only need to reference the main workflow file (`build.yml`) in their repository, which orchestrates these processes.
-
-### Key Benefits
-
--   **Simplified Process**: Authors need minimal GitHub Actions knowledge
--   **Optimized Performance**: Environment caching for faster builds
--   **Customization Points**: Two script entry points for custom configurations
--   **Automated Deployment**: Direct publishing to GitHub Pages
-
-Authors simply use the `build.yml` workflow in their repository to trigger the complete process from environment setup to final publication.
-
-### Reproducing an existing paper published in Computo
-
-Our publication workflow makes it very easy for anyone to reproduce a given paper. Consider for instance the paper <https://doi.org/10.57750/sfxn-1t05> associated with the Github repository [published-202412-giorgi-efficient][https://github.com/computorg/published-202412-giorgi-efficient]. You first need to clone the repository. Then you need to install Quarto and the Computo Quarto extension in the `published-202412-giorgi-efficient` folder that the cloning step made. Finally, you can render the document. In summary, you do that with the following commands:
-
-```bash
-git clone https://github.com/computorg/published-202412-giorgi-efficient.git
-cd published-202412-giorgi-efficient
-quarto add computorg/computo-quarto-extension
-quarto render
-```
 
 ## Computo's code of ethics {#sec-ethics}
 
