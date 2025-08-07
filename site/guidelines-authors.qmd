@@ -103,6 +103,12 @@ These templates provide a starting point for authors to format their contributio
 
 ### Setup a git repository {#sec-git}
 
+::: {.callout-note title="Git and GitHub"}
+Git is a versioning tool and GitHub is an online platform owned by Microsoft which provides the service of hosting repositories with all the capabilities of versioning offered by Git.
+
+Computo requires authors to submit their contribution as a GitHub repository. Hence, authors are expected to have basic knowledge of Git. We refer authors to the following online book which is particularly well written: <https://happygitwithr.com>.
+:::
+
 Create a new GitHub repository by navigating to the [R](https://github.com/computorg/template-computo-R), [Python](https://github.com/computorg/template-computo-python), or [Julia](https://github.com/computorg/template-computo-julia) template repository and clicking the **"Use this template"** button at the top of the page, as shown in @fig-template.
 
 ![Screenshot of the R Computo template GitHub page.](/assets/img/computo-template-screenshot.png){#fig-template width="100%"}
@@ -111,7 +117,7 @@ Create a new GitHub repository by navigating to the [R](https://github.com/compu
 When you fork a GitHub repository – whether it is a classic repository or a template – GitHub will ask if you want to include all branches (there is a box labeled *Include all branches*). You only need to fork the main branch, so you do not need to check that box.
 :::
 
-::: {.callout-caution title="Public repository"}
+::: {.callout-caution title="Public/private repository"}
 The paper will be automatically published online using GitHub pages. This is possible only with public repositories (which is the default behavior when you initialize your repository from this template, see @fig-clone-template). If your prefer, it is fine to keep your repository private during the writing phase. However, we ask you to set it public at the submission stage; so that the paper can be rendered and published online for the reviewers.
 :::
 
@@ -145,7 +151,21 @@ quarto add computorg/computo-quarto-extension
 If you are collaborating with others when writing your contributions, **each collaborator** needs to perform these same three steps (clone the repository, install Quarto and install the Computo Quarto extension).
 :::
 
-::: {.callout-important title="Local compilation"}
+### Write your contribution {#sec-writing}
+
+There are mainly two files you are expected to modify in your repository for writing your contribution: `template-computo-LANG.qmd` (where LANG is to be replaced with either R, Python or Julia) and `_quarto.yml`.
+
+#### Main content of your contribution
+
+The main body of your paper (starting with the *Introduction* section) should be written in the `template-computo-LANG.qmd` following the formatting suggestions therein.
+
+::: {.callout-tip title="Multiple languages"}
+Quarto relies on a specific engine to compile your document. By default, that engine detects code blocks, executes them and paste the result below the code block in the rendered document.
+
+It is possible to use multiple languages within the same document (e.g. R and Python or Python and Julia, etc.) provided that you use the **knitr** engine. Indeed, [**knitr**](https://yihui.org/knitr/) is an R package that is able to parse code blocks from many languages. This can be achieved by specifying `engine: knitr` in your document metadata. The default engine binding that Quarto uses is detailed here: <https://quarto.org/docs/computations/execution-options.html#engine-binding>.
+:::
+
+::: {.callout-caution title="Local compilation"}
 Before proceeding to the next step,  make sure that you are able to build your manuscript as a standard notebook on your system by running the following command in a terminal:
 
 ```bash
@@ -248,32 +268,7 @@ Now that you have written your contribution in the correct template and set up i
 
 #### Use Computo's built-in GitHub Action workflow
 
-Computo has a built-in workflow for just that purpose which comes in the form of a YAML file describing a GitHub Action. It should have been automatically added to your repository when you cloned one of our templates. It is located under `.github/workflows/build.yml` and its content should exactly match the following:
-
-```yml
-name: Main Workflows
-
-on:
-  push:
-    branches: ["main","master"]
-  repository_dispatch:
-    types: [custom-event] 
-  workflow_dispatch:
-  pull_request:
-    branches: ["main","master"]
-
-
-jobs:
-  call_env_workflow:
-    uses: computorg/workflows/.github/workflows/global-env.yml@main
-  call_quartopublish_workflow:
-    permissions:
-      id-token: write
-      contents: write
-      pages: write
-    uses: computorg/workflows/.github/workflows/publish-render.yml@main
-    needs: call_env_workflow
-```
+Computo has a built-in workflow for just that purpose which comes in the form of a YAML file describing a GitHub Action. It should have been automatically added to your repository when you cloned one of our templates. It is located under `.github/workflows/build.yml`.
 
 ::: {.callout-important title="Content of `build.yml`"}
 Authors should **under no circumstances** modify this file. If you encounter a problem (such as the CI not completing successfully), please get in touch with us at <contact@computo-journal.org>.
