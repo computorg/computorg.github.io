@@ -24,7 +24,7 @@ Env.Load(".env-secret")
 let client =
     let client = new GitHubClient(new ProductHeaderValue("computo"))
     // Using environment variable for token is a good security practice
-    match System.Environment.GetEnvironmentVariable("GITHUB_TOKEN") with
+    match System.Environment.GetEnvironmentVariable("API_GITHUB_TOKEN") with
     | null
     | "" -> client // No authentication
     | token ->
