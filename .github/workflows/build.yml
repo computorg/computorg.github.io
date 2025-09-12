@@ -31,6 +31,8 @@ jobs:
       uses: quarto-dev/quarto-actions/setup@v2
     - name: refresh publications and commit changes
       if: ${{ github.event_name == 'workflow_dispatch' || github.event.inputs.force == 'true' }}
+      env:
+        API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
       run: |
         dotnet fsi getcomputo-pub.fsx
         git config user.name "github-actions[bot]"
