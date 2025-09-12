@@ -15,16 +15,16 @@ open DrBiber
 open System.Threading.Tasks
 
 // exit if QUARTO_PROJECT_RENDER_ALL is set in the environment
-if System.Environment.GetEnvironmentVariable("QUARTO_PROJECT_RENDER_ALL") = null then
-    printfn "QUARTO_PROJECT_RENDER_ALL is not set, exiting."
-    exit 0
+// if System.Environment.GetEnvironmentVariable("QUARTO_PROJECT_RENDER_ALL") = null then
+//     printfn "QUARTO_PROJECT_RENDER_ALL is not set, exiting."
+//     exit 0
 // Load environment variables from .env file
 Env.Load(".env-secret")
 
 let client =
     let client = new GitHubClient(new ProductHeaderValue("computo"))
     // Using environment variable for token is a good security practice
-    match System.Environment.GetEnvironmentVariable("GITHUB_TOKEN") with
+    match System.Environment.GetEnvironmentVariable("API_GITHUB_TOKEN") with
     | null
     | "" -> client // No authentication
     | token ->

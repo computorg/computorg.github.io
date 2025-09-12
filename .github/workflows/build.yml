@@ -8,15 +8,46 @@ on:
     branches:
       - master
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Set to "true" to mark this run as forced when manually triggered'
+        required: false
+        default: 'false'
 
 jobs:
   build:
+    # Skip this job on push events when the head commit message contains [skip ci]
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip ci]') }}
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        persist-credentials: true
     - name: Setup Quarto
       uses: quarto-dev/quarto-actions/setup@v2
+    - name: refresh publications and commit changes
+      if: ${{ github.event_name == 'workflow_dispatch' || github.event.inputs.force == 'true' }}
+      env:
+        API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+      run: |
+        dotnet fsi getcomputo-pub.fsx
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        # Stage the generated files (ignore errors if files missing)
+        git add site/published.yml site/pipeline.yml site/mock-papers.yml || true
+        # Only commit if there are staged changes
+        if git diff --staged --quiet; then
+          echo "No publication changes to commit"
+        else
+          git commit -m "Update publications from getcomputo-pub.fsx [skip ci]"
+          # push to the branch that triggered the workflow
+          git push origin HEAD:${{ github.ref_name }}
+        fi
+
     - name: Build site
       uses: quarto-dev/quarto-actions/render@v2
     - name: Upload artifact

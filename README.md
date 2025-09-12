@@ -9,11 +9,9 @@ This repository stores the source of Computorg.
 
 Our website has been built with [Quarto](https://quarto.org), an open-source scientific and technical publishing system. The first thing you need to compile the website is therefore to install Quarto, which can be done by downloading the corresponing installer here: <https://quarto.org/docs/get-started/>.
 
-::: {.callout-note}
 ## Positron
 
 If you are using the new [Positron IDE](https://positron.posit.co), quarto is already bundled with it. You can simply type `which quarto` within the built-in terminal in Positron and add the returned path to your `PATH`.
-:::
 
 ### Microsoft DotNet SDK
 
