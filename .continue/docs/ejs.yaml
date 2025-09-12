@@ -1,0 +1,6 @@
+name: EjS
+version: 0.0.1
+schema: v1
+docs:
+  - name: EJS Docs
+    startUrl: https://ejs.co/#docs

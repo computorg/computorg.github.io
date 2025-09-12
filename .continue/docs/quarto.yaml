@@ -1,0 +1,6 @@
+name: Quarto
+version: 0.0.1
+schema: v1
+docs:
+  - name: Quarto
+    startUrl: https://quarto.org/
