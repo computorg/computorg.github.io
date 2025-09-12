@@ -18,6 +18,10 @@ listing:
     type: table
 ---
 
+::: {.callout title="Reproducibility"}
+Any paper with a passing build badge can be easily reproduced, as detailed in this FAQ entry [here](../blog/2025-07-31-reproduce-paper/index.html).
+:::
+
 ## Published Articles
 
 ::: {#published}

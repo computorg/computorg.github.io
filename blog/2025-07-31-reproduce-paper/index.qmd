@@ -1,0 +1,21 @@
+---
+title: Reproducing an existing paper published in Computo
+date: '2025-07-31'
+description: How to reproduce a published paper?
+categories:
+  - authors
+  - reproducibility
+format:
+  html:
+    toc: true
+page-layout: article
+---
+
+Our publication workflow makes it very easy for anyone to reproduce a given paper. Consider for instance the paper <https://doi.org/10.57750/sfxn-1t05> associated with the Github repository [published-202412-giorgi-efficient][https://github.com/computorg/published-202412-giorgi-efficient]. You first need to clone the repository. Then you need to install Quarto and the Computo Quarto extension in the `published-202412-giorgi-efficient` folder that the cloning step made. Finally, you can render the document. In summary, you do that with the following commands:
+
+```bash
+git clone https://github.com/computorg/published-202412-giorgi-efficient.git
+cd published-202412-giorgi-efficient
+quarto add computorg/computo-quarto-extension
+quarto render
+```
