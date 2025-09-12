@@ -15,9 +15,9 @@ open DrBiber
 open System.Threading.Tasks
 
 // exit if QUARTO_PROJECT_RENDER_ALL is set in the environment
-if System.Environment.GetEnvironmentVariable("QUARTO_PROJECT_RENDER_ALL") = null then
-    printfn "QUARTO_PROJECT_RENDER_ALL is not set, exiting."
-    exit 0
+// if System.Environment.GetEnvironmentVariable("QUARTO_PROJECT_RENDER_ALL") = null then
+//     printfn "QUARTO_PROJECT_RENDER_ALL is not set, exiting."
+//     exit 0
 // Load environment variables from .env file
 Env.Load(".env-secret")
 
