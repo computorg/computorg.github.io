@@ -1,4 +1,49 @@
 - abstract': >-
+    The Maximum Mean Discrepancy (MMD) is a kernel-based
+        metric widely used for nonparametric tests and estimation. Recently,
+        it has also been studied as an objective function for parametric
+        estimation, as it has been shown to yield robust estimators. We have
+        implemented MMD minimization for parameter inference in a wide range
+        of statistical models, including various regression models, within
+        an `R` package called `regMMD`. This paper provides an introduction
+        to the `regMMD` package. We describe the available kernels and
+        optimization procedures, as well as the default settings. Detailed
+        applications to simulated and real data are provided.
+  authors: Pierre Alquier and Mathieu Gerber
+  bibtex: >+
+    @article{alquier2025,
+    	author = {Alquier, Pierre and Gerber, Mathieu},
+    	publisher = {French Statistical Society},
+    	title = {`regMMD`: An {`R`} Package for Parametric Estimation and
+        Regression with Maximum Mean Discrepancy},
+    	journal = {Computo},
+    	date = {2025-11-18},
+    	doi = {10.57750/d6d1-gb09},
+    	issn = {2824-7795},
+    	langid = {en},
+    	abstract = {The Maximum Mean Discrepancy (MMD) is a kernel-based
+        metric widely used for nonparametric tests and estimation. Recently,
+        it has also been studied as an objective function for parametric
+        estimation, as it has been shown to yield robust estimators. We have
+        implemented MMD minimization for parameter inference in a wide range
+        of statistical models, including various regression models, within
+        an `R` package called `regMMD`. This paper provides an introduction
+        to the `regMMD` package. We describe the available kernels and
+        optimization procedures, as well as the default settings. Detailed
+        applications to simulated and real data are provided.}
+    }
+
+  date: 2025-11-18
+  description: This document provides a complete introduction to the template based on the `regMMD` package for `R`, that implements minimum distance estimation in various parametric and regression models using the maximum mean discrepancy (MMD) metric.
+  doi: 10.57750/d6d1-gb09
+  draft: false
+  journal: Computo
+  pdf: ''
+  repo: published-202511-alquier-regmmd
+  title: '`regMMD`: an `R` package for parametric estimation and regression with maximum mean discrepancy'
+  url: ''
+  year: 2025
+- abstract': >-
     This paper presents a new algorithm (and an additional
         trick) that allows to compute fastly an entire curve of post hoc
         bounds for the False Discovery Proportion when the underlying bound
@@ -20,12 +65,11 @@
   bibtex: >+
     @article{durand2025,
     	author = {Durand, Guillermo},
-    	publisher = {Société Française de Statistique},
+    	publisher = {French Statistical Society},
     	title = {Fast Confidence Bounds for the False Discovery Proportion
         over a Path of Hypotheses},
     	journal = {Computo},
     	date = {2025-10-09},
-    	url = {https://computo-journal.org/published-202510-durand-fast},
     	doi = {10.57750/efbs-ef14},
     	issn = {2824-7795},
     	langid = {en},
