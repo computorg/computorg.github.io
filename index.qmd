@@ -6,6 +6,7 @@ listing:
   - id: published
     template: site/news.ejs
     contents: site/published.yml
+    feed: true
     sort: date desc
 ---
 
