@@ -30,6 +30,8 @@ website:
       href: https://github.com/computorg
     - icon: mastodon
       href: https://mathstodon.xyz/@computo
+    - icon: rss
+      href: index.xml
   page-footer:
     left: "\xA9 2023 Computo"
     border: false
