@@ -5,6 +5,7 @@ listing:
   - id: published
     template: publications.ejs
     contents: published.yml
+    feed: true
     sort: date desc
   - id: pipeline
     template: publications.ejs
