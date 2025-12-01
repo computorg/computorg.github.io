@@ -3,7 +3,7 @@ project:
   output-dir: _site
 website:
   title: COMPUTO
-  site-url: https://computo.sfds.asso.fr/
+  site-url: https://computo-journal.org/
   description: A platform for computational research and reproducibility
   favicon: assets/favicon.ico
   navbar:
