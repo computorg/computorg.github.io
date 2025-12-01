@@ -1,48 +1,178 @@
-- abstract'@: >-
-    This study investigates the use of Variational
-        Auto-Encoders to build a simulator that approximates the law of
-        genuine observations. Using both simulated and real data in
-        scenarios involving counterfactuality, we discuss the general task
-        of evaluating a simulator’s quality, with a focus on comparisons of
-        statistical properties and predictive performance. While the
-        simulator built from simulated data shows minor discrepancies, the
-        results with real data reveal more substantial challenges. Beyond
-        the technical analysis, we reflect on the broader implications of
-        simulator design, and consider its role in modeling reality.
-  authors@: Sandrine Boulet and Antoine Chambaz
-  bibtex@: >+
-    @article{boulet2025,
-    	author = {Boulet, Sandrine and Chambaz, Antoine},
+- abstract': >-
+    In Bayesian statistics, the choice of the prior can have
+        an important influence on the posterior and the parameter
+        estimation, especially when few data samples are available. To limit
+        the added subjectivity from a priori information, one can use the
+        framework of objective priors, more particularly, we focus on
+        reference priors in this work. However, computing such priors is a
+        difficult task in general. Hence, we consider cases where the
+        reference prior simplifies to the Jeffreys prior. We develop in this
+        paper a flexible algorithm based on variational inference which
+        computes approximations of priors from a set of parametric
+        distributions using neural networks. We also show that our algorithm
+        can retrieve modified Jeffreys priors when constraints are specified
+        in the optimization problem to ensure the solution is proper. We
+        propose a simple method to recover a relevant approximation of the
+        parametric posterior distribution using Markov Chain Monte Carlo
+        (MCMC) methods even if the density function of the parametric prior
+        is not known in general. Numerical experiments on several
+        statistical models of increasing complexity are presented. We show
+        the usefulness of this approach by recovering the target
+        distribution. The performance of the algorithm is evaluated on both
+        prior and posterior distributions, jointly using variational
+        inference and MCMC sampling.
+  authors: Nils Baillie, Antoine Van Biesbroeck and Clément Gauchy
+  bibtex: >+
+    @article{baillie2025,
+    	author = {Baillie, Nils and Van Biesbroeck, Antoine and Gauchy,
+        Clément},
     	publisher = {French Statistical Society},
-    	title = {Draw {Me} a {Simulator}},
+    	title = {Variational Inference for Approximate Objective Priors Using
+        Neural Networks},
     	journal = {Computo},
-    	date = {2025-09-08},
-    	doi = {10.57750/w1hj-dw22},
+    	date = {2025-12-01},
+    	doi = {10.57750/76fh-t442},
     	issn = {2824-7795},
     	langid = {en},
-    	abstract = {This study investigates the use of Variational
-        Auto-Encoders to build a simulator that approximates the law of
-        genuine observations. Using both simulated and real data in
-        scenarios involving counterfactuality, we discuss the general task
-        of evaluating a simulator’s quality, with a focus on comparisons of
-        statistical properties and predictive performance. While the
-        simulator built from simulated data shows minor discrepancies, the
-        results with real data reveal more substantial challenges. Beyond
-        the technical analysis, we reflect on the broader implications of
-        simulator design, and consider its role in modeling reality.}
+    	abstract = {In Bayesian statistics, the choice of the prior can have
+        an important influence on the posterior and the parameter
+        estimation, especially when few data samples are available. To limit
+        the added subjectivity from a priori information, one can use the
+        framework of objective priors, more particularly, we focus on
+        reference priors in this work. However, computing such priors is a
+        difficult task in general. Hence, we consider cases where the
+        reference prior simplifies to the Jeffreys prior. We develop in this
+        paper a flexible algorithm based on variational inference which
+        computes approximations of priors from a set of parametric
+        distributions using neural networks. We also show that our algorithm
+        can retrieve modified Jeffreys priors when constraints are specified
+        in the optimization problem to ensure the solution is proper. We
+        propose a simple method to recover a relevant approximation of the
+        parametric posterior distribution using Markov Chain Monte Carlo
+        (MCMC) methods even if the density function of the parametric prior
+        is not known in general. Numerical experiments on several
+        statistical models of increasing complexity are presented. We show
+        the usefulness of this approach by recovering the target
+        distribution. The performance of the algorithm is evaluated on both
+        prior and posterior distributions, jointly using variational
+        inference and MCMC sampling.}
     }
 
-  date@: 2025-09-08
-  description@: ''
-  doi@: 10.57750/w1hj-dw22
-  draft@: false
-  journal@: Computo
-  pdf@: ''
-  repo@: published-202509-boulet-simulator
-  title@: Draw Me a Simulator
-  url@: ''
-  year@: 2025
-  abstract': >-
+  date: 2025-12-01
+  description: ''
+  doi: 10.57750/76fh-t442
+  draft: false
+  journal: Computo
+  pdf: ''
+  repo: published-202512-baillie-varp
+  title: Variational inference for approximate objective priors using neural networks
+  url: ''
+  year: 2025
+- abstract': >-
+    The Maximum Mean Discrepancy (MMD) is a kernel-based
+        metric widely used for nonparametric tests and estimation. Recently,
+        it has also been studied as an objective function for parametric
+        estimation, as it has been shown to yield robust estimators. We have
+        implemented MMD minimization for parameter inference in a wide range
+        of statistical models, including various regression models, within
+        an `R` package called `regMMD`. This paper provides an introduction
+        to the `regMMD` package. We describe the available kernels and
+        optimization procedures, as well as the default settings. Detailed
+        applications to simulated and real data are provided.
+  authors: Pierre Alquier and Mathieu Gerber
+  bibtex: >+
+    @article{alquier2025,
+    	author = {Alquier, Pierre and Gerber, Mathieu},
+    	publisher = {French Statistical Society},
+    	title = {`regMMD`: An {`R`} Package for Parametric Estimation and
+        Regression with Maximum Mean Discrepancy},
+    	journal = {Computo},
+    	date = {2025-11-18},
+    	doi = {10.57750/d6d1-gb09},
+    	issn = {2824-7795},
+    	langid = {en},
+    	abstract = {The Maximum Mean Discrepancy (MMD) is a kernel-based
+        metric widely used for nonparametric tests and estimation. Recently,
+        it has also been studied as an objective function for parametric
+        estimation, as it has been shown to yield robust estimators. We have
+        implemented MMD minimization for parameter inference in a wide range
+        of statistical models, including various regression models, within
+        an `R` package called `regMMD`. This paper provides an introduction
+        to the `regMMD` package. We describe the available kernels and
+        optimization procedures, as well as the default settings. Detailed
+        applications to simulated and real data are provided.}
+    }
+
+  date: 2025-11-18
+  description: This document provides a complete introduction to the template based on the `regMMD` package for `R`, that implements minimum distance estimation in various parametric and regression models using the maximum mean discrepancy (MMD) metric.
+  doi: 10.57750/d6d1-gb09
+  draft: false
+  journal: Computo
+  pdf: ''
+  repo: published-202511-alquier-regmmd
+  title: '`regMMD`: an `R` package for parametric estimation and regression with maximum mean discrepancy'
+  url: ''
+  year: 2025
+- abstract': >-
+    This paper presents a new algorithm (and an additional
+        trick) that allows to compute fastly an entire curve of post hoc
+        bounds for the False Discovery Proportion when the underlying bound
+        \$V\^{}*\_\{\textbackslash mathfrak\{R\}\}\$ construction is based
+        on a reference family \$\textbackslash mathfrak\{R\}\$ with a forest
+        structure à la @MR4178188. By an entire curve, we mean the values
+        \$V\^{}*\_\{\textbackslash mathfrak\{R\}\}(S\_1),\textbackslash
+        dotsc,V\^{}*\_\{\textbackslash mathfrak\{R\}\}(S\_m)\$ computed on a
+        path of increasing selection sets \$S\_1\textbackslash
+        subsetneq\textbackslash dotsb\textbackslash subsetneq S\_m\$,
+        \$\textbar S\_t\textbar=t\$. The new algorithm leverages the fact
+        that going from \$S\_t\$ to \$S\_\{t+1\}\$ is done by adding only
+        one hypothesis. Compared to a more naive approach, the new algorithm
+        has a complexity in \$O(\textbar\textbackslash mathcal K\textbar
+        m)\$ instead of \$O(\textbar\textbackslash mathcal K\textbar
+        m\^{}2)\$, where \$\textbar\textbackslash mathcal K\textbar\$ is the
+        cardinality of the family.
+  authors: Guillermo Durand
+  bibtex: >+
+    @article{durand2025,
+    	author = {Durand, Guillermo},
+    	publisher = {French Statistical Society},
+    	title = {Fast Confidence Bounds for the False Discovery Proportion
+        over a Path of Hypotheses},
+    	journal = {Computo},
+    	date = {2025-10-09},
+    	doi = {10.57750/efbs-ef14},
+    	issn = {2824-7795},
+    	langid = {en},
+    	abstract = {This paper presents a new algorithm (and an additional
+        trick) that allows to compute fastly an entire curve of post hoc
+        bounds for the False Discovery Proportion when the underlying bound
+        \$V\^{}*\_\{\textbackslash mathfrak\{R\}\}\$ construction is based
+        on a reference family \$\textbackslash mathfrak\{R\}\$ with a forest
+        structure à la @MR4178188. By an entire curve, we mean the values
+        \$V\^{}*\_\{\textbackslash mathfrak\{R\}\}(S\_1),\textbackslash
+        dotsc,V\^{}*\_\{\textbackslash mathfrak\{R\}\}(S\_m)\$ computed on a
+        path of increasing selection sets \$S\_1\textbackslash
+        subsetneq\textbackslash dotsb\textbackslash subsetneq S\_m\$,
+        \$\textbar S\_t\textbar=t\$. The new algorithm leverages the fact
+        that going from \$S\_t\$ to \$S\_\{t+1\}\$ is done by adding only
+        one hypothesis. Compared to a more naive approach, the new algorithm
+        has a complexity in \$O(\textbar\textbackslash mathcal K\textbar
+        m)\$ instead of \$O(\textbar\textbackslash mathcal K\textbar
+        m\^{}2)\$, where \$\textbar\textbackslash mathcal K\textbar\$ is the
+        cardinality of the family.}
+    }
+
+  date: 2025-10-09
+  description: ''
+  doi: 10.57750/efbs-ef14
+  draft: false
+  journal: Computo
+  pdf: ''
+  repo: published-202510-durand-fast
+  title: Fast confidence bounds for the false discovery proportion over a path of hypotheses
+  url: ''
+  year: 2025
+- abstract': >-
     This study investigates the use of Variational
         Auto-Encoders to build a simulator that approximates the law of
         genuine observations. Using both simulated and real data in
@@ -86,48 +216,7 @@
   title: Draw Me a Simulator
   url: ''
   year: 2025
-- abstract'@: >-
-    Model-based clustering provides a principled way of
-        developing clustering methods. We develop a new model-based
-        clustering methods for count data. The method combines clustering
-        and variable selection for improved clustering. The method is based
-        on conditionally independent Poisson mixture models and Poisson
-        generalized linear models. The method is demonstrated on simulated
-        data and data from an ultra running race, where the method yields
-        excellent clustering and variable selection performance.
-  authors@: Julien Jacques and Thomas Brendan Murphy
-  bibtex@: >+
-    @article{jacques2025,
-    	author = {Jacques, Julien and Brendan Murphy, Thomas},
-    	publisher = {French Statistical Society},
-    	title = {Model-Based {Clustering} and {Variable} {Selection} for
-        {Multivariate} {Count} {Data}},
-    	journal = {Computo},
-    	date = {2025-07-01},
-    	doi = {10.57750/6v7b-8483},
-    	issn = {2824-7795},
-    	langid = {en},
-    	abstract = {Model-based clustering provides a principled way of
-        developing clustering methods. We develop a new model-based
-        clustering methods for count data. The method combines clustering
-        and variable selection for improved clustering. The method is based
-        on conditionally independent Poisson mixture models and Poisson
-        generalized linear models. The method is demonstrated on simulated
-        data and data from an ultra running race, where the method yields
-        excellent clustering and variable selection performance.}
-    }
-
-  date@: 2025-07-01
-  description@: ''
-  doi@: 10.57750/6v7b-8483
-  draft@: false
-  journal@: Computo
-  pdf@: ''
-  repo@: published-202507-jacques-count-data
-  title@: Model-Based Clustering and Variable Selection for Multivariate Count Data
-  url@: ''
-  year@: 2025
-  abstract': >-
+- abstract': >-
     Model-based clustering provides a principled way of
         developing clustering methods. We develop a new model-based
         clustering methods for count data. The method combines clustering

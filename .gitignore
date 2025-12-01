@@ -16,3 +16,4 @@ vendor
 .fake
 *_files/
 .vscode/
+**/*.quarto_ipynb

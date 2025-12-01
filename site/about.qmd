@@ -46,6 +46,8 @@ The CC-BY license is therefore indicated on the published and readable versions 
 
 The source code of each article is based on various software and programs whose licenses (typically MIT, GPL, etc.) are specified where the code for this software is distributed. The authors commit to using content that complies with the CC-BY license of the articles and, more generally, to promoting the dissemination of open-source software, crediting the authors and contributors.
 
+Computo does not ask for copyright transfer from authors: authors retain the copyright of their work.
+
 This is in accordance with the [Budapest Open Access Initiative (BOAI)](https://en.wikipedia.org/wiki/Budapest_Open_Access_Initiative) definition of open access, as well as the [DOAJ](https://en.wikipedia.org/wiki/Directory_of_Open_Access_Journals)’s definition of open access, to whom we have submitted an application.
 
 ### Open reviews
