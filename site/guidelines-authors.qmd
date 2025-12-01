@@ -49,6 +49,7 @@ This document provides a comprehensive documentation to accompany the authors du
 - **Publishing**:
   - Push changes to GitHub; CI will build and deploy the site.
   - Submit the PDF and repository link to [OpenReview](https://openreview.net/group?id=Computo).
+  - Ensure that the HTML is publicly accessible for reviewers on the GitHub Pages site.
 
 :::
 
@@ -150,14 +151,6 @@ quarto add computorg/computo-quarto-extension
 ::: {.callout-caution title="Multiple collaborators"}
 If you are collaborating with others when writing your contributions, **each collaborator** needs to perform these same three steps (clone the repository, install Quarto and install the Computo Quarto extension).
 :::
-
-### Write your contribution {#sec-writing}
-
-There are mainly two files you are expected to modify in your repository for writing your contribution: `template-computo-LANG.qmd` (where LANG is to be replaced with either R, Python or Julia) and `_quarto.yml`.
-
-#### Main content of your contribution
-
-The main body of your paper (starting with the *Introduction* section) should be written in the `template-computo-LANG.qmd` following the formatting suggestions therein.
 
 ::: {.callout-tip title="Multiple languages"}
 Quarto relies on a specific engine to compile your document. By default, that engine detects code blocks, executes them and paste the result below the code block in the rendered document.
@@ -320,6 +313,11 @@ Make sure to check and update the `.gitignore` file in your repository. In parti
 ### Submit your manuscript {#sec-submitting}
 
 Once you are satisfied with your manuscript, you can submit it for review. To do so, upload the generated PDF to the [OpenReview](https://openreview.net/group?id=Computo) platform and indicate the corresponding Git repository. This will initiate both the scientific and reproducibility review processes.
+
+Please also ensure that the HTML version of your manuscript is publicly accessible for reviewers on the GitHub Pages site associated with your repository. To do so, complete the description of your repository (below the "about" section) by ticking the box labeled "Use your Github page Website" (see image below).
+
+![Acces to HTML via GitHub page.](/assets/img/Github-page-access.png){#fig-github-page-acess width="100%" fig-align="center"}
+
 
 For more details about the review process, see the [guidelines for reviewers](/site/guidelines-reviewers.qmd).
 
