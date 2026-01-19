@@ -174,7 +174,7 @@ quarto render
 ```
 :::
 
-### Write your contribution {#sec-writing}
+### Files and metadata {#sec-files-metadata}
 
 There are mainly two files you are expected to modify in your repository for writing your contribution: `template-computo-LANG.qmd` (where LANG is to be replaced with either R, Python or Julia) and `_quarto.yml`. While the first can be renamed (e.g, `submission-YYYYMM-firstAuthor-keyword.qmd`), the second must remain `_quarto.yml` as it contains metadata about your contribution shared between project's files.
 

@@ -17,3 +17,4 @@ vendor
 *_files/
 .vscode/
 **/*.quarto_ipynb
+.config/dotnet-tools.json
