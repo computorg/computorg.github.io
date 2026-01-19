@@ -38,7 +38,7 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         # Stage the generated files (ignore errors if files missing)
-        git add site/published.yml site/pipeline.yml site/mock-papers.yml || true
+        git add site/published.{yml,xml} site/pipeline.yml site/mock-papers.yml || true
         # Only commit if there are staged changes
         if git diff --staged --quiet; then
           echo "No publication changes to commit"
