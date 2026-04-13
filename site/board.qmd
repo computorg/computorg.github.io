@@ -18,27 +18,27 @@ Statistical learning for life science
 
 ## Associate Editors
 
-- [Nelle Varoquaux](https://nellev.github.io/)
-Machine learning and causal inference for genomics [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8748-6546). *CNRS, Université Grenoble Alpes, Grenoble, France*
+- [Mathieu Carrière](https://www-sop.inria.fr/members/Mathieu.Carriere/)
+Topological data analysis. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-4747-9915). *Inria, Sophia Antipolis, France*
 
 - [Marie-Pierre Etienne](https://marieetienne.github.io/)
 Statistical methods for ecology. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-2097-2267). *ENSAI CREST, Rennes, France*
 
-- [Mathieu Carrière](https://www-sop.inria.fr/members/Mathieu.Carriere/)
-Topological data analysis. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-4747-9915). *Inria, Sophia Antipolis, France*
+- [Aymeric Stamm](https://astamm.github.io/) 
+Research Engineer, Statistics.[![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8725-3654). *Laboratoire de Mathématiques Jean Leray, Nantes› CNRS, France*
+
+- [Nelle Varoquaux](https://nellev.github.io/)
+Machine learning and causal inference for genomics [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8748-6546). *CNRS, Université Grenoble Alpes, Grenoble, France*
 
 ## Technical Support
 
 - [François-David Collin](https://fradav.github.io/) 
 Research Engineer, Biostatistics. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8374-7163). *Institut Montpelliérain Alexander Grothendieck, CNRS, France*
 
-- [Aymeric Stamm](https://astamm.github.io/) 
-Research Engineer, Statistics.[![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8725-3654). *Laboratoire de Mathématiques Jean Leray, Nantes› CNRS, France*
-
 ## Community Management
+
 - [Chloé-Agathe Azencott](https://cazencott.info/) 
 Machine learning for therapeutic research  [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-1003-301X). *Mines ParisTech, Institut Curie and INSERM, Paris, France*
-
 
 ## Former contributors
 
