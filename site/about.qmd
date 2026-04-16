@@ -93,6 +93,8 @@ Enquiries can be sent to the Chief Editor, Julien Chiquet, through <contact@comp
 
 ## Thanks
 
+We gratefully acknowledge the [Institut Henri Poincaré](https://www.ihp.fr) for hosting the yearly meeting of our Editorial Committee since 2025.
+
 We rely on [Quarto](https://quarto.org/),
 [BibTeX](http://www.bibtex.org/) and we drew our inspiration
 from [Rescience-C](https://rescience.github.io/) and

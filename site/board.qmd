@@ -8,63 +8,37 @@ page-layout: article
 
 ---
 
-
-## Chief Editor
+## Chiefs Editors
 
 - [Julien Chiquet](https://jchiquet.github.io), 
 Statistical learning for life science 
 [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-3629-3429) *Université Paris-Saclay, AgroParisTech, INRAE, Paris, France*
 
+- [Pierre Neuvial](https://www.math.univ-toulouse.fr/~pneuvial/). Statistics. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-3584-9998). *CNRS, Institut de Mathématiques de Toulouse, Toulouse, France*
 
 ## Associate Editors
 
-- [Pierre Neuvial](https://www.math.univ-toulouse.fr/~pneuvial/). Statistics. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-3584-9998). *CNRS, Institut de Mathématiques de Toulouse, Toulouse, France*
-
-
-- [Nelle Varoquaux](https://nellev.github.io/)
-Machine learning and causal inference for genomics [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8748-6546). *CNRS, Université Grenoble Alpes, Grenoble, France*
+- [Mathieu Carrière](https://www-sop.inria.fr/members/Mathieu.Carriere/)
+Topological data analysis. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-4747-9915). *Inria, Sophia Antipolis, France*
 
 - [Marie-Pierre Etienne](https://marieetienne.github.io/)
 Statistical methods for ecology. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-2097-2267). *ENSAI CREST, Rennes, France*
+
+- [Aymeric Stamm](https://astamm.github.io/) 
+Research Engineer, Statistics.[![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8725-3654). *Laboratoire de Mathématiques Jean Leray, Nantes› CNRS, France*
+
+- [Nelle Varoquaux](https://nellev.github.io/)
+Machine learning and causal inference for genomics [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8748-6546). *CNRS, Université Grenoble Alpes, Grenoble, France*
 
 ## Technical Support
 
 - [François-David Collin](https://fradav.github.io/) 
 Research Engineer, Biostatistics. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8374-7163). *Institut Montpelliérain Alexander Grothendieck, CNRS, France*
 
-- [Aymeric Stamm](https://astamm.github.io/) 
-Research Engineer, Statistics.[![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8725-3654). *Laboratoire de Mathématiques Jean Leray, Nantes› CNRS, France*
-
-
 ## Community Management
+
 - [Chloé-Agathe Azencott](https://cazencott.info/) 
 Machine learning for therapeutic research  [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-1003-301X). *Mines ParisTech, Institut Curie and INSERM, Paris, France*
-
-
-<!--
-
-<h2 id="editors">Associate Editors</h2>
-
-<ul>
-<li>
-    <p><a class="post-title" href="https://robin.genuer.fr/">Robin Génuer</a></p>
-	<p class="post-meta">Statistical Learning</p>
-	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-0981-3943" href="https://orcid.org/0000-0002-0981-3943" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0002-0981-3943</a></div>
-	<small>
-	Université de Bordeaux, INSERM, Inria, Bordeaux, France
-	</small>
-</li>
-
-<li>
-    <p><a class="post-title" href="https://www.ceremade.dauphine.fr/~xian/">Christian Robert</a></p>
-	<p class="post-meta">Statistics</p>
-	<div itemscope="" itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-6635-3261" href="https://orcid.org/0000-0001-6635-3261" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon" />orcid.org/0000-0001-6635-3261</a></div>
-	<small>
-	Université Paris-Dauphine, Paris, France
-	</small>
-</li>
-</ul>
--->
 
 ## Former contributors
 
