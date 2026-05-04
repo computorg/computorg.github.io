@@ -4,11 +4,136 @@
   <title>Computo Journal - Recent Articles</title>
   <link>https://computo-journal.org/</link>
   <description>Latest published articles from Computo Journal</description>
-  <generator>getcomputo-pub.fsx</generator>
   <item>
-    <title>Variational inference for approximate objective priors using neural networks — Nils Baillie, Antoine Van Biesbroeck and Clément Gauchy</title>
-    <link>https://computo-journal.org/published-202512-baillie-varp</link>
-    <guid>https://computo-journal.org/published-202512-baillie-varp</guid>
+    <title>Macrolitter video counting on riverbanks using state space models and moving cameras </title>
+    <link>http://computo-journal.org/published-202301-chagneux-macrolitter/</link>
+    <guid>http://computo-journal.org/published-202301-chagneux-macrolitter/</guid>
+    <pubDate>Thu, 16 Feb 2023 00:00:00 GMT</pubDate>
+    <description>Litter is a known cause of degradation in marine
+    environments and most of it travels in rivers before reaching the
+    oceans. In this paper, we present a novel algorithm to assist waste
+    monitoring along watercourses. While several attempts have been made
+    to quantify litter using neural object detection in photographs of
+    floating items, we tackle the more challenging task of counting
+    directly in videos using boat-embedded cameras. We rely on
+    multi-object tracking (MOT) but focus on the key pitfalls of false
+    and redundant counts which arise in typical scenarios of poor
+    detection performance. Our system only requires supervision at the
+    image level and performs Bayesian filtering via a state space model
+    based on optical flow. We present a new open image dataset gathered
+    through a crowdsourced campaign and used to train a center-based
+    anchor-free object detector. Realistic video footage assembled by
+    water monitoring experts is annotated and provided for evaluation.
+    Improvements in count quality are demonstrated against systems built
+    from state-of-the-art multi-object trackers sharing the same
+    detection capabilities. A precise error decomposition allows clear
+    analysis and highlights the remaining challenges.</description>
+  </item>
+  <item>
+    <title>A Python Package for Sampling from Copulae: clayton</title>
+    <link>http://computo-journal.org/published-202301-boulin-clayton/</link>
+    <guid>http://computo-journal.org/published-202301-boulin-clayton/</guid>
+    <pubDate>Thu, 12 Jan 2023 00:00:00 GMT</pubDate>
+    <description>The package \$\textbackslash textsf\{clayton\}\$ is
+    designed to be intuitive, user-friendly, and efficient. It offers a
+    wide range of copula models, including Archimedean, Elliptical, and
+    Extreme. The package is implemented in pure \$\textbackslash
+    textsf\{Python\}\$, making it easy to install and use. In addition,
+    we provide detailed documentation and examples to help users get
+    started quickly. We also conduct a performance comparison with
+    existing \$\textbackslash textsf\{R\}\$ packages, demonstrating the
+    efficiency of our implementation. The \$\textbackslash
+    textsf\{clayton\}\$ package is a valuable tool for researchers and
+    practitioners working with copulae in \$\textbackslash
+    textsf\{Python\}\$.</description>
+  </item>
+  <item>
+    <title>Trade-off between deep learning for species identification and inference about predator-prey co-occurrence</title>
+    <link>https://computo-journal.org/published-202204-deeplearning-occupancy-lynx/</link>
+    <guid>https://computo-journal.org/published-202204-deeplearning-occupancy-lynx/</guid>
+    <pubDate>Fri, 22 Apr 2022 00:00:00 GMT</pubDate>
+    <description>Deep learning is used in computer vision problems with
+    important applications in several scientific fields. In ecology for
+    example, there is a growing interest in deep learning for
+    automatizing repetitive analyses on large amounts of images, such as
+    animal species identification. However, there are challenging issues
+    toward the wide adoption of deep learning by the community of
+    ecologists. First, there is a programming barrier as most algorithms
+    are written in `Python` while most ecologists are versed in `R`.
+    Second, recent applications of deep learning in ecology have focused
+    on computational aspects and simple tasks without addressing the
+    underlying ecological questions or carrying out the statistical data
+    analysis to answer these questions. Here, we showcase a reproducible
+    `R` workflow integrating both deep learning and statistical models
+    using predator-prey relationships as a case study. We illustrate
+    deep learning for the identification of animal species on images
+    collected with camera traps, and quantify spatial co-occurrence
+    using multispecies occupancy models. Despite average model
+    classification performances, ecological inference was similar
+    whether we analysed the ground truth dataset or the classified
+    dataset. This result calls for further work on the trade-offs
+    between time and resources allocated to train models with deep
+    learning and our ability to properly address key ecological
+    questions with biodiversity monitoring. We hope that our
+    reproducible workflow will be useful to ecologists and applied
+    statisticians.</description>
+  </item>
+  <item>
+    <title>Local tree methods for classification: a review and some dead ends</title>
+    <link>http://computo-journal.org/published-202312-cleynen-local/</link>
+    <guid>http://computo-journal.org/published-202312-cleynen-local/</guid>
+    <pubDate>Thu, 14 Dec 2023 00:00:00 GMT</pubDate>
+    <description>Random Forests (RF) {[}@breiman:2001{]} are very popular
+    machine learning methods. They perform well even with little or no
+    tuning, and have some theoretical guarantees, especially for sparse
+    problems {[}@biau:2012;@scornet:etal:2015{]}. These learning
+    strategies have been used in several contexts, also outside the
+    field of classification and regression. To perform Bayesian model
+    selection in the case of intractable likelihoods, the ABC Random
+    Forests (ABC-RF) strategy of @pudlo:etal:2016 consists in applying
+    Random Forests on training sets composed of simulations coming from
+    the Bayesian generative models. The ABC-RF technique is based on an
+    underlying RF for which the training and prediction phases are
+    separated. The training phase does not take into account the data to
+    be predicted. This seems to be suboptimal as in the ABC framework
+    only one observation is of interest for the prediction. In this
+    paper, we study tree-based methods that are built to predict a
+    specific instance in a classification setting. This type of methods
+    falls within the scope of local (lazy/instance-based/case specific)
+    classification learning. We review some existing strategies and
+    propose two new ones. The first consists in modifying the tree
+    splitting rule by using kernels, the second in using a first RF to
+    compute some local variable importance that is used to train a
+    second, more local, RF. Unfortunately, these approaches, although
+    interesting, do not provide conclusive results.</description>
+  </item>
+  <item>
+    <title>Spectral Bridges</title>
+    <link>http://computo-journal.org/published-202412-ambroise-spectral/</link>
+    <guid>http://computo-journal.org/published-202412-ambroise-spectral/</guid>
+    <pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate>
+    <description>In this paper, Spectral Bridges, a novel clustering
+    algorithm, is introduced. This algorithm builds upon the traditional
+    k-means and spectral clustering frameworks by subdividing data into
+    small Voronoï regions, which are subsequently merged according to a
+    connectivity measure. Drawing inspiration from Support Vector
+    Machine’s margin concept, a non-parametric clustering approach is
+    proposed, building an affinity margin between each pair of Voronoï
+    regions. This approach delineates intricate, non-convex cluster
+    structures and is robust to hyperparameter choice. The numerical
+    experiments underscore Spectral Bridges as a fast, robust, and
+    versatile tool for clustering tasks spanning diverse domains. Its
+    efficacy extends to large-scale scenarios encompassing both
+    real-world and synthetic datasets. The Spectral Bridge algorithm is
+    implemented both in Python (\textless
+    https://pypi.org/project/spectral-bridges\textgreater) and R
+    \textless
+    https://github.com/cambroise/spectral-bridges-Rpackage\textgreater).</description>
+  </item>
+  <item>
+    <title>Variational inference for approximate objective priors using neural networks</title>
+    <link>https://computo-journal.org/published-202512-baillie-varp/</link>
+    <guid>https://computo-journal.org/published-202512-baillie-varp/</guid>
     <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
     <description>In Bayesian statistics, the choice of the prior can have
     an important influence on the posterior and the parameter
@@ -34,9 +159,35 @@
     inference and MCMC sampling.</description>
   </item>
   <item>
-    <title>`regMMD`: an `R` package for parametric estimation and regression with maximum mean discrepancy — Pierre Alquier and Mathieu Gerber</title>
-    <link>https://computo-journal.org/published-202511-alquier-regmmd</link>
-    <guid>https://computo-journal.org/published-202511-alquier-regmmd</guid>
+    <title>Computing  an empirical  Fisher information matrix estimate in latent variable models through stochastic approximation</title>
+    <link>http://computo-journal.org/published-202311-delattre-fim/</link>
+    <guid>http://computo-journal.org/published-202311-delattre-fim/</guid>
+    <pubDate>Tue, 21 Nov 2023 00:00:00 GMT</pubDate>
+    <description>The Fisher information matrix (FIM) is a key quantity in
+    statistics. However its exact computation is often not trivial. In
+    particular in many latent variable models, it is intricated due to
+    the presence of unobserved variables. Several methods have been
+    proposed to approximate the FIM when it can not be evaluated
+    analytically. Different estimates have been considered, in
+    particular moment estimates. However some of them require to compute
+    second derivatives of the complete data log-likelihood which leads
+    to some disadvantages. In this paper, we focus on the empirical
+    Fisher information matrix defined as an empirical estimate of the
+    covariance matrix of the score, which only requires to compute the
+    first derivatives of the log-likelihood. Our contribution consists
+    in presenting a new numerical method to evaluate this empirical
+    Fisher information matrix in latent variable model when the proposed
+    estimate can not be directly analytically evaluated. We propose a
+    stochastic approximation estimation algorithm to compute this
+    estimate as a by-product of the parameter estimate. We evaluate the
+    finite sample size properties of the proposed estimate and the
+    convergence properties of the estimation algorithm through
+    simulation studies.</description>
+  </item>
+  <item>
+    <title>`regMMD`: an `R` package for parametric estimation and regression with maximum mean discrepancy</title>
+    <link>https://computo-journal.org/published-202511-alquier-regmmd/</link>
+    <guid>https://computo-journal.org/published-202511-alquier-regmmd/</guid>
     <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
     <description>The Maximum Mean Discrepancy (MMD) is a kernel-based
     metric widely used for nonparametric tests and estimation. Recently,
@@ -50,9 +201,9 @@
     applications to simulated and real data are provided.</description>
   </item>
   <item>
-    <title>Fast confidence bounds for the false discovery proportion  over a path of hypotheses — Guillermo Durand</title>
-    <link>https://computo-journal.org/published-202510-durand-fast</link>
-    <guid>https://computo-journal.org/published-202510-durand-fast</guid>
+    <title>Fast confidence bounds for the false discovery proportion  over a path of hypotheses</title>
+    <link>https://computo-journal.org/published-202510-durand-fast/</link>
+    <guid>https://computo-journal.org/published-202510-durand-fast/</guid>
     <pubDate>Thu, 09 Oct 2025 00:00:00 GMT</pubDate>
     <description>This paper presents a new algorithm (and an additional
     trick) that allows to compute fastly an entire curve of post hoc
@@ -73,9 +224,9 @@
     cardinality of the family.</description>
   </item>
   <item>
-    <title>Draw Me a Simulator — Sandrine Boulet and Antoine Chambaz</title>
-    <link>https://computo-journal.org/published-202509-boulet-simulator</link>
-    <guid>https://computo-journal.org/published-202509-boulet-simulator</guid>
+    <title>Draw Me a Simulator</title>
+    <link>https://computo-journal.org/published-202509-boulet-simulator/</link>
+    <guid>https://computo-journal.org/published-202509-boulet-simulator/</guid>
     <pubDate>Mon, 08 Sep 2025 00:00:00 GMT</pubDate>
     <description>This study investigates the use of Variational
     Auto-Encoders to build a simulator that approximates the law of
@@ -87,148 +238,6 @@
     results with real data reveal more substantial challenges. Beyond
     the technical analysis, we reflect on the broader implications of
     simulator design, and consider its role in modeling reality.</description>
-  </item>
-  <item>
-    <title>Model-Based Clustering and Variable Selection for Multivariate Count Data — Julien Jacques and Thomas Brendan Murphy</title>
-    <link>https://computo-journal.org/published-202507-jacques-count-data</link>
-    <guid>https://computo-journal.org/published-202507-jacques-count-data</guid>
-    <pubDate>Tue, 01 Jul 2025 00:00:00 GMT</pubDate>
-    <description>Model-based clustering provides a principled way of
-    developing clustering methods. We develop a new model-based
-    clustering methods for count data. The method combines clustering
-    and variable selection for improved clustering. The method is based
-    on conditionally independent Poisson mixture models and Poisson
-    generalized linear models. The method is demonstrated on simulated
-    data and data from an ultra running race, where the method yields
-    excellent clustering and variable selection performance.</description>
-  </item>
-  <item>
-    <title>Reservoir Computing in R: a Tutorial for Using reservoirnet to Predict Complex Time-Series — Thomas Ferté, Kalidou Ba, Dan Dutartre, Pierrick Legrand, Vianney Jouhet, Rodolphe Thiébaut, Xavier Hinaut and Boris P Hejblum</title>
-    <link>https://computo-journal.org/published-202505-ferte-reservoirnet</link>
-    <guid>https://computo-journal.org/published-202505-ferte-reservoirnet</guid>
-    <pubDate>Fri, 27 Jun 2025 00:00:00 GMT</pubDate>
-    <description>Reservoir Computing (RC) is a machine learning method
-    based on neural networks that efficiently process information
-    generated by dynamical systems. It has been successful in solving
-    various tasks including time series forecasting, language processing
-    or voice processing. RC is implemented in `Python` and `Julia` but
-    not in `R`. This article introduces `reservoirnet`, an `R` package
-    providing access to the `Python` API `ReservoirPy`, allowing `R`
-    users to harness the power of reservoir computing. This article
-    provides an introduction to the fundamentals of RC and showcases its
-    real-world applicability through three distinct sections. First, we
-    cover the foundational concepts of RC, setting the stage for
-    understanding its capabilities. Next, we delve into the practical
-    usage of `reservoirnet` through two illustrative examples. These
-    examples demonstrate how it can be applied to real-world problems,
-    specifically, regression of COVID-19 hospitalizations and
-    classification of Japanese vowels. Finally, we present a
-    comprehensive analysis of a real-world application of
-    `reservoirnet`, where it was used to forecast COVID-19
-    hospitalizations at Bordeaux University Hospital using public data
-    and electronic health records.</description>
-  </item>
-  <item>
-    <title>Efficient simulation of individual-based population models — Daphné Giorgi, Sarah Kaakai and Vincent Lemaire</title>
-    <link>https://computo-journal.org/published-202412-giorgi-efficient</link>
-    <guid>https://computo-journal.org/published-202412-giorgi-efficient</guid>
-    <pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate>
-    <description>The `R` Package `IBMPopSim` facilitates the simulation of
-    the random evolution of heterogeneous populations using stochastic
-    Individual-Based Models (IBMs). The package enables users to
-    simulate population evolution, in which individuals are
-    characterized by their age and some characteristics, and the
-    population is modified by different types of events, including
-    births/arrivals, death/exit events, or changes of characteristics.
-    The frequency at which an event can occur to an individual can
-    depend on their age and characteristics, but also on the
-    characteristics of other individuals (interactions). Such models
-    have a wide range of applications in fields including actuarial
-    science, biology, ecology or epidemiology. `IBMPopSim` overcomes the
-    limitations of time-consuming IBMs simulations by implementing new
-    efficient algorithms based on thinning methods, which are compiled
-    using the `Rcpp` package while providing a user-friendly interface.</description>
-  </item>
-  <item>
-    <title>Spectral Bridges — Félix Laplante and Christophe Ambroise</title>
-    <link>https://computo-journal.org/published-202412-ambroise-spectral</link>
-    <guid>https://computo-journal.org/published-202412-ambroise-spectral</guid>
-    <pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate>
-    <description>In this paper, Spectral Bridges, a novel clustering
-    algorithm, is introduced. This algorithm builds upon the traditional
-    k-means and spectral clustering frameworks by subdividing data into
-    small Voronoï regions, which are subsequently merged according to a
-    connectivity measure. Drawing inspiration from Support Vector
-    Machine’s margin concept, a non-parametric clustering approach is
-    proposed, building an affinity margin between each pair of Voronoï
-    regions. This approach delineates intricate, non-convex cluster
-    structures and is robust to hyperparameter choice. The numerical
-    experiments underscore Spectral Bridges as a fast, robust, and
-    versatile tool for clustering tasks spanning diverse domains. Its
-    efficacy extends to large-scale scenarios encompassing both
-    real-world and synthetic datasets. The Spectral Bridge algorithm is
-    implemented both in Python (\textless
-    https://pypi.org/project/spectral-bridges\textgreater) and R
-    \textless
-    https://github.com/cambroise/spectral-bridges-Rpackage\textgreater).</description>
-  </item>
-  <item>
-    <title>AdaptiveConformal: An `R` Package for Adaptive Conformal Inference — Herbert Susmann, Antoine Chambaz and Julie Josse</title>
-    <link>https://computo-journal.org/published-202407-susmann-adaptive-conformal</link>
-    <guid>https://computo-journal.org/published-202407-susmann-adaptive-conformal</guid>
-    <pubDate>Thu, 18 Jul 2024 00:00:00 GMT</pubDate>
-    <description>Conformal Inference (CI) is a popular approach for
-    generating finite sample prediction intervals based on the output of
-    any point prediction method when data are exchangeable. Adaptive
-    Conformal Inference (ACI) algorithms extend CI to the case of
-    sequentially observed data, such as time series, and exhibit strong
-    theoretical guarantees without having to assume exchangeability of
-    the observed data. The common thread that unites algorithms in the
-    ACI family is that they adaptively adjust the width of the generated
-    prediction intervals in response to the observed data. We provide a
-    detailed description of five ACI algorithms and their theoretical
-    guarantees, and test their performance in simulation studies. We
-    then present a case study of producing prediction intervals for
-    influenza incidence in the United States based on black-box point
-    forecasts. Implementations of all the algorithms are released as an
-    open-source `R` package, `AdaptiveConformal`, which also includes
-    tools for visualizing and summarizing conformal prediction
-    intervals.</description>
-  </item>
-  <item>
-    <title>Bayesian spatiotemporal modelling of wildfire occurrences and sizes for projections under climate change — Juliette Legrand, François Pimont, Jean-Luc Dupuy and Thomas Opitz</title>
-    <link>https://computo-journal.org/published-202407-legrand-wildfires</link>
-    <guid>https://computo-journal.org/published-202407-legrand-wildfires</guid>
-    <pubDate>Fri, 12 Jul 2024 00:00:00 GMT</pubDate>
-    <description>Appropriate spatiotemporal modelling of wildfire activity
-    is crucial for its prediction and risk management. Here, we focus on
-    wildfire risk in the Aquitaine region in the Southwest of France and
-    its projection under climate change. We study whether wildfire risk
-    could further increase under climate change in this specific region,
-    which does not lie in the historical core area of wildfires in
-    Southeastern France, corresponding to the Southwest. For this
-    purpose, we consider a marked spatiotemporal point process, a
-    flexible model for occurrences and magnitudes of such environmental
-    risks, where the magnitudes are defined as the burnt areas. The
-    model is first calibrated using 14 years of past observation data of
-    wildfire occurrences and weather variables, and then applied for
-    projection of climate-change impacts using simulations of numerical
-    climate models until 2100 as new inputs. We work within the
-    framework of a spatiotemporal Bayesian hierarchical model, and we
-    present the workflow of its implementation for a large dataset at
-    daily resolution for 8km-pixels using the INLA-SPDE approach. The
-    assessment of the posterior distributions shows a satisfactory fit
-    of the model for the observation period. We stochastically simulate
-    projections of future wildfire activity by combining climate model
-    output with posterior simulations of model parameters. Depending on
-    climate models, spline-smoothed projections indicate low to moderate
-    increase of wildfire activity under climate change. The increase is
-    weaker than in the historical core area, which we attribute to
-    different weather conditions (oceanic versus Mediterranean). Besides
-    providing a relevant case study of environmental risk modelling,
-    this paper is also intended to provide a full workflow for
-    implementing the Bayesian estimation of marked log-Gaussian Cox
-    processes using the R-INLA package of the R statistical software.</description>
   </item>
 </channel>
 </rss>
