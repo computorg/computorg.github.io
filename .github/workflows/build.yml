@@ -12,7 +12,7 @@ on:
       force:
         description: 'Set to "true" to mark this run as forced when manually triggered'
         required: false
-        default: 'false'
+        default: "false"
 
 jobs:
   build:
@@ -22,50 +22,50 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-        persist-credentials: true
-    - name: Setup Quarto
-      uses: quarto-dev/quarto-actions/setup@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '10.0.x'
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
 
-    - name: Restore build tooling
-      run: |
-        dotnet tool restore
-        dotnet tool run paket restore
+      - name: Restore build tooling
+        run: |
+          dotnet tool restore
+          dotnet tool run paket restore
 
-    - name: Run tests
-      run: dotnet run --project src/Build.fsproj -- -t Test
+      - name: Run tests
+        run: dotnet run --project src/Build.fsproj -- -t Test
 
-    - name: refresh publications and commit changes
-      if: ${{ github.event_name == 'workflow_dispatch' || github.event.inputs.force == 'true' }}
-      env:
-        API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
-      run: |
-        dotnet run --project src/Build.fsproj -- -t UpdatePublications
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
-        # Stage the generated files (ignore errors if files missing)
-        git add site/published.{yml,xml} site/pipeline.yml site/mock-papers.yml || true
-        # Only commit if there are staged changes
-        if git diff --staged --quiet; then
-          echo "No publication changes to commit"
-        else
-          git commit -m "Refresh publication metadata [skip ci]"
-          # push to the branch that triggered the workflow
-          git push origin HEAD:${{ github.ref_name }}
-        fi
+      - name: refresh publications and commit changes
+        if: ${{ github.event_name == 'workflow_dispatch' || github.event.inputs.force == 'true' }}
+        env:
+          API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+        run: |
+          dotnet run --project src/Build.fsproj
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Stage the generated files (ignore errors if files missing)
+          git add site/published.{yml,xml} site/pipeline.yml site/mock-papers.yml || true
+          # Only commit if there are staged changes
+          if git diff --staged --quiet; then
+            echo "No publication changes to commit"
+          else
+            git commit -m "Refresh publication metadata [skip ci]"
+            # push to the branch that triggered the workflow
+            git push origin HEAD:${{ github.ref_name }}
+          fi
 
-    - name: Build site
-      run: dotnet run --project src/Build.fsproj -- -t RenderSite
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
+      - name: Build site
+        run: dotnet run --project src/Build.fsproj -- -t RenderSite
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:

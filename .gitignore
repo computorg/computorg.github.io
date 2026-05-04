@@ -17,7 +17,7 @@ vendor
 *_files/
 .vscode/
 **/*.quarto_ipynb
-.config/dotnet-tools.json
+#.config/dotnet-tools.json
 src/getcomputo-pub-refactored.fsx
 
 .vscode/*
