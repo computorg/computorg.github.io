@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "site/**/*.qmd"
+    - "blog/**/*.qmd"
 website:
   title: COMPUTO
   site-url: https://computo-journal.org/

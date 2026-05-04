@@ -29,12 +29,26 @@ jobs:
         persist-credentials: true
     - name: Setup Quarto
       uses: quarto-dev/quarto-actions/setup@v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.x'
+
+    - name: Restore build tooling
+      run: |
+        dotnet tool restore
+        dotnet tool run paket restore
+
+    - name: Run tests
+      run: dotnet run --project src/Build.fsproj -- -t Test
+
     - name: refresh publications and commit changes
       if: ${{ github.event_name == 'workflow_dispatch' || github.event.inputs.force == 'true' }}
       env:
         API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
       run: |
-        dotnet fsi getcomputo-pub.fsx
+        dotnet run --project src/Build.fsproj -- -t UpdatePublications
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         # Stage the generated files (ignore errors if files missing)
@@ -43,13 +57,13 @@ jobs:
         if git diff --staged --quiet; then
           echo "No publication changes to commit"
         else
-          git commit -m "Update publications from getcomputo-pub.fsx [skip ci]"
+          git commit -m "Refresh publication metadata [skip ci]"
           # push to the branch that triggered the workflow
           git push origin HEAD:${{ github.ref_name }}
         fi
 
     - name: Build site
-      uses: quarto-dev/quarto-actions/render@v2
+      run: dotnet run --project src/Build.fsproj -- -t RenderSite
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
 
