@@ -1,8 +1,8 @@
-- title: Visualizing Data using t-SNE (mock contributon)
-  name: Visualizing Data using t-SNE (mock contributon)
-  authors: Laurens van der Maaten and Geoffrey Hinton
+- title: Visualizing Data using t-SNE (mock contribution)
+  name: published-paper-tsne
+  authors: ''
   journal: Computo
-  doi: 10.57750/xxxxxx
+  doi: ''
   year: 2008
   date: 2008-08-11
   description: >
@@ -33,7 +33,7 @@
     @article{van_der_maaten2008,
     	author = {van der Maaten, Laurens and Hinton, Geoffrey},
     	publisher = {French Statistical Society},
-    	title = {Visualizing {Data} Using {t-SNE} (Mock Contributon)},
+    	title = {Visualizing {Data} Using {t-SNE} (Mock Contribution)},
     	journal = {Computo},
     	date = {2008-08-11},
     	doi = {10.57750/xxxxxx},
@@ -62,13 +62,13 @@
     }
 
   pdf: ''
-  url: https://computo-journal.org/published-paper-tsne
+  url: http://computo-journal.org/published-paper-tsne/
   draft: false
-- title: Visualizing Data using t-SNE (mock contributon)
-  name: Visualizing Data using t-SNE (mock contributon)
-  authors: Laurens van der Maaten and Geoffrey Hinton
+- title: Visualizing Data using t-SNE (mock contribution)
+  name: published-paper-tsne-R
+  authors: ''
   journal: Computo
-  doi: 10.57750/xxxxxx
+  doi: ''
   year: 2008
   date: 2008-08-11
   description: >
@@ -99,7 +99,7 @@
     @article{van_der_maaten2008,
     	author = {van der Maaten, Laurens and Hinton, Geoffrey},
     	publisher = {French Statistical Society},
-    	title = {Visualizing {Data} Using {t-SNE} (Mock Contributon)},
+    	title = {Visualizing {Data} Using {t-SNE} (Mock Contribution)},
     	journal = {Computo},
     	date = {2008-08-11},
     	doi = {10.57750/xxxxxx},
@@ -128,5 +128,5 @@
     }
 
   pdf: ''
-  url: https://computo-journal.org/published-paper-tsne-R
+  url: http://computo-journal.org/published-paper-tsne-R/
   draft: false
