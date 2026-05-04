@@ -48,6 +48,6 @@ Target.create "Default" ignore
 
 open Fake.Core.TargetOperators
 
-"UpdatePublications" ==> "RenderSite" ==> "Default" |> ignore
+"RenderSite" ==> "Default" |> ignore
 
 Target.runOrDefaultWithArguments "Default"
