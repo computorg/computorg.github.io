@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Computo Journal - Recent Articles</title>
+  <link>https://computo-journal.org/</link>
+  <description>Latest published articles from Computo Journal</description>
+  <item>
+    <title>Macrolitter video counting on riverbanks using state space models and moving cameras </title>
+    <link>http://computo-journal.org/published-202301-chagneux-macrolitter/</link>
+    <guid>http://computo-journal.org/published-202301-chagneux-macrolitter/</guid>
+    <pubDate>Thu, 16 Feb 2023 00:00:00 GMT</pubDate>
+    <description>Litter is a known cause of degradation in marine
+    environments and most of it travels in rivers before reaching the
+    oceans. In this paper, we present a novel algorithm to assist waste
+    monitoring along watercourses. While several attempts have been made
+    to quantify litter using neural object detection in photographs of
+    floating items, we tackle the more challenging task of counting
+    directly in videos using boat-embedded cameras. We rely on
+    multi-object tracking (MOT) but focus on the key pitfalls of false
+    and redundant counts which arise in typical scenarios of poor
+    detection performance. Our system only requires supervision at the
+    image level and performs Bayesian filtering via a state space model
+    based on optical flow. We present a new open image dataset gathered
+    through a crowdsourced campaign and used to train a center-based
+    anchor-free object detector. Realistic video footage assembled by
+    water monitoring experts is annotated and provided for evaluation.
+    Improvements in count quality are demonstrated against systems built
+    from state-of-the-art multi-object trackers sharing the same
+    detection capabilities. A precise error decomposition allows clear
+    analysis and highlights the remaining challenges.</description>
+  </item>
+  <item>
+    <title>A Python Package for Sampling from Copulae: clayton</title>
+    <link>http://computo-journal.org/published-202301-boulin-clayton/</link>
+    <guid>http://computo-journal.org/published-202301-boulin-clayton/</guid>
+    <pubDate>Thu, 12 Jan 2023 00:00:00 GMT</pubDate>
+    <description>The package \$\textbackslash textsf\{clayton\}\$ is
+    designed to be intuitive, user-friendly, and efficient. It offers a
+    wide range of copula models, including Archimedean, Elliptical, and
+    Extreme. The package is implemented in pure \$\textbackslash
+    textsf\{Python\}\$, making it easy to install and use. In addition,
+    we provide detailed documentation and examples to help users get
+    started quickly. We also conduct a performance comparison with
+    existing \$\textbackslash textsf\{R\}\$ packages, demonstrating the
+    efficiency of our implementation. The \$\textbackslash
+    textsf\{clayton\}\$ package is a valuable tool for researchers and
+    practitioners working with copulae in \$\textbackslash
+    textsf\{Python\}\$.</description>
+  </item>
+  <item>
+    <title>Trade-off between deep learning for species identification and inference about predator-prey co-occurrence</title>
+    <link>https://computo-journal.org/published-202204-deeplearning-occupancy-lynx/</link>
+    <guid>https://computo-journal.org/published-202204-deeplearning-occupancy-lynx/</guid>
+    <pubDate>Fri, 22 Apr 2022 00:00:00 GMT</pubDate>
+    <description>Deep learning is used in computer vision problems with
+    important applications in several scientific fields. In ecology for
+    example, there is a growing interest in deep learning for
+    automatizing repetitive analyses on large amounts of images, such as
+    animal species identification. However, there are challenging issues
+    toward the wide adoption of deep learning by the community of
+    ecologists. First, there is a programming barrier as most algorithms
+    are written in `Python` while most ecologists are versed in `R`.
+    Second, recent applications of deep learning in ecology have focused
+    on computational aspects and simple tasks without addressing the
+    underlying ecological questions or carrying out the statistical data
+    analysis to answer these questions. Here, we showcase a reproducible
+    `R` workflow integrating both deep learning and statistical models
+    using predator-prey relationships as a case study. We illustrate
+    deep learning for the identification of animal species on images
+    collected with camera traps, and quantify spatial co-occurrence
+    using multispecies occupancy models. Despite average model
+    classification performances, ecological inference was similar
+    whether we analysed the ground truth dataset or the classified
+    dataset. This result calls for further work on the trade-offs
+    between time and resources allocated to train models with deep
+    learning and our ability to properly address key ecological
+    questions with biodiversity monitoring. We hope that our
+    reproducible workflow will be useful to ecologists and applied
+    statisticians.</description>
+  </item>
+  <item>
+    <title>Local tree methods for classification: a review and some dead ends</title>
+    <link>http://computo-journal.org/published-202312-cleynen-local/</link>
+    <guid>http://computo-journal.org/published-202312-cleynen-local/</guid>
+    <pubDate>Thu, 14 Dec 2023 00:00:00 GMT</pubDate>
+    <description>Random Forests (RF) {[}@breiman:2001{]} are very popular
+    machine learning methods. They perform well even with little or no
+    tuning, and have some theoretical guarantees, especially for sparse
+    problems {[}@biau:2012;@scornet:etal:2015{]}. These learning
+    strategies have been used in several contexts, also outside the
+    field of classification and regression. To perform Bayesian model
+    selection in the case of intractable likelihoods, the ABC Random
+    Forests (ABC-RF) strategy of @pudlo:etal:2016 consists in applying
+    Random Forests on training sets composed of simulations coming from
+    the Bayesian generative models. The ABC-RF technique is based on an
+    underlying RF for which the training and prediction phases are
+    separated. The training phase does not take into account the data to
+    be predicted. This seems to be suboptimal as in the ABC framework
+    only one observation is of interest for the prediction. In this
+    paper, we study tree-based methods that are built to predict a
+    specific instance in a classification setting. This type of methods
+    falls within the scope of local (lazy/instance-based/case specific)
+    classification learning. We review some existing strategies and
+    propose two new ones. The first consists in modifying the tree
+    splitting rule by using kernels, the second in using a first RF to
+    compute some local variable importance that is used to train a
+    second, more local, RF. Unfortunately, these approaches, although
+    interesting, do not provide conclusive results.</description>
+  </item>
+  <item>
+    <title>Spectral Bridges</title>
+    <link>http://computo-journal.org/published-202412-ambroise-spectral/</link>
+    <guid>http://computo-journal.org/published-202412-ambroise-spectral/</guid>
+    <pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate>
+    <description>In this paper, Spectral Bridges, a novel clustering
+    algorithm, is introduced. This algorithm builds upon the traditional
+    k-means and spectral clustering frameworks by subdividing data into
+    small Voronoï regions, which are subsequently merged according to a
+    connectivity measure. Drawing inspiration from Support Vector
+    Machine’s margin concept, a non-parametric clustering approach is
+    proposed, building an affinity margin between each pair of Voronoï
+    regions. This approach delineates intricate, non-convex cluster
+    structures and is robust to hyperparameter choice. The numerical
+    experiments underscore Spectral Bridges as a fast, robust, and
+    versatile tool for clustering tasks spanning diverse domains. Its
+    efficacy extends to large-scale scenarios encompassing both
+    real-world and synthetic datasets. The Spectral Bridge algorithm is
+    implemented both in Python (\textless
+    https://pypi.org/project/spectral-bridges\textgreater) and R
+    \textless
+    https://github.com/cambroise/spectral-bridges-Rpackage\textgreater).</description>
+  </item>
+  <item>
+    <title>Variational inference for approximate objective priors using neural networks</title>
+    <link>https://computo-journal.org/published-202512-baillie-varp/</link>
+    <guid>https://computo-journal.org/published-202512-baillie-varp/</guid>
+    <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
+    <description>In Bayesian statistics, the choice of the prior can have
+    an important influence on the posterior and the parameter
+    estimation, especially when few data samples are available. To limit
+    the added subjectivity from a priori information, one can use the
+    framework of objective priors, more particularly, we focus on
+    reference priors in this work. However, computing such priors is a
+    difficult task in general. Hence, we consider cases where the
+    reference prior simplifies to the Jeffreys prior. We develop in this
+    paper a flexible algorithm based on variational inference which
+    computes approximations of priors from a set of parametric
+    distributions using neural networks. We also show that our algorithm
+    can retrieve modified Jeffreys priors when constraints are specified
+    in the optimization problem to ensure the solution is proper. We
+    propose a simple method to recover a relevant approximation of the
+    parametric posterior distribution using Markov Chain Monte Carlo
+    (MCMC) methods even if the density function of the parametric prior
+    is not known in general. Numerical experiments on several
+    statistical models of increasing complexity are presented. We show
+    the usefulness of this approach by recovering the target
+    distribution. The performance of the algorithm is evaluated on both
+    prior and posterior distributions, jointly using variational
+    inference and MCMC sampling.</description>
+  </item>
+  <item>
+    <title>Computing  an empirical  Fisher information matrix estimate in latent variable models through stochastic approximation</title>
+    <link>http://computo-journal.org/published-202311-delattre-fim/</link>
+    <guid>http://computo-journal.org/published-202311-delattre-fim/</guid>
+    <pubDate>Tue, 21 Nov 2023 00:00:00 GMT</pubDate>
+    <description>The Fisher information matrix (FIM) is a key quantity in
+    statistics. However its exact computation is often not trivial. In
+    particular in many latent variable models, it is intricated due to
+    the presence of unobserved variables. Several methods have been
+    proposed to approximate the FIM when it can not be evaluated
+    analytically. Different estimates have been considered, in
+    particular moment estimates. However some of them require to compute
+    second derivatives of the complete data log-likelihood which leads
+    to some disadvantages. In this paper, we focus on the empirical
+    Fisher information matrix defined as an empirical estimate of the
+    covariance matrix of the score, which only requires to compute the
+    first derivatives of the log-likelihood. Our contribution consists
+    in presenting a new numerical method to evaluate this empirical
+    Fisher information matrix in latent variable model when the proposed
+    estimate can not be directly analytically evaluated. We propose a
+    stochastic approximation estimation algorithm to compute this
+    estimate as a by-product of the parameter estimate. We evaluate the
+    finite sample size properties of the proposed estimate and the
+    convergence properties of the estimation algorithm through
+    simulation studies.</description>
+  </item>
+  <item>
+    <title>`regMMD`: an `R` package for parametric estimation and regression with maximum mean discrepancy</title>
+    <link>https://computo-journal.org/published-202511-alquier-regmmd/</link>
+    <guid>https://computo-journal.org/published-202511-alquier-regmmd/</guid>
+    <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
+    <description>The Maximum Mean Discrepancy (MMD) is a kernel-based
+    metric widely used for nonparametric tests and estimation. Recently,
+    it has also been studied as an objective function for parametric
+    estimation, as it has been shown to yield robust estimators. We have
+    implemented MMD minimization for parameter inference in a wide range
+    of statistical models, including various regression models, within
+    an `R` package called `regMMD`. This paper provides an introduction
+    to the `regMMD` package. We describe the available kernels and
+    optimization procedures, as well as the default settings. Detailed
+    applications to simulated and real data are provided.</description>
+  </item>
+  <item>
+    <title>Fast confidence bounds for the false discovery proportion  over a path of hypotheses</title>
+    <link>https://computo-journal.org/published-202510-durand-fast/</link>
+    <guid>https://computo-journal.org/published-202510-durand-fast/</guid>
+    <pubDate>Thu, 09 Oct 2025 00:00:00 GMT</pubDate>
+    <description>This paper presents a new algorithm (and an additional
+    trick) that allows to compute fastly an entire curve of post hoc
+    bounds for the False Discovery Proportion when the underlying bound
+    \$V\^{}*\_\{\textbackslash mathfrak\{R\}\}\$ construction is based
+    on a reference family \$\textbackslash mathfrak\{R\}\$ with a forest
+    structure à la @MR4178188. By an entire curve, we mean the values
+    \$V\^{}*\_\{\textbackslash mathfrak\{R\}\}(S\_1),\textbackslash
+    dotsc,V\^{}*\_\{\textbackslash mathfrak\{R\}\}(S\_m)\$ computed on a
+    path of increasing selection sets \$S\_1\textbackslash
+    subsetneq\textbackslash dotsb\textbackslash subsetneq S\_m\$,
+    \$\textbar S\_t\textbar=t\$. The new algorithm leverages the fact
+    that going from \$S\_t\$ to \$S\_\{t+1\}\$ is done by adding only
+    one hypothesis. Compared to a more naive approach, the new algorithm
+    has a complexity in \$O(\textbar\textbackslash mathcal K\textbar
+    m)\$ instead of \$O(\textbar\textbackslash mathcal K\textbar
+    m\^{}2)\$, where \$\textbar\textbackslash mathcal K\textbar\$ is the
+    cardinality of the family.</description>
+  </item>
+  <item>
+    <title>Draw Me a Simulator</title>
+    <link>https://computo-journal.org/published-202509-boulet-simulator/</link>
+    <guid>https://computo-journal.org/published-202509-boulet-simulator/</guid>
+    <pubDate>Mon, 08 Sep 2025 00:00:00 GMT</pubDate>
+    <description>This study investigates the use of Variational
+    Auto-Encoders to build a simulator that approximates the law of
+    genuine observations. Using both simulated and real data in
+    scenarios involving counterfactuality, we discuss the general task
+    of evaluating a simulator’s quality, with a focus on comparisons of
+    statistical properties and predictive performance. While the
+    simulator built from simulated data shows minor discrepancies, the
+    results with real data reveal more substantial challenges. Beyond
+    the technical analysis, we reflect on the broader implications of
+    simulator design, and consider its role in modeling reality.</description>
+  </item>
+</channel>
+</rss>

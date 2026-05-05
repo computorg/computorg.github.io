@@ -15,11 +15,11 @@ If you are using the new [Positron IDE](https://positron.posit.co), quarto is al
 
 ### Microsoft DotNet SDK
 
-You need to install Microsoft DotNet SDK which is now v9.0. Installers can be found here: <https://dotnet.microsoft.com/en-us/download>. Otherwise, you can install it on Unix systems via:
+You need to install Microsoft DotNet SDK which is now v10.0. Installers can be found here: <https://dotnet.microsoft.com/en-us/download>. Otherwise, you can install it on Unix systems via:
 
 - Linux:
 ```bash
-sudo apt-get install dotnet-sdk-9.0
+sudo apt-get install dotnet-sdk-10.0
 ```
 - macOS:
 ```bash
@@ -34,7 +34,38 @@ You need to connect to your GitHub account.
 - Put the token in a file named `.env-secret` in the root of this repository
 
 ```bash
-GITHUB_TOKEN=your_github_token
+API_GITHUB_TOKEN=your_github_token
 ```
 
-Now, you can compile the website with `quarto render .`.
+### Refresh local publication metadata
+
+The publication metadata is generated locally from the Computorg GitHub repositories before the site is rendered. The refresh step updates these generated files:
+
+- `site/published.yml`
+- `site/published.xml`
+- `site/pipeline.yml`
+- `site/mock-papers.yml`
+
+To refresh only the publication metadata, run:
+
+```bash
+dotnet run --project src/Build.fsproj -- -t UpdatePublications
+```
+
+This command runs the `PublicationUpdater.Cli` app through the FAKE build entrypoint and writes the generated metadata files into `site/`.
+
+If you want to refresh the metadata and then rebuild the full website, run:
+
+```bash
+dotnet run --project src/Build.fsproj
+```
+
+The default build target runs publication refresh first and then executes `quarto render`.
+
+If you only need to render the site from already-generated metadata, run:
+
+```bash
+dotnet run --project src/Build.fsproj -- -t RenderSite
+```
+
+Now, you can compile the website with `dotnet run --project src/Build.fsproj`.

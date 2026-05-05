@@ -1,0 +1,27 @@
+{
+  "quarto": {
+    "version": "1.3.0"
+  },
+  "engines": ["python"],
+  "formats": {
+    "html": {
+      "theme": "default"
+    }
+  },
+  "resources": [],
+  "fileInformation": {
+    "document.qmd": {
+      "includeMap": [],
+      "codeCells": [
+        {
+          "start": 1,
+          "end": 10,
+          "file": "document.qmd",
+          "source": "import pandas as pd",
+          "language": "python",
+          "metadata": {}
+        }
+      ]
+    }
+  }
+}

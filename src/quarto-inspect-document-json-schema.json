@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "quarto": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "version": { "type": "string" }
+            },
+            "description": "The version of Quarto used to inspect the document"
+        },
+        "engines": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "The engines used in the document"
+        },
+        "formats": {
+            "type": "object",
+            "properties": {},
+            "additionalProperties": false,
+            "description": "An object representing the formats used in the document (keys) and their configuration (values)"
+        },
+        "resources": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "The resource files explicitly provided in the document"
+        },
+        "fileInformation": {
+            "type": "object",
+            "properties": {},
+            "additionalProperties": false
+        },
+        "project": {
+            "type": "object",
+            "description": "Project inspection payload (kept inline for FSharp.Data schema compatibility)",
+            "properties": {},
+            "additionalProperties": false
+        }
+    }
+}

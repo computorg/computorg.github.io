@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "site/**/*.qmd"
+    - "blog/**/*.qmd"
 website:
   title: COMPUTO
   site-url: https://computo-journal.org/
@@ -31,7 +35,7 @@ website:
     - icon: mastodon
       href: https://mathstodon.xyz/@computo
     - icon: rss
-      href: index.xml
+      href: site/published.xml
   page-footer:
     left: "\xA9 2023 Computo"
     border: false

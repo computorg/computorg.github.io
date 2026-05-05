@@ -1,0 +1,25 @@
+source https://api.nuget.org/v3/index.json
+
+group Main
+  framework: net10.0
+  source https://api.nuget.org/v3/index.json
+  nuget FSharp.Core == 10.1.202
+  nuget DotNetEnv == 3.1.1
+  nuget DrBiber == 0.1.0
+  nuget FSharp.Data == 6.4.0
+  nuget Octokit == 1.0.0
+  nuget YamlDotNet == 16.3.0
+
+group Test
+  framework: net10.0
+  source https://api.nuget.org/v3/index.json
+  nuget Microsoft.NET.Test.Sdk == 18.4.0
+  nuget YoloDev.Expecto.TestSdk == 0.15.6
+  nuget expecto == 10.2.3
+
+group Build
+  framework: net10.0
+  source https://api.nuget.org/v3/index.json
+  nuget Fake.Core.Target == 6.1.4
+  nuget Fake.DotNet.Cli == 6.1.4
+  nuget Fake.IO.FileSystem == 6.1.4
