@@ -37,15 +37,19 @@ module Generator =
     let private publishedRe = Regex(@"^published(_|-)\d+")
     let private redirectStringRe = Regex(@"URL='(.*)'")
 
-    let normalizeDraftValue (raw: string) =
-        if String.IsNullOrWhiteSpace(raw) then
-            "false"
-        elif raw.Equals("true", StringComparison.OrdinalIgnoreCase) then
-            "true"
-        elif raw.Equals("false", StringComparison.OrdinalIgnoreCase) then
-            "false"
-        else
-            raw.ToLowerInvariant()
+    let (|Empty|True|False|Other|) (raw: string) =
+        match raw with
+        | _ when String.IsNullOrWhiteSpace raw -> Empty
+        | _ when raw.Equals("true", StringComparison.OrdinalIgnoreCase) -> True
+        | _ when raw.Equals("false", StringComparison.OrdinalIgnoreCase) -> False
+        | _ -> Other raw
+
+    let normalizeDraftValue raw =
+        match raw with
+        | Empty -> "false"
+        | True -> "true"
+        | False -> "false"
+        | Other s -> s.ToLowerInvariant()
 
     let buildRssTitle (title: string) (authors: string) =
         if String.IsNullOrWhiteSpace(authors) then
@@ -120,8 +124,10 @@ module Generator =
                     HtmlDocument.Load(page + p))
             |> Option.defaultValue htmlFirst
 
+        let bibtexCls = ".bibtex"
+
         try
-            html.CssSelect(".bibtex").Head.InnerText()
+            html.CssSelect(bibtexCls).Head.InnerText()
             |> DirtyParser.bibTeXFromString
             |> _.Head
             |> Result.Ok
