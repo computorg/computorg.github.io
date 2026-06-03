@@ -10,8 +10,8 @@ page-layout: article
 
 ## Chiefs Editors
 
-- [Julien Chiquet](https://jchiquet.github.io), 
-Statistical learning for life science 
+- [Julien Chiquet](https://jchiquet.github.io),
+Statistical learning for life science
 [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-3629-3429) *Université Paris-Saclay, AgroParisTech, INRAE, Paris, France*
 
 - [Pierre Neuvial](https://www.math.univ-toulouse.fr/~pneuvial/). Statistics. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-3584-9998). *CNRS, Institut de Mathématiques de Toulouse, Toulouse, France*
@@ -24,7 +24,7 @@ Topological data analysis. [![ORCID](https://orcid.org/sites/default/files/image
 - [Marie-Pierre Etienne](https://marieetienne.github.io/)
 Statistical methods for ecology. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-2097-2267). *ENSAI CREST, Rennes, France*
 
-- [Aymeric Stamm](https://astamm.github.io/) 
+- [Aymeric Stamm](https://astamm.github.io/)
 Research Engineer, Statistics.[![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8725-3654). *Laboratoire de Mathématiques Jean Leray, Nantes› CNRS, France*
 
 - [Nelle Varoquaux](https://nellev.github.io/)
@@ -32,18 +32,18 @@ Machine learning and causal inference for genomics [![ORCID](https://orcid.org/s
 
 ## Technical Support
 
-- [François-David Collin](https://fradav.github.io/) 
-Research Engineer, Biostatistics. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8374-7163). *Institut Montpelliérain Alexander Grothendieck, CNRS, France*
+- [François-David Collin](https://fradav.github.io/)
+Research Engineer, IA applied to Micro-electronics. [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8374-7163). *Laboratoire d’Informatique, de Robotique et de Microélectronique de Montpellier, CNRS, France*
 
 ## Community Management
 
-- [Chloé-Agathe Azencott](https://cazencott.info/) 
+- [Chloé-Agathe Azencott](https://cazencott.info/)
 Machine learning for therapeutic research  [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-1003-301X). *Mines ParisTech, Institut Curie and INSERM, Paris, France*
 
 ## Former contributors
 
 - [Mathurin Massias](https://mathurinm.github.io/)
-Optimization for Machine Learning. 
+Optimization for Machine Learning.
 Mathurin greatly contributed to the initial launch of the journal and the technical aspects
 [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8950-0356).
 
