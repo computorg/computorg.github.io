@@ -16,6 +16,16 @@ module QuartoClient =
           stdout: string
           executionTime: TimeSpan }
 
+    /// Utility function for erroring with about missing fields
+    let errorMissingFields (has: string -> bool) (fields: string list) =
+        let missingFields = fields |> List.filter (fun f -> not (has f))
+
+        if missingFields.Length > 0 then
+            let missingFieldNames = missingFields |> String.concat ", "
+            Result.Error $"Missing required fields: {missingFieldNames}"
+        else
+            Ok()
+
     /// Run quarto inspect on a given path
     let runInspect (path: string) : Async<Result<InspectResult, string>> =
         async {
@@ -74,14 +84,9 @@ module QuartoClient =
                 let mutable elem = Unchecked.defaultof<JsonElement>
                 root.TryGetProperty(key, &elem)
             // Check required fields
-            if not (has "quarto") then
-                Result.Error "Missing required field: quarto"
-            elif not (has "engines") then
-                Result.Error "Missing required field: engines"
-            elif not (has "formats") then
-                Result.Error "Missing required field: formats"
-            else
-                Ok root
+            [ "quarto"; "engines"; "formats" ]
+            |> errorMissingFields has
+            |> Result.bind (fun () -> Ok root)
         with ex ->
             Error $"Invalid JSON: {ex.Message}"
 
@@ -95,16 +100,9 @@ module QuartoClient =
                 let mutable elem = Unchecked.defaultof<JsonElement>
                 root.TryGetProperty(key, &elem)
             // Check required fields
-            if not (has "quarto") then
-                Result.Error "Missing required field: quarto"
-            elif not (has "dir") then
-                Result.Error "Missing required field: dir"
-            elif not (has "engines") then
-                Result.Error "Missing required field: engines"
-            elif not (has "files") then
-                Result.Error "Missing required field: files"
-            else
-                Ok root
+            [ "quarto"; "dir"; "engines"; "files" ]
+            |> errorMissingFields has
+            |> Result.bind (fun () -> Ok root)
         with ex ->
             Error $"Invalid JSON: {ex.Message}"
 
