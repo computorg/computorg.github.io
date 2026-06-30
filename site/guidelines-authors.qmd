@@ -29,11 +29,10 @@ This document provides a comprehensive documentation to accompany the authors du
 
 - **Local Setup**:
   - Clone the repository.
-  - Install [Quarto](https://quarto.org/) and the [Computo Quarto extension](https://github.com/computorg/computo-quarto-extension).
   - Ensure you can render the manuscript locally.
 
 - **Writing Your Contribution**:
-  - Main content goes in `template-computo-LANG.qmd`.
+  - Main content goes in `main.qmd`.
   - Metadata (title, authors, abstract, etc.) is set in `_quarto.yml`.
   - Edit using any text editor or IDE (VS Code/RStudio/Positron recommended).
 
@@ -64,9 +63,9 @@ A Computo submission is therefore a Git(Hub) repository containing:
 - configuration files to set up dependencies in a virtual environment;
 - configuration files to enable continuous integration and render the final documents.
 
-### Template repositories {#sec-templates}
+### Setup a git repository {#sec-git}
 
-The [Computo](https://github.com/computorg) organization provides template repositories for [R](https://github.com/computorg/template-computo-R), [Python](https://github.com/computorg/template-computo-python), and [Julia](https://github.com/computorg/template-computo-julia) contributors. 
+The [Computo](https://github.com/computorg) organization provides template repositories for R, Python, Julia contributors. 
 
 ::: {.grid}
 
@@ -74,9 +73,8 @@ The [Computo](https://github.com/computorg) organization provides template repos
 ::: {.callout-note icon="false"}
 ### R
 
-[![](/assets/img/computo-template-r.png)](https://github.com/computorg/template-computo-R/)
+![](/assets/img/computo-template-r.png)
 
-<https://github.com/computorg/template-computo-R/>
 :::
 :::
 
@@ -84,9 +82,8 @@ The [Computo](https://github.com/computorg) organization provides template repos
 ::: {.callout-tip icon="false"}
 ### Python
 
-[![](/assets/img/computo-template-python.png)](https://github.com/computorg/template-computo-python/)
+![](/assets/img/computo-template-python.png)
 
-<https://github.com/computorg/template-computo-python/>
 :::
 :::
 
@@ -94,16 +91,14 @@ The [Computo](https://github.com/computorg) organization provides template repos
 ::: {.callout-important icon="false"}
 ### Julia
 
-[![](/assets/img/computo-template-julia.png)](https://github.com/computorg/template-computo-julia/)
+![](/assets/img/computo-template-julia.png)
 
-<https://github.com/computorg/template-computo-julia/>
 :::
 :::
 :::
 
 These templates provide a starting point for authors to format their contributions according to Computo's guidelines. They include the necessary files and configurations to set up a reproducible environment and continuous integration
 
-### Setup a git repository {#sec-git}
 
 ::: {.callout-note title="Git and GitHub"}
 Git is a versioning tool and GitHub is an online platform owned by Microsoft which provides the service of hosting repositories with all the capabilities of versioning offered by Git.
@@ -116,7 +111,7 @@ Create a new GitHub repository by navigating to the [R](https://github.com/compu
 ![Screenshot of the R Computo template GitHub page.](/assets/img/computo-template-screenshot.png){#fig-template width="100%"}
 
 ::: {.callout-tip title="Branches"}
-When you fork a GitHub repository – whether it is a classic repository or a template – GitHub will ask if you want to include all branches (there is a box labeled *Include all branches*). You only need to fork the main branch, so you do not need to check that box.
+When you create a GitHub repository from a template, GitHub will ask if you want to include all branches (there is a box labeled *Include all branches*). You do not need to check that box.
 :::
 
 ::: {.callout-caution title="Public/private repository"}
@@ -141,7 +136,7 @@ git clone http://github.com/<user-name>/<repository-name>.git
 You need to have [Quarto](https://quarto.org/) and the [Computo extension](https://github.com/computorg/computo-quarto-extension) installed.
 
 - Install Quarto: follow instructions at <https://quarto.org/docs/get-started/>.
-- Once Quarto is installed, open a terminal in your cloned repo folder and run:
+- Once Quarto is installed, open a terminal **in the directory of the cloned repo** and run:
 
 
 ```bash
@@ -170,7 +165,7 @@ quarto render
 
 ### Files and metadata {#sec-files-metadata}
 
-There are mainly two files you are expected to modify in your repository for writing your contribution: `template-computo-LANG.qmd` (where LANG is to be replaced with either R, Python or Julia) and `_quarto.yml`. While the first can be renamed (e.g, `submission-YYYYMM-firstAuthor-keyword.qmd`), the second must remain `_quarto.yml` as it contains metadata about your contribution shared between project's files.
+There are mainly two files you are expected to modify in your repository for writing your contribution: `main.qmd` and `_quarto.yml`. While the first can be renamed (e.g, `submission-YYYYMM-firstAuthor-keyword.qmd`), the second must remain `_quarto.yml` as it contains metadata about your contribution shared between project's files.
 
 ::: {.callout-tip}
 ## Editing your project
@@ -185,11 +180,11 @@ All yaml metadata should preferably be placed in the `_quarto.yml` file. To cust
 project:
   type: default
   render:
-    - template-computo-LANG.qmd
+    - main.qmd
     - README.qmd
 
 title: "Template for contribution to Computo"
-subtitle: "Example dedicated to `LANG` users"
+subtitle: "Example dedicated to `R` users"
 author:
   - name: Jane Doe
     corresponding: true
@@ -205,34 +200,38 @@ author:
     url: https://johndoe.someplace.themoon.org
     orcid: 0000-0000-0000-0000
     affiliations:
-      - name: Name of Afficiliation two
+      - name: Name of Affiliation two
         department: Computer Science
         url: https://someplace.themoon.org
 date: last-modified
 date-modified: last-modified
-description: |
-  This document provides a template based on the [`quarto`](https://quarto.org/) system for contributions to Computo, using the [`quarto journal extension`](https://github.com/computorg/computo-quarto-extension), the knitr kernel (R user) and [`renv`](https://rstudio.github.io/renv/articles/renv.html) to set-up the dependencies.
 abstract: >+
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere vestibulum facilisis. Aenean pretium orci augue, quis lobortis libero accumsan eu. Nam mollis lorem sit amet pellentesque ullamcorper. Curabitur lobortis libero eget malesuada vestibulum. Nam nec nibh massa. Pellentesque porttitor cursus tellus. Mauris urna erat, rhoncus sed faucibus sit amet, venenatis eu ipsum.
+  Template for preparing a submission to Computo, using the [quarto journal extension](https://github.com/computorg/computo-quarto-extension), the knitr kernel (R user) and [renv](https://rstudio.github.io/renv/articles/renv.html) to set up the dependencies.
+  
+  For a detailed, step-by-step guide on preparing your article, setting up the continuous integration and submitting it to Computo, please consult the [guidelines for authors](https://computo-journal.org/site/guidelines-authors.html).
 keywords: [key1, key2, key3]
 bibliography: references.bib
 github-user: computorg
 repo: "template-computo-r"
-draft: true # set to false once the build is running
-published: false # will be set to true once accepted
+status: "draft"
+citation:
+  type: article-journal
+  container-title: "Computo"
+  issn: "2824-7795"
+  doi: "10.5072/computo.0000" # placeholder DOI (10.5072 is the official DOI test prefix), replace once assigned
 license: CC-BY-4.0
 format:
   computo-html: default
   computo-pdf: default
 ```
 
-You can customize most of the entries in that file except `project:`, `published:`, `draft:`, `license:` and `format:`. If your contribution is accepted for publication, the associate editors will modify parts of this file accordingly.
+You can customize most of the entries in that file except `status:`, `license:` and `format:`. If your contribution is accepted for publication, the associate editors will modify parts of this file accordingly.
 
 #### Main content of your contribution
 
-The main content of your contribution must be written in the `template-computo-LANG.qmd` file (see formatting suggestion therein). To compile your contribution, run `quarto render` anytime needed.
+The main content of your contribution must be written in the `main.qmd` file (see formatting suggestion therein). To compile your contribution, run `quarto render` anytime needed.
 
-We also provide a `README.qmd` file as part of the project. This file uses shortcodes to extract metadata from `_quarto.yml` and generate a `README.md` that will be displayed on the main page of your GitHub repository. The `README.md` file is rendered automatically when you run `quarto render` at the root of your repository. You may modify the `README.qmd` file if you wish, at your own risk. If your submission is accepted, it will be standardized by the Computo team.
+We also provide a `README.qmd` file as part of the project, which is used by the Computo team to generate a `README.md` for accepted papers. Please do not modify this file.
 
 ### Setup dependencies {#sec-dependencies}
 
