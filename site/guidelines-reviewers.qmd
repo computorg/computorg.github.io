@@ -31,13 +31,10 @@ This step is essential for linking the invitation to your account.
 - If you encounter any technical issues or need to update your email, contact us.
 :::
 
-
-
 ## Guidelines for evaluation
 
 ::: {.callout-important}
-Once a manuscript is accepted, reviews and discussion will be made available on the Computo website. Reviewers can choose to remain anonymous or
-not.
+Once a manuscript is accepted, the anonymous reviews and discussion with authors are made publicly available. We maintain a list of past Computo reviewers at the bottom of the present page (reviewers may choose not to be listed on this list).
 :::
 
 In order to help you in performing your review we provide a list of the main questions we are trying to answer when evaluating a submission:
@@ -67,4 +64,3 @@ In order to help you in performing your review we provide a list of the main que
 
 The review form is text-based, but Markdown and LaTeX formatting is supported so you can add hyperlinks and use LaTeX to add equations to your review. Reviewers are also required to answer a handful  of rating  scale questions  about the  submission.
 :::
-
