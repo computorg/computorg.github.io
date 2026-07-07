@@ -346,18 +346,6 @@ In addition to the template repositories that can serve as example papers (see @
 For other advanced examples, do not hesitate to explore the source code of any [paper already published in Computo](https://computo-journal.org/site/publications.html) to see how the template is used in practice. In particular, reproducing an existing paper published in Computo can be easily done [as detailed in the FAQ](../blog/2025-07-31-reproduce-paper/index.html).
 :::
 
-:::{.callout-tip}
-## Accessing source code
-You can also access the source code of the example papers mentioned above by clicking on the `</> Source` button in the upper-right corner of the page as illustrated in @fig-template-source.
-:::
-
-![Accessing sources of the rendered example papers.](/assets/img/computo-template-r-source.png){#fig-template-source width="100%"}
-
-The source code of the page then displays as shown in @fig-template-source-display and the user can click on the icon in the upper-right corner to copy the source code for practicing locally.
-
-![Copying the sources of the rendered example papers.](/assets/img/computo-template-r-source-display.png){#fig-template-source-display width="100%"}
-
-
 ## Computo's code of ethics {#sec-ethics}
 
 Originality
