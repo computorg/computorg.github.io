@@ -44,7 +44,7 @@ This document provides a comprehensive documentation to accompany the authors du
 
 - **Dependencies**:
   - Freeze package versions for reproducibility.
-  - Use `renv` (R), `conda`/`requirements.txt` (Python), or `Project.toml` (Julia).
+  - Use `renv` (R), `micromamba`/`environment.yml` (Python), or `Project.toml` (Julia).
   - System dependencies can be installed via `setup-env-ci.sh` and `setup-render-ci.sh`.
 
 - **Publishing**:
