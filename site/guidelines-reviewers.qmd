@@ -69,45 +69,45 @@ The review form is text-based, but Markdown and LaTeX formatting is supported so
 
 We would like to sincerely thank the following individuals, who agreed to review one or more articles for *Computo*:
 
-Ismaïl Ahmed
-Julyan Arbel
-Pierre Barbillon
-Simon Barthelmé
-Ayoub Belhadji
-Samy Blusseau
-Christophe Botella
-Nicolas Bousquet
-Camille Coron
-Charita Dellaporta
-Mathieu Emily
-Marie-Pierre Etienne
-Gersende Fort
-Isaac Gibbs
-Valentina Giunchi
-Pierre Gloagen
-Jesse Hemerik
-Toby Hocking 
-Jeremie Houssineau
-Mathurin Massias
-Raphaël Jolivet
-Adeline Leclercq Samson
-Adrien Mazoyer
-Iqraa Meah
-Matthieu Marbac
-Hedvig Nenzen
-Mahendra Mariadassou
-Takuo Matsubara
-Valérie Monbet
-Lorenzo Pacchiardi
-Alessia Pini
-Nicolas Savy
-Frédéric Proia
-Guillem Rigaill
-Davide Risso
-Julien Stoehr
-Felipe Uribe
-Romain Thavenard
-Gaël Thébaud
-Vincent Vandewalle
-Michael Weylandt
-Rishikesh Yadav
+- Ismaïl Ahmed
+- Julyan Arbel
+- Pierre Barbillon
+- Simon Barthelmé
+- Ayoub Belhadji
+- Samy Blusseau
+- Christophe Botella
+- Nicolas Bousquet
+- Camille Coron
+- Charita Dellaporta
+- Mathieu Emily
+- Marie-Pierre Etienne
+- Gersende Fort
+- Isaac Gibbs
+- Valentina Giunchi
+- Pierre Gloagen
+- Jesse Hemerik
+- Toby Hocking 
+- Jeremie Houssineau
+- Raphaël Jolivet
+- Adeline Leclercq Samson
+- Matthieu Marbac
+- Mathurin Massias
+- Adrien Mazoyer
+- Mahendra Mariadassou
+- Takuo Matsubara
+- Iqraa Meah
+- Hedvig Nenzen
+- Valérie Monbet
+- Lorenzo Pacchiardi
+- Alessia Pini
+- Frédéric Proia
+- Guillem Rigaill
+- Davide Risso
+- Nicolas Savy
+- Julien Stoehr
+- Felipe Uribe
+- Romain Thavenard
+- Gaël Thébaud
+- Vincent Vandewalle
+- Michael Weylandt
+- Rishikesh Yadav
