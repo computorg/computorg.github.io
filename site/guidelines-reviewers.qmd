@@ -105,9 +105,9 @@ We would like to sincerely thank the following individuals, who agreed to review
 - Davide Risso
 - Nicolas Savy
 - Julien Stoehr
-- Felipe Uribe
 - Romain Thavenard
 - Gaël Thébaud
+- Felipe Uribe
 - Vincent Vandewalle
 - Michael Weylandt
 - Rishikesh Yadav
