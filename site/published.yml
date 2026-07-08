@@ -61,7 +61,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202301-chagneux-macrolitter/
+  url: https://computo-journal.org/published-202301-chagneux-macrolitter/
   draft: false
 - title: 'A Python Package for Sampling from Copulae: clayton'
   name: published-202301-boulin-clayton
@@ -111,7 +111,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202301-boulin-clayton/
+  url: https://computo-journal.org/published-202301-boulin-clayton/
   draft: false
 - title: Trade-off between deep learning for species identification and inference about predator-prey co-occurrence
   name: published-202204-deeplearning-occupancy-lynx
@@ -261,7 +261,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202312-cleynen-local/
+  url: https://computo-journal.org/published-202312-cleynen-local/
   draft: false
 - title: Spectral Bridges
   name: published-202412-ambroise-spectral
@@ -320,7 +320,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202412-ambroise-spectral/
+  url: https://computo-journal.org/published-202412-ambroise-spectral/
   draft: false
 - title: Variational inference for approximate objective priors using neural networks
   name: published-202512-baillie-varp
@@ -457,7 +457,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202311-delattre-fim/
+  url: https://computo-journal.org/published-202311-delattre-fim/
   draft: false
 - title: '`regMMD`: an `R` package for parametric estimation and regression with maximum mean discrepancy'
   name: published-202511-alquier-regmmd
@@ -693,7 +693,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202407-legrand-wildfires/
+  url: https://computo-journal.org/published-202407-legrand-wildfires/
   draft: false
 - title: Geometric-Based Pruning Rules for Change Point Detection in Multiple Independent Time Series
   name: published-202406-pishchagina-change-point
@@ -760,7 +760,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202406-pishchagina-change-point/
+  url: https://computo-journal.org/published-202406-pishchagina-change-point/
   draft: false
 - title: 'AdaptiveConformal: An `R` Package for Adaptive Conformal Inference'
   name: published-202407-susmann-adaptive-conformal
@@ -820,7 +820,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202407-susmann-adaptive-conformal/
+  url: https://computo-journal.org/published-202407-susmann-adaptive-conformal/
   draft: false
 - title: Model-Based Clustering and Variable Selection for Multivariate Count Data
   name: published-202507-jacques-count-data
@@ -931,7 +931,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202306-sanou-multiscale_glasso/
+  url: https://computo-journal.org/published-202306-sanou-multiscale_glasso/
   draft: false
 - title: 'Reservoir Computing in R: a Tutorial for Using reservoirnet to Predict Complex Time-Series'
   name: published-202505-ferte-reservoirnet
@@ -999,7 +999,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202505-ferte-reservoirnet/
+  url: https://computo-journal.org/published-202505-ferte-reservoirnet/
   draft: false
 - title: 'Peerannot: classification for crowdsourced image datasets with Python'
   name: published-202402-lefort-peerannot
@@ -1053,7 +1053,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202402-lefort-peerannot/
+  url: https://computo-journal.org/published-202402-lefort-peerannot/
   draft: false
 - title: Optimal projection for parametric importance sampling in high dimensions
   name: published-202402-elmasri-optimal
@@ -1110,7 +1110,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202402-elmasri-optimal/
+  url: https://computo-journal.org/published-202402-elmasri-optimal/
   draft: false
 - title: Point Process Discrimination According to Repulsion
   name: published-202401-adrat-repulsion
@@ -1315,5 +1315,5 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202412-giorgi-efficient/
+  url: https://computo-journal.org/published-202412-giorgi-efficient/
   draft: false

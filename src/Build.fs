@@ -42,7 +42,19 @@ Target.create "RenderSite" (fun _ ->
         |> CreateProcess.withWorkingDirectory repoRoot
         |> Proc.run
 
-    ensureExitCode result.ExitCode "quarto render")
+    ensureExitCode result.ExitCode "quarto render"
+
+    let sitemapPath = Path.Combine(repoRoot, "_site", "sitemap.xml")
+    let fragmentPath = Path.Combine(repoRoot, "site", "published-sitemap-fragment.xml")
+
+    if File.Exists sitemapPath && File.Exists fragmentPath then
+        let fragment = File.ReadAllText fragmentPath
+
+        if fragment.Contains "<url>" then
+            let sitemap = File.ReadAllText sitemapPath
+            let updated = sitemap.Replace("</urlset>", fragment + "</urlset>")
+            File.WriteAllText(sitemapPath, updated)
+            printfn "Injected published-article URLs into sitemap.xml")
 
 Target.create "Default" ignore
 
