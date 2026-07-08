@@ -1,7 +1,10 @@
 ---
-description: <h1>COMPUTO</h1> A journal of the <a href="https://sfds.asso.fr/">French
-  Statistical Society <img height="10px" src="assets/img/sfds.png" alt="SFdS"/></a>
-  - ISSN 2824-7795
+description: >-
+  Computo is an open-access journal of the French Statistical Society publishing
+  reproducible computational and algorithmic contributions in statistics and
+  machine learning.
+image: assets/img/og-image.png
+image-alt: "Computo, a journal of the French Statistical Society"
 page-layout: full
 toc: false
 listing:
