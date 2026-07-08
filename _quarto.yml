@@ -5,10 +5,18 @@ project:
     - "*.qmd"
     - "site/**/*.qmd"
     - "blog/**/*.qmd"
+  post-render:
+    - scripts/fix-sitemap.sh
 website:
   title: COMPUTO
-  site-url: https://computo-journal.org/
+  site-url: https://computo-journal.org
   description: A platform for computational research and reproducibility
+  image: /assets/img/og-image.png
+  image-alt: "Computo, a journal of the French Statistical Society"
+  open-graph:
+    locale: en_US
+  twitter-card:
+    card-style: summary_large_image
   favicon: assets/favicon.ico
   navbar:
     background: primary
@@ -52,6 +60,7 @@ format:
     theme:
       light: [ custom.scss, light.scss ]
       dark: [ custom.scss, dark.scss ]
+    canonical-url: true
     toc: true
     code-copy: true
     code-block-border-left: true
