@@ -37,6 +37,12 @@ module Generator =
     let private publishedRe = Regex(@"^published(_|-)\d+")
     let private redirectStringRe = Regex(@"URL='(.*)'")
 
+    let internal normalizeUrl (url: string) =
+        if url.StartsWith("http://computo-journal.org") then
+            "https://" + url.Substring("http://".Length)
+        else
+            url
+
     let (|Empty|True|False|Other|) (raw: string) =
         match raw with
         | _ when String.IsNullOrWhiteSpace raw -> Empty
@@ -287,7 +293,7 @@ module Generator =
                         match repo.Homepage with
                         | null
                         | "" -> repo.HtmlUrl
-                        | h -> h
+                        | h -> normalizeUrl h
                       draft = normalizeDraftValue (getJsonString metadata "draft") }
             | Error e -> Error e
         with e ->
@@ -407,17 +413,37 @@ module Generator =
             let drafts, publishedOnly = published |> List.partition (fun d -> d.draft = "true")
             printfn "  Found %d published and %d draft papers" publishedOnly.Length drafts.Length
 
-            let writeYaml (relativePath: string) (content: string) =
+            let writeFile (relativePath: string) (content: string) =
                 let outPath = Path.Combine(rootDir, relativePath)
                 File.WriteAllText(outPath, content)
                 printfn "  Wrote %s" outPath
 
-            writeYaml "site/published.yml" (serializeToYaml publishedOnly)
+            writeFile "site/published.yml" (serializeToYaml publishedOnly)
+
+            let sitemapFragment =
+                let sb = StringBuilder()
+
+                for item in publishedOnly do
+                    if item.url.StartsWith(computoUrl) then
+                        let lastmod =
+                            try
+                                DateTime.Parse(item.date).ToString("yyyy-MM-dd")
+                            with _ ->
+                                item.date
+
+                        sb.AppendLine("  <url>") |> ignore
+                        sb.AppendLine($"    <loc>{xmlEscape item.url}</loc>") |> ignore
+                        sb.AppendLine($"    <lastmod>{lastmod}</lastmod>") |> ignore
+                        sb.AppendLine("  </url>") |> ignore
+
+                sb.ToString()
+
+            writeFile "site/published-sitemap-fragment.xml" sitemapFragment
 
             if drafts.IsEmpty then
-                writeYaml "site/pipeline.yml" "[]\n"
+                writeFile "site/pipeline.yml" "[]\n"
             else
-                writeYaml "site/pipeline.yml" (serializeToYaml drafts)
+                writeFile "site/pipeline.yml" (serializeToYaml drafts)
 
             let rssItems = publishedOnly |> List.truncate 10
 
@@ -457,7 +483,7 @@ module Generator =
                 sb.AppendLine("</rss>") |> ignore
                 sb.ToString()
 
-            writeYaml "site/published.xml" rss
+            writeFile "site/published.xml" rss
 
             let mock =
                 repos
@@ -466,7 +492,7 @@ module Generator =
                     | Ok(json, repo) -> getCitationStructure json repo |> Result.toOption
                     | Error _ -> None)
 
-            writeYaml "site/mock-papers.yml" (serializeToYaml mock)
+            writeFile "site/mock-papers.yml" (serializeToYaml mock)
 
             printfn "================================================"
             printfn "Done"
