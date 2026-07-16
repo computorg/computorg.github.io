@@ -1,10 +1,10 @@
 - title: Should we correct the bias in Confidence Bands for Repeated Functional Data?
   name: published-202606-devijver-scb
-  authors: Emilie Devijver and Adeline Samson
+  authors: ''
   journal: Computo
   doi: ''
   year: 2026
-  date: 2026-07-20
+  date: last-modified
   description: ''
   abstract: >-
     While confidence intervals for finite quantities are
@@ -32,8 +32,7 @@
     	title = {Should We Correct the Bias in {Confidence} {Bands} for
         {Repeated} {Functional} {Data?}},
     	journal = {Computo},
-    	date = {2026-07-20},
-    	url = {https://computo-journal.org/published-202606-devijver-scb/},
+    	date = {2026-07-12},
     	doi = {10.57750/nmyg-wg36},
     	issn = {2824-7795},
     	langid = {en},
@@ -58,10 +57,10 @@
 
   pdf: ''
   url: https://computo-journal.org/published-202606-devijver-scb/
-  status: published
+  draft: false
 - title: Variational inference for approximate objective priors using neural networks
   name: published-202512-baillie-varp
-  authors: Nils Baillie, Antoine Van Biesbroeck and Clément Gauchy
+  authors: ''
   journal: Computo
   doi: ''
   year: 2025
@@ -130,10 +129,10 @@
 
   pdf: ''
   url: https://computo-journal.org/published-202512-baillie-varp/
-  status: published
+  draft: false
 - title: '`regMMD`: an `R` package for parametric estimation and regression with maximum mean discrepancy'
   name: published-202511-alquier-regmmd
-  authors: Pierre Alquier and Mathieu Gerber
+  authors: ''
   journal: Computo
   doi: ''
   year: 2025
@@ -177,10 +176,10 @@
 
   pdf: ''
   url: https://computo-journal.org/published-202511-alquier-regmmd/
-  status: published
+  draft: false
 - title: Fast confidence bounds for the false discovery proportion over a path of hypotheses
   name: published-202510-durand-fast
-  authors: Guillermo Durand
+  authors: ''
   journal: Computo
   doi: ''
   year: 2025
@@ -242,10 +241,10 @@
 
   pdf: ''
   url: https://computo-journal.org/published-202510-durand-fast/
-  status: published
+  draft: false
 - title: Draw Me a Simulator
   name: published-202509-boulet-simulator
-  authors: Sandrine Boulet and Antoine Chambaz
+  authors: ''
   journal: Computo
   doi: ''
   year: 2025
@@ -288,10 +287,10 @@
 
   pdf: ''
   url: https://computo-journal.org/published-202509-boulet-simulator/
-  status: published
+  draft: false
 - title: Model-Based Clustering and Variable Selection for Multivariate Count Data
   name: published-202507-jacques-count-data
-  authors: Julien Jacques and Thomas Brendan Murphy
+  authors: ''
   journal: Computo
   doi: ''
   year: 2025
@@ -331,10 +330,10 @@
 
   pdf: ''
   url: https://computo-journal.org/published-202507-jacques-count-data/
-  status: published
+  draft: false
 - title: 'Reservoir Computing in R: a Tutorial for Using reservoirnet to Predict Complex Time-Series'
   name: published-202505-ferte-reservoirnet
-  authors: Thomas Ferté, Kalidou Ba, Dan Dutartre, Pierrick Legrand, Vianney Jouhet, Rodolphe Thiébaut, Xavier Hinaut and Boris P Hejblum
+  authors: ''
   journal: Computo
   doi: ''
   year: 2025
@@ -400,10 +399,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-202505-ferte-reservoirnet/
-  status: published
+  draft: false
 - title: Efficient simulation of individual-based population models
   name: published-202412-giorgi-efficient
-  authors: Daphné Giorgi, Sarah Kaakai and Vincent Lemaire
+  authors: ''
   journal: Computo
   doi: ''
   year: 2025
@@ -456,10 +455,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-202412-giorgi-efficient/
-  status: published
+  draft: false
 - title: Spectral Bridges
   name: published-202412-ambroise-spectral
-  authors: Félix Laplante and Christophe Ambroise
+  authors: ''
   journal: Computo
   doi: ''
   year: 2024
@@ -516,10 +515,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-202412-ambroise-spectral/
-  status: published
+  draft: false
 - title: 'AdaptiveConformal: An `R` Package for Adaptive Conformal Inference'
   name: published-202407-susmann-adaptive-conformal
-  authors: Herbert Susmann, Antoine Chambaz and Julie Josse
+  authors: ''
   journal: Computo
   doi: ''
   year: 2024
@@ -577,10 +576,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-202407-susmann-adaptive-conformal/
-  status: published
+  draft: false
 - title: Bayesian spatiotemporal modelling of wildfire occurrences and sizes for projections under climate change
   name: published-202407-legrand-wildfires
-  authors: Juliette Legrand, François Pimont, Jean-Luc Dupuy and Thomas Opitz
+  authors: ''
   journal: Computo
   doi: ''
   year: 2024
@@ -664,10 +663,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-202407-legrand-wildfires/
-  status: published
+  draft: false
 - title: Geometric-Based Pruning Rules for Change Point Detection in Multiple Independent Time Series
   name: published-202406-pishchagina-change-point
-  authors: Liudmila Pishchagina, Guillem Rigaill and Vincent Runge
+  authors: ''
   journal: Computo
   doi: ''
   year: 2024
@@ -732,10 +731,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-202406-pishchagina-change-point/
-  status: published
+  draft: false
 - title: 'Peerannot: classification for crowdsourced image datasets with Python'
   name: published-202402-lefort-peerannot
-  authors: Tanguy Lefort, Benjamin Charlier, Alexis Joly and Joseph Salmon
+  authors: ''
   journal: Computo
   doi: ''
   year: 2024
@@ -780,10 +779,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-202402-lefort-peerannot/
-  status: published
+  draft: false
 - title: Optimal projection for parametric importance sampling in high dimensions
   name: published-202402-elmasri-optimal
-  authors: Maxime El Masri, Jérôme Morio and Florian Simatos
+  authors: ''
   journal: Computo
   doi: ''
   year: 2024
@@ -838,10 +837,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-202402-elmasri-optimal/
-  status: published
+  draft: false
 - title: Point Process Discrimination According to Repulsion
   name: published-202401-adrat-repulsion
-  authors: Hamza Adrat and Laurent Decreusefond
+  authors: ''
   journal: Computo
   doi: ''
   year: 2024
@@ -878,10 +877,10 @@
 
   pdf: ''
   url: https://computo-journal.org/published-202401-adrat-repulsion/
-  status: published
+  draft: false
 - title: A hierarchical model to evaluate pest treatments from prevalence and intensity data
   name: published-202312-favrot-hierarchical
-  authors: Armand Favrot and David Makowski
+  authors: ''
   journal: Computo
   doi: ''
   year: 2024
@@ -989,10 +988,10 @@
 
   pdf: ''
   url: https://computo-journal.org/published-202312-favrot-hierarchical/
-  status: published
+  draft: false
 - title: 'Local tree methods for classification: a review and some dead ends'
   name: published-202312-cleynen-local
-  authors: Alice Cleynen, Louis Raynal and Jean-Michel Marin
+  authors: ''
   journal: Computo
   doi: ''
   year: 2023
@@ -1062,10 +1061,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-202312-cleynen-local/
-  status: published
+  draft: false
 - title: Computing  an empirical  Fisher information matrix estimate in latent variable models through stochastic approximation
   name: published-202311-delattre-fim
-  authors: Maud Delattre and Estelle Kuhn
+  authors: ''
   journal: Computo
   doi: ''
   year: 2023
@@ -1129,10 +1128,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-202311-delattre-fim/
-  status: published
+  draft: false
 - title: Inference of Multiscale Gaussian Graphical Models
   name: published-202306-sanou-multiscale_glasso
-  authors: Edmond Sanou, Christophe Ambroise and Geneviève Robin
+  authors: ''
   journal: Computo
   doi: ''
   year: 2023
@@ -1199,10 +1198,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-202306-sanou-multiscale_glasso/
-  status: published
+  draft: false
 - title: 'Macrolitter video counting on riverbanks using state space models and moving cameras '
   name: published-202301-chagneux-macrolitter
-  authors: Mathis Chagneux, Sylvain Le Corff, Pierre Gloaguen, Charles Ollion, Océane Lepâtre and Antoine Bruge
+  authors: ''
   journal: Computo
   doi: ''
   year: 2023
@@ -1265,10 +1264,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-202301-chagneux-macrolitter/
-  status: published
+  draft: false
 - title: 'A Python Package for Sampling from Copulae: clayton'
   name: published-202301-boulin-clayton
-  authors: Alexis Boulin
+  authors: ''
   journal: Computo
   doi: ''
   year: 2023
@@ -1316,10 +1315,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-202301-boulin-clayton/
-  status: published
+  draft: false
 - title: Trade-off between deep learning for species identification and inference about predator-prey co-occurrence
   name: published-202204-deeplearning-occupancy-lynx
-  authors: Olivier Gimenez, Maëlis Kervellec, Jean-Baptiste Fanjul, Anna Chaine, Lucile Marescot, Yoann Bollet and Christophe Duchamp
+  authors: ''
   journal: Computo
   doi: ''
   year: 2022
@@ -1396,4 +1395,4 @@
 
   pdf: ''
   url: https://computo-journal.org/published-202204-deeplearning-occupancy-lynx/
-  status: published
+  draft: false
