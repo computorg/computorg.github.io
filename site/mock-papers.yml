@@ -36,7 +36,8 @@
     	title = {Visualizing {Data} Using {t-SNE} (Mock Contribution)},
     	journal = {Computo},
     	date = {2008-08-11},
-    	doi = {10.57750/xxxxxx},
+    	url = {https://computo-journal.org/published-paper-tsne/},
+    	doi = {10.57750/xxx-xxx},
     	issn = {2824-7795},
     	langid = {en},
     	abstract = {We present a new technique called “t-SNE” that visualizes
@@ -102,7 +103,8 @@
     	title = {Visualizing {Data} Using {t-SNE} (Mock Contribution)},
     	journal = {Computo},
     	date = {2008-08-11},
-    	doi = {10.57750/xxxxxx},
+    	url = {https://computo-journal.org/published-paper-tsne/},
+    	doi = {10.57750/xxx-xxx},
     	issn = {2824-7795},
     	langid = {en},
     	abstract = {We present a new technique called “t-SNE” that visualizes
