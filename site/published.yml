@@ -4,7 +4,7 @@
   journal: Computo
   doi: ''
   year: 2026
-  date: last-modified
+  date: 2026-07-20
   description: ''
   abstract: >-
     While confidence intervals for finite quantities are
@@ -32,7 +32,8 @@
     	title = {Should We Correct the Bias in {Confidence} {Bands} for
         {Repeated} {Functional} {Data?}},
     	journal = {Computo},
-    	date = {2026-07-12},
+    	date = {2026-07-20},
+    	url = {https://computo-journal.org/published-202606-devijver-scb/},
     	doi = {10.57750/nmyg-wg36},
     	issn = {2824-7795},
     	langid = {en},
