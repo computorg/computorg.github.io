@@ -44,7 +44,14 @@ jobs:
             --store-password-in-clear-text
 
       - name: Install Computo CLI tools
+        env:
+          API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         run: |
+          dotnet nuget add source "https://nuget.pkg.github.com/computorg/index.json" \
+            --name "GitHubPackages" \
+            --username "fradav" \
+            --password "$API_GITHUB_TOKEN" \
+            --store-password-in-clear-text
           dotnet tool install --global Computo.PublicationUpdater.Cli
           echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
