@@ -45,8 +45,12 @@ jobs:
 
       - name: Install Computo CLI tools
         run: |
-          dotnet tool install --global Computo.PublicationUpdater.Cli \
-            --source "https://nuget.pkg.github.com/computorg/index.json"
+          dotnet nuget add source "https://nuget.pkg.github.com/computorg/index.json" \
+            --name "GitHubPackages" \
+            --username "${{ github.actor }}" \
+            --password "${{ secrets.GITHUB_TOKEN }}" \
+            --store-password-in-clear-text
+          dotnet tool install --global Computo.PublicationUpdater.Cli
           echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
       - name: refresh publications and commit changes
