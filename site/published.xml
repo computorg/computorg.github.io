@@ -5,7 +5,7 @@
   <link>https://computo-journal.org/</link>
   <description>Latest published articles from Computo Journal</description>
   <item>
-    <title>Should we correct the bias in Confidence Bands for Repeated Functional Data?</title>
+    <title>Should we correct the bias in Confidence Bands for Repeated Functional Data? - Emilie Devijver</title>
     <link>https://computo-journal.org/published-202606-devijver-scb/</link>
     <guid>https://computo-journal.org/published-202606-devijver-scb/</guid>
     <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
@@ -28,7 +28,7 @@
     data.</description>
   </item>
   <item>
-    <title>Variational inference for approximate objective priors using neural networks</title>
+    <title>Variational inference for approximate objective priors using neural networks - Nils Baillie</title>
     <link>https://computo-journal.org/published-202512-baillie-varp/</link>
     <guid>https://computo-journal.org/published-202512-baillie-varp/</guid>
     <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
@@ -56,7 +56,7 @@
     inference and MCMC sampling.</description>
   </item>
   <item>
-    <title>`regMMD`: an `R` package for parametric estimation and regression with maximum mean discrepancy</title>
+    <title>`regMMD`: an `R` package for parametric estimation and regression with maximum mean discrepancy - Pierre Alquier</title>
     <link>https://computo-journal.org/published-202511-alquier-regmmd/</link>
     <guid>https://computo-journal.org/published-202511-alquier-regmmd/</guid>
     <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
@@ -72,7 +72,7 @@
     applications to simulated and real data are provided.</description>
   </item>
   <item>
-    <title>Fast confidence bounds for the false discovery proportion over a path of hypotheses</title>
+    <title>Fast confidence bounds for the false discovery proportion over a path of hypotheses - Guillermo Durand</title>
     <link>https://computo-journal.org/published-202510-durand-fast/</link>
     <guid>https://computo-journal.org/published-202510-durand-fast/</guid>
     <pubDate>Thu, 09 Oct 2025 00:00:00 GMT</pubDate>
@@ -97,7 +97,7 @@
     the family.</description>
   </item>
   <item>
-    <title>Draw Me a Simulator</title>
+    <title>Draw Me a Simulator - Sandrine Boulet</title>
     <link>https://computo-journal.org/published-202509-boulet-simulator/</link>
     <guid>https://computo-journal.org/published-202509-boulet-simulator/</guid>
     <pubDate>Mon, 08 Sep 2025 00:00:00 GMT</pubDate>
@@ -113,7 +113,7 @@
     simulator design, and consider its role in modeling reality.</description>
   </item>
   <item>
-    <title>Model-Based Clustering and Variable Selection for Multivariate Count Data</title>
+    <title>Model-Based Clustering and Variable Selection for Multivariate Count Data - Julien Jacques</title>
     <link>https://computo-journal.org/published-202507-jacques-count-data/</link>
     <guid>https://computo-journal.org/published-202507-jacques-count-data/</guid>
     <pubDate>Tue, 01 Jul 2025 00:00:00 GMT</pubDate>
@@ -127,7 +127,7 @@
     excellent clustering and variable selection performance.</description>
   </item>
   <item>
-    <title>Reservoir Computing in R: a Tutorial for Using reservoirnet to Predict Complex Time-Series</title>
+    <title>Reservoir Computing in R: a Tutorial for Using reservoirnet to Predict Complex Time-Series - Thomas Ferté</title>
     <link>http://computo-journal.org/published-202505-ferte-reservoirnet/</link>
     <guid>http://computo-journal.org/published-202505-ferte-reservoirnet/</guid>
     <pubDate>Fri, 27 Jun 2025 00:00:00 GMT</pubDate>
@@ -153,7 +153,7 @@
     and electronic health records.</description>
   </item>
   <item>
-    <title>Efficient simulation of individual-based population models</title>
+    <title>Efficient simulation of individual-based population models - Daphné Giorgi</title>
     <link>http://computo-journal.org/published-202412-giorgi-efficient/</link>
     <guid>http://computo-journal.org/published-202412-giorgi-efficient/</guid>
     <pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate>
@@ -174,7 +174,7 @@
     using the `Rcpp` package while providing a user-friendly interface.</description>
   </item>
   <item>
-    <title>Spectral Bridges</title>
+    <title>Spectral Bridges - Félix Laplante</title>
     <link>http://computo-journal.org/published-202412-ambroise-spectral/</link>
     <guid>http://computo-journal.org/published-202412-ambroise-spectral/</guid>
     <pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate>
@@ -197,7 +197,7 @@
     https://github.com/cambroise/spectral-bridges-Rpackage\textgreater).</description>
   </item>
   <item>
-    <title>AdaptiveConformal: An `R` Package for Adaptive Conformal Inference</title>
+    <title>AdaptiveConformal: An `R` Package for Adaptive Conformal Inference - Herbert Susmann</title>
     <link>http://computo-journal.org/published-202407-susmann-adaptive-conformal/</link>
     <guid>http://computo-journal.org/published-202407-susmann-adaptive-conformal/</guid>
     <pubDate>Thu, 18 Jul 2024 00:00:00 GMT</pubDate>

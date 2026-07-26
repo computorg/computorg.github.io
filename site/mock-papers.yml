@@ -1,6 +1,6 @@
 - title: Visualizing Data using t-SNE (mock contribution)
   name: published-paper-tsne
-  authors: ''
+  authors: Laurens van der Maaten
   journal: Computo
   doi: ''
   year: 2008
@@ -67,7 +67,7 @@
   status: published
 - title: Visualizing Data using t-SNE (mock contribution)
   name: published-paper-tsne-R
-  authors: ''
+  authors: Laurens van der Maaten
   journal: Computo
   doi: ''
   year: 2008
