@@ -35,14 +35,6 @@ jobs:
         with:
           dotnet-version: "10.0.x"
 
-      - name: Add GitHub Packages NuGet source
-        run: |
-          dotnet nuget add source "https://nuget.pkg.github.com/computorg/index.json" \
-            --name "GitHub Packages" \
-            --username "${{ github.actor }}" \
-            --password "${{ secrets.GITHUB_TOKEN }}" \
-            --store-password-in-clear-text
-
       - name: Install Computo CLI tools
         env:
           API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
