@@ -1,6 +1,6 @@
 - title: Should we correct the bias in Confidence Bands for Repeated Functional Data?
   name: published-202606-devijver-scb
-  authors: Emilie Devijver, CNRS, Univ. Grenoble Alpes, Grenoble INP, LIG, 38000 Grenoble, France, Adeline Samson and Univ. Grenoble Alpes, CNRS, Grenoble INP, LJK, 38000 Grenoble, France
+  authors: Emilie Devijver and Adeline Samson
   journal: Computo
   doi: ''
   year: 2026
@@ -61,7 +61,7 @@
   status: published
 - title: Variational inference for approximate objective priors using neural networks
   name: published-202512-baillie-varp
-  authors: Nils Baillie, Université Paris-Saclay, CEA, Service d'Études Mécaniques et Thermiques, 91191 Gif-sur-Yvette, France, CMAP, CNRS, École polytechnique, Institut Polytechnique de Paris, 91120 Palaiseau, France, Antoine Van Biesbroeck, Université Paris-Saclay, CEA, Service d'Études Mécaniques et Thermiques, 91191 Gif-sur-Yvette, France, CMAP, CNRS, École polytechnique, Institut Polytechnique de Paris, 91120 Palaiseau, France, (Now at Centre Borelli, ENS Paris-Saclay, Université Paris-Saclay, 91190 Gif-sur-Yvette, France), Clément Gauchy and Université Paris-Saclay, CEA, Service de Génie Logiciel pour la Simulation, 91191 Gif-sur-Yvette, France
+  authors: Nils Baillie, Antoine Van Biesbroeck and Clément Gauchy
   journal: Computo
   doi: ''
   year: 2025
@@ -133,7 +133,7 @@
   status: published
 - title: '`regMMD`: an `R` package for parametric estimation and regression with maximum mean discrepancy'
   name: published-202511-alquier-regmmd
-  authors: Pierre Alquier, ESSEC Business School, Mathieu Gerber and University of Bristol
+  authors: Pierre Alquier and Mathieu Gerber
   journal: Computo
   doi: ''
   year: 2025
@@ -245,7 +245,7 @@
   status: published
 - title: Draw Me a Simulator
   name: published-202509-boulet-simulator
-  authors: Sandrine Boulet, Inria, Université Paris Cité, Inserm, HeKA, F-75015 Paris, France, Antoine Chambaz and Université Paris Cité, CNRS, MAP5, F-75006, Paris, France
+  authors: ''
   journal: Computo
   doi: ''
   year: 2025
@@ -291,7 +291,7 @@
   status: published
 - title: Model-Based Clustering and Variable Selection for Multivariate Count Data
   name: published-202507-jacques-count-data
-  authors: Julien Jacques, Université Lumière Lyon 2, Universite Claude Bernard Lyon 1, ERIC, 69007, Lyon, France, Thomas Brendan Murphy, School of Mathematics \& Statistics, University College Dublin and Institut d'Études Avancées, Université de Lyon
+  authors: ''
   journal: Computo
   doi: ''
   year: 2025
@@ -334,7 +334,7 @@
   status: published
 - title: 'Reservoir Computing in R: a Tutorial for Using reservoirnet to Predict Complex Time-Series'
   name: published-202505-ferte-reservoirnet
-  authors: Thomas Ferté, Inserm, Inria, CHU de Bordeaux, Kalidou Ba, Inserm, Inria, Dan Dutartre, Inria, Pierrick Legrand, Bordeaux INP, Inria, IMS, Vianney Jouhet, Inserm, CHU de Bordeaux, Rodolphe Thiébaut, Inserm, Inria, CHU de Bordeaux, Xavier Hinaut, Inria, IMN, LaBRI, Boris P Hejblum and Inserm, Inria
+  authors: Thomas Ferté, Kalidou Ba, Dan Dutartre, Pierrick Legrand, Vianney Jouhet, Rodolphe Thiébaut, Xavier Hinaut and Boris P Hejblum
   journal: Computo
   doi: ''
   year: 2025
@@ -403,7 +403,7 @@
   status: published
 - title: Efficient simulation of individual-based population models
   name: published-202412-giorgi-efficient
-  authors: Daphné Giorgi, Sorbonne Université, CNRS, Sarah Kaakai, Université Sorbonne Paris Nord, CNRS, Ecole Polytechnique, CNRS, Vincent Lemaire and Sorbonne Université, CNRS
+  authors: Daphné Giorgi, Sarah Kaakai and Vincent Lemaire
   journal: Computo
   doi: ''
   year: 2025
@@ -459,7 +459,7 @@
   status: published
 - title: Spectral Bridges
   name: published-202412-ambroise-spectral
-  authors: Félix Laplante, Université Paris-Saclay, CNRS, Univ Evry,, Christophe Ambroise and Université Paris-Saclay, CNRS, Univ Evry,
+  authors: Félix Laplante and Christophe Ambroise
   journal: Computo
   doi: ''
   year: 2024
@@ -519,7 +519,7 @@
   status: published
 - title: 'AdaptiveConformal: An `R` Package for Adaptive Conformal Inference'
   name: published-202407-susmann-adaptive-conformal
-  authors: Herbert Susmann, CEREMADE (UMR 7534), Université Paris-Dauphine PSL, Place du Maréchal de Lattre de Tassigny, Paris, 75016, France, Antoine Chambaz, Université Paris Cité, CNRS, MAP5, F-75006 Paris, France, Julie Josse and Inria PreMeDICaL team, Idesp, Université de Montpellier
+  authors: Herbert Susmann, Antoine Chambaz and Julie Josse
   journal: Computo
   doi: ''
   year: 2024
@@ -667,7 +667,7 @@
   status: published
 - title: Geometric-Based Pruning Rules for Change Point Detection in Multiple Independent Time Series
   name: published-202406-pishchagina-change-point
-  authors: Liudmila Pishchagina, Université Paris-Saclay, CNRS, Université d'Évry-Val-d'Essonne, Laboratoire de Mathématiques et Modélisation d'Évry, France, Guillem Rigaill, Université Paris-Saclay, CNRS, Université d'Évry-Val-d'Essonne, Laboratoire de Mathématiques et Modélisation d'Évry, France, Université Paris-Saclay, CNRS, INRAE, Université d'Évry-Val-d'Essonne, Institute of Plant Sciences Paris-Saclay (IPS2), Orsay, France, Vincent Runge and Université Paris-Saclay, CNRS, Université d'Évry-Val-d'Essonne, Laboratoire de Mathématiques et Modélisation d'Évry, France
+  authors: Liudmila Pishchagina, Guillem Rigaill and Vincent Runge
   journal: Computo
   doi: ''
   year: 2024
@@ -735,7 +735,7 @@
   status: published
 - title: 'Peerannot: classification for crowdsourced image datasets with Python'
   name: published-202402-lefort-peerannot
-  authors: Tanguy Lefort, IMAG, Univ Montpellier, CNRS, Inria, LIRMM, Benjamin Charlier, IMAG, Univ Montpellier, CNRS, Alexis Joly, Inria, LIRMM, Univ Montpellier, CNRS, Joseph Salmon and IMAG, Univ Montpellier, CNRS, IUF
+  authors: Tanguy Lefort, Benjamin Charlier, Alexis Joly and Joseph Salmon
   journal: Computo
   doi: ''
   year: 2024
@@ -841,7 +841,7 @@
   status: published
 - title: Point Process Discrimination According to Repulsion
   name: published-202401-adrat-repulsion
-  authors: Hamza Adrat, Mohammed VI Polytechnic University, Laurent Decreusefond and Telecom Paris
+  authors: ''
   journal: Computo
   doi: ''
   year: 2024
@@ -881,7 +881,7 @@
   status: published
 - title: A hierarchical model to evaluate pest treatments from prevalence and intensity data
   name: published-202312-favrot-hierarchical
-  authors: Armand Favrot, MIA Paris-Saclay, INRAE AgroParisTech Université Paris-Saclay, France, David Makowski and MIA Paris-Saclay, INRAE AgroParisTech Université Paris-Saclay, France
+  authors: Armand Favrot and David Makowski
   journal: Computo
   doi: ''
   year: 2024
@@ -992,7 +992,7 @@
   status: published
 - title: 'Local tree methods for classification: a review and some dead ends'
   name: published-202312-cleynen-local
-  authors: 'Alice Cleynen, IMAG, Univ Montpellier, CNRS, UMR 5149, Montpellier, France, Louis Raynal, Centre Hospitalier Départemental Vendée, La Roche-sur-Yon, France, url: https://www.chd-vendee.fr/, Jean-Michel Marin and IMAG, Univ Montpellier, CNRS, UMR 5149, Montpellier, France'
+  authors: Alice Cleynen, Louis Raynal and Jean-Michel Marin
   journal: Computo
   doi: ''
   year: 2023
@@ -1065,7 +1065,7 @@
   status: published
 - title: Computing  an empirical  Fisher information matrix estimate in latent variable models through stochastic approximation
   name: published-202311-delattre-fim
-  authors: Maud Delattre, Université Paris-Saclay, INRAE, MaIAGE, 78350, Jouy-en-Josas, France, Estelle Kuhn and Université Paris-Saclay, INRAE, MaIAGE, 78350, Jouy-en-Josas, France
+  authors: Maud Delattre and Estelle Kuhn
   journal: Computo
   doi: ''
   year: 2023
@@ -1132,7 +1132,7 @@
   status: published
 - title: Inference of Multiscale Gaussian Graphical Models
   name: published-202306-sanou-multiscale_glasso
-  authors: Edmond Sanou, Université Paris-Saclay, CNRS, Univ Evry, Laboratoire de Mathématiques et Modélisation d'Evry, Christophe Ambroise, Université Paris-Saclay, CNRS, Univ Evry, Laboratoire de Mathématiques et Modélisation d'Evry, Geneviève Robin and Université Paris-Saclay, CNRS, Univ Evry, Laboratoire de Mathématiques et Modélisation d'Evry
+  authors: Edmond Sanou, Christophe Ambroise and Geneviève Robin
   journal: Computo
   doi: ''
   year: 2023
@@ -1268,7 +1268,7 @@
   status: published
 - title: 'A Python Package for Sampling from Copulae: clayton'
   name: published-202301-boulin-clayton
-  authors: Alexis Boulin, Université Côte d'Azur, CNRS, LJAD, France and Inria, Lemon
+  authors: Alexis Boulin
   journal: Computo
   doi: ''
   year: 2023

@@ -5,7 +5,7 @@
   <link>https://computo-journal.org/</link>
   <description>Latest published articles from Computo Journal</description>
   <item>
-    <title>Should we correct the bias in Confidence Bands for Repeated Functional Data? - Emilie Devijver, CNRS, Univ. Grenoble Alpes, Grenoble INP, LIG, 38000 Grenoble, France, Adeline Samson and Univ. Grenoble Alpes, CNRS, Grenoble INP, LJK, 38000 Grenoble, France</title>
+    <title>Should we correct the bias in Confidence Bands for Repeated Functional Data? - Emilie Devijver and Adeline Samson</title>
     <link>https://computo-journal.org/published-202606-devijver-scb/</link>
     <guid>https://computo-journal.org/published-202606-devijver-scb/</guid>
     <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
@@ -28,7 +28,7 @@
     data.</description>
   </item>
   <item>
-    <title>Variational inference for approximate objective priors using neural networks - Nils Baillie, Université Paris-Saclay, CEA, Service d&apos;Études Mécaniques et Thermiques, 91191 Gif-sur-Yvette, France, CMAP, CNRS, École polytechnique, Institut Polytechnique de Paris, 91120 Palaiseau, France, Antoine Van Biesbroeck, Université Paris-Saclay, CEA, Service d&apos;Études Mécaniques et Thermiques, 91191 Gif-sur-Yvette, France, CMAP, CNRS, École polytechnique, Institut Polytechnique de Paris, 91120 Palaiseau, France, (Now at Centre Borelli, ENS Paris-Saclay, Université Paris-Saclay, 91190 Gif-sur-Yvette, France), Clément Gauchy and Université Paris-Saclay, CEA, Service de Génie Logiciel pour la Simulation, 91191 Gif-sur-Yvette, France</title>
+    <title>Variational inference for approximate objective priors using neural networks - Nils Baillie, Antoine Van Biesbroeck and Clément Gauchy</title>
     <link>https://computo-journal.org/published-202512-baillie-varp/</link>
     <guid>https://computo-journal.org/published-202512-baillie-varp/</guid>
     <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
@@ -56,7 +56,7 @@
     inference and MCMC sampling.</description>
   </item>
   <item>
-    <title>`regMMD`: an `R` package for parametric estimation and regression with maximum mean discrepancy - Pierre Alquier, ESSEC Business School, Mathieu Gerber and University of Bristol</title>
+    <title>`regMMD`: an `R` package for parametric estimation and regression with maximum mean discrepancy - Pierre Alquier and Mathieu Gerber</title>
     <link>https://computo-journal.org/published-202511-alquier-regmmd/</link>
     <guid>https://computo-journal.org/published-202511-alquier-regmmd/</guid>
     <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
@@ -97,7 +97,7 @@
     the family.</description>
   </item>
   <item>
-    <title>Draw Me a Simulator - Sandrine Boulet, Inria, Université Paris Cité, Inserm, HeKA, F-75015 Paris, France, Antoine Chambaz and Université Paris Cité, CNRS, MAP5, F-75006, Paris, France</title>
+    <title>Draw Me a Simulator</title>
     <link>https://computo-journal.org/published-202509-boulet-simulator/</link>
     <guid>https://computo-journal.org/published-202509-boulet-simulator/</guid>
     <pubDate>Mon, 08 Sep 2025 00:00:00 GMT</pubDate>
@@ -113,7 +113,7 @@
     simulator design, and consider its role in modeling reality.</description>
   </item>
   <item>
-    <title>Model-Based Clustering and Variable Selection for Multivariate Count Data - Julien Jacques, Université Lumière Lyon 2, Universite Claude Bernard Lyon 1, ERIC, 69007, Lyon, France, Thomas Brendan Murphy, School of Mathematics \&amp; Statistics, University College Dublin and Institut d&apos;Études Avancées, Université de Lyon</title>
+    <title>Model-Based Clustering and Variable Selection for Multivariate Count Data</title>
     <link>https://computo-journal.org/published-202507-jacques-count-data/</link>
     <guid>https://computo-journal.org/published-202507-jacques-count-data/</guid>
     <pubDate>Tue, 01 Jul 2025 00:00:00 GMT</pubDate>
@@ -127,7 +127,7 @@
     excellent clustering and variable selection performance.</description>
   </item>
   <item>
-    <title>Reservoir Computing in R: a Tutorial for Using reservoirnet to Predict Complex Time-Series - Thomas Ferté, Inserm, Inria, CHU de Bordeaux, Kalidou Ba, Inserm, Inria, Dan Dutartre, Inria, Pierrick Legrand, Bordeaux INP, Inria, IMS, Vianney Jouhet, Inserm, CHU de Bordeaux, Rodolphe Thiébaut, Inserm, Inria, CHU de Bordeaux, Xavier Hinaut, Inria, IMN, LaBRI, Boris P Hejblum and Inserm, Inria</title>
+    <title>Reservoir Computing in R: a Tutorial for Using reservoirnet to Predict Complex Time-Series - Thomas Ferté, Kalidou Ba, Dan Dutartre, Pierrick Legrand, Vianney Jouhet, Rodolphe Thiébaut, Xavier Hinaut and Boris P Hejblum</title>
     <link>http://computo-journal.org/published-202505-ferte-reservoirnet/</link>
     <guid>http://computo-journal.org/published-202505-ferte-reservoirnet/</guid>
     <pubDate>Fri, 27 Jun 2025 00:00:00 GMT</pubDate>
@@ -153,7 +153,7 @@
     and electronic health records.</description>
   </item>
   <item>
-    <title>Efficient simulation of individual-based population models - Daphné Giorgi, Sorbonne Université, CNRS, Sarah Kaakai, Université Sorbonne Paris Nord, CNRS, Ecole Polytechnique, CNRS, Vincent Lemaire and Sorbonne Université, CNRS</title>
+    <title>Efficient simulation of individual-based population models - Daphné Giorgi, Sarah Kaakai and Vincent Lemaire</title>
     <link>http://computo-journal.org/published-202412-giorgi-efficient/</link>
     <guid>http://computo-journal.org/published-202412-giorgi-efficient/</guid>
     <pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate>
@@ -174,7 +174,7 @@
     using the `Rcpp` package while providing a user-friendly interface.</description>
   </item>
   <item>
-    <title>Spectral Bridges - Félix Laplante, Université Paris-Saclay, CNRS, Univ Evry,, Christophe Ambroise and Université Paris-Saclay, CNRS, Univ Evry,</title>
+    <title>Spectral Bridges - Félix Laplante and Christophe Ambroise</title>
     <link>http://computo-journal.org/published-202412-ambroise-spectral/</link>
     <guid>http://computo-journal.org/published-202412-ambroise-spectral/</guid>
     <pubDate>Fri, 13 Dec 2024 00:00:00 GMT</pubDate>
@@ -197,7 +197,7 @@
     https://github.com/cambroise/spectral-bridges-Rpackage\textgreater).</description>
   </item>
   <item>
-    <title>AdaptiveConformal: An `R` Package for Adaptive Conformal Inference - Herbert Susmann, CEREMADE (UMR 7534), Université Paris-Dauphine PSL, Place du Maréchal de Lattre de Tassigny, Paris, 75016, France, Antoine Chambaz, Université Paris Cité, CNRS, MAP5, F-75006 Paris, France, Julie Josse and Inria PreMeDICaL team, Idesp, Université de Montpellier</title>
+    <title>AdaptiveConformal: An `R` Package for Adaptive Conformal Inference - Herbert Susmann, Antoine Chambaz and Julie Josse</title>
     <link>http://computo-journal.org/published-202407-susmann-adaptive-conformal/</link>
     <guid>http://computo-journal.org/published-202407-susmann-adaptive-conformal/</guid>
     <pubDate>Thu, 18 Jul 2024 00:00:00 GMT</pubDate>
