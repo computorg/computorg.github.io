@@ -6,7 +6,7 @@ project:
     - "site/**/*.qmd"
     - "blog/**/*.qmd"
   post-render:
-    - scripts/fix-sitemap.sh
+    - scripts/fix-sitemap.lua
 website:
   title: COMPUTO
   site-url: https://computo-journal.org

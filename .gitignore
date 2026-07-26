@@ -17,3 +17,5 @@ vendor
 *_files/
 
 /.luarc.json
+
+**/*.quarto_ipynb
