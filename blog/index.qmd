@@ -7,6 +7,8 @@ listing:
   - title
   - categories
   categories: true
+  filter:
+    - "path != '2026-07-26-google-scholar'"
 page-layout: full
 ---
 
