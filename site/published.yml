@@ -2,7 +2,7 @@
   name: published-202606-devijver-scb
   authors: Emilie Devijver and Adeline Samson
   journal: Computo
-  doi: ''
+  doi: 10.57750/nmyg-wg36
   year: 2026
   date: 2026-07-20
   description: ''
@@ -63,7 +63,7 @@
   name: published-202512-baillie-varp
   authors: Nils Baillie, Antoine Van Biesbroeck and Clément Gauchy
   journal: Computo
-  doi: ''
+  doi: 10.57750/76fh-t442
   year: 2025
   date: 2025-12-01
   description: ''
@@ -135,7 +135,7 @@
   name: published-202511-alquier-regmmd
   authors: Pierre Alquier and Mathieu Gerber
   journal: Computo
-  doi: ''
+  doi: 10.57750/d6d1-gb09
   year: 2025
   date: 2025-11-18
   description: This document provides a complete introduction to the template based on the `regMMD` package for `R`, that implements minimum distance estimation in various parametric and regression models using the maximum mean discrepancy (MMD) metric.
@@ -182,7 +182,7 @@
   name: published-202510-durand-fast
   authors: Guillermo Durand
   journal: Computo
-  doi: ''
+  doi: 10.57750/efbs-ef14
   year: 2025
   date: 2025-10-09
   description: ''
@@ -247,7 +247,7 @@
   name: published-202509-boulet-simulator
   authors: Sandrine Boulet and Antoine Chambaz
   journal: Computo
-  doi: ''
+  doi: 10.57750/w1hj-dw22
   year: 2025
   date: 2025-09-08
   description: ''
@@ -293,7 +293,7 @@
   name: published-202507-jacques-count-data
   authors: Julien Jacques and Thomas Brendan Murphy
   journal: Computo
-  doi: ''
+  doi: 10.57750/6v7b-8483
   year: 2025
   date: 2025-07-01
   description: ''
@@ -336,7 +336,7 @@
   name: published-202505-ferte-reservoirnet
   authors: Thomas Ferté, Kalidou Ba, Dan Dutartre, Pierrick Legrand, Vianney Jouhet, Rodolphe Thiébaut, Xavier Hinaut and Boris P Hejblum
   journal: Computo
-  doi: ''
+  doi: 10.57750/arxn-6z34
   year: 2025
   date: 2025-06-27
   description: ''
@@ -405,7 +405,7 @@
   name: published-202412-giorgi-efficient
   authors: Daphné Giorgi, Sarah Kaakai and Vincent Lemaire
   journal: Computo
-  doi: ''
+  doi: 10.57750/sfxn-1t05
   year: 2025
   date: 2025-01-27
   description: ''
@@ -461,7 +461,7 @@
   name: published-202412-ambroise-spectral
   authors: Félix Laplante and Christophe Ambroise
   journal: Computo
-  doi: ''
+  doi: 10.57750/1gr8-bk61
   year: 2024
   date: 2024-12-13
   description: Scalable Spectral Clustering Based on Vector Quantization
@@ -521,7 +521,7 @@
   name: published-202407-susmann-adaptive-conformal
   authors: Herbert Susmann, Antoine Chambaz and Julie Josse
   journal: Computo
-  doi: ''
+  doi: 10.57750/edan-5f53
   year: 2024
   date: 2024-07-18
   description: ''
@@ -582,7 +582,7 @@
   name: published-202407-legrand-wildfires
   authors: Juliette Legrand, François Pimont, Jean-Luc Dupuy and Thomas Opitz
   journal: Computo
-  doi: ''
+  doi: 10.57750/4y84-4t68
   year: 2024
   date: 2024-07-12
   description: ''
@@ -669,7 +669,7 @@
   name: published-202406-pishchagina-change-point
   authors: Liudmila Pishchagina, Guillem Rigaill and Vincent Runge
   journal: Computo
-  doi: ''
+  doi: 10.57750/9vvx-eq57
   year: 2024
   date: 2024-07-12
   description: ''
@@ -737,7 +737,7 @@
   name: published-202402-lefort-peerannot
   authors: Tanguy Lefort, Benjamin Charlier, Alexis Joly and Joseph Salmon
   journal: Computo
-  doi: ''
+  doi: 10.57750/qmaz-gr91
   year: 2024
   date: 2024-05-07
   description: ''
@@ -785,7 +785,7 @@
   name: published-202402-elmasri-optimal
   authors: Maxime El Masri, Jérôme Morio and Florian Simatos
   journal: Computo
-  doi: ''
+  doi: 10.57750/jjza-6j82
   year: 2024
   date: 2024-03-11
   description: >
@@ -843,7 +843,7 @@
   name: published-202401-adrat-repulsion
   authors: Hamza Adrat and Laurent Decreusefond
   journal: Computo
-  doi: ''
+  doi: 10.57750/3r07-aw28
   year: 2024
   date: 2024-01-25
   description: ''
@@ -883,7 +883,7 @@
   name: published-202312-favrot-hierarchical
   authors: Armand Favrot and David Makowski
   journal: Computo
-  doi: ''
+  doi: 10.57750/6cgk-g727
   year: 2024
   date: 2024-01-09
   description: ''
@@ -994,7 +994,7 @@
   name: published-202312-cleynen-local
   authors: Alice Cleynen, Louis Raynal and Jean-Michel Marin
   journal: Computo
-  doi: ''
+  doi: 10.57750/3j8m-8d57
   year: 2023
   date: 2023-12-14
   description: ''
@@ -1067,7 +1067,7 @@
   name: published-202311-delattre-fim
   authors: Maud Delattre and Estelle Kuhn
   journal: Computo
-  doi: ''
+  doi: 10.57750/r5gx-jk62
   year: 2023
   date: 2023-11-21
   description: ''
@@ -1134,7 +1134,7 @@
   name: published-202306-sanou-multiscale_glasso
   authors: Edmond Sanou, Christophe Ambroise and Geneviève Robin
   journal: Computo
-  doi: ''
+  doi: 10.57750/1f4p-7955
   year: 2023
   date: 2023-06-28
   description: ''
@@ -1204,7 +1204,7 @@
   name: published-202301-chagneux-macrolitter
   authors: Mathis Chagneux, Sylvain Le Corff, Pierre Gloaguen, Charles Ollion, Océane Lepâtre and Antoine Bruge
   journal: Computo
-  doi: ''
+  doi: 10.57750/845m-f805
   year: 2023
   date: 2023-02-16
   description: ''
@@ -1270,7 +1270,7 @@
   name: published-202301-boulin-clayton
   authors: Alexis Boulin
   journal: Computo
-  doi: ''
+  doi: 10.57750/4szh-t752
   year: 2023
   date: 2023-01-12
   description: >
@@ -1321,7 +1321,7 @@
   name: published-202204-deeplearning-occupancy-lynx
   authors: Olivier Gimenez, Maëlis Kervellec, Jean-Baptiste Fanjul, Anna Chaine, Lucile Marescot, Yoann Bollet and Christophe Duchamp
   journal: Computo
-  doi: ''
+  doi: 10.57750/yfm2-5f45
   year: 2022
   date: 2022-04-22
   description: ''
