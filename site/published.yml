@@ -245,7 +245,7 @@
   status: published
 - title: Draw Me a Simulator
   name: published-202509-boulet-simulator
-  authors: ''
+  authors: Sandrine Boulet and Antoine Chambaz
   journal: Computo
   doi: ''
   year: 2025
@@ -291,7 +291,7 @@
   status: published
 - title: Model-Based Clustering and Variable Selection for Multivariate Count Data
   name: published-202507-jacques-count-data
-  authors: ''
+  authors: Julien Jacques and Thomas Brendan Murphy
   journal: Computo
   doi: ''
   year: 2025
@@ -841,7 +841,7 @@
   status: published
 - title: Point Process Discrimination According to Repulsion
   name: published-202401-adrat-repulsion
-  authors: ''
+  authors: Hamza Adrat and Laurent Decreusefond
   journal: Computo
   doi: ''
   year: 2024
