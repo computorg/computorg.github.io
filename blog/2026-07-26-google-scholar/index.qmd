@@ -1,0 +1,225 @@
+---
+title: Google Scholar Indexing
+date: '2026-07-26'
+description: How Computo ensures Google Scholar indexing and understanding URL selection
+categories:
+  - indexing
+  - authors
+format:
+  html:
+    toc: true
+page-layout: article
+---
+
+## How Computo ensures Google Scholar indexing
+
+Computo is indexed by [Google Scholar](https://scholar.google.com), which means all published articles are discoverable through scholarly search. This page explains how we achieve this and what you can do to verify your article's presence.
+
+## Technical implementation
+
+### Highwire Press meta tags
+
+Google Scholar relies on machine-readable metadata to identify and index scholarly articles. The preferred format is the [Highwire Press](https://www.highwirepress.com/) `citation_*` family of HTML meta tags. At minimum, Google Scholar requires three fields:
+
+1. **`citation_title`** -- the exact title of the paper
+2. **`citation_author`** -- the full name of at least the first author (one tag per author)
+3. **`citation_publication_date`** or **`citation_year`** -- the publication date
+
+Computo articles also include the following recommended tags for richer indexing:
+
+- `citation_journal_title` -- "Computo"
+- `citation_issn` -- "2824-7795"
+- `citation_pdf_url` -- link to the article PDF
+- `citation_abstract_html_url` -- link to the article landing page
+- `citation_doi` -- the article DOI
+
+### The `google-scholar` flag
+
+All Computo article repositories include `google-scholar: true` in their `_quarto.yml` configuration. When this flag is set, the [Computo Quarto extension](https://github.com/computorg/computo-quarto-extension) automatically generates the complete set of Highwire Press meta tags from the article's frontmatter and `citation:` block. This happens at render time -- no manual intervention is needed.
+
+Here is what the configuration looks like in a published article's `_quarto.yml`:
+
+```yaml
+google-scholar: true
+citation:
+  title: "Article Title"
+  author:
+    - id: author1
+      name: "Author Name"
+      affiliation: "Institution"
+  date: 2024-01-01
+  doi: "10.57750/xxxxx"
+  journal: "Computo"
+  publisher: "French Statistical Society"
+  ISSN: "2824-7795"
+  url: "https://computo-journal.org/article-slug/"
+  pdf: "article-slug.pdf"
+  abstract: "..."
+```
+
+From this, Quarto generates HTML meta tags like:
+
+```html
+<meta name="citation_title" content="Article Title">
+<meta name="citation_author" content="Author Name">
+<meta name="citation_publication_date" content="2024/01/01">
+<meta name="citation_journal_title" content="Computo">
+<meta name="citation_issn" content="2824-7795">
+<meta name="citation_pdf_url" content="https://computo-journal.org/article-slug/article-slug.pdf">
+<meta name="citation_doi" content="10.57750/xxxxx">
+```
+
+### Additional discoverability features
+
+Beyond meta tags, Computo articles benefit from several features that help Google Scholar's crawlers:
+
+- **Sitemap**: Quarto auto-generates a `sitemap.xml` (thanks to `site-url` being configured in the main site's `_quarto.yml`), which helps search engines discover all article URLs.
+- **Open access**: All articles are freely accessible without login walls or paywalls, meeting Google Scholar's requirement for crawlable full text.
+- **Stable URLs**: Each article has a permanent URL on `computo-journal.org` and a DOI, ensuring persistent access.
+- **Abstract visibility**: The full author-written abstract is clearly visible on each article's landing page.
+- **PDF availability**: Each article includes a downloadable PDF linked via `citation_pdf_url`.
+
+## Verifying indexing
+
+### Check if your article is indexed
+
+To verify that a Computo article appears in Google Scholar:
+
+1. Go to [Google Scholar](https://scholar.google.com)
+2. Search for the article title in quotes, e.g. `"A Python Package for Sampling from Copulae: Clayton"`
+3. Alternatively, search by source: `source:"Computo"` or `site:computo-journal.org`
+
+### Check meta tags on an article page
+
+To verify the meta tags are correctly generated on any published article:
+
+1. Open the article page in a browser
+2. Right-click and select "View Page Source" (or press `Ctrl+U` / `Cmd+Option+U`)
+3. Search for `citation_` in the HTML source
+4. Verify that `citation_title`, `citation_author`, and `citation_publication_date` are present
+
+### Google Rich Results Test
+
+You can also use Google's [Rich Results Test](https://search.google.com/test/rich-results) to check how Google sees a given article URL. Enter the article URL and review the detected structured data.
+
+## Google Scholar inclusion guidelines
+
+For the full official documentation, see Google Scholar's [Inclusion Guidelines for Webmasters](https://scholar.google.com/intl/en/scholar/inclusion.html). Key requirements relevant to Computo:
+
+- Articles must be in HTML or PDF format with searchable text
+- Each article must be on a separate URL with a clearly visible abstract
+- Bibliographic data must be provided as HTML `<meta>` tags
+- The title tag must contain the paper title (not the journal name)
+- The author tag must contain only the actual authors
+- At least the title, one author, and the publication year must be provided
+
+## Indexing status report
+
+::: {.callout-note}
+### Report date: July 2026
+The following status was verified by searching Google Scholar for each published article.
+:::
+
+### Indexed articles (found on computo-journal.org)
+
+| # | Article | Authors | Year |
+|---|---------|---------|------|
+| 1 | Optimal projection for parametric importance sampling in high dimensions | El Masri, Morio, Simatos | 2024 |
+| 2 | Macrolitter video counting on riverbanks using state space models | Chagneux, Le Corff, Gloaguen, Ollion et al. | 2023 |
+| 3 | regMMD: an R package for parametric estimation and regression with MMD | Alquier, Gerber | 2025 |
+| 4 | Computing an empirical Fisher information matrix estimate in latent variable models | Delattre, Kuhn | 2023 |
+| 5 | Point Process Discrimination According to Repulsion | Adrat, Decreusefond | 2024 |
+
+### Also indexed (via other sources)
+
+| # | Article | Authors | Notes |
+|---|---------|---------|-------|
+| 6 | A Python Package for Sampling from Copulae: clayton | Boulin | Indexed via arXiv, not directly from computo-journal.org |
+| 7 | Visualizing Data using t-SNE (mock) | van der Maaten, Hinton | Mock contribution, indexed from multiple URLs |
+
+### Not yet indexed in Google Scholar
+
+The following 18 published articles were **not found** in Google Scholar as of July 2026:
+
+| # | Article | Authors | Year |
+|---|---------|---------|------|
+| 1 | Should we correct the bias in Confidence Bands for Repeated Functional Data? | Devijver, Samson | 2026 |
+| 2 | Variational inference for approximate objective priors using neural networks | Baillie, Van Biesbroeck, Gauchy | 2025 |
+| 3 | Fast confidence bounds for the false discovery proportion | Durand | 2025 |
+| 4 | Draw Me a Simulator | Boulet, Chambaz | 2025 |
+| 5 | Model-Based Clustering and Variable Selection for Multivariate Count Data | Jacques, Murphy | 2025 |
+| 6 | Reservoir Computing in R: a Tutorial | Ferté, Ba, Dutartre et al. | 2025 |
+| 7 | Efficient simulation of individual-based population models | Giorgi, Kaakai, Lemaire | 2025 |
+| 8 | Spectral Bridges: Scalable Spectral Clustering | Laplante, Ambroise | 2024 |
+| 9 | An R Package for Adaptive Conformal Inference | Susmann, Chambaz, Josse | 2024 |
+| 10 | Bayesian spatiotemporal modelling of wildfire occurrences | Legrand, Pimont, Dupuy, Opitz | 2024 |
+| 11 | Geometric-Based Pruning Rules for Change Point Detection | Pishchagina, Rigaill, Runge | 2024 |
+| 12 | PeerAnnot: crowdsourcing for image annotation | Lefort, Charlier, Joly, Salmon | 2024 |
+| 13 | A hierarchical model to evaluate pest treatments | Favrot, Makowski | 2024 |
+| 14 | Local tree methods for classification | Cleynen, Raynal, Marin | 2023 |
+| 15 | Inference of Multiscale Gaussian Graphical Models | Sanou, Ambroise, Robin | 2023 |
+| 16 | Trade-off between deep learning for species identification | Gimenez, Kervellec et al. | 2022 |
+
+### Observations
+
+- **Coverage**: Only ~5 out of 25 published articles (20%) are indexed in Google Scholar with computo-journal.org URLs.
+- **Older articles more likely indexed**: Articles from 2023--2024 have had more time to be crawled.
+- **The 2026 article is not yet indexed**: This is expected given the short time since publication.
+- **Some articles indexed via other sources**: The clayton paper is indexed via its arXiv version, not from the Computo landing page.
+- **Google Scholar crawling is slow**: It can take months for new content to appear.
+
+## Understanding URL selection by Google Scholar
+
+::: {.callout-important}
+### Key finding: Most articles ARE indexed, but under different URLs
+Our investigation (July 2026) revealed that articles not found under `computo-journal.org` URLs are often **already indexed in Google Scholar under preprint server URLs** (arXiv, HAL, OpenReview, etc.).
+:::
+
+### Why does this happen?
+
+1. **Authors post preprints early**: Many authors deposit preprints on arXiv, HAL, or submit to conferences (OpenReview) before or during journal review.
+2. **Google Scholar discovers preprints first**: Google Scholar crawls preprint servers regularly and indexes papers when first discovered.
+3. **First URL wins**: Google Scholar typically associates the metadata with the **first URL it finds**, which is usually the preprint.
+4. **Merging is not automatic**: Even after journal publication, Google Scholar may not automatically merge the preprint and journal versions.
+
+### Examples from Computo
+
+| Article | Indexed URL | Source |
+|---------|-------------|--------|
+| Spectral Bridges (Laplante, 2024) | `arxiv.org/abs/2407.07430` | arXiv preprint |
+| Draw Me a Simulator (Boulet, 2025) | `openreview.net/forum?id=WgNljqj0GH` | OpenReview |
+| Local tree methods (Cleynen, 2023) | `hal.science/hal-04590982/` | HAL repository |
+| Hierarchical model (Favrot, 2024) | `hal.science/hal-04501913/` | HAL repository |
+| clayton (Boulin, 2023) | `arxiv.org/abs/...` | arXiv preprint |
+
+**Indexed via computo-journal.org** (no preprint found):
+- El Masri et al. (2024) — importance sampling
+- Chagneux et al. (2023) — macrolitter detection
+
+### What authors can do
+
+If you want your Computo article to appear under the journal URL in Google Scholar:
+
+1. **Update your preprint record**: Add the journal DOI and a link to the published version on your preprint (arXiv, HAL, etc.).
+2. **Use the published version flag**: On arXiv, use the "Journal ref" field when updating your submission.
+3. **Suggest a correction to Google Scholar**: Use [Google Scholar's suggestion form](https://scholar.google.com/intl/en/scholar/inclusion.html) to request merging versions.
+4. **Cite the journal version**: When citing your own work, use the computo-journal.org URL and DOI.
+
+### Recommendations
+
+1. **Be patient**: Google Scholar typically takes 2--6 months to index new scholarly content.
+2. **Submit to Google Scholar directly**: Authors can suggest their article for inclusion via [Google Scholar's suggestion form](https://scholar.google.com/intl/en/scholar/inclusion.html).
+3. **Ensure cross-linking**: Articles should be cited by other indexed papers to improve discovery.
+4. **Consider registering with CrossRef**: DOIs registered with CrossRef improve metadata propagation to scholarly databases.
+5. **Update preprint records**: If you have a preprint, update it with the journal DOI and published URL.
+
+## Troubleshooting
+
+If an article is not appearing in Google Scholar despite being published:
+
+1. **Check for preprint versions**: Search Google Scholar for the article title — it may be indexed under a preprint URL (arXiv, HAL, OpenReview) instead of computo-journal.org.
+2. **Wait**: Google Scholar's crawlers may take several weeks to index new content
+3. **Verify meta tags**: Check the HTML source of the article page for `citation_*` tags
+4. **Check robots.txt**: Ensure `computo-journal.org/robots.txt` does not block the article path
+5. **Verify PDF accessibility**: The PDF must be publicly accessible without authentication
+6. **Contact us**: If issues persist, reach out at <contact@computo-journal.org>
