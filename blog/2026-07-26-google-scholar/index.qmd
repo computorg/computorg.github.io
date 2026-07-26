@@ -9,6 +9,7 @@ format:
   html:
     toc: true
 page-layout: article
+draft: true
 ---
 
 ## How Computo ensures Google Scholar indexing
