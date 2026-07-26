@@ -88,22 +88,22 @@ We would like to sincerely thank the following individuals, who agreed to review
 - Jesse Hemerik
 - Toby Hocking 
 - Jeremie Houssineau
-- Mathurin Massias
 - Raphaël Jolivet
 - Adeline Leclercq Samson
-- Adrien Mazoyer
-- Iqraa Meah
 - Matthieu Marbac
-- Hedvig Nenzen
+- Mathurin Massias
+- Adrien Mazoyer
 - Mahendra Mariadassou
 - Takuo Matsubara
+- Iqraa Meah
+- Hedvig Nenzen
 - Valérie Monbet
 - Lorenzo Pacchiardi
 - Alessia Pini
-- Nicolas Savy
 - Frédéric Proia
 - Guillem Rigaill
 - Davide Risso
+- Nicolas Savy
 - Julien Stoehr
 - Romain Thavenard
 - Gaël Thébaud
