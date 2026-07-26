@@ -16,60 +16,63 @@ on:
 
 jobs:
   build:
-    # Skip this job on push events when the head commit message contains [skip ci]
     if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip ci]') }}
     permissions:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout computorg.github.io site
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: true
+
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Setup .NET
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.force == 'true' }}
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "10.0.x"
 
-      - name: Restore build tooling
+      - name: Install Computo CLI tools
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.force == 'true' }}
+        env:
+          API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         run: |
-          dotnet tool restore
-          dotnet tool run paket restore
-
-      - name: Run tests
-        run: dotnet run --project src/Build.fsproj -- -t Test
+          dotnet nuget add source "https://nuget.pkg.github.com/computorg/index.json" \
+            --name "GitHubPackages" \
+            --username "fradav" \
+            --password "$API_GITHUB_TOKEN" \
+            --store-password-in-clear-text
+          dotnet tool install --global Computo.PublicationUpdater.Cli
+          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
       - name: refresh publications and commit changes
         if: ${{ github.event_name == 'workflow_dispatch' || github.event.inputs.force == 'true' }}
         env:
           API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         run: |
-          dotnet run --project src/Build.fsproj -- -t UpdatePublications
+          computo-publish .
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Stage the generated files (ignore errors if files missing)
           git add site/published.{yml,xml} site/pipeline.yml site/mock-papers.yml || true
-          # Only commit if there are staged changes
           if git diff --staged --quiet; then
             echo "No publication changes to commit"
           else
             git commit -m "Refresh publication metadata [skip ci]"
-            # push to the branch that triggered the workflow
             git push origin HEAD:${{ github.ref_name }}
           fi
 
       - name: Build site
-        run: dotnet run --project src/Build.fsproj -- -t RenderSite
+        run: quarto render
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
 
-  # Deployment job
   deploy:
-    # skip this job if the event is a pull request or if the branch is not master
     if: github.event_name != 'pull_request'
     permissions:
       pages: write

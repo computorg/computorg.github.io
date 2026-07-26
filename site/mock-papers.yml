@@ -1,6 +1,6 @@
 - title: Visualizing Data using t-SNE (mock contribution)
   name: published-paper-tsne
-  authors: ''
+  authors: Laurens van der Maaten and Geoffrey Hinton
   journal: Computo
   doi: ''
   year: 2008
@@ -64,10 +64,10 @@
 
   pdf: ''
   url: http://computo-journal.org/published-paper-tsne/
-  draft: false
+  status: published
 - title: Visualizing Data using t-SNE (mock contribution)
   name: published-paper-tsne-R
-  authors: ''
+  authors: Laurens van der Maaten and Geoffrey Hinton
   journal: Computo
   doi: ''
   year: 2008
@@ -131,4 +131,4 @@
 
   pdf: ''
   url: http://computo-journal.org/published-paper-tsne-R/
-  draft: false
+  status: published
