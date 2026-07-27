@@ -59,6 +59,92 @@
   pdf: ''
   url: https://computo-journal.org/published-202606-devijver-scb/
   status: published
+- title: Detecting adverse high-order drug combinations from individual case safety reports using computational statistics on disproportionality measures
+  name: published-202605-bangard-adverse
+  authors: Jules Bangard, Einar Holsbø, Kristian Svendsen, Vittorio Perduca and Étienne Birmelé
+  journal: Computo
+  doi: 10.57750/7e54-2z98
+  year: 2026
+  date: 2026-07-15
+  description: >
+    Adverse drug combination detection using individual case safety reports
+  abstract: >-
+    Adverse drug reactions linked to the intake of drug
+        combinations are a critical concern in pharmacovigilance,
+        particularly as the controlled environment of clinical trials often
+        lacks the scale and diversity to detect rare events involving
+        multiple medications. While spontaneous reporting systems provide
+        the necessary breadth for post-market surveillance, identifying
+        overrepresented drug cocktails within such large-scale data remains
+        a significant computational challenge. This study introduces a
+        computational framework for the detection of drug cocktails
+        associated with adverse events, leveraging disproportionality
+        analysis on individual case safety reports. By integrating the
+        Anatomical Therapeutic Chemical classification, the framework
+        extends beyond individual drugs to capture hierarchical
+        pharmacological relationships, enabling exploration of the space of
+        drug combinations beyond pairwise analysis. To address biases
+        inherent in existing disproportionality measures, we employ a
+        hypergeometric risk metric, while a Markov Chain Monte Carlo
+        algorithm provides robust empirical p-value estimation for the risk
+        associated with cocktails. A genetic algorithm further facilitates
+        efficient identification of high-risk drug cocktails. A
+        post-treatment step based on penalized logistic regression allows
+        distinguishing true pharmacological interactions from combined
+        individual effects for cocktails of any size. Validation on
+        synthetic and FDA Adverse Event Reporting System data demonstrates
+        the method’s efficacy in detecting established drugs and drug
+        combinations associated with myopathy-related adverse events.
+        Implemented as an R package, this framework offers a reproducible,
+        scalable tool for post-market drug safety surveillance.
+  repo: published-202605-bangard-adverse
+  bibtex: >+
+    @article{bangard2026,
+    	author = {Bangard, Jules and Holsbø, Einar and Svendsen, Kristian and
+        Perduca, Vittorio and Birmelé, Étienne},
+    	publisher = {French Statistical Society},
+    	title = {Detecting Adverse High-Order Drug Combinations from
+        Individual Case Safety Reports Using Computational Statistics on
+        Disproportionality Measures},
+    	journal = {Computo},
+    	date = {2026-07-15},
+    	url = {https://computo-journal.org/published-202605-bangard-adverse/},
+    	doi = {10.57750/7e54-2z98},
+    	issn = {2824-7795},
+    	langid = {en},
+    	abstract = {Adverse drug reactions linked to the intake of drug
+        combinations are a critical concern in pharmacovigilance,
+        particularly as the controlled environment of clinical trials often
+        lacks the scale and diversity to detect rare events involving
+        multiple medications. While spontaneous reporting systems provide
+        the necessary breadth for post-market surveillance, identifying
+        overrepresented drug cocktails within such large-scale data remains
+        a significant computational challenge. This study introduces a
+        computational framework for the detection of drug cocktails
+        associated with adverse events, leveraging disproportionality
+        analysis on individual case safety reports. By integrating the
+        Anatomical Therapeutic Chemical classification, the framework
+        extends beyond individual drugs to capture hierarchical
+        pharmacological relationships, enabling exploration of the space of
+        drug combinations beyond pairwise analysis. To address biases
+        inherent in existing disproportionality measures, we employ a
+        hypergeometric risk metric, while a Markov Chain Monte Carlo
+        algorithm provides robust empirical p-value estimation for the risk
+        associated with cocktails. A genetic algorithm further facilitates
+        efficient identification of high-risk drug cocktails. A
+        post-treatment step based on penalized logistic regression allows
+        distinguishing true pharmacological interactions from combined
+        individual effects for cocktails of any size. Validation on
+        synthetic and FDA Adverse Event Reporting System data demonstrates
+        the method’s efficacy in detecting established drugs and drug
+        combinations associated with myopathy-related adverse events.
+        Implemented as an R package, this framework offers a reproducible,
+        scalable tool for post-market drug safety surveillance.}
+    }
+
+  pdf: ''
+  url: https://computo-journal.org/published-202605-bangard-adverse/
+  status: published
 - title: Variational inference for approximate objective priors using neural networks
   name: published-202512-baillie-varp
   authors: Nils Baillie, Antoine Van Biesbroeck and Clément Gauchy
