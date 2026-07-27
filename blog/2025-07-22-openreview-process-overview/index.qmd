@@ -11,12 +11,12 @@ format:
 page-layout: article
 ---
 
-Here is a step-by-step overview of the Computo reviewing process based on   [OpenReview](https://openreview.net/): 
+Here is a step-by-step overview of the Computo reviewing process based on   [OpenReview](https://openreview.net/):
 
 - **Submission**: the authors provide a link to git repository and HTML/PDF version of the manuscript
 - Editorial management: the editorial board decides whether the paper is appropriate for review
-- **Review** (typically 8 weeks): see our [Reviewer guidelines](/guidelines-reviewers)
-- **Rebuttal**: discussion and revision period (6 weeks, but extendable): 
+- **Review** (typically 8 weeks): see our [Reviewer guidelines](../../site/guidelines-reviewers.html)
+- **Rebuttal**: discussion and revision period (6 weeks, but extendable):
   -  discussion between authors and reviewers, upon which the reviewers will make their final recommendation.
   -  if necessary the authors should update their submission
 - **Recommendation** by reviewers: accept/leaning accept/leaning reject/reject
