@@ -182,8 +182,8 @@
   </item>
   <item>
     <title>Reservoir Computing in R: a Tutorial for Using reservoirnet to Predict Complex Time-Series - Thomas Ferté, Kalidou Ba, Dan Dutartre, Pierrick Legrand, Vianney Jouhet, Rodolphe Thiébaut, Xavier Hinaut and Boris P Hejblum</title>
-    <link>http://computo-journal.org/published-202505-ferte-reservoirnet/</link>
-    <guid>http://computo-journal.org/published-202505-ferte-reservoirnet/</guid>
+    <link>https://computo-journal.org/published-202505-ferte-reservoirnet/</link>
+    <guid>https://computo-journal.org/published-202505-ferte-reservoirnet/</guid>
     <pubDate>Fri, 27 Jun 2025 00:00:00 GMT</pubDate>
     <description>Reservoir Computing (RC) is a machine learning method
     based on neural networks that efficiently process information
@@ -208,8 +208,8 @@
   </item>
   <item>
     <title>Efficient simulation of individual-based population models - Daphné Giorgi, Sarah Kaakai and Vincent Lemaire</title>
-    <link>http://computo-journal.org/published-202412-giorgi-efficient/</link>
-    <guid>http://computo-journal.org/published-202412-giorgi-efficient/</guid>
+    <link>https://computo-journal.org/published-202412-giorgi-efficient/</link>
+    <guid>https://computo-journal.org/published-202412-giorgi-efficient/</guid>
     <pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate>
     <description>The `R` Package `IBMPopSim` facilitates the simulation of
     the random evolution of heterogeneous populations using stochastic
