@@ -5,6 +5,9 @@ project:
     - "*.qmd"
     - "site/**/*.qmd"
     - "blog/**/*.qmd"
+  resources:
+    # redirect pages for renamed article repositories (old URL -> new URL)
+    - published-202306-sanou-multiscale_glasso/index.html
   post-render:
     - scripts/fix-sitemap.lua
 website:
