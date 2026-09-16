@@ -2,6 +2,8 @@
 /.quarto/
 *.html
 !_site/**/*.html
+# redirect pages for renamed article repositories (declared in _quarto.yml resources)
+!/published-*/index.html
 /**/.DS_Store
 */.DS_Store
 /_freeze/
