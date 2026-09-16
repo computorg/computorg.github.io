@@ -541,7 +541,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202505-ferte-reservoirnet/
+  url: https://computo-journal.org/published-202505-ferte-reservoirnet/
   status: published
 - title: Efficient simulation of individual-based population models
   name: published-202412-giorgi-efficient
@@ -550,7 +550,8 @@
   doi: 10.57750/sfxn-1t05
   year: 2025
   date: 2025-01-27
-  description: ''
+  description: >
+    This document provides a full description of the Stochastic Individual-Based Models (IBMs) that can be implemented in the IBMPopSim package. A unified mathematical and simulation framework is given, with a detailed description of the simulation algorithm. Examples of applications for the package are also provided, showing the performance and flexibility of IBMPopSim. 
   abstract: >-
     The `R` Package `IBMPopSim` facilitates the simulation of
         the random evolution of heterogeneous populations using stochastic
@@ -597,7 +598,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202412-giorgi-efficient/
+  url: https://computo-journal.org/published-202412-giorgi-efficient/
   status: published
 - title: Spectral Bridges
   name: published-202412-ambroise-spectral
@@ -657,7 +658,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202412-ambroise-spectral/
+  url: https://computo-journal.org/published-202412-ambroise-spectral/
   status: published
 - title: 'AdaptiveConformal: An `R` Package for Adaptive Conformal Inference'
   name: published-202407-susmann-adaptive-conformal
@@ -718,7 +719,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202407-susmann-adaptive-conformal/
+  url: https://computo-journal.org/published-202407-susmann-adaptive-conformal/
   status: published
 - title: Bayesian spatiotemporal modelling of wildfire occurrences and sizes for projections under climate change
   name: published-202407-legrand-wildfires
@@ -762,8 +763,7 @@
   bibtex: >+
     @article{legrand2024,
     	author = {Legrand, Juliette and Pimont, François and Dupuy, Jean-Luc
-        and Opitz, Thomas and Pimont, François and Dupuy, Jean-Luc and
-        Opitz, Thomas},
+        and Opitz, Thomas},
     	publisher = {French Statistical Society},
     	title = {Bayesian Spatiotemporal Modelling of Wildfire Occurrences and
         Sizes for Projections Under Climate Change},
@@ -805,7 +805,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202407-legrand-wildfires/
+  url: https://computo-journal.org/published-202407-legrand-wildfires/
   status: published
 - title: Geometric-Based Pruning Rules for Change Point Detection in Multiple Independent Time Series
   name: published-202406-pishchagina-change-point
@@ -873,7 +873,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202406-pishchagina-change-point/
+  url: https://computo-journal.org/published-202406-pishchagina-change-point/
   status: published
 - title: 'Peerannot: classification for crowdsourced image datasets with Python'
   name: published-202402-lefort-peerannot
@@ -882,7 +882,14 @@
   doi: 10.57750/qmaz-gr91
   year: 2024
   date: 2024-05-07
-  description: ''
+  description: >
+    Crowdsourcing is a quick and easy way to collect labels for large datasets, involving many workers.
+
+    However, it is common for workers to disagree with each other.
+
+    Sources of error can arise from the workers' skills, but also from the intrinsic difficulty of the task.
+
+    We introduce `peerannot`, a Python library for managing and learning from crowdsourced labels of image classification tasks.
   abstract: >-
     Crowdsourcing is a quick and easy way to collect labels
         for large datasets, involving many workers. However, workers often
@@ -921,7 +928,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202402-lefort-peerannot/
+  url: https://computo-journal.org/published-202402-lefort-peerannot/
   status: published
 - title: Optimal projection for parametric importance sampling in high dimensions
   name: published-202402-elmasri-optimal
@@ -979,7 +986,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202402-elmasri-optimal/
+  url: https://computo-journal.org/published-202402-elmasri-optimal/
   status: published
 - title: Point Process Discrimination According to Repulsion
   name: published-202401-adrat-repulsion
@@ -1075,7 +1082,7 @@
   repo: published-202312-favrot-hierarchical
   bibtex: >+
     @article{favrot2024,
-    	author = {Favrot, Armand and Makowski, David and Makowski, David},
+    	author = {Favrot, Armand and Makowski, David},
     	publisher = {French Statistical Society},
     	title = {A Hierarchical Model to Evaluate Pest Treatments from
         Prevalence and Intensity Data},
@@ -1203,7 +1210,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202312-cleynen-local/
+  url: https://computo-journal.org/published-202312-cleynen-local/
   status: published
 - title: Computing  an empirical  Fisher information matrix estimate in latent variable models through stochastic approximation
   name: published-202311-delattre-fim
@@ -1270,10 +1277,10 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202311-delattre-fim/
+  url: https://computo-journal.org/published-202311-delattre-fim/
   status: published
 - title: Inference of Multiscale Gaussian Graphical Models
-  name: published-202306-sanou-multiscale_glasso
+  name: published-202306-sanou-multiscale-glasso
   authors: Edmond Sanou, Christophe Ambroise and Geneviève Robin
   journal: Computo
   doi: 10.57750/1f4p-7955
@@ -1303,7 +1310,7 @@
         performances of our model to state-of-the-art clustering methods and
         network inference models. Applications to gut microbiome data and
         poplar’s methylation mixed with transcriptomic data are presented.
-  repo: published-202306-sanou-multiscale_glasso
+  repo: published-202306-sanou-multiscale-glasso
   bibtex: >+
     @article{sanou2023,
     	author = {Sanou, Edmond and Ambroise, Christophe and Robin, Geneviève},
@@ -1311,7 +1318,7 @@
     	title = {Inference of {Multiscale} {Gaussian} {Graphical} {Models}},
     	journal = {Computo},
     	date = {2023-06-28},
-    	url = {https://computo-journal.org/published-202306-sanou-multiscale_glasso/},
+    	url = {https://computo-journal.org/published-202306-sanou-multiscale-glasso/},
     	doi = {10.57750/1f4p-7955},
     	issn = {2824-7795},
     	langid = {en},
@@ -1340,7 +1347,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202306-sanou-multiscale_glasso/
+  url: https://computo-journal.org/published-202306-sanou-multiscale-glasso/
   status: published
 - title: 'Macrolitter video counting on riverbanks using state space models and moving cameras '
   name: published-202301-chagneux-macrolitter
@@ -1406,7 +1413,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202301-chagneux-macrolitter/
+  url: https://computo-journal.org/published-202301-chagneux-macrolitter/
   status: published
 - title: 'A Python Package for Sampling from Copulae: clayton'
   name: published-202301-boulin-clayton
@@ -1457,7 +1464,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-202301-boulin-clayton/
+  url: https://computo-journal.org/published-202301-boulin-clayton/
   status: published
 - title: Trade-off between deep learning for species identification and inference about predator-prey co-occurrence
   name: published-202204-deeplearning-occupancy-lynx
@@ -1498,8 +1505,7 @@
     @article{gimenez2022,
     	author = {Gimenez, Olivier and Kervellec, Maëlis and Fanjul,
         Jean-Baptiste and Chaine, Anna and Marescot, Lucile and Bollet,
-        Yoann and Duchamp, Christophe and Gimenez, Olivier and Kervellec,
-        Maëlis and Marescot, Lucile},
+        Yoann and Duchamp, Christophe},
     	publisher = {French Statistical Society},
     	title = {Trade-Off Between Deep Learning for Species Identification
         and Inference about Predator-Prey Co-Occurrence},

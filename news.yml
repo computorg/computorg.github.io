@@ -12,7 +12,7 @@
 
     Computo has been presented at the [2nd Toronto Workshop on reproducibility](https://canssiontario.utoronto.ca/toronto_workshop_on_reproducibility_2022/) !
 
-    🤩 [slides are online here](http://computo.sfds.asso.fr/comm/)
+    🤩 [slides are online here](https://computo-journal.org/comm/)
 
 - date: 2022-06-14 07:59:00-0400
   description: >2+
@@ -34,20 +34,20 @@
 
     [François-David](https://fradav.github.io/) and
 
-    [Ghislain](https://gdurif.perso.math.cnrs.fr/) [in the team](board) 👨‍💻 !
+    [Ghislain](https://gdurif.perso.math.cnrs.fr/) [in the team](site/board.html) 👨‍💻 !
 
     Thanks for their support.
 
 - date: 2023-02-08 07:59:00-0400
   description: >2
 
-    We have [updated our templates for submitting to Computo](https://computo.sfds.asso.fr/submit/): all based on Quarto, but now with more specific and hoefully friendly set-ups for R, Python or Julia users.
+    We have [updated our templates for submitting to Computo](https://computo-journal.org/site/guidelines-authors.html): all based on Quarto, but now with more specific and hoefully friendly set-ups for R, Python or Julia users.
 - date: 2023-06-21 07:59:00-0400
   description: >2+
 
     Delighted to welcome
 
-    [Marie-Pierre](httpshttps://marieetienne.github.io/) [in the team](board) 👨‍💻 !
+    [Marie-Pierre](https://marieetienne.github.io/) [in the team](site/board.html) 👨‍💻 !
 
 - date: 2023-06-21 07:59:00-0400
   description: >2+
@@ -64,7 +64,7 @@
 
     Delighted to welcome
 
-    [Aymeric Stamm](https://astamm.github.io/) [in the team](board) 👨‍💻 !
+    [Aymeric Stamm](https://astamm.github.io/) [in the team](site/board.html) 👨‍💻 !
 
 - date: 2025-09-16 07:59:00-0400
   description: >2+
@@ -83,9 +83,9 @@
 
     Happy to welcome
 
-    [Mathieu Carrière](https://www-sop.inria.fr/members/Mathieu.Carriere/) [in the team](board) 👨‍💻 !
+    [Mathieu Carrière](https://www-sop.inria.fr/members/Mathieu.Carriere/) [in the team](site/board.html) 👨‍💻 !
 
-- date: 2026-12-16 07:59:00-0400
+- date: 2026-06-16 07:59:00-0400
   description: >2+
 
     The next [2026 French Statistics Days](https://jds2026.sciencesconf.org/) is fast approaching and will take place in Clermont-Ferrand. To mark the occasion, [François-David Collin](https://fradav.perso.math.cnrs.fr/) is running a [workshop](https://computo-journal.org/jds-workshop/) on how to use Computo templates to help you prepare your submission with ease.

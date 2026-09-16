@@ -39,7 +39,7 @@ When applicable, the switch from external to editorial reproducibility is done w
 ## Examples of data transfer solutions
 
 ### Intermediate results storage
-- in python environment: the [`joblib.Memory`](https://joblib.readthedocs.io/en/latest/memory.html) class which provides a caching mechanism for python functions, and can be used to save the results of a function call to disk, and load it back later.
+- in python environment: the [`joblib.Memory`](https://joblib.readthedocs.io/en/stable/generated/joblib.Memory.html) class which provides a caching mechanism for python functions, and can be used to save the results of a function call to disk, and load it back later.
 - in R environment: the `.RData` file format, which can be loaded back in R with the `load()` function.
 
 ### Transfer of the results to the notebook environment

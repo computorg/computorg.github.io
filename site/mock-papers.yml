@@ -63,7 +63,7 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-paper-tsne/
+  url: https://computo-journal.org/published-paper-tsne/
   status: published
 - title: Visualizing Data using t-SNE (mock contribution)
   name: published-paper-tsne-R
@@ -103,7 +103,7 @@
     	title = {Visualizing {Data} Using {t-SNE} (Mock Contribution)},
     	journal = {Computo},
     	date = {2008-08-11},
-    	url = {https://computo-journal.org/published-paper-tsne/},
+    	url = {https://computo-journal.org/published-paper-tsne-R/},
     	doi = {10.57750/xxx-xxx},
     	issn = {2824-7795},
     	langid = {en},
@@ -130,5 +130,5 @@
     }
 
   pdf: ''
-  url: http://computo-journal.org/published-paper-tsne-R/
+  url: https://computo-journal.org/published-paper-tsne-R/
   status: published
