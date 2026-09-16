@@ -20,7 +20,7 @@ website:
     locale: en_US
   twitter-card:
     card-style: summary_large_image
-  favicon: assets/favicon.ico
+  favicon: assets/img/logo_notext.png
   navbar:
     background: primary
     logo-alt: Computo’s Logo
