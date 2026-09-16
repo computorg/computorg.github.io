@@ -1,6 +1,8 @@
 ---
 title: Reviewing for Computo
 description: Guidelines for reviewers
+aliases:
+  - /guidelines-reviewers
 format:
   html: {}
 page-layout: article

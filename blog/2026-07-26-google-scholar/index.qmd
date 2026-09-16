@@ -1,6 +1,7 @@
 ---
 title: Google Scholar Indexing
 date: '2026-07-26'
+date-modified: '2026-09-16'
 description: How Computo ensures Google Scholar indexing and understanding URL selection
 categories:
   - indexing
@@ -29,43 +30,50 @@ Computo articles also include the following recommended tags for richer indexing
 
 - `citation_journal_title` -- "Computo"
 - `citation_issn` -- "2824-7795"
-- `citation_pdf_url` -- link to the article PDF
-- `citation_abstract_html_url` -- link to the article landing page
+- `citation_pdf_url` -- link to the article PDF (`main.pdf`)
+- `citation_fulltext_html_url` -- link to the article landing page
 - `citation_doi` -- the article DOI
 
 ### The `google-scholar` flag
 
-All Computo article repositories include `google-scholar: true` in their `_quarto.yml` configuration. When this flag is set, the [Computo Quarto extension](https://github.com/computorg/computo-quarto-extension) automatically generates the complete set of Highwire Press meta tags from the article's frontmatter and `citation:` block. This happens at render time -- no manual intervention is needed.
+All Computo article repositories include `google-scholar: true` in their `_quarto.yml` configuration. When this flag is set, [Quarto](https://quarto.org/docs/authoring/create-citeable-articles.html#google-scholar) itself generates the complete set of Highwire Press meta tags at render time, from the document metadata (`title`, `author`, `date`) and from the `citation:` block. No manual intervention is needed.
 
-Here is what the configuration looks like in a published article's `_quarto.yml`:
+Here is what the configuration looks like in a published article's `_quarto.yml` (for a repository named `published-YYYYMM-name`):
 
 ```yaml
+title: "Article Title"
+author:
+  - name: "Author Name"
+    orcid: 0000-0000-0000-0000
+    affiliations:
+      - name: "Institution"
+date: 2024-01-01
 google-scholar: true
 citation:
-  title: "Article Title"
-  author:
-    - id: author1
-      name: "Author Name"
-      affiliation: "Institution"
-  date: 2024-01-01
-  doi: "10.57750/xxxxx"
-  journal: "Computo"
+  type: article-journal
+  container-title: "Computo"
   publisher: "French Statistical Society"
-  ISSN: "2824-7795"
-  url: "https://computo-journal.org/article-slug/"
-  pdf: "article-slug.pdf"
-  abstract: "..."
+  issn: "2824-7795"
+  doi: "10.57750/xxxxx"
+  url: "https://computo-journal.org/published-YYYYMM-name/"
+  pdf-url: "https://computo-journal.org/published-YYYYMM-name/main.pdf"
 ```
+
+::: {.callout-warning}
+### Keep all metadata in `_quarto.yml`
+Do not repeat metadata in the front matter of `main.qmd`. A `citation:` block there **replaces** the one in `_quarto.yml` entirely (dropping `url` and `pdf-url`), and an `author:` list that differs from the one in `_quarto.yml` leads to duplicated authors in the generated citation.
+:::
 
 From this, Quarto generates HTML meta tags like:
 
 ```html
 <meta name="citation_title" content="Article Title">
 <meta name="citation_author" content="Author Name">
-<meta name="citation_publication_date" content="2024/01/01">
+<meta name="citation_publication_date" content="2024-01-01">
 <meta name="citation_journal_title" content="Computo">
 <meta name="citation_issn" content="2824-7795">
-<meta name="citation_pdf_url" content="https://computo-journal.org/article-slug/article-slug.pdf">
+<meta name="citation_fulltext_html_url" content="https://computo-journal.org/published-YYYYMM-name/">
+<meta name="citation_pdf_url" content="https://computo-journal.org/published-YYYYMM-name/main.pdf">
 <meta name="citation_doi" content="10.57750/xxxxx">
 ```
 
@@ -73,7 +81,7 @@ From this, Quarto generates HTML meta tags like:
 
 Beyond meta tags, Computo articles benefit from several features that help Google Scholar's crawlers:
 
-- **Sitemap**: Quarto auto-generates a `sitemap.xml` (thanks to `site-url` being configured in the main site's `_quarto.yml`), which helps search engines discover all article URLs.
+- **Sitemap**: Quarto auto-generates a `sitemap.xml` for the journal website (thanks to `site-url` being configured in the main site's `_quarto.yml`), and a post-render script adds the URL of every published article, which helps search engines discover them.
 - **Open access**: All articles are freely accessible without login walls or paywalls, meeting Google Scholar's requirement for crawlable full text.
 - **Stable URLs**: Each article has a permanent URL on `computo-journal.org` and a DOI, ensuring persistent access.
 - **Abstract visibility**: The full author-written abstract is clearly visible on each article's landing page.
@@ -115,6 +123,17 @@ For the full official documentation, see Google Scholar's [Inclusion Guidelines 
 
 ## Indexing status report
 
+::: {.callout-important}
+### Update: September 2026
+A September 2026 audit found that, contrary to what this post initially stated, the `citation_pdf_url` tag was **missing from all Computo articles** until September 15, 2026, as well as from two landing pages that were redirect-only. All articles have since been fixed:
+
+- every article now declares `pdf-url` in its `citation:` block, and the tag is present on all article pages;
+- article metadata was moved from `main.qmd` to `_quarto.yml`, which also removed duplicated authors from the generated citation of three articles;
+- re-indexing of all article pages has been requested through Google Search Console.
+
+The report below reflects the July 2026 situation, before these fixes.
+:::
+
 ::: {.callout-note}
 ### Report date: July 2026
 The following status was verified by searching Google Scholar for each published article.
@@ -139,7 +158,7 @@ The following status was verified by searching Google Scholar for each published
 
 ### Not yet indexed in Google Scholar
 
-The following 18 published articles were **not found** in Google Scholar as of July 2026:
+The following 16 published articles were **not found** in Google Scholar as of July 2026:
 
 | # | Article | Authors | Year |
 |---|---------|---------|------|
