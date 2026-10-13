@@ -48,7 +48,7 @@ website:
     - icon: rss
       href: site/published.xml
   page-footer:
-    left: "\xA9 2023 Computo"
+    left: "\xA9 2022\u20132026 Computo"
     border: false
     background: primary
     
