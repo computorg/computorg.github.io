@@ -22,9 +22,9 @@ Computo relies on  [OpenReview](https://openreview.net/group?id=Computo) for the
 
 This step is essential for linking the invitation to your account.
 
-2. **Confirming Your Commitment.** After accepting the invitation and logging in:
+2. **Finding Your Review Task.** Accepting the invitation is your commitment to review: no further confirmation is needed. After accepting the invitation and logging in:
 
-- In your [OpenReview tasks](https://openreview.net/tasks), you must acknowledge your commitment to complete the review by the designated deadline. 
+- The review appears in your [OpenReview tasks](https://openreview.net/tasks), with its due date and the link to submit your report.
 
 ::: {.callout-tip}
 ### Additional tips
