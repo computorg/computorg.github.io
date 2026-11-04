@@ -67,6 +67,17 @@ In order to help you in performing your review we provide a list of the main que
 The review form is text-based, but Markdown and LaTeX formatting is supported so you can add hyperlinks and use LaTeX to add equations to your review. Reviewers are also required to answer a handful  of rating  scale questions  about the  submission.
 :::
 
+## Use of generative AI
+
+You may use AI tools to help you review, under your responsibility; the assessment and the recommendation remain your own judgement. In short:
+
+- you may use an AI tool on a public submission, preferably one that does not keep your inputs or reuse them to train models; ask the Associate Editor when a submission is not public;
+- your report, the other reports, the authors' responses and the editors' messages are confidential until they are published: work on them only with a model that runs on your own machine, or with a secure tool approved by your institution;
+- end your report with one line saying whether you used an AI tool, which one, and whether it assisted you or shaped your assessment;
+- if you suspect a breach of the policy, such as references that do not exist or results that the code does not produce, tell the Associate Editor; do not rely on AI-detection tools.
+
+See our [generative AI policy](about.qmd#generative-ai-policy) for the full text.
+
 ## List of Computo reviewers
 
 We would like to sincerely thank the following individuals, who agreed to review one or more articles for *Computo*:
