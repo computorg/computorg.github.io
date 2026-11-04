@@ -123,7 +123,7 @@ Results, data, or figures written by an AI tool. In a Computo article, every num
 ### Editors
 
 - Editors follow the rules set for reviewers on confidential material.
-- Submissions are screened by scripts before they are assigned to an Associate Editor, for instance to detect references that do not exist. These checks inform the editors; they never decide.
+- Submissions may be screened by scripts before they are assigned to an Associate Editor, for instance to detect references that do not exist. These checks inform the editors; they never decide.
 - Every editorial decision is taken by a person.
 - A breach of this policy found during the review or after publication is handled as a breach of our code of ethics. Depending on its extent, it may lead to rejection, correction or retraction, following the guidance of the Committee on Publication Ethics (COPE), in particular its position statement on [Authorship and AI tools](https://doi.org/10.24318/cCVRZBms).
 
