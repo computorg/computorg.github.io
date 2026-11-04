@@ -374,6 +374,11 @@ References
 
 : Authors guarantee that all the publications used in their work have been cited appropriately.
 
+Use of generative AI
+
+: - Authors answer for everything in their submission, whatever tool helped to produce it: text, mathematics, references, code, repository, and figures. No result, data or figure may be written by an AI tool: every result is produced by the code of the article.
+- Every submission contains a short statement entitled "Use of generative AI", placed before the references, which names the tools and says whether they assisted or shaped the content, or that no tool was used. The Computo templates provide this section. See our [generative AI policy](about.qmd#generative-ai-policy).
+
 Copyright/author's right/license compliance
 
 : Authors guarantee that they comply with the usage license of any third party contents/works (code, software, data, figures/images, documents, etc.) that were used to produce their work.

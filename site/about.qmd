@@ -81,8 +81,53 @@ We would also like to emphasize that publishing an article in Computo in no way 
 ## Plagiarism policy
 
 Computo abides by the Committee on Publishing Ethics’s (COPE) guidelines listed below on plagiarism:
+
 - COPE Council. [Suspected plagiarism in a submitted manuscript](https://doi.org/10.24318/cope.2019.2.1), Version 2, November 2018.
 - COPE Council. [Suspected plagiarism in a published manuscript](https://doi.org/10.24318/cope.2019.2.2). Version 2. 2013.
+
+## Generative AI policy {#generative-ai-policy}
+
+Computo accepts the responsible use of generative AI tools, such as large language models, by authors, reviewers and editors. This policy sets out what that means in a journal where every result is produced by the code of the article.
+
+### Principles
+
+1. **People are accountable.** Authors, reviewers, and editors answer for everything produced in their name, whatever tool helped to produce it: text, mathematics, references, code, repository, and figures. This assumes that they have read and checked it.
+2. **AI may assist but not decide.** An AI tool cannot be an author, cannot write a review, and cannot take an editorial decision.
+3. **Uses are declared.** Authors and reviewers say whether they used generative AI, and how. A declared use does not count against a submission: reviewers assess the work, not the tools.
+4. **Confidential material stays protected.** Material that is not public, such as review reports, the authors' responses, and the editors' messages, is processed only with tools that do not keep it.
+
+### Two kinds of use
+
+Both are permitted, under the responsibility of the person who uses the tool. The distinction serves only to describe the use in the declaration.
+
+- **Assisting**: language editing and translation; formatting; making code easier to read; help with build or rendering errors; formatting references.
+- **Shaping the content**: drafting parts of the text; summarising the literature; suggesting methods, analyses or statistical tests; writing the code that implements the method, the simulations or the experiments; for reviewers, any use that shapes the assessment.
+
+### What Computo does not accept
+
+Results, data, or figures written by an AI tool. In a Computo article, every numerical result, table, and figure is produced by the code of the article, and the code is run on our infrastructure.
+
+### Authors
+
+- **Declaring the use.** Every submission contains a short statement entitled "Use of generative AI", placed before the references. It names the tools, what they were used for, and whether they assisted or shaped the content. If no tool was used, the statement says so. It is published with the article.
+- **Code.** Authors need not master every line of the libraries they rely on, but they must be able to say what each part of their own code is for. AI tools may help to write, rewrite, or document code, in answer to a request that the authors set and check.
+
+### Reviewers
+
+- **The review is yours.** We invite you for your expertise. You read the submission and run or inspect its code yourself; the assessment and the recommendation are your own judgement. Reports are published with the article once it is accepted.
+- **The submission.** Most submissions to Computo are public repositories. You may use an AI tool on a public submission, preferably one that does not keep your inputs or reuse them to train models. Ask the Associate Editor when a submission is not public.
+- **Confidential material.** Your report, the other reports, the authors' responses and the editors' messages are confidential until they are published. Work on them only with a model that runs on your own machine, or with a secure tool approved by your institution.
+- **Declaring the use.** End your report with one line saying whether you used an AI tool, which one, and whether it assisted you or shaped your assessment.
+- **Suspected misuse.** If you suspect a breach of this policy, such as references that do not exist or results that the code does not produce, tell the Associate Editor. Do not rely on AI-detection tools: their output is not evidence.
+
+### Editors
+
+- Editors follow the rules set for reviewers on confidential material.
+- Submissions are screened by scripts before they are assigned to an Associate Editor, for instance to detect references that do not exist. These checks inform the editors; they never decide.
+- Every editorial decision is taken by a person.
+- A breach of this policy found during the review or after publication is handled as a breach of our code of ethics. Depending on its extent, it may lead to rejection, correction or retraction, following the guidance of the Committee on Publication Ethics (COPE), in particular its position statement on [Authorship and AI tools](https://doi.org/10.24318/cCVRZBms).
+
+*This policy was drafted with the help of AI tools, from successive discussions of the editorial board, which revised it and takes full responsibility for it.*
 
 ## Publisher
 
