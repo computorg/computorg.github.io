@@ -1,171 +1,71 @@
 ```{=html}
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-<div class="container-fluid">
+<div class="computo-publications">
 <%
 // Group items by year
 let currentYear = null;
 for (const item of items) {
-  let doiurl = item.url === "" ? "https://doi.org/" + item.doi : item.url;
-  let bibtitle = item.title.replace(/'/g, "\\'");
-  let bibauthors = item.authors.replace(/'/g, "\\'");
-  let bibtex = item.bibtex.replace(/'/g, "\\'").replace(/\"/g, '&quot;').replace(/\r?\n/g, "\\n");
-  // DOI badge, same as in the README of each article repository (shields.io escaping: - and _ doubled)
+  let gh = "https://github.com/computorg/" + item.repo;
+  let pageurl = item.url ? item.url : "https://doi.org/" + item.doi;
+  // Mock contributions carry a placeholder DOI (10.57750/xxx-xxx): no DOI, no reviews, no archive
   let hasdoi = item.doi && !item.doi.includes("xxx");
-  let doibadge = hasdoi ? "https://img.shields.io/badge/DOI-" + encodeURIComponent(item.doi.replace(/-/g, "--").replace(/_/g, "__")) + "-034E79.svg" : "";
+  let pdfurl = item.pdf ? item.pdf : (item.url ? item.url.replace(/\/?$/, "/") + "main.pdf" : "");
   if (item.year !== currentYear) {
     if (currentYear !== null) { %>
 </div> <!-- End previous year section -->
     <% } %>
     <h2 class="mt-5 mb-3 text-primary"><%= item.year %></h2>
-    <div class="row year-section">
+    <div class="year-section">
     <% currentYear = item.year;
   } %>
-      <a id="<%= item.repo %>" class="publication-anchor"></a>
-      <div class="col-12 mb-2">
-        <div class="card border-0" style="padding: 0.25rem 0.5rem; background: #fff;">
-          <div class="card-body p-1" style="padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;">
-            <div class="row align-items-start"> <!-- align-items-start for top alignment -->
-              <div class="col-md-2 col-3 d-flex flex-column justify-content-start align-items-start p-0 badge-left-align"> <!-- left-aligned, no padding -->
-                <a href="https://github.com/computorg/<%- item.repo %>" target="_blank" style="margin-left:0;">
-                  <img src="https://img.shields.io/github/actions/workflow/status/computorg/<%- item.repo %>/build.yml?label=build&logo=github" class="img-fluid" alt="Build Status" style="margin-top: 0; margin-left:-20px; margin-top:5px; display:block;" />
-                </a>
-                <% if (hasdoi) { %>
-                <a href="https://doi.org/<%- item.doi %>" target="_blank" style="margin-left:0;">
-                  <img src="<%- doibadge %>" class="img-fluid" alt="DOI: <%- item.doi %>" title="DOI: <%- item.doi %>" style="margin-left:-20px; margin-top:5px; display:block;" />
-                </a>
-                <% } %>
-              </div>
-              <div class="col-md-10 col-9 pl-1">
-                <!-- <h5 class="card-title mb-1" style="font-size:1.1em;">
-                  <a href="<%= doiurl %>" data-toggle="modal" data-target="#articleModal" class="text-decoration-none"><%= item.title %></a>
-                </h5> -->
-                <h5 class="card-title mb-1" style="font-size:1.1em;">
-                  <a href="<%= doiurl %>" target="_blank"><%= item.title %></a>
-                </h5>
-                <% if (item.authors) { %>
-                <p class="text-muted mb-1" style="font-size:0.97em;"><%= item.authors %></p>
-                <% } %>
-                <div class="d-flex justify-content-between align-items-center mb-2" style="font-size:0.95em;">
-                  <span class="text-muted"><em>Computo</em>, <%= item.year %>.</span>
-                  <span class="text-muted text-right" style="font-size:0.95em; white-space:nowrap;"><em><% if (hasdoi) { %><a href="https://doi.org/<%- item.doi %>" target="_blank">https://doi.org/<%- item.doi %></a><% } else { %><a href="<%= doiurl %>" target="_blank" ><%= doiurl %></a><% } %></em></span>
-                </div>
-                <div class="btn-group btn-group-sm" role="group" aria-label="Article actions">
-                  <a href="<%= doiurl %>" data-toggle="modal" data-target="#articleModal" class="btn btn-outline-secondary btn-sm" style="padding:0.2em 0.6em;">Preview</a>
-                  <!-- <% if (item["abstract'" ] && item["abstract'"].trim()) { %>
-                  <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#abstractModal" data-abstract="<%- item["abstract'"].replace(/"/g, '&quot;') %>" data-title="<%- item.title.replace(/"/g, '&quot;') %>" style="padding:0.2em 0.6em;">ABS</button>
-                  <% } %> -->
-                  <!-- <a href="<%= doiurl %>" class="btn btn-outline-secondary btn-sm" target="_blank" style="padding:0.2em 0.6em;">HTML</a> -->
-                  <!-- <% if (item.pdf && item.pdf.trim()) { %>
-                  <a href="<%= item.pdf %>" class="btn btn-outline-secondary btn-sm" target="_blank" style="padding:0.2em 0.6em;">PDF</a>
-                  <% } %> -->
-                  <a href="https://github.com/computorg/<%- item.repo %>" class="btn btn-outline-secondary btn-sm" target="_blank" style="padding:0.2em 0.6em;">Sources (Git)</a>
-                  <button type="button" class="btn btn-outline-secondary btn-sm" onclick="generateBibTex('<%= bibtex %>')" style="padding:0.2em 0.6em;"><span style="font-variant: small-caps; font-family: 'Times New Roman', Times, serif;">Bib<span style="vertical-align: -0.2em;">T</span><span style="vertical-align: 0em;">E</span>X</span></button>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="publication mb-4" id="<%= item.repo %>">
+        <h5 class="mb-1"><a href="<%= pageurl %>"><%= item.title %></a></h5>
+        <% if (item.authors) { %>
+        <p class="text-muted mb-1"><%= item.authors %></p>
+        <% } %>
+        <p class="text-muted mb-2"><em>Computo</em>, <%= item.year %>.<% if (hasdoi) { %> <a href="https://doi.org/<%= item.doi %>">https://doi.org/<%= item.doi %></a><% } %></p>
+        <div class="publication-links" role="group" aria-label="Article links">
+          <a class="btn btn-outline-secondary btn-sm" href="<%= pageurl %>"><i class="bi bi-filetype-html"></i> HTML</a>
+          <% if (pdfurl) { %>
+          <a class="btn btn-outline-secondary btn-sm" href="<%= pdfurl %>"><i class="bi bi-file-earmark-pdf"></i> PDF</a>
+          <% } %>
+          <a class="btn btn-outline-secondary btn-sm" href="<%= gh %>"><i class="bi bi-github"></i> Code</a>
+          <% if (hasdoi) { %>
+          <a class="btn btn-outline-secondary btn-sm" href="<%= gh %>/issues?q=is%3Aissue+label%3Areview"><i class="bi bi-chat-left-text"></i> Reviews</a>
+          <a class="btn btn-outline-secondary btn-sm" href="https://archive.softwareheritage.org/browse/origin/?origin_url=<%= gh %>"><i class="bi bi-archive"></i> Archive</a>
+          <% } %>
+          <% if (item.bibtex) { %>
+          <button type="button" class="btn btn-outline-secondary btn-sm bibtex-copy" data-bibtex="<%= item.bibtex %>" title="Copy the BibTeX entry"><i class="bi bi-quote"></i> BibTeX</button>
+          <% } %>
+          <a class="build-status" href="<%= gh %>/actions/workflows/build.yml" title="Does the article still rebuild from its code? Last run of the build workflow">
+            <img src="https://img.shields.io/github/actions/workflow/status/computorg/<%= item.repo %>/build.yml?label=build&logo=github" alt="Build status of <%= item.repo %>" height="20" loading="lazy" />
+          </a>
         </div>
       </div>
 <% } %>
 <% if (currentYear !== null) { %>
 </div> <!-- End last year section -->
 <% } %>
-</div> <!-- End container -->
-
-<!-- Modal -->
-<div class="modal fade" id="articleModal" tabindex="-1" role="dialog" aria-labelledby="articleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="articleModalLabel">Article</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <iframe id="iframe_article" width="100%" height="500px"></iframe>
-      </div>
-    </div>
-  </div>
 </div>
 
-<!-- Abstract Modal -->
-<div class="modal fade" id="abstractModal" tabindex="-1" role="dialog" aria-labelledby="abstractModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="abstractModalLabel">Abstract</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h6 id="abstractTitle" class="font-weight-bold mb-3"></h6>
-        <p id="abstractContent"></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+  .computo-publications h5 { font-size: 1.1em; }
+  .computo-publications p { text-align: left; }
+  .computo-publications .text-muted { font-size: 0.95em; }
+  .publication-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; }
+  .publication-links .btn { padding: 0.15em 0.6em; font-size: 0.85em; }
+  .publication-links .build-status { line-height: 0; margin-left: 0.25rem; }
+  .publication { scroll-margin-top: 5rem; }
+</style>
 
 <script>
-  $('#articleModal').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget); // Button that triggered the modal
-    var url = button.attr('href'); // Extract info from data-* attributes
-    $('#iframe_article').attr('src', url);
+  document.addEventListener("click", function (event) {
+    var button = event.target.closest(".bibtex-copy");
+    if (!button) return;
+    navigator.clipboard.writeText(button.dataset.bibtex).then(function () {
+      var label = button.innerHTML;
+      button.innerHTML = '<i class="bi bi-check2"></i> Copied';
+      setTimeout(function () { button.innerHTML = label; }, 1500);
+    });
   });
-
-  $('#articleModal').on('hidden.bs.modal', function () {
-    $('#iframe_article').attr('src', '');
-  });
-
-  $('#abstractModal').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget); // Button that triggered the modal
-    var abstract = button.data('abstract'); // Extract abstract from data-* attributes
-    var title = button.data('title'); // Extract title from data-* attributes
-    
-    $('#abstractTitle').text(title);
-    $('#abstractContent').text(abstract);
-  });
-
-  function generateBibTex(bibTeX) {
-    // Create a temporary textarea to copy the BibTeX to clipboard
-    var textArea = document.createElement('textarea');
-    textArea.value = bibTeX;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textArea);
-    
-    // Show a temporary alert
-    alert('BibTeX citation copied to clipboard!');
-  }
-
-  document.addEventListener("DOMContentLoaded", function() {
-    if (window.location.hash) {
-      var el = document.getElementById(window.location.hash.substring(1));
-      if (el) {
-        el.scrollIntoView({ behavior: "auto", block: "center" });
-      }
-    }
-  });
-document.addEventListener("DOMContentLoaded", function() {
-  function scrollToAnchor() {
-    if (window.location.hash) {
-      var el = document.getElementById(window.location.hash.substring(1));
-      if (el) {
-        el.scrollIntoView({ behavior: "auto", block: "center" });
-      }
-    }
-  }
-  // Try immediately, then again after a short delay (for mobile/layout shifts)
-  scrollToAnchor();
-  setTimeout(scrollToAnchor, 400);
-});
 </script>
 ```
