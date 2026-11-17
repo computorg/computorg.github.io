@@ -31,7 +31,7 @@ for (const item of items) {
           <a class="btn btn-outline-secondary btn-sm" href="<%= gh %>"><i class="bi bi-github"></i> Code</a>
           <% if (hasdoi) { %>
           <a class="btn btn-outline-secondary btn-sm" href="<%= gh %>/issues?q=is%3Aissue+label%3Areview"><i class="bi bi-chat-left-text"></i> Reviews</a>
-          <a class="btn btn-outline-secondary btn-sm" href="https://archive.softwareheritage.org/browse/origin/?origin_url=<%= gh %>"><i class="bi bi-archive"></i> Archive</a>
+          <a class="btn btn-outline-secondary btn-sm" href="https://archive.softwareheritage.org/browse/origin/?origin_url=<%= gh %>" title="Software Heritage archive"><i class="bi bi-archive"></i> Archive</a>
           <% } %>
           <% if (item.bibtex) { %>
           <button type="button" class="btn btn-outline-secondary btn-sm bibtex-copy" data-bibtex="<%= item.bibtex %>" title="Copy the BibTeX entry"><i class="bi bi-quote"></i> BibTeX</button>
